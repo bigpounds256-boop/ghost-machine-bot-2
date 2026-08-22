@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22 21:46 UTC",
+  "generated_at": "2026-08-22 22:45 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
@@ -22,7 +22,10 @@
     "GBP/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The market is currently in an extremely tight consolidation phase, ranging within a mere 10 pips (1.3638 - 1.3648) over the last 24 hours. There is no clear market structure, swing high/low pattern, or valid BOS/CHoCH on either the H1 or M15 timeframes. Furthermore, the M15 ATR(14) is at 0.0, indicating a complete lack of volatility. Under these flat and illiquid conditions, no valid Order Blocks or Supply/Demand zones can be established, triggering a strict No-Trade condition."
+        }
       }
     },
     "USD/JPY": {
