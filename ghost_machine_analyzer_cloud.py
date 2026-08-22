@@ -27,6 +27,9 @@ from datetime import datetime, timezone
 TWELVEDATA_API_KEY = os.environ["TWELVEDATA_API_KEY"]
 GEMINI_API_KEY      = os.environ["GEMINI_API_KEY"]
 
+print(f"DEBUG: TWELVEDATA_API_KEY length = {len(TWELVEDATA_API_KEY)}")
+print(f"DEBUG: GEMINI_API_KEY length = {len(GEMINI_API_KEY)}")
+
 SYMBOL   = "BTC/USD"
 H1_BARS  = 25
 M15_BARS = 40
