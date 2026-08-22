@@ -152,27 +152,28 @@ def compute_trend(candles, short=8, long=21):
 def build_prompt(symbol, h1_candles, m15_candles, current_price):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    h1_trend = compute_trend(h1_candles)
-    m15_trend = compute_trend(m15_candles)
     atr = compute_atr(m15_candles)
     rsi = compute_rsi(m15_candles)
     vol_ratio = compute_volume_ratio(m15_candles)
 
-    indicator_block = f"""H1 Trend (SMA8 vs SMA21): {h1_trend}
-M15 Trend (SMA8 vs SMA21): {m15_trend}
-M15 ATR(14) [volatility]: {atr if atr is not None else "N/A"}
+    indicator_block = f"""M15 ATR(14) [volatility]: {atr if atr is not None else "N/A"}
 M15 RSI(14) [momentum]: {rsi if rsi is not None else "N/A"}
 M15 Volume Ratio (current vs 20-bar avg) [volume]: {vol_ratio if vol_ratio is not None else "N/A"}"""
 
-    prompt = f"""You are a technical trading analyst using a simple, practical strategy that blends basic ICT/SMC market structure concepts with standard technical indicators.
-Analyze the following live market data and computed indicators.
+    prompt = f"""You are an ICT/SMC (Inner Circle Trader / Smart Money Concepts) trading analyst.
+Your analysis must be based ENTIRELY on Supply & Demand zones, Order Blocks, and
+core SMC/ICT structural concepts. Do NOT use moving averages or simple trend
+filters as your basis for direction — direction comes purely from market
+structure (BOS/CHoCH) and where price sits relative to Order Blocks / Supply
+and Demand zones. Volatility, momentum, and volume indicators are used only
+as CONFIRMATION on top of the structural read, never as the primary signal.
 
 === MARKET DATA ===
 Symbol: {symbol}
 Current Price: {current_price}
 Time: {now}
 
---- Computed Indicators ---
+--- Confirmation Indicators (secondary, not primary signal) ---
 {indicator_block}
 
 --- H1 Candles (newest first) ---
@@ -181,51 +182,65 @@ Time: {now}
 --- M15 Candles (newest first) ---
 {format_candles(m15_candles)}
 
-=== STRATEGY RULES (simple confluence model) ===
-Timeframes: Higher Timeframe Bias = H1 | Entry Timeframe = M15
+=== STRATEGY RULES (pure ICT/SMC) ===
+Timeframes: Higher Timeframe Context = H1 | Entry Timeframe = M15
 
-Core idea: trade WITH the trend when volatility, momentum, and volume all agree.
-This is intentionally simpler than a strict SMC sniper setup — it should fire
-more often than "wait for a perfect Breaker Block," while still being disciplined.
+1. Market Structure (primary basis for direction — H1 and M15):
+   - Identify the current structure using swing highs/lows: is price making
+     Higher Highs/Higher Lows (bullish structure) or Lower Highs/Lower Lows
+     (bearish structure)?
+   - Look for a Break of Structure (BOS) — price breaking a prior swing
+     high/low in the direction of the prevailing structure — or a Change of
+     Character (CHoCH) — the first break AGAINST the prevailing structure,
+     signaling a possible reversal.
+   - HTF (H1) structure sets the directional context; M15 is where the entry
+     trigger (BOS/CHoCH + Order Block reaction) is found.
 
-1. Market Structure / Trend (basic ICT/SMC):
-   - H1 trend should be clearly bullish or bearish (not flat/sideways).
-   - M15 should be moving in the same direction, or showing early signs of
-     turning to align with H1 (e.g. a recent higher low forming in an uptrend,
-     or a recent lower high forming in a downtrend).
-   - A basic liquidity idea counts: price sweeping a recent swing high/low
-     before reversing back in the H1 trend direction is a bonus, not required.
+2. Supply & Demand Zones / Order Blocks:
+   - A bullish Order Block is the last down-close candle (or cluster) before
+     a strong impulsive move up that caused a BOS.
+   - A bearish Order Block is the last up-close candle (or cluster) before a
+     strong impulsive move down that caused a BOS.
+   - A valid setup requires price to return to (or approach) an Order Block /
+     Supply-Demand zone that aligns with the current structural bias, and
+     show a reaction (rejection wick, shift in momentum) from that zone.
+   - Prefer zones that are still "fresh" (untested since formation) over
+     zones price has already returned to multiple times.
 
-2. Volatility filter:
-   - ATR should indicate the market is actually moving (not dead/flat).
-   - If ATR is very low relative to typical recent ranges, treat as no-trade —
-     there isn't enough room for a sensible SL/TP.
+3. Liquidity:
+   - Look for evidence of liquidity being taken — price sweeping above a
+     prior high (buy-side liquidity) or below a prior low (sell-side
+     liquidity) — right before the reversal into the Order Block / BOS.
+   - This liquidity sweep is a strong supporting factor, though not always
+     present. Its absence alone should not disqualify an otherwise clean
+     structural setup.
 
-3. Momentum filter (RSI):
-   - For a BUY: RSI should generally be above 45-50 and not extremely
-     overbought (avoid RSI > 80 chasing a top).
-   - For a SELL: RSI should generally be below 50-55 and not extremely
-     oversold (avoid RSI < 20 chasing a bottom).
-   - RSI near 50 with no clear lean is a mild negative, not an automatic veto.
-
-4. Volume confirmation:
-   - Volume ratio above ~1.0-1.2 (i.e. at/above average) on the move supports
-     the setup. Very low volume ratio during a supposed breakout is a warning
-     sign of a weak/likely-to-fail move.
+4. Confirmation layer (secondary — do not use to override structure):
+   - Volatility (ATR): the zone reaction should occur with enough volatility
+     that a sensible SL/TP is achievable. Extremely flat/dead conditions
+     around the zone weaken the setup.
+   - Momentum (RSI): a bullish reaction from a demand zone is more convincing
+     if RSI is turning up from lower levels (not already extremely
+     overbought); a bearish reaction from a supply zone is more convincing if
+     RSI is turning down from higher levels (not already extremely oversold).
+   - Volume: a volume ratio at/above ~1.0 on the impulsive move that created
+     the Order Block, or on the reaction at the zone, adds confidence. Very
+     low volume on the reaction is a warning sign.
 
 Risk Rules:
-- Minimum Risk:Reward = 1:1.5 (this is a simpler swing-with-the-trend model, not a sniper setup)
-- Stop Loss placed beyond the most recent relevant swing high/low, with some
-  room informed by ATR (roughly 1x ATR beyond structure is reasonable)
-- Entry can be at-market or a shallow limit at a small pullback — this
-  strategy does not require waiting for a precise Breaker Block
+- Minimum Risk:Reward = 1:2
+- Stop Loss placed just beyond the Order Block / Supply-Demand zone boundary
+  (beyond the wick that defines it)
+- Entry at the Order Block / zone — either a limit order at the zone, or
+  confirmation entry once a reaction candle closes
 
 No-Trade Conditions (any of these → output NO TRADE):
-- H1 trend is flat/sideways/unclear
-- ATR shows dead/very low volatility
-- RSI and trend direction clearly disagree (e.g. bearish trend but RSI > 70)
-- Risk:Reward below 1:1.5
-- Data looks unreliable or insufficient
+- No clear market structure (choppy, no discernible swing pattern)
+- No valid, relevant Order Block / Supply-Demand zone near current price
+- Price has already moved away from the zone without a clean reaction
+- Risk:Reward below 1:2
+- Confirmation indicators strongly contradict the structural read (e.g. zero
+  volatility, or momentum firmly opposite the expected reaction direction)
 
 === OUTPUT FORMAT (MANDATORY) ===
 Reply with ONLY raw JSON, no markdown fences, no extra text. Use exactly this structure.
@@ -242,7 +257,9 @@ If a valid setup exists:
     "take_profit": "XXXX.XX",
     "risk_reward": "1:X.X",
     "analysis": {{
-      "trend_detection": "...",
+      "market_structure": "...",
+      "order_block_or_zone": "...",
+      "liquidity_context": "...",
       "volatility_level": "...",
       "momentum_rsi": "...",
       "volume_confirmation": "...",
@@ -260,9 +277,9 @@ If NO valid setup exists:
   }}
 }}
 
-Use good judgment and be reasonably selective, but this is meant to be a
-practical, tradeable strategy — don't require perfection. If trend, volatility,
-momentum, and volume are broadly in agreement, that's a valid setup."""
+Be disciplined: the setup must be justified primarily by structure (BOS/CHoCH)
+and a genuine Order Block / Supply-Demand reaction, with the indicators only
+supporting — never replacing — that structural read."""
     return prompt
 
 
