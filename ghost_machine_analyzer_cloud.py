@@ -1,4 +1,4 @@
-    """
+"""
 TheGhostMachine Analyzer — Standalone Edition
 ------------------------------------------------
 No MetaTrader required. Pulls live XAUUSD candles from TwelveData
