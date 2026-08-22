@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-08-22 19:38 UTC",
+  "results": {
+    "BTC/USD": {
+      "asset_class": "crypto",
+      "signal": {
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The H1 higher timeframe trend is bearish, but the M15 entry timeframe trend is currently bullish. Additionally, the M15 RSI is at 61.4, indicating active bullish momentum that conflicts with the bearish H1 bias (violating the rule that RSI should generally be below 50-55 for short setups). Without trend alignment or momentum confirmation, and with volume data unavailable, the strategy dictates a No-Trade stance."
+        }
+      }
+    },
+    "ETH/USD": {
+      "asset_class": "crypto",
+      "signal": {
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The H1 higher timeframe trend is bearish, but the M15 entry timeframe trend is currently bullish, showing a lack of structural alignment. Additionally, the M15 RSI is at 68.7, indicating strong short-term upward momentum that violates the momentum filter for short setups (which requires RSI to be below 50-55)."
+        }
+      }
+    },
+    "EUR/USD": {
+      "asset_class": "forex",
+      "signal": {
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The H1 and M15 trends are both sideways/neutral, indicating a lack of clear market direction. Additionally, the M15 ATR is 0.0, representing dead volatility, and the volume ratio is unavailable. These conditions fail the core trend and volatility filters, requiring a flat stance."
+        }
+      }
+    },
+    "GBP/USD": {
+      "asset_class": "forex",
+      "signal": {
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The H1 and M15 trends are both sideways/neutral, failing the core requirement of a clear directional bias. Additionally, the M15 ATR is 0.0, indicating dead volatility, and the volume ratio is unavailable, which triggers multiple mandatory no-trade conditions."
+        }
+      }
+    },
+    "USD/JPY": {
+      "asset_class": "forex",
+      "signal": {
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The H1 and M15 trends are both classified as sideways/neutral, which violates the core requirement for a clearly defined bullish or bearish market structure. Additionally, the M15 ATR of 0.02 indicates extremely low volatility, offering insufficient range for a viable risk-to-reward setup."
+        }
+      }
+    },
+    "XAU/USD": {
+      "asset_class": "metals",
+      "signal": {
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "Both H1 and M15 trends are sideways/neutral, indicating a complete lack of directional market structure. Additionally, the M15 ATR of 0.27 represents extremely low, flatlined volatility, and the RSI is exactly at 50.0. These conditions, likely due to weekend market closure, do not present any valid trading setups."
+        }
+      }
+    },
+    "XAG/USD": {
+      "asset_class": "metals",
+      "signal": {
+        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=XAG%2FUSD&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+      }
+    },
+    "US500": {
+      "asset_class": "indices",
+      "signal": {
+        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=US500&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+      }
+    },
+    "NAS100": {
+      "asset_class": "indices",
+      "signal": {
+        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=NAS100&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+      }
+    }
+  }
+}
