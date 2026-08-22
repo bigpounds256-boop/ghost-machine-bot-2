@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22 22:45 UTC",
+  "generated_at": "2026-08-22 23:41 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
@@ -22,10 +22,7 @@
     "GBP/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The market is currently in an extremely tight consolidation phase, ranging within a mere 10 pips (1.3638 - 1.3648) over the last 24 hours. There is no clear market structure, swing high/low pattern, or valid BOS/CHoCH on either the H1 or M15 timeframes. Furthermore, the M15 ATR(14) is at 0.0, indicating a complete lack of volatility. Under these flat and illiquid conditions, no valid Order Blocks or Supply/Demand zones can be established, triggering a strict No-Trade condition."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "USD/JPY": {
@@ -49,7 +46,7 @@
     "US500": {
       "asset_class": "indices",
       "signal": {
-        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=US500&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=US500&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
       }
     },
     "NAS100": {
