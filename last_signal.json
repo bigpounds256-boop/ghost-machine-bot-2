@@ -1,66 +1,16 @@
 {
-  "generated_at": "2026-08-22 21:06 UTC",
+  "generated_at": "2026-08-22 21:46 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "date": "2026-08-22",
-          "current_price": "77113.51",
-          "pair": "BTC/USD",
-          "trade_type": "SELL",
-          "entry_price": "77310.00",
-          "stop_loss": "77425.00",
-          "take_profit": "76950.00",
-          "risk_reward": "1:3.13",
-          "analysis": {
-            "market_structure": "The Higher Timeframe (H1) structure is firmly bearish following a massive displacement down from the 78.8k region to 76.5k at 05:00 UTC, establishing a bearish Change of Character (CHoCH). On the Lower Timeframe (M15), price was in a corrective uptrend making higher lows (76880 -> 76956 -> 77066 -> 77138 -> 77206 -> 77258). The current 21:00 M15 candle has aggressively broken below the key swing lows of 77258 and 77206, confirming a bearish CHoCH on the entry timeframe and aligning with the HTF bearish bias.",
-            "order_block_or_zone": "The bearish Order Block (OB) is identified on the M15 timeframe at the 20:30 candle (O:77298.16 H:77408.00 L:77258.00 C:77352.18). This represents the last up-close candle before the sharp bearish displacement. Our entry is set as a limit order at 77310.00, which sits at the lower boundary/open of this bearish OB, anticipating a corrective retest of this newly formed supply zone.",
-            "liquidity_context": "Prior to the downward expansion, price swept buy-side liquidity (BSL) above the 19:45 high (77469.64) and the 20:00 high (77467.53), trapping breakout buyers before reversing. Sell-side liquidity (SSL) now rests cleanly below the relatively equal lows near 77066 and the major swing low at 76880, which serves as our primary target area.",
-            "volatility_level": "M15 ATR(14) is currently at 124.72, indicating healthy intraday volatility. This ensures that a retracement to our entry at 77310.00 and a subsequent expansion to our target at 76950.00 are highly achievable within a few sessions.",
-            "momentum_rsi": "M15 RSI(14) is at 44.2, turning down from neutral levels. This confirms that bearish momentum is accelerating without being in an extremely oversold state, leaving ample room for further downside expansion.",
-            "volume_confirmation": "The current 21:00 M15 candle shows strong bearish displacement, indicating institutional participation and high volume on the breakdown, validating the strength of the bearish CHoCH.",
-            "technical_indicators": [
-              "H1 Bearish Market Structure",
-              "M15 Bearish Change of Character (CHoCH)",
-              "M15 Bearish Order Block (77298.16 - 77408.00)",
-              "Buy-Side Liquidity Sweep at 77469.64",
-              "Healthy Volatility (ATR 124.72) supporting expansion"
-            ]
-          },
-          "possible_outcomes": "The primary outcome is a brief corrective retracement to mitigate the M15 bearish Order Block at 77310.00, followed by a rejection and expansion downward to sweep the sell-side liquidity pools at 77066.00 and 76950.00. Alternatively, if buyers regain control and push price above the swing high of 77408.00, the bearish setup is invalidated, resulting in a controlled loss at our Stop Loss of 77425.00."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "ETH/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "date": "2026-08-22",
-          "current_price": "2422.92",
-          "pair": "ETH/USD",
-          "trade_type": "SELL",
-          "entry_price": "2435.00",
-          "stop_loss": "2445.50",
-          "take_profit": "2405.40",
-          "risk_reward": "1:2.8",
-          "analysis": {
-            "market_structure": "H1 structure is strongly bearish following a massive displacement down at 05:00. M15 has confirmed this bearish alignment by creating a clear Break of Structure (BOS) to the downside, breaking below the previous swing lows of 2423.98 and 2421.76, closing at 2422.92.",
-            "order_block_or_zone": "A bearish Order Block is identified on the M15 timeframe at the 20:00 candle (range 2436.77 - 2443.72). Additionally, a clear bearish Fair Value Gap (FVG) exists between 2431.95 and 2435.24, providing a high-probability premium entry zone.",
-            "liquidity_context": "Buy-side liquidity was swept at the 19:45 high (2444.71) prior to the displacement down. Sell-side liquidity is resting cleanly below the equal lows at 2405.40 and the major swing low at 2389.45.",
-            "volatility_level": "M15 ATR of 6.95 indicates healthy intraday volatility, making the stop loss of 10.50 points structurally safe and highly achievable.",
-            "momentum_rsi": "M15 RSI is at 47.9, declining from neutral territory, confirming that bearish momentum is accelerating without being in an extreme oversold state.",
-            "volume_confirmation": "The breakout candle at 21:00 shows a significant increase in range and volume compared to the preceding consolidation candles, confirming institutional displacement.",
-            "technical_indicators": [
-              "H1 Bearish Market Structure",
-              "M15 Break of Structure (BOS)",
-              "M15 Bearish Order Block (2436.77 - 2443.72)",
-              "M15 Fair Value Gap (2431.95 - 2435.24)",
-              "RSI Bearish Momentum Alignment"
-            ]
-          },
-          "possible_outcomes": "Price retraces into the premium FVG/OB zone at 2435.00, triggers the sell limit, and rejects downward to target the sell-side liquidity pool at 2405.40. Alternatively, an unexpected surge in buying pressure invalidates the setup by breaking above the swing high at 2445.50."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
