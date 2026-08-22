@@ -1,3 +1,4 @@
+
 """
 TheGhostMachine Analyzer — Standalone Edition
 ------------------------------------------------
@@ -34,7 +35,7 @@ SYMBOL   = "BTC/USD"
 H1_BARS  = 25
 M15_BARS = 40
 
-GEMINI_MODEL = "gemini-2.0-flash"  # fast + free-tier friendly
+GEMINI_MODEL = "gemini-3.5-flash"  # 2.0-flash was shut down June 2026
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 
