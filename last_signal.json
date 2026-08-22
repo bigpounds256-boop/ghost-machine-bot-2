@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-22 19:38 UTC",
+  "generated_at": "2026-08-22 19:53 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 higher timeframe trend is bearish, but the M15 entry timeframe trend is currently bullish. Additionally, the M15 RSI is at 61.4, indicating active bullish momentum that conflicts with the bearish H1 bias (violating the rule that RSI should generally be below 50-55 for short setups). Without trend alignment or momentum confirmation, and with volume data unavailable, the strategy dictates a No-Trade stance."
+          "reason": "Trend mismatch and momentum conflict. The H1 higher timeframe trend is bearish, but the M15 entry timeframe is bullish with strong upward momentum (RSI at 60.7, which is above the bearish threshold of 50-55). There are no signs of M15 turning to align with the bearish H1 trend, and the lack of M15 volume data prevents volume confirmation."
         }
       }
     },
@@ -15,7 +15,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 higher timeframe trend is bearish, but the M15 entry timeframe trend is currently bullish, showing a lack of structural alignment. Additionally, the M15 RSI is at 68.7, indicating strong short-term upward momentum that violates the momentum filter for short setups (which requires RSI to be below 50-55)."
+          "reason": "The H1 trend is bearish, but the M15 trend is bullish with an RSI of 70.5. This represents a clear disagreement between the higher timeframe bearish trend and the lower timeframe bullish momentum (RSI > 70), triggering a mandatory no-trade condition."
         }
       }
     },
@@ -24,7 +24,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 and M15 trends are both sideways/neutral, indicating a lack of clear market direction. Additionally, the M15 ATR is 0.0, representing dead volatility, and the volume ratio is unavailable. These conditions fail the core trend and volatility filters, requiring a flat stance."
+          "reason": "The H1 and M15 trends are both classified as sideways/neutral, indicating a lack of clear market direction. Additionally, the M15 ATR(14) is 0.0, representing dead volatility, and the volume ratio is unavailable. These conditions trigger multiple mandatory no-trade rules."
         }
       }
     },
@@ -33,7 +33,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 and M15 trends are both sideways/neutral, failing the core requirement of a clear directional bias. Additionally, the M15 ATR is 0.0, indicating dead volatility, and the volume ratio is unavailable, which triggers multiple mandatory no-trade conditions."
+          "reason": "The H1 and M15 trends are both classified as sideways/neutral, indicating a lack of clear market direction. Additionally, the M15 ATR is 0.0 (indicating dead volatility) and the volume ratio is unavailable (N/A). These conditions violate the core trend and volatility filters required for a valid setup."
         }
       }
     },
@@ -42,7 +42,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 and M15 trends are both classified as sideways/neutral, which violates the core requirement for a clearly defined bullish or bearish market structure. Additionally, the M15 ATR of 0.02 indicates extremely low volatility, offering insufficient range for a viable risk-to-reward setup."
+          "reason": "Both H1 and M15 trends are classified as sideways/neutral, and the M15 ATR of 0.02 indicates extremely low volatility (flat market), triggering multiple mandatory no-trade conditions."
         }
       }
     },
@@ -51,7 +51,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "Both H1 and M15 trends are sideways/neutral, indicating a complete lack of directional market structure. Additionally, the M15 ATR of 0.27 represents extremely low, flatlined volatility, and the RSI is exactly at 50.0. These conditions, likely due to weekend market closure, do not present any valid trading setups."
+          "reason": "Both H1 and M15 trends are flat/sideways. Additionally, volatility is extremely low with an ATR of 0.27 relative to a price of 4608.23, indicating a dead market with no tradeable structure or momentum."
         }
       }
     },
