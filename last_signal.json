@@ -1,12 +1,34 @@
 {
-  "generated_at": "2026-08-22 19:53 UTC",
+  "generated_at": "2026-08-22 20:49 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "Trend mismatch and momentum conflict. The H1 higher timeframe trend is bearish, but the M15 entry timeframe is bullish with strong upward momentum (RSI at 60.7, which is above the bearish threshold of 50-55). There are no signs of M15 turning to align with the bearish H1 trend, and the lack of M15 volume data prevents volume confirmation."
+          "date": "2026-08-22",
+          "current_price": "77374.62",
+          "pair": "BTC/USD",
+          "trade_type": "SELL",
+          "entry_price": "77374.62",
+          "stop_loss": "77485.00",
+          "take_profit": "77150.00",
+          "risk_reward": "1:2.03",
+          "analysis": {
+            "market_structure": "The Higher Timeframe (H1) structure is bearish following a major displacement down to the 76500 level. On the M15 timeframe, price recently executed a Change of Character (CHoCH) by breaking below the minor swing low of 77281.97 to reach 77258.00, aligning the short-term trend with the HTF bearish bias.",
+            "order_block_or_zone": "The relevant supply zone / bearish Order Block is located on the M15 timeframe between 77410.00 and 77470.00 (the last consecutive up-close candles before the displacement down). Price has retraced back into this premium zone, offering a high-probability short entry.",
+            "liquidity_context": "A clean double top (equal highs) was formed at 77469.64 and 77467.53, acting as a buy-side liquidity pool. The strong rejection from this level followed by the CHoCH indicates institutional distribution.",
+            "volatility_level": "M15 ATR(14) stands at 112.86, which provides healthy volatility to reach the target within a reasonable timeframe without excessive noise.",
+            "momentum_rsi": "M15 RSI is at 67.1, indicating that the pullback into the supply zone is reaching overbought territory, supporting a bearish reversal.",
+            "volume_confirmation": "Volume ratio is N/A, but the structural displacement on the M15 down-move confirms institutional presence.",
+            "technical_indicators": [
+              "H1 Bearish Market Structure",
+              "M15 Bearish CHoCH",
+              "M15 Bearish Order Block Mitigation",
+              "RSI Overbought Rejection (67.1)",
+              "ATR-aligned Stop Loss"
+            ]
+          },
+          "possible_outcomes": "The trade is expected to reject the M15 supply zone and target the sell-side liquidity resting below the 77258.00 and 77138.00 lows. If price breaks above the supply zone at 77485.00, the bearish thesis is invalidated, and we will look for a potential shift to bullish structure."
         }
       }
     },
@@ -15,7 +37,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 trend is bearish, but the M15 trend is bullish with an RSI of 70.5. This represents a clear disagreement between the higher timeframe bearish trend and the lower timeframe bullish momentum (RSI > 70), triggering a mandatory no-trade condition."
+          "reason": "The Higher Timeframe (H1) structure is strongly bearish following the impulsive drop from 2514.43 to 2385.00, while the Lower Timeframe (M15) is in a corrective bullish phase. Price recently reacted off the H1 supply zone/FVG boundary near 2444.71 but has already moved away from the zone without providing a clean M15 Change of Character (CHoCH) below 2433.75 to confirm a short entry. Entering a short at the current price of 2436.42 with a stop loss above the swing high (2444.71) yields a poor Risk-to-Reward ratio (< 1:2) due to oncoming M15 demand zones at 2427.06 and 2421.76. Conversely, buying is low probability as it would mean trading directly into HTF supply. We remain sidelined until a clear structural shift or a fresh mitigation occurs."
         }
       }
     },
@@ -24,7 +46,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 and M15 trends are both classified as sideways/neutral, indicating a lack of clear market direction. Additionally, the M15 ATR(14) is 0.0, representing dead volatility, and the volume ratio is unavailable. These conditions trigger multiple mandatory no-trade rules."
+          "reason": "The market is in an extremely tight, flat consolidation range between 1.1673 and 1.1693 with no discernible swing highs or lows, indicating a complete lack of market structure (no clear BOS or CHoCH on H1 or M15). Furthermore, the M15 ATR is at 0.0, confirming zero volatility (typical of weekend/non-trading hours), which strongly violates the confirmation rules and triggers an immediate no-trade condition."
         }
       }
     },
@@ -33,7 +55,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The H1 and M15 trends are both classified as sideways/neutral, indicating a lack of clear market direction. Additionally, the M15 ATR is 0.0 (indicating dead volatility) and the volume ratio is unavailable (N/A). These conditions violate the core trend and volatility filters required for a valid setup."
+          "reason": "The market is in an extremely tight consolidation range of approximately 10 pips over the last 24 hours, indicating a complete lack of volatility and volume (M15 ATR is 0.0). There is no clear market structure, no discernible swing pattern, and no valid Order Blocks or Supply/Demand zones formed by impulsive moves (BOS/CHoCH). Under these flat conditions, no high-probability trade setup exists."
         }
       }
     },
@@ -42,7 +64,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "Both H1 and M15 trends are classified as sideways/neutral, and the M15 ATR of 0.02 indicates extremely low volatility (flat market), triggering multiple mandatory no-trade conditions."
+          "reason": "The market is in an extremely low-volatility, range-bound state (M15 ATR is 0.02, representing only 2 pips of average movement) with no clear market structure, BOS, or CHoCH. Price is tightly consolidating between 158.94 and 159.00, characterized by frequent overlapping candles and a lack of impulsive displacement. Without a clear directional bias or valid, fresh Order Blocks, no high-probability setup exists."
         }
       }
     },
@@ -51,7 +73,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "Both H1 and M15 trends are flat/sideways. Additionally, volatility is extremely low with an ATR of 0.27 relative to a price of 4608.23, indicating a dead market with no tradeable structure or momentum."
+          "reason": "The market is in an extremely flat, illiquid consolidation phase (characteristic of weekend market closure) with virtually zero volatility. Since 2026-08-22 08:00 UTC, the price has been tightly bound within a 30-cent range (4608.08 to 4608.39) with identical candle metrics. There is no discernible market structure (BOS/CHoCH), no displacement, and no valid, active Order Blocks or Supply/Demand zones to base a trade upon."
         }
       }
     },
