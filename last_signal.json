@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-22 20:49 UTC",
+  "generated_at": "2026-08-22 20:54 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
           "date": "2026-08-22",
-          "current_price": "77374.62",
+          "current_price": "77334.01",
           "pair": "BTC/USD",
           "trade_type": "SELL",
-          "entry_price": "77374.62",
+          "entry_price": "77334.01",
           "stop_loss": "77485.00",
-          "take_profit": "77150.00",
-          "risk_reward": "1:2.03",
+          "take_profit": "77030.00",
+          "risk_reward": "1:2.01",
           "analysis": {
-            "market_structure": "The Higher Timeframe (H1) structure is bearish following a major displacement down to the 76500 level. On the M15 timeframe, price recently executed a Change of Character (CHoCH) by breaking below the minor swing low of 77281.97 to reach 77258.00, aligning the short-term trend with the HTF bearish bias.",
-            "order_block_or_zone": "The relevant supply zone / bearish Order Block is located on the M15 timeframe between 77410.00 and 77470.00 (the last consecutive up-close candles before the displacement down). Price has retraced back into this premium zone, offering a high-probability short entry.",
-            "liquidity_context": "A clean double top (equal highs) was formed at 77469.64 and 77467.53, acting as a buy-side liquidity pool. The strong rejection from this level followed by the CHoCH indicates institutional distribution.",
-            "volatility_level": "M15 ATR(14) stands at 112.86, which provides healthy volatility to reach the target within a reasonable timeframe without excessive noise.",
-            "momentum_rsi": "M15 RSI is at 67.1, indicating that the pullback into the supply zone is reaching overbought territory, supporting a bearish reversal.",
-            "volume_confirmation": "Volume ratio is N/A, but the structural displacement on the M15 down-move confirms institutional presence.",
+            "market_structure": "HTF (H1) is bearish following a massive displacement from 78800 down to 76500. The current upward move is a corrective retracement. On the LTF (M15), price has executed a bearish Change of Character (CHoCH) by breaking below the swing low of 77281.97, reaching 77258.",
+            "order_block_or_zone": "The bearish supply zone is located between 77410 and 77470 (origin of the M15 displacement). Price recently retraced to 77408, showing a clear rejection/mitigation of this supply zone.",
+            "liquidity_context": "Buy-side liquidity was swept/tapped around the 77469 level, followed by a displacement down to target sell-side liquidity resting below the 77200 and 77000 levels.",
+            "volatility_level": "M15 ATR is 114.16, indicating sufficient volatility to reach the target.",
+            "momentum_rsi": "RSI is at 64.8, turning down from near-overbought territory, confirming bearish momentum from the supply zone.",
+            "volume_confirmation": "Volume ratio is N/A, but structural displacement on M15 confirms institutional selling pressure.",
             "technical_indicators": [
               "H1 Bearish Market Structure",
               "M15 Bearish CHoCH",
-              "M15 Bearish Order Block Mitigation",
-              "RSI Overbought Rejection (67.1)",
-              "ATR-aligned Stop Loss"
+              "M15 Supply Zone Mitigation (77410 - 77470)",
+              "RSI Rejection from 64.8",
+              "ATR of 114.16 supporting target range"
             ]
           },
-          "possible_outcomes": "The trade is expected to reject the M15 supply zone and target the sell-side liquidity resting below the 77258.00 and 77138.00 lows. If price breaks above the supply zone at 77485.00, the bearish thesis is invalidated, and we will look for a potential shift to bullish structure."
+          "possible_outcomes": "The trade will either hit the Stop Loss at 77485.00 if buyers regain control and break the supply zone, or it will reach the Take Profit at 77030.00 as sellers target the sell-side liquidity below 77100."
         }
       }
     },
@@ -36,8 +36,30 @@
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The Higher Timeframe (H1) structure is strongly bearish following the impulsive drop from 2514.43 to 2385.00, while the Lower Timeframe (M15) is in a corrective bullish phase. Price recently reacted off the H1 supply zone/FVG boundary near 2444.71 but has already moved away from the zone without providing a clean M15 Change of Character (CHoCH) below 2433.75 to confirm a short entry. Entering a short at the current price of 2436.42 with a stop loss above the swing high (2444.71) yields a poor Risk-to-Reward ratio (< 1:2) due to oncoming M15 demand zones at 2427.06 and 2421.76. Conversely, buying is low probability as it would mean trading directly into HTF supply. We remain sidelined until a clear structural shift or a fresh mitigation occurs."
+          "date": "2026-08-22",
+          "current_price": "2435.87",
+          "pair": "ETH/USD",
+          "trade_type": "SELL",
+          "entry_price": "2435.87",
+          "stop_loss": "2445.50",
+          "take_profit": "2413.00",
+          "risk_reward": "1:2.37",
+          "analysis": {
+            "market_structure": "HTF (H1) is bearish following a massive displacement leg down from 2514 to 2385, breaking major swing lows (BOS). The current upward move is a corrective retracement. On M15, price has shown a Change of Character (CHoCH) by breaking below the minor swing low of 2436.77 after failing to sustain highs above 2444.71.",
+            "order_block_or_zone": "Price reacted precisely to the H1 Bearish Order Block / Supply Zone (2437.79 - 2447.60), which was the last up-candle before the minor drop to 2412.16. On M15, a bearish OB has formed at 2439.41 - 2443.72.",
+            "liquidity_context": "Price swept buy-side liquidity above the 06:00 high (2443.68) by reaching 2444.71 before aggressively rejecting downwards.",
+            "volatility_level": "M15 ATR is 6.22, indicating sufficient volatility for the trade to play out.",
+            "momentum_rsi": "M15 RSI is at 71.7, turning down from overbought territory, confirming bearish momentum from the supply zone.",
+            "volume_confirmation": "N/A",
+            "technical_indicators": [
+              "H1 Bearish Order Block",
+              "M15 Change of Character (CHoCH)",
+              "Buy-side Liquidity Sweep",
+              "M15 RSI Overbought Reversal",
+              "M15 ATR Volatility Confirmation"
+            ]
+          },
+          "possible_outcomes": "Price continues its bearish momentum from the H1 supply zone to sweep the sell-side liquidity around 2413.00. Alternatively, price could retrace deeper into the H1 supply zone to test the 2447.60 level, potentially hitting our stop loss if the bullish retracement extends."
         }
       }
     },
@@ -46,35 +68,26 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, flat consolidation range between 1.1673 and 1.1693 with no discernible swing highs or lows, indicating a complete lack of market structure (no clear BOS or CHoCH on H1 or M15). Furthermore, the M15 ATR is at 0.0, confirming zero volatility (typical of weekend/non-trading hours), which strongly violates the confirmation rules and triggers an immediate no-trade condition."
+          "reason": "The market is in an extremely tight, choppy consolidation with no clear market structure or directional bias. Price is repeatedly sweeping both the highs (~1.1693) and lows (~1.1673) on almost every H1 and M15 candle, indicating a lack of sustained expansion or valid Order Blocks. Additionally, the M15 ATR is 0.0, confirming zero genuine volatility, which violates our confirmation rules and makes setting a reliable stop loss impossible."
         }
       }
     },
     "GBP/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely tight consolidation range of approximately 10 pips over the last 24 hours, indicating a complete lack of volatility and volume (M15 ATR is 0.0). There is no clear market structure, no discernible swing pattern, and no valid Order Blocks or Supply/Demand zones formed by impulsive moves (BOS/CHoCH). Under these flat conditions, no high-probability trade setup exists."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "USD/JPY": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely low-volatility, range-bound state (M15 ATR is 0.02, representing only 2 pips of average movement) with no clear market structure, BOS, or CHoCH. Price is tightly consolidating between 158.94 and 159.00, characterized by frequent overlapping candles and a lack of impulsive displacement. Without a clear directional bias or valid, fresh Order Blocks, no high-probability setup exists."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely flat, illiquid consolidation phase (characteristic of weekend market closure) with virtually zero volatility. Since 2026-08-22 08:00 UTC, the price has been tightly bound within a 30-cent range (4608.08 to 4608.39) with identical candle metrics. There is no discernible market structure (BOS/CHoCH), no displacement, and no valid, active Order Blocks or Supply/Demand zones to base a trade upon."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAG/USD": {
