@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-23 05:08 UTC",
+  "generated_at": "2026-08-23 06:04 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "Price has swept major HTF sell-side liquidity around the 76500 level and is currently trading deep in a discount zone with the M15 RSI extremely oversold at 22.7. While the overall market structure remains bearish on both H1 and M15, entering a short position at these levels violates premium/discount rules. Conversely, a long position cannot be initiated yet because there is no confirmed bullish Change of Character (CHoCH) on the M15 timeframe to validate the liquidity sweep."
+          "reason": "The HTF (H1) structure has shifted bearish after a major downward expansion. On the M15 timeframe, price swept sell-side liquidity down to 75545.67 and is currently consolidating. A long entry is invalid as there is no bullish CHoCH on M15 to confirm a reversal. A short entry at the current price (76043.63) is also invalid because price is far from the premium supply zone / bearish Order Block (76600 - 76730), leading to an unfavorable Risk:Reward ratio (< 1:2) and high risk of chasing the move into an oversold market (M15 RSI at 23.4)."
         }
       }
     },
@@ -19,7 +19,10 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely tight, flat consolidation range between approximately 1.1671 and 1.1693, with no clear market structure, expansion, or trend (no valid BOS or CHoCH). Furthermore, the M15 ATR is at 0.0, indicating zero volatility, which is a primary no-trade condition. Without volatility and a clear structural breakout or displacement to form valid Order Blocks, no high-probability setups can be established."
+        }
       }
     },
     "GBP/USD": {
