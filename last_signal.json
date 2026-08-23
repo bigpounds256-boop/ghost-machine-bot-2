@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-08-23 19:15 UTC",
+  "generated_at": "2026-08-23 19:56 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77250.00 - 77320.00",
+          "entry_price": "77290.00",
+          "invalidation_stop": "77090.00",
+          "take_profit": {
+            "primary_tp": "77750.00",
+            "extreme_tp": "79450.00",
+            "risk_reward_ratio": "1:10.8"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The H1 bullish Break of Structure (BOS) above 77400 is supported by a strong demand zone between 77116 and 77250. This zone represents a bullish mitigation block (SMC) where institutional buyers defended the trend, aligning perfectly with the upward-sloping EMA50/200 trend indicators on H4/H1.",
+            "Confluence 2: The defensive staff zone is anchored at the 77250 half-quarter level (Quarter Theory), which aligns with the MSNR support level at 77255.99. The M5/M15 candlestick patterns show strong wick rejections at this level, while the M15 RSI at 55.2 indicates healthy bullish momentum with ample room to expand upward.",
+            "Confluence 3: The defensive staff zone sits within the 0.5 to 0.618 Fibonacci retracement level (77144 - 77063) of the recent H1 expansion leg. This overlaps with an unmitigated M15 Fair Value Gap (FVG) and the lower boundary of the current H4 Candle Range Theory (CRT) value area. The M15 ATR of 152.93 confirms that the volatility is sufficient to tap this zone and trigger a sharp wick-rejection.",
+            "Confluence 4: Price is forming a bullish flag/pennant chart pattern on the M15 timeframe, bouncing off a major H4 bullish trendline. This pattern is accompanied by a liquidity sweep (SMC) of the minor lows at 77255.99, while volume indicators like OBV and CMF show steady accumulation, validating the strength of the defensive staff.",
+            "Confluence 5: The entry zone at 77290.00 aligns with the -1 Standard Deviation band of the M15 Bollinger Bands, representing a high-probability mean-reversion buy area. This volatility boundary coincides with the 77250 Quarter Theory level and a fresh M5 demand zone, ensuring a highly precise, low-risk preemptive entry."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "88.23%",
+            "dominant_bias_reason": "Strong multi-timeframe bullish alignment on H4 and H1, with price consolidating in a bullish flag pattern above key MSNR and Quarter Theory support at 77250. The presence of an unmitigated FVG and a clear defensive staff zone at 77250-77320 provides a high-probability preemptive buy-limit entry with a tight stop below the H1 swing low of 77116."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.8",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
