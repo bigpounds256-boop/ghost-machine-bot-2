@@ -1,34 +1,32 @@
 {
-  "generated_at": "2026-08-23 11:45 UTC",
+  "generated_at": "2026-08-23 13:24 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
           "date": "2026-08-23",
-          "current_price": "77313.36",
+          "current_price": "77407.73",
           "pair": "BTC/USD",
           "trade_type": "BUY-LIMIT",
-          "entry_price": "76820.00",
-          "stop_loss": "76710.00",
-          "take_profit": "77150.00",
+          "entry_price": "77090.00",
+          "stop_loss": "76990.00",
+          "take_profit": "77390.00",
           "risk_reward": "1:3.0",
           "analysis": {
             "zone_type": "Demand Zone",
-            "zone_range": "76744.94 - 76892.00",
-            "zone_freshness": "Fresh (completely untested since formation between 10:45 and 11:00 UTC)",
-            "volatility_level": "High (ATR of 204.28 confirms strong, healthy price expansion)",
-            "momentum_rsi": "90.1 (extremely overbought, indicating a corrective pullback to the demand zone is highly probable to reset momentum before the next leg up)",
-            "volume_confirmation": "N/A (Volume ratio unavailable, but the explosive price departure confirms a significant institutional imbalance)",
+            "zone_range": "77020.00 - 77127.72",
+            "zone_freshness": "Fresh. Formed during the 12:15 UTC M15 consolidation base immediately prior to a sharp upward departure toward 77444.00. Price has not returned to this zone since the departure.",
+            "volatility_level": "High. M15 ATR of 203.13 provides sufficient price movement to reach both entry and target levels efficiently.",
+            "momentum_rsi": "M15 RSI is currently at 77.1, showing strong bullish momentum. The pending limit order is positioned to catch the corrective pullback into the demand zone.",
+            "volume_confirmation": "N/A",
             "technical_indicators": [
-              "M15 Demand Zone Base: 76744.94 - 76892.00",
-              "M15 ATR(14): 204.28",
-              "M15 RSI(14): 90.1",
-              "H1 Bullish Departure Candle (11:00)",
-              "Fresh Zone Status (Zero previous tests)"
+              "M15 ATR(14): 203.13",
+              "M15 RSI(14): 77.1",
+              "H1 Bullish Departure Candle (13:00 UTC)"
             ]
           },
-          "possible_outcomes": "Price retraces to the fresh M15 demand zone at 76,820.00, filling the resting buy limit order. It then finds strong buying interest within the base, reversing upward toward the target of 77,150.00. Alternatively, if selling pressure is too intense, price may break below the zone low, triggering the stop loss at 76,710.00."
+          "possible_outcomes": "If price retraces to the fresh M15 demand zone, the buy-limit order at 77090.00 will be triggered. A bullish reversal from this zone is expected to target the recent high area near 77390.00. If selling pressure is strong enough to invalidate the zone and push price below 76990.00, the trade will close at a controlled loss."
         }
       }
     },
@@ -37,7 +35,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The market is experiencing zero volatility with the M15 ATR(14) at 0.0, which triggers a strict no-trade condition. Furthermore, the major H1 supply zone (1.16900 - 1.16933) and demand zone (1.16717 - 1.16730) are stale and overused, having been tested multiple times throughout the session, while the lack of volume confirmation (N/A) prevents any high-probability setup."
+          "reason": "The M15 ATR(14) is 0.0, indicating zero volatility in the market, which violates the confirmation rules. Additionally, the price action is extremely flat and repetitive with no clear, strong departures to establish valid, high-quality Supply or Demand zones near the current price of 1.16801."
         }
       }
     },
@@ -46,7 +44,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, flat consolidation with virtually zero volatility (ATR of 0.27 at a price level of 4608). There are no sharp, high-momentum departures on either the H1 or M15 timeframes to establish valid, high-quality Supply or Demand zones. Without defined zones, no pending limit orders can be placed."
+          "reason": "The market is in an extremely tight, flat consolidation with a total range of approximately 0.30 USD over the past 24 hours. There are no sharp, one-directional departures from any base to establish valid, high-quality Supply or Demand zones. Due to the complete lack of market imbalance and virtually zero volatility, no trade setup can be identified."
         }
       }
     }
