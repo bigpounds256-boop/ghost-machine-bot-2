@@ -1,19 +1,35 @@
 {
-  "generated_at": "2026-08-23 06:04 UTC",
+  "generated_at": "2026-08-23 07:43 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The HTF (H1) structure has shifted bearish after a major downward expansion. On the M15 timeframe, price swept sell-side liquidity down to 75545.67 and is currently consolidating. A long entry is invalid as there is no bullish CHoCH on M15 to confirm a reversal. A short entry at the current price (76043.63) is also invalid because price is far from the premium supply zone / bearish Order Block (76600 - 76730), leading to an unfavorable Risk:Reward ratio (< 1:2) and high risk of chasing the move into an oversold market (M15 RSI at 23.4)."
+          "date": "2026-08-23",
+          "current_price": "76076.68",
+          "pair": "BTC/USD",
+          "trade_type": "SELL-LIMIT",
+          "entry_price": "76850.00",
+          "stop_loss": "77050.00",
+          "take_profit": "76450.00",
+          "risk_reward": "1:2.0",
+          "analysis": {
+            "zone_type": "Supply Zone",
+            "zone_range": "76821.23 - 77036.58",
+            "zone_freshness": "Fresh. Formed during the sharp downward departure between 04:30 and 05:00 UTC. Price has not yet returned to retest this area.",
+            "volatility_level": "High. M15 ATR of 313.12 indicates strong market movement, allowing for a well-spaced stop loss and take profit.",
+            "momentum_rsi": "RSI is currently at 30.8, indicating oversold conditions. A short-term corrective rally is expected to carry price upward to fill our pending sell-limit order within the supply zone.",
+            "volume_confirmation": "N/A",
+            "technical_indicators": [
+              "M15 ATR(14) at 313.12",
+              "M15 RSI(14) at 30.8",
+              "H1 Bearish Departure",
+              "M15 Supply Base (76821.23 - 77036.58)",
+              "Fresh Zone (Zero previous retests)"
+            ]
+          },
+          "possible_outcomes": "Price undergoes a corrective rally to fill the SELL-LIMIT order at 76850.00 inside the supply zone, followed by a sharp downward reversal toward the 76450.00 target. Alternatively, strong buying pressure invalidates the zone, pushing price past the far edge to trigger the stop loss at 77050.00."
         }
-      }
-    },
-    "ETH/USD": {
-      "asset_class": "crypto",
-      "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
@@ -21,44 +37,17 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, flat consolidation range between approximately 1.1671 and 1.1693, with no clear market structure, expansion, or trend (no valid BOS or CHoCH). Furthermore, the M15 ATR is at 0.0, indicating zero volatility, which is a primary no-trade condition. Without volatility and a clear structural breakout or displacement to form valid Order Blocks, no high-probability setups can be established."
+          "reason": "The market is currently locked in a highly consolidated range with no fresh, high-quality supply or demand zones near the current price. The historical boundaries (Supply at 1.1690 - 1.1693 and Demand at 1.1671 - 1.1675) have been repeatedly tested and are stale/overused. Furthermore, the M15 ATR(14) is at 0.0, indicating zero volatility, which strongly contradicts any potential zone reaction and triggers a mandatory no-trade condition."
         }
-      }
-    },
-    "GBP/USD": {
-      "asset_class": "forex",
-      "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
-      }
-    },
-    "USD/JPY": {
-      "asset_class": "forex",
-      "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
-      }
-    },
-    "XAG/USD": {
-      "asset_class": "metals",
-      "signal": {
-        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=XAG%2FUSD&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
-      }
-    },
-    "US500": {
-      "asset_class": "indices",
-      "signal": {
-        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=US500&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
-      }
-    },
-    "NAS100": {
-      "asset_class": "indices",
-      "signal": {
-        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=NAS100&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_Theghostmachine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely tight, flat consolidation range between 4608.08 and 4608.39 with no strong, impulsive departures in either direction. Without a sharp expansion move to create a market imbalance, no valid or high-quality Supply or Demand zones can be identified. Additionally, the extremely low volatility (M15 ATR of 0.27 at a price level of 4608) indicates flat/dead market conditions, which violates our core strategy requirements for a high-probability zone reaction."
+        }
       }
     }
   }
