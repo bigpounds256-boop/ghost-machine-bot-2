@@ -1,18 +1,18 @@
 """
-TheGhostMachine Analyzer — Standalone Edition
-------------------------------------------------
-No MetaTrader required. Pulls live XAUUSD candles from TwelveData
-and sends them to Google Gemini for Smart Money Concepts (SMC) analysis.
-Outputs a strict JSON trade signal.
+TheGhostMachine Analyzer — Doctrine Edition (Predictive Wick-Rejection)
+------------------------------------------------------------------------
+Pulls live H4/H1/M15/M5 candles from TwelveData for a watchlist of
+instruments and sends them to Google Gemini for analysis using the
+"Preemptive Predictive Wick-Rejection / Defensive Staff" doctrine —
+17 price-action/indicator concepts, 5 causal confluences, dual buy/sell
+scenario scoring, and a confidence percentage.
 
-SETUP (one time):
-  1. pip install requests
-  2. Fill in your keys below (or set as environment variables — safer).
-  3. Run:  python ghost_machine_analyzer.py
+Runs standalone (python ghost_machine_analyzer_cloud.py) or via the
+GitHub Actions workflow on a schedule.
 
-Get keys:
-  TwelveData : https://twelvedata.com/  (free tier, you already have one)
-  Gemini     : https://aistudio.google.com/ (free, no card required)
+NOTE on "confidence percentage": this is Gemini's own structured
+self-assessment of how many doctrine concepts align — a reasoning aid,
+not a statistically backtested probability.
 """
 
 import os
@@ -22,30 +22,25 @@ import requests
 from datetime import datetime, timezone
 
 # ── CONFIG ────────────────────────────────────────────────────────────
-# Keys come from GitHub Secrets (set as environment variables in the
-# workflow) — never hardcode keys in a public repo, they get scraped
-# and abused within hours if committed in plain text.
 TWELVEDATA_API_KEY = os.environ["TWELVEDATA_API_KEY"]
 GEMINI_API_KEY      = os.environ["GEMINI_API_KEY"]
 
 print(f"DEBUG: TWELVEDATA_API_KEY length = {len(TWELVEDATA_API_KEY)}")
 print(f"DEBUG: GEMINI_API_KEY length = {len(GEMINI_API_KEY)}")
 
-# Watchlist across asset classes. TwelveData symbol format shown.
-# NOTE: Indices (US500/NAS100/DJI) often require a paid TwelveData plan —
-# if your free tier rejects them, the script logs it and skips that
-# instrument rather than crashing the whole run.
 WATCHLIST = [
     {"symbol": "BTC/USD", "class": "crypto"},
     {"symbol": "EUR/USD", "class": "forex"},
     {"symbol": "XAU/USD", "class": "metals"},
 ]
 
-H1_BARS  = 25
-M15_BARS = 40
+H4_BARS  = 30
+H1_BARS  = 30
+M15_BARS = 48
+M5_BARS  = 60
 
-# TwelveData free tier ≈ 8 requests/minute. 2 calls per symbol (H1+M15),
-# so pace requests to stay safely under that limit across the whole run.
+# TwelveData free tier ≈ 8 requests/minute. 4 calls per symbol now
+# (H4+H1+M15+M5), so pace requests to stay safely under that limit.
 SECONDS_BETWEEN_CALLS = 8
 
 GEMINI_MODEL = "gemini-3.5-flash"  # 2.0-flash was shut down June 2026
@@ -57,7 +52,7 @@ def fetch_candles(symbol: str, interval: str, count: int):
     url = "https://api.twelvedata.com/time_series"
     params = {
         "symbol": symbol,
-        "interval": interval,       # "1h" or "15min"
+        "interval": interval,
         "outputsize": count,
         "apikey": TWELVEDATA_API_KEY,
         "order": "desc",
@@ -80,8 +75,6 @@ def format_candles(candles):
 
 
 # ── STEP 1b: Compute technical indicators from candle data ──────────────
-# TwelveData returns newest-first; these need oldest-first for calculation.
-
 def _chronological(candles):
     return list(reversed(candles))
 
@@ -96,8 +89,7 @@ def compute_atr(candles, period=14):
         prev_close = float(c[i - 1]["close"])
         tr = max(high - low, abs(high - prev_close), abs(low - prev_close))
         trs.append(tr)
-    atr = sum(trs[-period:]) / period
-    return round(atr, 2)
+    return round(sum(trs[-period:]) / period, 5)
 
 def compute_rsi(candles, period=14):
     c = _chronological(candles)
@@ -114,8 +106,7 @@ def compute_rsi(candles, period=14):
     if avg_loss == 0:
         return 100.0
     rs = avg_gain / avg_loss
-    rsi = 100 - (100 / (1 + rs))
-    return round(rsi, 1)
+    return round(100 - (100 / (1 + rs)), 1)
 
 def compute_volume_ratio(candles, period=20):
     c = _chronological(candles)
@@ -142,140 +133,203 @@ def compute_trend(candles, short=8, long=21):
     return "sideways/neutral"
 
 
-# ── STEP 2: Build the strategy prompt ────────────────────────────────
-def build_prompt(symbol, h1_candles, m15_candles, current_price):
+# ── STEP 2: Build the doctrine-based prompt ─────────────────────────────
+def build_prompt(symbol, h4, h1, m15, m5, current_price):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    atr = compute_atr(m15_candles)
-    rsi = compute_rsi(m15_candles)
-    vol_ratio = compute_volume_ratio(m15_candles)
+    h4_trend  = compute_trend(h4)
+    h1_trend  = compute_trend(h1)
+    m15_trend = compute_trend(m15)
+    m5_trend  = compute_trend(m5)
+    atr = compute_atr(m15)
+    rsi = compute_rsi(m15)
+    vol_ratio = compute_volume_ratio(m15)
 
-    indicator_block = f"""M15 ATR(14) [volatility]: {atr if atr is not None else "N/A"}
+    indicator_block = f"""H4 Trend: {h4_trend}
+H1 Trend: {h1_trend}
+M15 Trend: {m15_trend}
+M5 Trend: {m5_trend}
+M15 ATR(14) [volatility]: {atr if atr is not None else "N/A"}
 M15 RSI(14) [momentum]: {rsi if rsi is not None else "N/A"}
-M15 Volume Ratio (current vs 20-bar avg) [volume]: {vol_ratio if vol_ratio is not None else "N/A"}"""
+M15 Volume Ratio (current vs 20-bar avg) [volume]: {vol_ratio if vol_ratio is not None else "N/A"}
 
-    prompt = f"""You are a Supply & Demand trading analyst. Your analysis must be based
-ENTIRELY AND ONLY on Supply & Demand zones — nothing else determines direction
-or entry. Do NOT use moving averages, trend filters, ICT concepts like
-Break of Structure / Change of Character, Order Block terminology, or
-liquidity-sweep language. The zones themselves are the entire basis.
-Volatility, momentum, and volume indicators are used ONLY as confirmation
-on top of a zone reaction, never as the primary signal.
+Note: only trend/ATR/RSI/Volume above are pre-computed with exact math.
+For any other indicator you reference below (Ichimoku, ADX, MACD, Stochastic,
+CCI, TRIX, AO, Bollinger Bands, Keltner, OBV, CMF, VPVR, VROC, A/D, Fibonacci
+levels, SD), reason about it qualitatively from the raw candle data provided
+— do not invent precise numeric values for indicators you have not been
+given exact figures for; describe their likely state/direction in words."""
+
+    prompt = f"""You are a trading analyst operating strictly under the doctrine below —
+"Preemptive Predictive Wick-Rejection / Defensive Staff." Apply it exactly
+as written. Do not substitute a different strategy or simplify it.
 
 === MARKET DATA ===
 Symbol: {symbol}
 Current Price: {current_price}
 Time: {now}
 
---- Confirmation Indicators (secondary, not primary signal) ---
+--- Computed / Reasoning Anchors ---
 {indicator_block}
 
+--- H4 Candles (newest first) ---
+{format_candles(h4)}
+
 --- H1 Candles (newest first) ---
-{format_candles(h1_candles)}
+{format_candles(h1)}
 
 --- M15 Candles (newest first) ---
-{format_candles(m15_candles)}
+{format_candles(m15)}
 
-=== STRATEGY RULES (Supply & Demand only) ===
-Timeframes: Higher Timeframe Context = H1 | Entry Timeframe = M15
+--- M5 Candles (newest first) ---
+{format_candles(m5)}
 
-1. Identify Supply Zones:
-   - A Supply Zone is a small area of consolidation/base immediately before
-     price departed sharply downward (a strong, mostly one-directional move
-     away from that base). The base itself is the zone.
-   - The stronger and faster the departure (the bigger the imbalance left
-     behind), the higher-quality the zone.
+=== DOCTRINE ===
 
-2. Identify Demand Zones:
-   - A Demand Zone is a small area of consolidation/base immediately before
-     price departed sharply upward. The base itself is the zone.
-   - Same quality principle: a stronger, faster departure = higher-quality zone.
+1. Price Action Concepts (use all 10 — no single concept alone is sufficient):
+ICT / Smart Money Concepts (SMC); MSNR / Malaysian SNR; CRT (Candle Range
+Theory); Supply and Demand Zones; Trendline Breaks & Bounces; Chart Patterns;
+Candlestick Patterns; Quarter Theory (QT); Break of Structure (BOS); Fair
+Value Gap (FVG) / Unmitigated Gaps.
+Each of the 5 confluences below must integrate at least 3 of these concepts
+plus at least 1 indicator alignment.
 
-3. Zone Freshness:
-   - Prefer zones price has not returned to since they formed ("fresh"
-     zones). A zone that has already been retested and held once is
-     lower quality; one retested multiple times is likely close to failing.
+2. Core Indicators Concepts (all four types actively analyzed):
+Trend: EMA50/200, Ichimoku, ADX, MACD.
+Momentum: RSI, Stochastic, CCI, TRIX, AO.
+Volatility: ATR, Bollinger Bands, SD, Keltner.
+Volume: OBV, CMF, VPVR, VROC, Accumulation/Distribution.
+Indicators validate concept alignment and confluence.
 
-4. Order-Based Entry Logic (pending orders placed AT the zone, not chased):
-   - This is an order-based strategy: you identify the zone first, then place
-     a pending limit order directly inside it, and let price come to the
-     order rather than reacting after the fact.
-   - SELL-LIMIT: placed inside a valid, relevant Supply Zone, anticipating
-     price will rise into the zone and reverse down from it.
-   - BUY-LIMIT: placed inside a valid, relevant Demand Zone, anticipating
-     price will fall into the zone and reverse up from it.
-   - The order's price should sit within the zone boundaries — not at the
-     very edge, and not requiring price to have already reacted there yet.
-     The whole point is the order is resting and waiting.
-   - Only propose an order if price is currently within a reasonable
-     approach distance of the zone (close enough that the order is likely
-     to actually get filled in a sensible timeframe). If price is far away
-     with no realistic path to the zone soon, that is NO TRADE.
-   - If no valid zone exists near current price at all, that is NO TRADE
-     regardless of anything else happening on the chart.
+3. Additional Tools:
+Fibonacci Retracement (0.382, 0.5, 0.618); Fibonacci Circles; Standard
+Deviation (SD). These enhance precision in locating predictive defensive
+staff zones.
 
-5. Confirmation layer (secondary — never overrides the zone read):
-   - Volatility (ATR): the zone reaction should have enough volatility for a
-     sensible SL/TP. Dead/flat conditions at the zone weaken the setup.
-   - Momentum (RSI): a bullish reaction from a demand zone is more convincing
-     if RSI is turning up from lower levels; a bearish reaction from a
-     supply zone is more convincing if RSI is turning down from higher
-     levels.
-   - Volume: a volume ratio at/above ~1.0 on the original departure from the
-     zone, or on the current reaction, adds confidence.
+4. Predictive Wick-Rejection / Defensive Staff:
+Principle: enter preemptively at the predicted wick-rejection point — do not
+wait for confirmation. The market reacts at internal defensive zones; deep
+textbook zones are secondary. Stop Loss sits just beyond the HTF invalidation
+of the defensive staff. Take Profit is based on HTF liquidity clusters, swing
+highs, and BOS — aim for 1:10+ Risk:Reward where the structure genuinely
+supports it.
 
-Risk Rules:
-- Minimum Risk:Reward = 1:2
-- Stop Loss placed just beyond the far edge of the Supply/Demand zone
-- Entry is ALWAYS a pending limit order resting inside the zone (BUY-LIMIT
-  in a Demand Zone, SELL-LIMIT in a Supply Zone) — never a market entry
+5. Take Profit and Risk Management:
+Primary TP: first HTF liquidity zone or swing high (conservative).
+Extreme TP: extended HTF move, maintaining 1:10+ R:R where realistic.
+SL: tight, doctrine-compliant, preemptive, placed just below/above the
+predicted defensive staff.
 
-No-Trade Conditions (any of these → output NO TRADE):
-- No valid, relevant Supply or Demand zone near current price
-- Price already left the zone without a clean reaction
-- The only nearby zone is stale/overused (tested multiple times already)
-- Risk:Reward below 1:2
-- Confirmation indicators strongly contradict the zone reaction (e.g. zero
-  volatility, or momentum firmly opposite the expected direction)
+6. Confluence Rules:
+Exactly 5 confluences per signal. Each integrates at least 3 price-action
+concepts plus at least 1 indicator alignment. Reasoning must be causal
+(explain HOW the concepts interact), not just a list of names. Composition
+is flexible — rotate concepts based on actual chart context, not a fixed
+template.
+
+7. Dual-Scenario Evaluation:
+Score BOTH a Buy scenario and a Sell scenario. For each, state which
+concepts align, which fail, and why. Select the higher-confidence scenario
+as the bias.
+
+8. Confidence Percentage:
+Calculate as (aligned concepts ÷ 17) × 100 for both Buy and Sell. Only treat
+a scenario as executable if confidence is ≥ 80%. If neither scenario reaches
+80%, this is NO TRADE.
+
+9. Entry Module (order-based):
+This is an order-based strategy: you must output a SPECIFIC price for a
+pending order — a BUY-LIMIT resting price for buys or a SELL-LIMIT resting
+price for sells — not just a zone description. The order rests and waits;
+price is not chased. entry_price must be a single actionable number sitting
+within the defensive staff zone (entry_zone gives the zone's boundaries for
+context, but entry_price is the exact order price). SL tight at HTF
+invalidation below/above the predicted defensive staff. TP aligns with HTF
+liquidity clusters / swing highs. Requires multi-concept + indicator
+validation. Do not wait for wick confirmation before placing the order —
+the order itself is the preemptive action.
+
+10. Signal Selection Logic:
+Evaluate all 17 concepts → build 5 valid confluences → score Buy vs Sell →
+compute confidence % → select the higher-confidence scenario (if ≥ 80%) →
+define the preemptive entry with tight SL.
+
+11. Market Contexts:
+Consider trend, structure, volatility, session/timing, and sentiment.
+Multi-timeframe alignment across H4/H1/M15/M5 (all provided above) is
+mandatory. Include liquidity clusters and HTF BOS in your reasoning.
+
+12. Current Price Behavior:
+Analyze the anticipated defensive staff, BOS, structure interactions,
+indicator alignment, trend, momentum, and volume at current price.
+
+13. Possible Outcome & News:
+State the Success case (price reacts at the defensive staff, continuation
+occurs), Failure case (SL invalidation at the HTF level), and Neutral case
+(consolidation/delayed move). No live news feed is provided here — only
+mention news if it's reasoned from price behavior itself, don't fabricate
+specific headlines.
 
 === OUTPUT FORMAT (MANDATORY) ===
-Reply with ONLY raw JSON, no markdown fences, no extra text. Use exactly this structure.
+Reply with ONLY raw JSON, no markdown fences, no extra text.
 
-If a valid setup exists:
+If confidence >= 80% for the winning scenario, use exactly this structure:
 {{
-  "trade_signal_Theghostmachine": {{
-    "date": "YYYY-MM-DD",
-    "current_price": "XXXX.XX",
-    "pair": "{symbol}",
+  "trade_signal_doctrine": {{
+    "asset": "{symbol}",
+    "bias": "BUY or SELL",
     "trade_type": "BUY-LIMIT or SELL-LIMIT",
+    "entry_zone": "XXXX.XX - XXXX.XX",
     "entry_price": "XXXX.XX",
-    "stop_loss": "XXXX.XX",
-    "take_profit": "XXXX.XX",
-    "risk_reward": "1:X.X",
-    "analysis": {{
-      "zone_type": "Supply Zone or Demand Zone",
-      "zone_range": "XXXX.XX - XXXX.XX",
-      "zone_freshness": "...",
-      "volatility_level": "...",
-      "momentum_rsi": "...",
-      "volume_confirmation": "...",
-      "technical_indicators": ["...", "...", "...", "...", "..."]
+    "invalidation_stop": "XXXX.XX",
+    "take_profit": {{
+      "primary_tp": "XXXX.XX",
+      "extreme_tp": "XXXX.XX",
+      "risk_reward_ratio": "1:X"
     }},
-    "possible_outcomes": "..."
+    "timeframes_used": ["H4", "H1", "M15", "M5"],
+    "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+    "confluences": [
+      "Confluence 1: ...reasoning and concepts...",
+      "Confluence 2: ...reasoning and concepts...",
+      "Confluence 3: ...reasoning and concepts...",
+      "Confluence 4: ...reasoning and concepts...",
+      "Confluence 5: ...reasoning and concepts..."
+    ],
+    "confidence_model": {{
+      "total_doctrine_checks": 17,
+      "buy_conditions_met": 0,
+      "sell_conditions_met": 0,
+      "confidence_percentage": "",
+      "dominant_bias_reason": "..."
+    }},
+    "risk_profile": {{
+      "expected_rr": "1:X",
+      "stop_type": "HTF structure invalidation (preemptive)",
+      "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+    }},
+    "status": "PENDING - valid only if price taps predictive zone"
   }}
 }}
 
-If NO valid setup exists:
+If confidence is below 80% for both scenarios, or no valid predictive
+defensive staff zone can be identified, use exactly this structure instead:
 {{
-  "trade_signal_Theghostmachine": {{
+  "trade_signal_doctrine": {{
     "status": "NO TRADE",
-    "reason": "..."
+    "reason": "...",
+    "confidence_model": {{
+      "total_doctrine_checks": 17,
+      "buy_conditions_met": 0,
+      "sell_conditions_met": 0,
+      "confidence_percentage": "",
+      "dominant_bias_reason": "..."
+    }}
   }}
 }}
 
-Be disciplined: only propose a pending limit order when a genuine, relevant
-Supply or Demand zone exists within realistic reach of current price, with
-the indicators only supporting — never replacing — that zone-based read."""
+Apply the doctrine exactly. Do not lower the 80% threshold and do not invent
+precise numeric values for indicators you were not given computed figures for."""
     return prompt
 
 
@@ -293,9 +347,9 @@ def get_ai_analysis(prompt: str) -> dict:
     max_retries = 3
     r = None
     for attempt in range(max_retries):
-        r = requests.post(GEMINI_URL, json=payload, headers=headers, timeout=30)
+        r = requests.post(GEMINI_URL, json=payload, headers=headers, timeout=60)
         if r.status_code == 429:
-            wait = 20 * (attempt + 1)  # 20s, then 40s, then 60s
+            wait = 20 * (attempt + 1)
             print(f"Gemini rate-limited (429). Waiting {wait}s before retry {attempt + 1}/{max_retries}...")
             time.sleep(wait)
             continue
@@ -306,22 +360,24 @@ def get_ai_analysis(prompt: str) -> dict:
     if r.status_code == 401:
         raise RuntimeError(
             "Gemini returned 401 Unauthorized. If you're on a new 'AQ.' format key, "
-            "double check it was copied in full (they're long) and that it hasn't been "
-            "regenerated since — regenerating invalidates the old string immediately."
+            "double check it was copied in full and hasn't been regenerated since."
         )
     r.raise_for_status()
     data = r.json()
     text = data["candidates"][0]["content"]["parts"][0]["text"]
 
-    # Strip accidental markdown fences if the model adds them
     text = text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-
     return json.loads(text)
 
 
 # ── MAIN ──────────────────────────────────────────────────────────────
 def analyze_symbol(symbol: str) -> dict:
     print(f"\n--- {symbol} ---")
+
+    print("Fetching live H4 candles...")
+    h4 = fetch_candles(symbol, "4h", H4_BARS)
+    time.sleep(SECONDS_BETWEEN_CALLS)
+
     print("Fetching live H1 candles...")
     h1 = fetch_candles(symbol, "1h", H1_BARS)
     time.sleep(SECONDS_BETWEEN_CALLS)
@@ -330,14 +386,18 @@ def analyze_symbol(symbol: str) -> dict:
     m15 = fetch_candles(symbol, "15min", M15_BARS)
     time.sleep(SECONDS_BETWEEN_CALLS)
 
-    current_price = m15[0]["close"]
+    print("Fetching live M5 candles...")
+    m5 = fetch_candles(symbol, "5min", M5_BARS)
+    time.sleep(SECONDS_BETWEEN_CALLS)
 
-    print("Building prompt...")
-    prompt = build_prompt(symbol, h1, m15, current_price)
+    current_price = m5[0]["close"]
 
-    print("Sending to Gemini for analysis...")
+    print("Building doctrine prompt...")
+    prompt = build_prompt(symbol, h4, h1, m15, m5, current_price)
+
+    print("Sending to Gemini for doctrine analysis...")
     signal = get_ai_analysis(prompt)
-    time.sleep(SECONDS_BETWEEN_CALLS)  # space out Gemini calls between symbols too
+    time.sleep(SECONDS_BETWEEN_CALLS)
     return signal
 
 
@@ -349,22 +409,15 @@ def main():
         asset_class = entry["class"]
         try:
             signal = analyze_symbol(symbol)
-            results[symbol] = {
-                "asset_class": asset_class,
-                "signal": signal,
-            }
+            results[symbol] = {"asset_class": asset_class, "signal": signal}
             print(f"OK: {symbol}")
         except Exception as e:
-            # Don't let one bad/unsupported symbol (e.g. indices needing a
-            # paid TwelveData plan) kill the whole run — skip and continue.
             print(f"SKIPPED {symbol}: {e}")
-            results[symbol] = {
-                "asset_class": asset_class,
-                "signal": {"error": str(e)},
-            }
+            results[symbol] = {"asset_class": asset_class, "signal": {"error": str(e)}}
 
     output = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
         "results": results,
     }
 
