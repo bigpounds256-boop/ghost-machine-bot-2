@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-08-23 13:44 UTC",
+  "generated_at": "2026-08-23 14:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77240.34 - 77338.22",
-          "entry_price": "77285.00",
-          "invalidation_stop": "77130.00",
-          "take_profit": {
-            "primary_tp": "78800.00",
-            "extreme_tp": "79500.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT / SMC (Bullish Order Block), Supply and Demand Zones (Demand zone at 77200-77300), and Break of Structure (BOS of 77400) interact to establish a high-probability mitigation area. This structural alignment is validated by the bullish EMA50/200 trend indicators on M15/H4, confirming that any rapid retracement into this zone represents a continuation buy rather than a structural reversal.",
-            "Confluence 2: MSNR (Malaysian SNR - SR Flip at 77400), Quarter Theory (QT - 77250 minor quarter level), and Candlestick Patterns (Bullish engulfing on H1 at 11:00) converge to form a strong psychological and structural floor. This is supported by high ATR volatility (223.185 on M15), which ensures that a quick downward wick into this level will be rapidly rejected, forming the defensive staff.",
-            "Confluence 3: Fair Value Gap (FVG on M5 between 77240.34 and 77338.22), Candle Range Theory (CRT - defending the lower range of the expansion candle), and Trendline Breaks & Bounces (bounce off the ascending trendline) interact as price seeks to fill the unmitigated gap. This is validated by strong RSI momentum (76.6), indicating that the dip will be aggressively bought before the gap can be fully closed.",
-            "Confluence 4: Chart Patterns (Inverse Head and Shoulders breakout neckline at 77400), Supply and Demand (Demand zone mitigation), and ICT / SMC (Liquidity sweep of minor lows) interact to clear out late-joining longs. This is validated by rising OBV and VPVR high volume node support at 77200-77300, showing institutional accumulation at the defensive staff.",
-            "Confluence 5: Quarter Theory (77250 level), Break of Structure (BOS), and MSNR (Support level) align with the 0.5-0.618 Fibonacci retracement levels (77134 - 77255) and -2 Standard Deviation band, providing a highly precise defensive staff zone for a tight stop loss."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4, M15, and M5 timeframes are strongly bullish, with a clear break of structure (BOS) above the 77400 resistance level. This resistance has flipped into support (MSNR), aligning with a minor quarter level at 77250, a fresh M5 Fair Value Gap (FVG), and the 0.5-0.618 Fibonacci retracement zone. Momentum (RSI 76.6) and volume indicators support a continuation of the upward expansion, making the buy scenario highly confident at 88.2%."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
@@ -56,7 +17,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extreme state of low-volatility consolidation (weekend flat pricing) with XAU/USD trading in a microscopic range of 4608.11 - 4608.39. M15 ATR is extremely low at 0.27332 and RSI is neutral at 50.9. There is no valid predictive defensive staff zone or structural breakout on lower timeframes. Buying here is highly risky due to an unmitigated H4 FVG below (4574.35 - 4602.74), while selling is counter-trend to the strong H4 bullish trend. Neither scenario meets the 80% confidence threshold required by the doctrine.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "17.65%",
+            "dominant_bias_reason": "The dominant bias is technically bearish for a short-term correction to fill the unmitigated H4 FVG down to 4574.35, but the lack of volatility, volume, and lower-timeframe structural confirmation makes any execution highly speculative. Thus, the doctrine strictly mandates a NO TRADE stance."
+          }
+        }
       }
     }
   }
