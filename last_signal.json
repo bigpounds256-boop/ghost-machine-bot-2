@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-23 17:01 UTC",
+  "generated_at": "2026-08-23 17:50 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
@@ -15,12 +15,12 @@
           "asset": "EUR/USD",
           "bias": "BUY",
           "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.16720 - 1.16740",
-          "entry_price": "1.16720",
-          "invalidation_stop": "1.16700",
+          "entry_zone": "1.16745 - 1.16755",
+          "entry_price": "1.16751",
+          "invalidation_stop": "1.16728",
           "take_profit": {
-            "primary_tp": "1.16820",
-            "extreme_tp": "1.16920",
+            "primary_tp": "1.16881",
+            "extreme_tp": "1.16981",
             "risk_reward_ratio": "1:10"
           },
           "timeframes_used": [
@@ -31,18 +31,18 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: ICT/SMC Liquidity Sweep & H4 Demand Zone Mitigation. The H4 range shows a clear sell-side liquidity (SSL) pool resting below the equal lows at 1.16715 - 1.16719. A preemptive buy limit at 1.16720 captures the institutional mitigation of the H4 demand zone during the liquidity sweep, aligned with flat EMA50/200 indicating range-bound behavior.",
-            "Confluence 2: Malaysian SNR (MSNR) & Quarter Theory Alignment. The minor quarter level of 1.16750 acts as a psychological pivot. The defensive staff zone is established just below this level (1.16720 - 1.16740), where historical H4 wicks have repeatedly rejected. This is validated by a flat Ichimoku cloud and low ADX, confirming range-bound defense.",
-            "Confluence 3: Candlestick Wick-Rejection & Candle Range Theory (CRT). Multiple H4 candles (e.g., 15:00 and 11:00 on 2026-08-23) exhibit long lower wicks, proving strong buying pressure at the range low. CRT indicates that the current session is in a deep discount phase relative to the daily open (1.16809), setting up a high-probability expansion back to the mean, supported by oversold M15 RSI (20.7).",
-            "Confluence 4: Fibonacci Retracement & Standard Deviation Deviation. The 1.16720 entry aligns with a deep 88.6% retracement of the recent H4 swing from 1.16694 to 1.17108. This level represents a -2.5 Standard Deviation extension from the H1 mean, indicating an extreme statistical outlier. Volatility indicators (ATR at 0.00018 and contracting Bollinger Bands) suggest an imminent volatility squeeze and mean-reversion.",
-            "Confluence 5: Volume Profile (VPVR) & Chart Pattern Confluence. The H4 chart displays a well-defined rectangle range pattern. VPVR analysis qualitatively indicates a high-volume node (POC) near 1.16800 and a low-volume node at the 1.16720 extreme. Price is expected to reject the low-volume edge and auction back toward the high-volume center, validated by decelerating bearish momentum on the MACD histogram."
+            "Confluence 1: SMC mitigation of the H4 discount/demand zone combined with Malaysian SNR support at 1.1675 and Quarter Theory reaction to the 1.16750 major quarter level, aligned with an oversold M15 RSI at 28.7 indicating seller exhaustion at this key structural level.",
+            "Confluence 2: Supply and Demand zone between 1.1670 and 1.1675, Candlestick Patterns showing deceleration via M15/M5 dojis, and Candle Range Theory (CRT) accumulation phase at the session low, validated by low ATR (0.00016) indicating volatility compression near the lower Bollinger Band.",
+            "Confluence 3: Trendline bounce off the major horizontal support trendline, potential double bottom Chart Pattern on H1/M15, and SMC liquidity sweep of minor internal lows, aligned with flat EMA50/200 trend indicators confirming a sideways market where buying at range support is mathematically dominant.",
+            "Confluence 4: Fair Value Gap (FVG) mitigation of the H1 unmitigated gap, Quarter Theory 1.16750 level, and SMC mitigation of the H4 bullish order block, validated by low volume accumulation on M5/M15 during the Asian session indicating a lack of institutional selling pressure.",
+            "Confluence 5: SMC anticipation of a bullish Break of Structure (BOS) on lower timeframes, Malaysian SNR historical rejection level, and Candle Range Theory (CRT) manipulation phase sweeping below 1.1676, aligned with oversold momentum indicators indicating a high probability of a sharp wick rejection."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "EUR/USD is trading at the extreme bottom of a well-defined H4 range. Multiple H4 candles show massive wick rejections between 1.16715 and 1.16740. M15 RSI is extremely oversold at 20.7, indicating seller exhaustion. A preemptive buy limit at 1.16720 captures the wick-rejection at the defensive staff before a rapid mean-reversion back to the range POC."
+            "buy_conditions_met": 16,
+            "sell_conditions_met": 1,
+            "confidence_percentage": "94.12%",
+            "dominant_bias_reason": "EUR/USD is consolidating in a sideways range across all timeframes, currently trading at the major H4 demand zone and the 1.16750 Quarter level. With M15 RSI oversold at 28.7 and volatility compressing (ATR 0.00016), the market is primed for a preemptive wick-rejection buy. The sell scenario fails as it requires selling at the absolute bottom of a range into major support."
           },
           "risk_profile": {
             "expected_rr": "1:10",
@@ -56,17 +56,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extreme, anomalous low-volatility flatline consolidation. At a price level of 4608.27, the M15 ATR is a mere 0.27375, and the entire price range over the last 24 hours is compressed within less than 0.30 points. This complete absence of structural expansion, volume, or directional momentum across H1, M15, and M5 prevents the identification of any valid predictive defensive staff zone. Neither scenario can satisfy the strict 80% confidence threshold required by the doctrine.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "11.76%",
-            "dominant_bias_reason": "No dominant bias exists. While the HTF H4 trend remains technically bullish, a massive unmitigated H4 Fair Value Gap (FVG) lies directly below the current price between 4583.58 and 4602.74, acting as a strong bearish magnet. These opposing structural forces are locked in a complete volume vacuum, resulting in a flatline state where any entry would be purely speculative and highly vulnerable to spread expansion or random breakout gaps."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
