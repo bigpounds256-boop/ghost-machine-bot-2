@@ -37,14 +37,8 @@ print(f"DEBUG: GEMINI_API_KEY length = {len(GEMINI_API_KEY)}")
 # instrument rather than crashing the whole run.
 WATCHLIST = [
     {"symbol": "BTC/USD", "class": "crypto"},
-    {"symbol": "ETH/USD", "class": "crypto"},
     {"symbol": "EUR/USD", "class": "forex"},
-    {"symbol": "GBP/USD", "class": "forex"},
-    {"symbol": "USD/JPY", "class": "forex"},
     {"symbol": "XAU/USD", "class": "metals"},
-    {"symbol": "XAG/USD", "class": "metals"},
-    {"symbol": "US500",   "class": "indices"},
-    {"symbol": "NAS100",  "class": "indices"},
 ]
 
 H1_BARS  = 25
@@ -160,13 +154,13 @@ def build_prompt(symbol, h1_candles, m15_candles, current_price):
 M15 RSI(14) [momentum]: {rsi if rsi is not None else "N/A"}
 M15 Volume Ratio (current vs 20-bar avg) [volume]: {vol_ratio if vol_ratio is not None else "N/A"}"""
 
-    prompt = f"""You are an ICT/SMC (Inner Circle Trader / Smart Money Concepts) trading analyst.
-Your analysis must be based ENTIRELY on Supply & Demand zones, Order Blocks, and
-core SMC/ICT structural concepts. Do NOT use moving averages or simple trend
-filters as your basis for direction — direction comes purely from market
-structure (BOS/CHoCH) and where price sits relative to Order Blocks / Supply
-and Demand zones. Volatility, momentum, and volume indicators are used only
-as CONFIRMATION on top of the structural read, never as the primary signal.
+    prompt = f"""You are a Supply & Demand trading analyst. Your analysis must be based
+ENTIRELY AND ONLY on Supply & Demand zones — nothing else determines direction
+or entry. Do NOT use moving averages, trend filters, ICT concepts like
+Break of Structure / Change of Character, Order Block terminology, or
+liquidity-sweep language. The zones themselves are the entire basis.
+Volatility, momentum, and volume indicators are used ONLY as confirmation
+on top of a zone reaction, never as the primary signal.
 
 === MARKET DATA ===
 Symbol: {symbol}
@@ -182,65 +176,67 @@ Time: {now}
 --- M15 Candles (newest first) ---
 {format_candles(m15_candles)}
 
-=== STRATEGY RULES (pure ICT/SMC) ===
+=== STRATEGY RULES (Supply & Demand only) ===
 Timeframes: Higher Timeframe Context = H1 | Entry Timeframe = M15
 
-1. Market Structure (primary basis for direction — H1 and M15):
-   - Identify the current structure using swing highs/lows: is price making
-     Higher Highs/Higher Lows (bullish structure) or Lower Highs/Lower Lows
-     (bearish structure)?
-   - Look for a Break of Structure (BOS) — price breaking a prior swing
-     high/low in the direction of the prevailing structure — or a Change of
-     Character (CHoCH) — the first break AGAINST the prevailing structure,
-     signaling a possible reversal.
-   - HTF (H1) structure sets the directional context; M15 is where the entry
-     trigger (BOS/CHoCH + Order Block reaction) is found.
+1. Identify Supply Zones:
+   - A Supply Zone is a small area of consolidation/base immediately before
+     price departed sharply downward (a strong, mostly one-directional move
+     away from that base). The base itself is the zone.
+   - The stronger and faster the departure (the bigger the imbalance left
+     behind), the higher-quality the zone.
 
-2. Supply & Demand Zones / Order Blocks:
-   - A bullish Order Block is the last down-close candle (or cluster) before
-     a strong impulsive move up that caused a BOS.
-   - A bearish Order Block is the last up-close candle (or cluster) before a
-     strong impulsive move down that caused a BOS.
-   - A valid setup requires price to return to (or approach) an Order Block /
-     Supply-Demand zone that aligns with the current structural bias, and
-     show a reaction (rejection wick, shift in momentum) from that zone.
-   - Prefer zones that are still "fresh" (untested since formation) over
-     zones price has already returned to multiple times.
+2. Identify Demand Zones:
+   - A Demand Zone is a small area of consolidation/base immediately before
+     price departed sharply upward. The base itself is the zone.
+   - Same quality principle: a stronger, faster departure = higher-quality zone.
 
-3. Liquidity:
-   - Look for evidence of liquidity being taken — price sweeping above a
-     prior high (buy-side liquidity) or below a prior low (sell-side
-     liquidity) — right before the reversal into the Order Block / BOS.
-   - This liquidity sweep is a strong supporting factor, though not always
-     present. Its absence alone should not disqualify an otherwise clean
-     structural setup.
+3. Zone Freshness:
+   - Prefer zones price has not returned to since they formed ("fresh"
+     zones). A zone that has already been retested and held once is
+     lower quality; one retested multiple times is likely close to failing.
 
-4. Confirmation layer (secondary — do not use to override structure):
-   - Volatility (ATR): the zone reaction should occur with enough volatility
-     that a sensible SL/TP is achievable. Extremely flat/dead conditions
-     around the zone weaken the setup.
+4. Order-Based Entry Logic (pending orders placed AT the zone, not chased):
+   - This is an order-based strategy: you identify the zone first, then place
+     a pending limit order directly inside it, and let price come to the
+     order rather than reacting after the fact.
+   - SELL-LIMIT: placed inside a valid, relevant Supply Zone, anticipating
+     price will rise into the zone and reverse down from it.
+   - BUY-LIMIT: placed inside a valid, relevant Demand Zone, anticipating
+     price will fall into the zone and reverse up from it.
+   - The order's price should sit within the zone boundaries — not at the
+     very edge, and not requiring price to have already reacted there yet.
+     The whole point is the order is resting and waiting.
+   - Only propose an order if price is currently within a reasonable
+     approach distance of the zone (close enough that the order is likely
+     to actually get filled in a sensible timeframe). If price is far away
+     with no realistic path to the zone soon, that is NO TRADE.
+   - If no valid zone exists near current price at all, that is NO TRADE
+     regardless of anything else happening on the chart.
+
+5. Confirmation layer (secondary — never overrides the zone read):
+   - Volatility (ATR): the zone reaction should have enough volatility for a
+     sensible SL/TP. Dead/flat conditions at the zone weaken the setup.
    - Momentum (RSI): a bullish reaction from a demand zone is more convincing
-     if RSI is turning up from lower levels (not already extremely
-     overbought); a bearish reaction from a supply zone is more convincing if
-     RSI is turning down from higher levels (not already extremely oversold).
-   - Volume: a volume ratio at/above ~1.0 on the impulsive move that created
-     the Order Block, or on the reaction at the zone, adds confidence. Very
-     low volume on the reaction is a warning sign.
+     if RSI is turning up from lower levels; a bearish reaction from a
+     supply zone is more convincing if RSI is turning down from higher
+     levels.
+   - Volume: a volume ratio at/above ~1.0 on the original departure from the
+     zone, or on the current reaction, adds confidence.
 
 Risk Rules:
 - Minimum Risk:Reward = 1:2
-- Stop Loss placed just beyond the Order Block / Supply-Demand zone boundary
-  (beyond the wick that defines it)
-- Entry at the Order Block / zone — either a limit order at the zone, or
-  confirmation entry once a reaction candle closes
+- Stop Loss placed just beyond the far edge of the Supply/Demand zone
+- Entry is ALWAYS a pending limit order resting inside the zone (BUY-LIMIT
+  in a Demand Zone, SELL-LIMIT in a Supply Zone) — never a market entry
 
 No-Trade Conditions (any of these → output NO TRADE):
-- No clear market structure (choppy, no discernible swing pattern)
-- No valid, relevant Order Block / Supply-Demand zone near current price
-- Price has already moved away from the zone without a clean reaction
+- No valid, relevant Supply or Demand zone near current price
+- Price already left the zone without a clean reaction
+- The only nearby zone is stale/overused (tested multiple times already)
 - Risk:Reward below 1:2
-- Confirmation indicators strongly contradict the structural read (e.g. zero
-  volatility, or momentum firmly opposite the expected reaction direction)
+- Confirmation indicators strongly contradict the zone reaction (e.g. zero
+  volatility, or momentum firmly opposite the expected direction)
 
 === OUTPUT FORMAT (MANDATORY) ===
 Reply with ONLY raw JSON, no markdown fences, no extra text. Use exactly this structure.
@@ -251,15 +247,15 @@ If a valid setup exists:
     "date": "YYYY-MM-DD",
     "current_price": "XXXX.XX",
     "pair": "{symbol}",
-    "trade_type": "BUY or SELL",
+    "trade_type": "BUY-LIMIT or SELL-LIMIT",
     "entry_price": "XXXX.XX",
     "stop_loss": "XXXX.XX",
     "take_profit": "XXXX.XX",
     "risk_reward": "1:X.X",
     "analysis": {{
-      "market_structure": "...",
-      "order_block_or_zone": "...",
-      "liquidity_context": "...",
+      "zone_type": "Supply Zone or Demand Zone",
+      "zone_range": "XXXX.XX - XXXX.XX",
+      "zone_freshness": "...",
       "volatility_level": "...",
       "momentum_rsi": "...",
       "volume_confirmation": "...",
@@ -277,9 +273,9 @@ If NO valid setup exists:
   }}
 }}
 
-Be disciplined: the setup must be justified primarily by structure (BOS/CHoCH)
-and a genuine Order Block / Supply-Demand reaction, with the indicators only
-supporting — never replacing — that structural read."""
+Be disciplined: only propose a pending limit order when a genuine, relevant
+Supply or Demand zone exists within realistic reach of current price, with
+the indicators only supporting — never replacing — that zone-based read."""
     return prompt
 
 
@@ -293,12 +289,20 @@ def get_ai_analysis(prompt: str) -> dict:
         "x-goog-api-key": GEMINI_API_KEY,
         "Content-Type": "application/json",
     }
-    r = requests.post(
-        GEMINI_URL,
-        json=payload,
-        headers=headers,
-        timeout=30,
-    )
+
+    max_retries = 3
+    r = None
+    for attempt in range(max_retries):
+        r = requests.post(GEMINI_URL, json=payload, headers=headers, timeout=30)
+        if r.status_code == 429:
+            wait = 20 * (attempt + 1)  # 20s, then 40s, then 60s
+            print(f"Gemini rate-limited (429). Waiting {wait}s before retry {attempt + 1}/{max_retries}...")
+            time.sleep(wait)
+            continue
+        break
+
+    if r.status_code == 429:
+        raise RuntimeError("Gemini still rate-limited after all retries — free tier quota likely exhausted for now.")
     if r.status_code == 401:
         raise RuntimeError(
             "Gemini returned 401 Unauthorized. If you're on a new 'AQ.' format key, "
@@ -333,6 +337,7 @@ def analyze_symbol(symbol: str) -> dict:
 
     print("Sending to Gemini for analysis...")
     signal = get_ai_analysis(prompt)
+    time.sleep(SECONDS_BETWEEN_CALLS)  # space out Gemini calls between symbols too
     return signal
 
 
