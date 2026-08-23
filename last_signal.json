@@ -1,66 +1,19 @@
 {
-  "generated_at": "2026-08-23 03:34 UTC",
+  "generated_at": "2026-08-23 05:08 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
-          "date": "2026-08-23",
-          "current_price": "76930.00",
-          "pair": "BTC/USD",
-          "trade_type": "SELL",
-          "entry_price": "77115.00",
-          "stop_loss": "77245.00",
-          "take_profit": "76750.00",
-          "risk_reward": "1:2.8",
-          "analysis": {
-            "market_structure": "Bearish on both H1 and M15. H1 shows a series of lower highs (77400 -> 77232). M15 recently broke structure (BOS) to the downside by closing below the 77005.88 swing low, confirming bearish order flow.",
-            "order_block_or_zone": "Bearish Order Block identified on the M15 timeframe at 77114.48 - 77207.30 (the last up-close candle before the impulsive expansion that broke the 77005.88 low).",
-            "liquidity_context": "Sell-side liquidity (SSL) is resting below the H1 swing lows at 76772.00 and 76828.00. The trade aims to capture the sweep of this liquidity.",
-            "volatility_level": "M15 ATR is 141.0, indicating healthy volatility to facilitate both the retracement to our entry and the expansion to our target.",
-            "momentum_rsi": "M15 RSI is currently at 42.9, leaving ample room for a temporary retracement into premium pricing before resuming the bearish trend.",
-            "volume_confirmation": "The expansion down from 77232 to 76930 occurred with strong bearish momentum, indicating institutional participation.",
-            "technical_indicators": [
-              "M15 Bearish BOS",
-              "M15 Bearish Order Block",
-              "H1 Bearish Flow",
-              "Sell-Side Liquidity Target",
-              "Premium/Discount Equilibrium"
-            ]
-          },
-          "possible_outcomes": "Price retraces to mitigate the M15 bearish Order Block at 77115.00, triggers our sell limit, and then reverses downward to sweep the sell-side liquidity below 76772.00. Alternatively, price could continue straight down without filling our limit order, or invalidate the setup by breaking above the swing high at 77245.00."
+          "status": "NO TRADE",
+          "reason": "Price has swept major HTF sell-side liquidity around the 76500 level and is currently trading deep in a discount zone with the M15 RSI extremely oversold at 22.7. While the overall market structure remains bearish on both H1 and M15, entering a short position at these levels violates premium/discount rules. Conversely, a long position cannot be initiated yet because there is no confirmed bullish Change of Character (CHoCH) on the M15 timeframe to validate the liquidity sweep."
         }
       }
     },
     "ETH/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "date": "2026-08-23",
-          "current_price": "2409.29",
-          "pair": "ETH/USD",
-          "trade_type": "SELL",
-          "entry_price": "2417.20",
-          "stop_loss": "2425.50",
-          "take_profit": "2400.00",
-          "risk_reward": "1:2.1",
-          "analysis": {
-            "market_structure": "HTF (H1) is strongly bearish following the massive displacement down on Aug 22. LTF (M15) is also in a clear bearish trend, making lower highs and lower lows, with the most recent key swing high established at 2424.47.",
-            "order_block_or_zone": "A fresh M15 bearish Order Block has formed between 2417.22 and 2419.05 (the 03:00 bullish candle prior to the impulsive drop to 2409.28). We set a sell limit at the bottom of this supply zone to catch the premium retracement.",
-            "liquidity_context": "Sell-side liquidity (SSL) is resting below the clean lows at 2408.00 and 2403.47. A sweep of these key liquidity pools is highly probable as the bearish trend extends.",
-            "volatility_level": "M15 ATR is at 8.19, indicating sufficient intraday volatility to facilitate a retracement to our entry and a subsequent expansion to our target.",
-            "momentum_rsi": "M15 RSI is at 36.3, which is bearish but not yet deeply oversold, allowing room for a short-term corrective bounce into our supply zone before continuation.",
-            "volume_confirmation": "N/A (Volume ratio data is unavailable, but structural displacement on the M15 down-candles confirms strong selling pressure).",
-            "technical_indicators": [
-              "M15 RSI at 36.3",
-              "M15 ATR at 8.19",
-              "Bearish Market Structure (BOS)",
-              "M15 Bearish Order Block (2417.22 - 2419.05)",
-              "Sell-Side Liquidity Pool below 2403.47"
-            ]
-          },
-          "possible_outcomes": "1. Price retraces to 2417.20, triggers our sell limit, and expands downward to sweep the SSL at 2400.00. 2. Price continues straight down without triggering our entry. 3. Price invalidates the setup by breaking above the swing high at 2425.50."
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
@@ -102,7 +55,7 @@
     "NAS100": {
       "asset_class": "indices",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=NAS100&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=NAS100&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
       }
     }
   }
