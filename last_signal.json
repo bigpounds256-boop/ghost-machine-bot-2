@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-23 07:43 UTC",
+  "generated_at": "2026-08-23 07:53 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
         "trade_signal_Theghostmachine": {
           "date": "2026-08-23",
-          "current_price": "76076.68",
+          "current_price": "76084.38",
           "pair": "BTC/USD",
-          "trade_type": "SELL-LIMIT",
-          "entry_price": "76850.00",
-          "stop_loss": "77050.00",
-          "take_profit": "76450.00",
+          "trade_type": "BUY-LIMIT",
+          "entry_price": "75960.00",
+          "stop_loss": "75840.00",
+          "take_profit": "76200.00",
           "risk_reward": "1:2.0",
           "analysis": {
-            "zone_type": "Supply Zone",
-            "zone_range": "76821.23 - 77036.58",
-            "zone_freshness": "Fresh. Formed during the sharp downward departure between 04:30 and 05:00 UTC. Price has not yet returned to retest this area.",
-            "volatility_level": "High. M15 ATR of 313.12 indicates strong market movement, allowing for a well-spaced stop loss and take profit.",
-            "momentum_rsi": "RSI is currently at 30.8, indicating oversold conditions. A short-term corrective rally is expected to carry price upward to fill our pending sell-limit order within the supply zone.",
+            "zone_type": "Demand Zone",
+            "zone_range": "75872.89 - 76053.38",
+            "zone_freshness": "Fresh. Formed during the 06:00 UTC M15 candle and has not yet been retested.",
+            "volatility_level": "High. M15 ATR is 302.77, which easily accommodates the zone depth and target range.",
+            "momentum_rsi": "RSI is at 31.8, indicating oversold conditions as price approaches the demand zone, supporting a bullish reversal.",
             "volume_confirmation": "N/A",
             "technical_indicators": [
-              "M15 ATR(14) at 313.12",
-              "M15 RSI(14) at 30.8",
-              "H1 Bearish Departure",
-              "M15 Supply Base (76821.23 - 77036.58)",
-              "Fresh Zone (Zero previous retests)"
+              "M15 Demand Zone (75872.89 - 76053.38)",
+              "M15 ATR(14) of 302.77",
+              "M15 RSI(14) of 31.8",
+              "H1 Support/Demand Context",
+              "Fresh Zone Test"
             ]
           },
-          "possible_outcomes": "Price undergoes a corrective rally to fill the SELL-LIMIT order at 76850.00 inside the supply zone, followed by a sharp downward reversal toward the 76450.00 target. Alternatively, strong buying pressure invalidates the zone, pushing price past the far edge to trigger the stop loss at 77050.00."
+          "possible_outcomes": "Price declines slightly further into the demand zone, triggering the buy-limit order at 75960.00, and reverses upward toward the 76200.00 target. Alternatively, downward momentum persists, breaking below the zone and triggering the stop loss at 75840.00."
         }
       }
     },
@@ -37,7 +37,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The market is currently locked in a highly consolidated range with no fresh, high-quality supply or demand zones near the current price. The historical boundaries (Supply at 1.1690 - 1.1693 and Demand at 1.1671 - 1.1675) have been repeatedly tested and are stale/overused. Furthermore, the M15 ATR(14) is at 0.0, indicating zero volatility, which strongly contradicts any potential zone reaction and triggers a mandatory no-trade condition."
+          "reason": "The market is in an extremely tight, low-volatility consolidation range with an M15 ATR of 0.0, indicating flat/dead conditions. There are no fresh, high-quality Supply or Demand zones with strong departures near the current price. The nearby boundaries (highs around 1.1692 and lows around 1.1672) have been repeatedly tested over the last 24 hours, making them stale and overused, which violates the zone freshness and volatility requirements."
         }
       }
     },
@@ -46,7 +46,7 @@
       "signal": {
         "trade_signal_Theghostmachine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, flat consolidation range between 4608.08 and 4608.39 with no strong, impulsive departures in either direction. Without a sharp expansion move to create a market imbalance, no valid or high-quality Supply or Demand zones can be identified. Additionally, the extremely low volatility (M15 ATR of 0.27 at a price level of 4608) indicates flat/dead market conditions, which violates our core strategy requirements for a high-probability zone reaction."
+          "reason": "The market is exhibiting extremely flat, range-bound price action with a total range of less than 0.30 USD over the last 24 hours. There are no sharp, high-momentum departures from any consolidation base on either the H1 or M15 timeframes to establish valid Supply or Demand zones. Due to the complete lack of market imbalance and exceptionally low volatility (M15 ATR of 0.27), no high-quality setups can be identified."
         }
       }
     }
