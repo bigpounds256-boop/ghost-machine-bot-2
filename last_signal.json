@@ -1,51 +1,62 @@
 {
-  "generated_at": "2026-08-23 13:24 UTC",
+  "generated_at": "2026-08-23 13:44 UTC",
+  "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "date": "2026-08-23",
-          "current_price": "77407.73",
-          "pair": "BTC/USD",
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
           "trade_type": "BUY-LIMIT",
-          "entry_price": "77090.00",
-          "stop_loss": "76990.00",
-          "take_profit": "77390.00",
-          "risk_reward": "1:3.0",
-          "analysis": {
-            "zone_type": "Demand Zone",
-            "zone_range": "77020.00 - 77127.72",
-            "zone_freshness": "Fresh. Formed during the 12:15 UTC M15 consolidation base immediately prior to a sharp upward departure toward 77444.00. Price has not returned to this zone since the departure.",
-            "volatility_level": "High. M15 ATR of 203.13 provides sufficient price movement to reach both entry and target levels efficiently.",
-            "momentum_rsi": "M15 RSI is currently at 77.1, showing strong bullish momentum. The pending limit order is positioned to catch the corrective pullback into the demand zone.",
-            "volume_confirmation": "N/A",
-            "technical_indicators": [
-              "M15 ATR(14): 203.13",
-              "M15 RSI(14): 77.1",
-              "H1 Bullish Departure Candle (13:00 UTC)"
-            ]
+          "entry_zone": "77240.34 - 77338.22",
+          "entry_price": "77285.00",
+          "invalidation_stop": "77130.00",
+          "take_profit": {
+            "primary_tp": "78800.00",
+            "extreme_tp": "79500.00",
+            "risk_reward_ratio": "1:10"
           },
-          "possible_outcomes": "If price retraces to the fresh M15 demand zone, the buy-limit order at 77090.00 will be triggered. A bullish reversal from this zone is expected to target the recent high area near 77390.00. If selling pressure is strong enough to invalidate the zone and push price below 76990.00, the trade will close at a controlled loss."
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT / SMC (Bullish Order Block), Supply and Demand Zones (Demand zone at 77200-77300), and Break of Structure (BOS of 77400) interact to establish a high-probability mitigation area. This structural alignment is validated by the bullish EMA50/200 trend indicators on M15/H4, confirming that any rapid retracement into this zone represents a continuation buy rather than a structural reversal.",
+            "Confluence 2: MSNR (Malaysian SNR - SR Flip at 77400), Quarter Theory (QT - 77250 minor quarter level), and Candlestick Patterns (Bullish engulfing on H1 at 11:00) converge to form a strong psychological and structural floor. This is supported by high ATR volatility (223.185 on M15), which ensures that a quick downward wick into this level will be rapidly rejected, forming the defensive staff.",
+            "Confluence 3: Fair Value Gap (FVG on M5 between 77240.34 and 77338.22), Candle Range Theory (CRT - defending the lower range of the expansion candle), and Trendline Breaks & Bounces (bounce off the ascending trendline) interact as price seeks to fill the unmitigated gap. This is validated by strong RSI momentum (76.6), indicating that the dip will be aggressively bought before the gap can be fully closed.",
+            "Confluence 4: Chart Patterns (Inverse Head and Shoulders breakout neckline at 77400), Supply and Demand (Demand zone mitigation), and ICT / SMC (Liquidity sweep of minor lows) interact to clear out late-joining longs. This is validated by rising OBV and VPVR high volume node support at 77200-77300, showing institutional accumulation at the defensive staff.",
+            "Confluence 5: Quarter Theory (77250 level), Break of Structure (BOS), and MSNR (Support level) align with the 0.5-0.618 Fibonacci retracement levels (77134 - 77255) and -2 Standard Deviation band, providing a highly precise defensive staff zone for a tight stop loss."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The H4, M15, and M5 timeframes are strongly bullish, with a clear break of structure (BOS) above the 77400 resistance level. This resistance has flipped into support (MSNR), aligning with a minor quarter level at 77250, a fresh M5 Fair Value Gap (FVG), and the 0.5-0.618 Fibonacci retracement zone. Momentum (RSI 76.6) and volume indicators support a continuation of the upward expansion, making the buy scenario highly confident at 88.2%."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
         }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The M15 ATR(14) is 0.0, indicating zero volatility in the market, which violates the confirmation rules. Additionally, the price action is extremely flat and repetitive with no clear, strong departures to establish valid, high-quality Supply or Demand zones near the current price of 1.16801."
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_Theghostmachine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, flat consolidation with a total range of approximately 0.30 USD over the past 24 hours. There are no sharp, one-directional departures from any base to establish valid, high-quality Supply or Demand zones. Due to the complete lack of market imbalance and virtually zero volatility, no trade setup can be identified."
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
