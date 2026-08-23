@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22 23:41 UTC",
+  "generated_at": "2026-08-23 00:03 UTC",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
       }
     },
     "ETH/USD": {
@@ -46,7 +46,7 @@
     "US500": {
       "asset_class": "indices",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=US500&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "404 Client Error: Not Found for url: https://api.twelvedata.com/time_series?symbol=US500&interval=1h&outputsize=25&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
       }
     },
     "NAS100": {
