@@ -1,101 +1,23 @@
 {
-  "generated_at": "2026-08-24 23:07 UTC",
+  "generated_at": "2026-08-25 00:00 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "78468.61 - 78560.00",
-          "entry_price": "78485.00",
-          "invalidation_stop": "78350.00",
-          "take_profit": {
-            "primary_tp": "79850.00",
-            "extreme_tp": "80150.00",
-            "risk_reward_ratio": "1:10.1"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC (Bullish Order Block), Supply and Demand (Demand Zone), and Quarter Theory (78500 key level) align with Volatility Indicators (M15 ATR of 173.84 and Bollinger Bands lower band dynamic support), suggesting a highly probable pullback into the defensive staff before continuation.",
-            "Confluence 2: Malaysian SNR (MSNR support at 78560), Chart Patterns (Double Bottom / Liquidity Sweep), and Candlestick Patterns (Long lower wicks on H1) align with Momentum Indicators (M15 RSI at 41.8 and oversold M5 Stochastic/CCI), indicating aggressive buying pressure and momentum reset at the key support zone.",
-            "Confluence 3: Break of Structure (BOS), Trendline Breaks & Bounces, and SMC (Mitigation of previous breakout zone) align with Trend Indicators (EMA 50/200 and Ichimoku cloud bullish slope on H1/H4), confirming a healthy trend continuation and bounce off dynamic support.",
-            "Confluence 4: Candle Range Theory (CRT), Quarter Theory (78500 level), and Supply and Demand (Unmitigated demand) align with Volume Indicators (OBV and CMF showing steady accumulation), proving that the short-term M5 bearish pullback is an institutional accumulation phase.",
-            "Confluence 5: SMC (Liquidity pool sweep), Malaysian SNR (78468 key level), and Chart Patterns (Bull flag channel) align with Fibonacci Retracement (0.618 golden pocket at 78424) and Standard Deviation (price reaching -2SD on M15), establishing a high-probability reversal zone for a rapid preemptive wick-rejection."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 6,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong HTF bullish trend (H4/H1) with a healthy M5/M15 retracement into a high-confluence defensive staff zone (78468.61 - 78560.00) aligning with the 0.618 Fibonacci retracement, 78500 quarter level, and oversold momentum indicators."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.1",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.16615 - 1.16635",
-          "entry_price": "1.16625",
-          "invalidation_stop": "1.16595",
-          "take_profit": {
-            "primary_tp": "1.16745",
-            "extreme_tp": "1.16925",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC liquidity sweep of the 1.1655 low interacts with Malaysian SNR (MSNR) support at 1.1655-1.1658, creating a strong demand zone. This is validated by the Volatility indicator (ATR at 0.00024), which shows low volatility, indicating a high-probability reversal zone where sellers are exhausted.",
-            "Confluence 2: Candle Range Theory (CRT) accumulation within the 1.1660-1.1666 range shows a manipulation phase below 1.1660. This aligns with the bullish Candlestick Patterns (pin bars/hammer on H1) and Quarter Theory (QT) support near the 1.1650 major level. This is confirmed by the Momentum indicator (RSI at 63.2 and rising), showing strong bullish momentum out of the accumulation phase.",
-            "Confluence 3: A Break of Structure (BOS) on the M5 timeframe above 1.1664 is accompanied by a minor Trendline Break of the descending channel. This structural shift occurs right at the Fibonacci 0.618 retracement level of the LTF swing. This is validated by the Trend indicator (MACD showing a bullish crossover on M5/M15), confirming the shift in trend direction.",
-            "Confluence 4: The unmitigated Fair Value Gap (FVG) and liquidity pool above 1.1670 act as a magnet for price. This aligns with a double bottom Chart Pattern on M15 and Fibonacci Circles providing support at 1.1655. This is validated by the Volume indicator (Accumulation/Distribution showing steady buying pressure), indicating institutional positioning for an upward expansion.",
-            "Confluence 5: Standard Deviation (SD) analysis shows the price deviation to 1.1655 was a -2SD extreme, suggesting a mean reversion. This aligns with the M5/M15 demand zone and the 1.16625 defensive staff level. This is validated by the Volatility indicator (Bollinger Bands contracting), signaling an imminent volatility breakout to the upside."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 6,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "EUR/USD swept the HTF liquidity at 1.1655, mitigated a major demand zone, and broke structure to the upside on LTF. Momentum (RSI 63.2) and volume indicators support a bullish reversal from the defensive staff zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
