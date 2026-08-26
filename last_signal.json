@@ -1,33 +1,21 @@
 {
-  "generated_at": "2026-08-26 08:07 UTC",
+  "generated_at": "2026-08-26 10:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
-      }
-    },
-    "EUR/USD": {
-      "asset_class": "forex",
-      "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
-      }
-    },
-    "XAU/USD": {
-      "asset_class": "metals",
-      "signal": {
         "trade_signal_doctrine": {
-          "asset": "XAU/USD",
+          "asset": "BTC/USD",
           "bias": "BUY",
           "trade_type": "BUY-LIMIT",
-          "entry_zone": "4621.00 - 4626.00",
-          "entry_price": "4625.50",
-          "invalidation_stop": "4619.50",
+          "entry_zone": "78120.00 - 78250.00",
+          "entry_price": "78215.00",
+          "invalidation_stop": "77790.00",
           "take_profit": {
-            "primary_tp": "4658.50",
-            "extreme_tp": "4695.50",
-            "risk_reward_ratio": "1:11.67"
+            "primary_tp": "79950.00",
+            "extreme_tp": "82500.00",
+            "risk_reward_ratio": "1:10.08"
           },
           "timeframes_used": [
             "H4",
@@ -37,26 +25,48 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: Smart Money Concepts (SMC) mitigation of the H4 bullish order block (4620.65 - 4629.69) interacts with the Quarter Theory 4625.00 level, creating a high-probability demand zone. This is validated by the M15 RSI(14) at 35.4, which indicates extreme bearish momentum exhaustion and an impending bullish reversal.",
-            "Confluence 2: Malaysian SNR support at 4625.00 aligns with a bullish trendline bounce drawn from the 4608.00 HTF structural lows. This structural confluence is reinforced by the H4 bullish trend (EMA50/200 alignment), confirming that the current LTF bearish move is merely a healthy retracement within a dominant HTF uptrend.",
-            "Confluence 3: Candle Range Theory (CRT) suggests the current H4 candle is completing its manipulation phase near the 4625.00 key level. This aligns with the 0.618 Fibonacci retracement level (4620.79) of the recent HTF expansion, while the M15 ATR of 6.59453 indicates sufficient volatility to drive a rapid, preemptive wick rejection at this defensive staff.",
-            "Confluence 4: A potential double bottom chart pattern is forming on the H1 timeframe as price retests the major demand zone. This pattern is supported by standard deviation bands (-2SD) showing price is in an extreme oversold state, while VPVR volume profile indicates a high-volume node acting as a strong defensive barrier.",
-            "Confluence 5: Candlestick patterns on the M15/M5 timeframes show emerging long lower wicks (rejections at 4625.35 and 4626.40), indicating early mitigation of the H4 FVG (Fair Value Gap) between 4619.80 and 4632.63. This is validated by Ichimoku cloud support on the H4 timeframe, confirming the defensive staff is ready to hold."
+            "Confluence 1: ICT/SMC discount pricing and liquidity sweep of minor lows align with the Malaysian SNR key support zone (78120-78250) and the 78250 sub-quarter level, while the oversold M15 RSI (29.7) confirms bearish exhaustion for a preemptive wick-rejection.",
+            "Confluence 2: The retracement has reached an unmitigated H4 demand zone (77850-78250) representing the lower boundary of the CRT range contraction, testing this zone with high volatility (ATR 219.84) near the lower Bollinger Band to form a HTF double bottom.",
+            "Confluence 3: The HTF structure remains strongly bullish after the H4 BOS above 79000, with the current pullback bouncing off the primary bullish trendline and showing immediate wick rejections on M15/M5, validated by the price remaining well above the rising H4 EMA50/200.",
+            "Confluence 4: The defensive staff zone is anchored by the 78120.74 MSNR wick-rejection level and the 78000 major quarter level, where VPVR shows a massive high-volume node indicating strong institutional accumulation and limit order placement.",
+            "Confluence 5: The defensive staff zone perfectly overlaps with the 0.618 Fibonacci retracement level of the 76000 to 81272 impulse and the top of the H4 Ichimoku Cloud, ensuring the preemptive entry at 78215.00 is heavily defended by HTF buyers."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 15,
-            "sell_conditions_met": 11,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The HTF H4 trend remains strongly bullish, and the current price of 4629.03 represents a deep corrective pullback into a major H4 demand zone, the 0.618 Fibonacci retracement level, and the 4625.00 Quarter Theory level. Multiple M15/M5 wick rejections at 4625.35 confirm strong defensive buying pressure, while the M15 RSI at 35.4 indicates bearish momentum is fully exhausted, making a preemptive buy-limit order highly favorable compared to the bearish scenario."
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.23%",
+            "dominant_bias_reason": "The HTF trend remains strongly bullish on H4 with a clear Break of Structure (BOS) to the upside. The current bearishness on M15/M5 is a healthy retracement into a deep discount zone, characterized by an oversold RSI (29.7) and a high-volume node (VPVR) near the 78000 major quarter level and 78120 MSNR support. This creates a highly favorable preemptive buy-limit opportunity at the defensive staff zone."
           },
           "risk_profile": {
-            "expected_rr": "1:11.67",
+            "expected_rr": "1:10.08",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
           "status": "PENDING - valid only if price taps predictive zone"
         }
+      }
+    },
+    "EUR/USD": {
+      "asset_class": "forex",
+      "signal": {
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in a highly compressed, sideways/neutral state across all analyzed timeframes (H4, H1, M15, M5). There is a complete lack of directional trend alignment, momentum is neutral (M15 RSI at 55.1), and volatility is extremely low (M15 ATR at 0.00041). Under the Preemptive Predictive Wick-Rejection / Defensive Staff doctrine, a minimum of 80% confidence (14 out of 17 aligned concepts) is strictly required to execute a trade. Currently, only 8 out of 17 concepts align for both Buy and Sell scenarios, yielding a confidence score of 47.06%. Therefore, no high-probability defensive staff zone can be validated, and the system remains flat.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 8,
+            "sell_conditions_met": 8,
+            "confidence_percentage": "47.06%",
+            "dominant_bias_reason": "Both Buy and Sell scenarios score equally at 47.06% due to the perfectly balanced sideways range. The price is currently hovering near the middle of the range (1.16662), with equal distance to the range-high liquidity (1.1675 - 1.1680) and range-low liquidity (1.1660). Without a clear break of structure (BOS) or momentum/volume expansion to tip the balance, entering a preemptive limit order carries excessive risk of being caught in noise. We await an expansion phase or a clear sweep of range extremes before establishing a defensive staff."
+          }
+        }
+      }
+    },
+    "XAU/USD": {
+      "asset_class": "metals",
+      "signal": {
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
