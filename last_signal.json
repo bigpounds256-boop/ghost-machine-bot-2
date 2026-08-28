@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-28 00:56 UTC",
+  "generated_at": "2026-08-28 21:55 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
@@ -13,14 +13,14 @@
       "signal": {
         "trade_signal_doctrine": {
           "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.16455 - 1.16485",
-          "entry_price": "1.16475",
-          "invalidation_stop": "1.16435",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.15880 - 1.15895",
+          "entry_price": "1.15880",
+          "invalidation_stop": "1.15910",
           "take_profit": {
-            "primary_tp": "1.16595",
-            "extreme_tp": "1.16875",
+            "primary_tp": "1.15580",
+            "extreme_tp": "1.15280",
             "risk_reward_ratio": "1:10"
           },
           "timeframes_used": [
@@ -31,18 +31,18 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: The market is consolidating around the 1.16500 Quarter Theory level, forming a high-probability demand zone and bullish order block (ICT/SMC) between 1.16455 and 1.16485. The low M15 ATR of 0.00023 indicates volatility compression, which typically precedes a strong expansion from this defensive staff zone.",
-            "Confluence 2: The strong displacement from 1.16402 to 1.16597 created a bullish Break of Structure (BOS) on H1 and left an unmitigated Fair Value Gap (FVG). This void overlaps with a key Malaysian SNR (MSNR) support level at 1.16450-1.16470, where flat-to-bullish EMAs provide dynamic trend alignment to support a preemptive bounce.",
-            "Confluence 3: Multiple long lower rejection wicks (Candlestick Patterns) on H1/M15 candles near 1.16450 suggest strong buying pressure, forming the right shoulder of an emerging Inverse Head and Shoulders (Chart Pattern). This pattern retests the broken descending trendline from H4, while the M15 RSI at 41.2 indicates a healthy cooling off of momentum, setting up an oversold bounce.",
-            "Confluence 4: The 50% to 61.8% Fibonacci retracement of the recent bullish impulse lies exactly at 1.16456 - 1.16483, nesting perfectly within our demand zone just below the 1.16500 quarter level. This confluence is validated by the lower Bollinger Band, which acts as a volatility boundary to reject further downward extension.",
-            "Confluence 5: The sweep of sell-side liquidity (ICT/SMC) at 1.16402 cleared weak hands, establishing a strong MSNR floor. Candle Range Theory (CRT) shows range contraction within the current session, and the accumulation of volume on lower wicks confirms that institutional buyers are defending this internal defensive zone, validating a preemptive buy-limit order."
+            "Confluence 1: Smart Money Concepts (SMC) and Break of Structure (BOS) align with Trend indicators. The H4 and H1 timeframes show a dominant bearish trend following a major BOS below the key 1.1640 support level. This structural shift is validated by the bearish alignment of the EMA50/200 and Ichimoku cloud, confirming that any pullback is a high-probability sell opportunity.",
+            "Confluence 2: Supply and Demand Zones and Candlestick Patterns align with Volatility indicators. A clear M15 supply zone has formed between 1.15880 and 1.15895, characterized by multiple long upper wicks (wick-rejections) on the M5/M15 charts. This defensive staff zone is validated by the M15 ATR of 0.00046, indicating tight consolidation before an explosive downward expansion.",
+            "Confluence 3: Quarter Theory (QT) and Malaysian SNR (MSNR) align with Momentum indicators. The entry zone sits just below the 1.16000 major Quarter level, which acts as a psychological barrier. MSNR resistance at 1.15880 aligns with the M15 RSI of 43.5, which remains in bearish territory, indicating that momentum supports a downward continuation.",
+            "Confluence 4: Fair Value Gap (FVG) and Candle Range Theory (CRT) align with Volume indicators. While a massive unmitigated H1 FVG exists above 1.1620, the immediate CRT suggests the current consolidation range (1.1578 - 1.1588) is distributing volume (validated by declining OBV) for a downward breakout rather than a deep retracement.",
+            "Confluence 5: Fibonacci Retracement and Chart Patterns align with Standard Deviation (SD). The entry at 1.15880 represents a shallow Fibonacci retracement of the recent sharp drop, forming a classic bearish flag pattern. This is validated by SD analysis showing price is primed for a downward expansion toward the 1.15500 level."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 11,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The bullish scenario has a high confidence of 88.2% due to a clear market structure shift (BOS) on H1, a strong demand zone/order block at 1.16455-1.16485, and perfect alignment with the 50%-61.8% Fibonacci retracement levels and the 1.16500 Quarter Theory level. The sell scenario lacks structural support as the recent impulse was strongly bullish."
+            "buy_conditions_met": 0,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "Strong bearish HTF trend, clear BOS of major support, and a well-defined M15/M5 defensive staff zone at 1.15880-1.15895 with multiple wick rejections, supported by bearish momentum and volume distribution."
           },
           "risk_profile": {
             "expected_rr": "1:10",
