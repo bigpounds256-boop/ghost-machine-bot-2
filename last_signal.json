@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29 02:25 UTC",
+  "generated_at": "2026-08-29 02:39 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,46 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.15870 - 1.15890",
+          "entry_price": "1.15880",
+          "invalidation_stop": "1.15910",
+          "take_profit": {
+            "primary_tp": "1.15780",
+            "extreme_tp": "1.15580",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The H1 supply zone at 1.15870-1.15890 is reinforced by Malaysian SNR horizontal resistance at 1.15880, where multiple candlestick upper wicks demonstrate active seller defense. This resistance aligns with the bearish EMA50/200 and Ichimoku cloud on HTF, ensuring that any pullback to this zone is met with strong trend-following sell pressure.",
+            "Confluence 2: Following the bearish BOS below the 1.16000 quarter level, price is consolidating. A preemptive entry at 1.15880 targets the liquidity sweep of the minor consolidation highs (1.15888) and mitigates the bearish order block. This zone aligns with the upper Bollinger Band on M15, which acts as a dynamic volatility barrier to cap the retracement.",
+            "Confluence 3: The unmitigated bearish FVG on H1 starting at 1.15966 exerts a magnetic pull, but the immediate defensive staff at 1.15880 (Malaysian SNR) is expected to reject price before it can fully close the gap. As price pulls back to 1.15880, the oversold M15 RSI (22.0) will relieve pressure and reset, allowing sellers to reload at a premium.",
+            "Confluence 4: The sideways consolidation on M15/M5 forms a classic bearish flag pattern following the H1 BOS. The upper boundary of this flag aligns with the retest of the broken trendline. This pattern is validated by declining OBV and negative CMF, indicating that the consolidation is a distribution phase where institutional sellers are building short positions before the next expansion.",
+            "Confluence 5: Under Candle Range Theory, the current consolidation represents the accumulation of a new daily range, with the expansion phase expected to target the HTF liquidity clusters below 1.15770. The entry at 1.15880 represents a shallow 0.236 Fibonacci retracement, typical of highly impulsive bearish trends, aiming for an extreme TP near the 1.15500 quarter level."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment on H4/H1, with a highly defined defensive staff zone at 1.15870-1.15890 validated by 15 out of 17 doctrine concepts, including a 0.236 Fibonacci retracement, H1 supply zone, and multiple wick rejections."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
