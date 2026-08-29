@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29 06:09 UTC",
+  "generated_at": "2026-08-29 06:25 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.1588 - 1.1594",
-          "entry_price": "1.1588",
-          "invalidation_stop": "1.1591",
-          "take_profit": {
-            "primary_tp": "1.1558",
-            "extreme_tp": "1.1518",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC/ICT, Supply/Demand, and FVG align with Trend Indicators. The H4/H1 bearish trend (EMA50/200 sloping downwards, Ichimoku cloud overhead) creates a high-probability environment for the mitigation of the supply zone at 1.1588 - 1.1594. This zone contains an unmitigated H1 FVG. As price retraces into this defensive staff, the bearish order block will trigger a preemptive wick-rejection, continuing the HTF bearish order flow.",
-            "Confluence 2: MSNR, CRT, and Candlestick Patterns align with Momentum Indicators. The Candle Range Theory (CRT) identifies the current consolidation between 1.1580 and 1.1588 as an accumulation of short positions. The Malaysian SNR (MSNR) resistance at 1.1588 is validated by repeated upper wick rejections on the M15/M5 timeframes. This resistance is further confirmed by the M15 RSI remaining capped below 50 (45.8), indicating that momentum is firmly in control of the sellers.",
-            "Confluence 3: Trendline Breaks & Bounces, Chart Patterns, and BOS align with Volatility Indicators. The clean Break of Structure (BOS) on the H4 timeframe below 1.1640 established a strong bearish expansion. The subsequent sideways consolidation forms a bearish flag/rectangle chart pattern. A bearish trendline drawn across the local M15 highs aligns perfectly with the upper Bollinger Band and Keltner Channel boundary at 1.1588, where volatility contraction (ATR at 0.00033) precedes an explosive expansion downward.",
-            "Confluence 4: Quarter Theory (QT), Supply/Demand, and SMC/ICT align with Volume Indicators. The psychological quarter level of 1.15875 acts as a magnet and institutional supply threshold. VPVR (Volume Profile Visible Range) shows a high-volume node (HVN) just below this level, which will act as heavy overhead resistance. When price taps the defensive staff at 1.1588, institutional sell orders resting at this liquidity cluster will absorb any remaining buying pressure, driving the price lower.",
-            "Confluence 5: Fibonacci Retracement, Standard Deviation (SD), and Candlestick Patterns align with Volatility/Momentum Indicators. The 1.1588 entry price represents a key local Fibonacci retracement level of the recent H1 impulse leg. This level coincides with the +2 Standard Deviation band on the M5 timeframe. The confluence of the +2SD boundary, Fibonacci resistance, and the historical wick-rejection patterns on M15 ensures a highly precise, low-risk entry point with minimal drawdown."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "Strong H4/H1 bearish trend alignment, clear Break of Structure (BOS), unmitigated FVG overhead, and repeated M15/M5 wick rejections at the 1.1588 Malaysian SNR resistance level, supported by RSI under 50 and Bollinger Band squeeze."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
