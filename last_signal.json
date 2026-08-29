@@ -1,27 +1,17 @@
 {
-  "generated_at": "2026-08-29 10:38 UTC",
+  "generated_at": "2026-08-29 10:55 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Higher-timeframe bearish trends on H4 and H1 conflict with neutral-to-bullish lower-timeframe momentum on M15 (RSI at 65.1) and M5. This structural divergence prevents the alignment of the required price action concepts and indicator confluences, keeping confidence below the 80% execution threshold.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
-            "sell_conditions_met": 9,
-            "confidence_percentage": "52.9%",
-            "dominant_bias_reason": "The dominant higher-timeframe bearish trend is currently countered by short-term consolidation and rising momentum, resulting in an unclear defensive staff zone."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
