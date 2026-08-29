@@ -1,62 +1,23 @@
 {
-  "generated_at": "2026-08-29 07:07 UTC",
+  "generated_at": "2026-08-29 07:21 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77600.00 - 77650.00",
-          "entry_price": "77635.00",
-          "invalidation_stop": "77725.00",
-          "take_profit": {
-            "primary_tp": "76890.00",
-            "extreme_tp": "76450.00",
-            "risk_reward_ratio": "1:13.16"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC Bearish Mitigation Block, Supply and Demand, and Quarter Theory. The H1 supply zone between 77630 and 77716 acts as a bearish mitigation block, aligning with the 77625 Quarter Theory level. This zone is further validated by the bearish slope of the H1 EMA50, which acts as dynamic resistance, preventing upward expansion and forcing a preemptive wick-rejection.",
-            "Confluence 2: Fair Value Gap (M15 FVG), Break of Structure (BOS), and Malaysian SNR (MSNR). The bearish Break of Structure (BOS) below 77478.61 left an unmitigated M15 FVG between 77516.78 and 77604.06. This gap aligns with the MSNR resistance level at 77630. The M15 RSI at 41.0 confirms bearish momentum, indicating that any retracement into this FVG will be met with strong selling pressure.",
-            "Confluence 3: Candle Range Theory (CRT), Candlestick Patterns (Bearish Engulfing), and Chart Patterns (Bearish Flag). Under CRT, the Asian session accumulated volume, which was manipulated upward to 77716 before a bearish engulfing candle on M15 at 06:00 initiated the distribution phase. This distribution forms a bearish flag pattern. The ATR of 80.58 suggests sufficient volatility to drive a rapid retracement to the 77635 entry before expanding downward.",
-            "Confluence 4: Fibonacci Retracement, Supply and Demand, and ICT/SMC Premium Pricing. A Fibonacci retracement from the swing high of 77963.92 to the swing low of 77382.37 places the 0.382 - 0.5 retracement levels exactly within the 77604 - 77673 premium pricing zone. This zone overlaps with the H1 supply zone, while the MACD bearish histogram expansion on H1 confirms that the dominant trend remains heavily bearish, validating a preemptive sell entry.",
-            "Confluence 5: Trendline Breaks & Bounces, Quarter Theory, and Break of Structure (BOS). The price broke below the minor bullish trendline on M5, leading to a BOS. The retest of the broken trendline confluences with the 77625 Quarter Theory level and a VPVR high volume node at 77630, which now acts as a defensive staff barrier. This ensures a high-probability wick-rejection at our entry price of 77635."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong multi-timeframe bearish alignment across H4, H1, and M5. Price has broken structure to the downside, leaving an unmitigated M15 FVG and supply zone at premium pricing (77600 - 77650) which aligns with the 0.382-0.5 Fibonacci retracement and Quarter Theory levels, presenting a high-probability preemptive sell opportunity."
-          },
-          "risk_profile": {
-            "expected_rr": "1:13.16",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
