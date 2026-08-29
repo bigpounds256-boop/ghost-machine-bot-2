@@ -1,101 +1,23 @@
 {
-  "generated_at": "2026-08-29 04:52 UTC",
+  "generated_at": "2026-08-29 05:10 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77800.00 - 77900.00",
-          "entry_price": "77850.00",
-          "invalidation_stop": "78050.00",
-          "take_profit": {
-            "primary_tp": "76888.00",
-            "extreme_tp": "75800.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Alignment of H4, H1, and M15 bearish trends with a clear Break of Structure (BOS) to the downside, establishing a dominant bearish order flow.",
-            "Confluence 2: Identification of an unmitigated Fair Value Gap (FVG) and supply zone on the H1 timeframe between 77800 and 77900, acting as the primary defensive staff.",
-            "Confluence 3: Retest of broken support-turned-resistance (MSNR) aligning with the 0.618 Fibonacci retracement level of the recent minor swing high to low.",
-            "Confluence 4: Momentum indicators (RSI at 36.1 on M15) showing bearish control and room to expand downward before reaching extreme oversold conditions on higher timeframes.",
-            "Confluence 5: Volatility contraction (ATR at 82.35) suggesting an imminent expansion phase, validating a tight preemptive stop placement just above the local H1 swing high."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 14,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "Strong multi-timeframe bearish alignment (H4/H1/M15) combined with a clear unmitigated supply zone and FVG overhead makes the Sell-Limit scenario highly probable, exceeding the 80% execution threshold."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "4458.90 - 4459.00",
-          "entry_price": "4458.95",
-          "invalidation_stop": "4460.15",
-          "take_profit": {
-            "primary_tp": "4444.65",
-            "extreme_tp": "4430.00",
-            "risk_reward_ratio": "1:11.9"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC bearish order flow and redistribution aligns with a strong Supply Zone at 4459.00 and Quarter Theory minor level of 4460.00, validated by Trend Indicators (H4/H1 bearish trends, EMA50/200 sloped down, and Ichimoku cloud acting as overhead resistance).",
-            "Confluence 2: Candle Range Theory (CRT) premium pricing aligns with Candlestick Patterns showing repeated upper wick rejections at the 4459.00 MSNR resistance, validated by Volatility Indicators (M15 ATR at an extremely low 0.26731 and highly constricted Bollinger Bands indicating an imminent breakout).",
-            "Confluence 3: HTF bearish Break of Structure (BOS) followed by a bearish flag Chart Pattern and ICT/SMC internal liquidity sweeps, validated by Momentum Indicators (M15 RSI at 49.1 and negative MACD/AO confirming dominant bearish control).",
-            "Confluence 4: Unmitigated bearish Fair Value Gaps (FVG) on H1/H4 aligning with the 4460.00 Quarter Theory level and a fresh Supply Zone, validated by Volume Indicators (declining volume during consolidation and negative OBV/CMF showing distribution).",
-            "Confluence 5: Trendline Breaks & Bounces off the local counter-trendline aligning with MSNR resistance at 4459.00 and bearish Candlestick Patterns, validated by Fibonacci Retracement (shallow retracement of the recent drop) and Standard Deviation (+2 SD of the local range)."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 0,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100.0%",
-            "dominant_bias_reason": "The HTF trend is strongly bearish across H4 and H1, with the market currently in an extreme low-volatility consolidation (M15 ATR 0.26731) just below the 4460.00 minor quarter level. All 17 doctrine concepts align for a Sell scenario, indicating a high-probability bearish redistribution phase. The Buy scenario fails completely as it fights the dominant trend and structure."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.9",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
