@@ -1,21 +1,11 @@
 {
-  "generated_at": "2026-08-30 03:39 UTC",
+  "generated_at": "2026-08-30 03:55 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market exhibits conflicting multi-timeframe trends, with a bearish H4 structure opposing a bullish H1 recovery, while lower timeframes remain neutral. This divergence prevents the required alignment of core price action concepts and indicator confluences.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
-            "sell_conditions_met": 8,
-            "confidence_percentage": "47.06%",
-            "dominant_bias_reason": "Although the higher timeframe bias remains bearish, the immediate lower timeframe bullish momentum creates an unresolved conflict, failing to meet the 80% confidence threshold required for execution."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
