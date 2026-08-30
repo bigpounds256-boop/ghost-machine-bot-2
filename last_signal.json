@@ -1,17 +1,56 @@
 {
-  "generated_at": "2026-08-30 01:36 UTC",
+  "generated_at": "2026-08-30 01:54 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "78130.00 - 78190.00",
+          "entry_price": "78150.00",
+          "invalidation_stop": "78350.00",
+          "take_profit": {
+            "primary_tp": "77500.00",
+            "extreme_tp": "76150.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The price rejected the 78250 quarter level and the H1 supply zone (78230-78330), which aligns with the bearish order block. This rejection is structurally validated by the dominant H4 bearish trend and EMA50 dynamic resistance, indicating that the path of least resistance is down.",
+            "Confluence 2: A clear double top pattern has formed at the 78330 resistance level, which is a key Malaysian SNR level of sharp rejection. This is confirmed by a bearish pin bar on the H1 timeframe, while the M15 RSI remains below 50 (at 46.1), indicating that bearish momentum is accelerating as buyers fail to sustain higher prices.",
+            "Confluence 3: The market swept buy-side liquidity above 78298 before a sharp M5 Break of Structure (BOS) below 78086. Under Candle Range Theory, the H1 candle's manipulation phase (wick to 78190) has completed, and the expansion phase is underway. The M15 ATR of 80.5 provides sufficient volatility to drive the price down through the defensive staff zone.",
+            "Confluence 4: The defensive staff zone between 78130 and 78190 acts as an internal supply zone below the 78250 quarter level. Price is bouncing into this zone to mitigate orders along the bearish trendline, while volume analysis shows distribution (selling pressure) on the pullback, setting up a high-probability rejection towards the 78000 major quarter level.",
+            "Confluence 5: The 78330 high represents a precise rejection of the 0.5 Fibonacci retracement level of the HTF bearish impulse (79838.73 to 76888). This rejection occurred at the +2 Standard Deviation band on the M15 timeframe, forming a bearish flag pattern that targets the unmitigated HTF liquidity pools below 76888."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The H4 bearish trend aligns with a double top rejection at the 78330 Malaysian SNR level and the 0.5 Fibonacci retracement. A bearish Break of Structure (BOS) on M5 and RSI below 50 confirm accelerating downward momentum, making a preemptive sell-limit at the 78150 defensive staff highly favorable."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
