@@ -1,21 +1,11 @@
 {
-  "generated_at": "2026-08-30 07:51 UTC",
+  "generated_at": "2026-08-30 08:07 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Multi-timeframe conflict between the bearish H4 trend and bullish H1 trend, combined with neutral momentum (RSI 51.8) and sideways M15/M5 structures, prevents either scenario from achieving the required 80% confidence threshold.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 8,
-            "sell_conditions_met": 9,
-            "confidence_percentage": "52.9%",
-            "dominant_bias_reason": "The overall HTF trend remains bearish, but short-term H1 structure shows bullish recovery, leading to a high-risk consolidation phase without clear predictive wick-rejection alignment."
-          }
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
@@ -27,46 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "4458.95 - 4459.05",
-          "entry_price": "4458.98",
-          "invalidation_stop": "4459.10",
-          "take_profit": {
-            "primary_tp": "4458.72",
-            "extreme_tp": "4453.52",
-            "risk_reward_ratio": "1:45"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC liquidity sweep of equal highs, MSNR resistance at 4458.98, and CRT range high deviation interact with Volatility (Bollinger Bands squeeze on M15/M5) to indicate that the tight consolidation is building energy for a rapid, short-lived expansion. This expansion is expected to sweep the buy-side liquidity pool just above the range high before immediately rejecting back into the range.",
-            "Confluence 2: Supply and Demand LTF zone at 4458.98-4459.05, Candlestick Patterns showing frequent upper wicks on M15/M5, and Chart Patterns rectangle consolidation top interact with Momentum (RSI at 50.1 is neutral) to show that while the market is currently balanced, a quick spike to the range high will push the LTF momentum into overbought territory. This momentum shift will trigger the defensive staff supply zone, causing a sharp wick rejection.",
-            "Confluence 3: Bearish BOS on H4, unmitigated bearish FVGs on H4/H1, and Quarter Theory resistance near the 4460 minor quarter level interact with Trend (EMA50/200 and Ichimoku cloud far above current price) to confirm a strong bearish HTF bias. Any upward movement within the consolidation is a low-volume corrective spike into a minor quarter level, which serves as a highly probable zone for trend continuation to the downside.",
-            "Confluence 4: Trendline Breaks & Bounces rejection of the descending HTF trendline, ICT/SMC mitigation of LTF bearish order block, and CRT session range high validation interact with Volume (extremely low weekend volume) to suggest that the market lacks the genuine buying pressure required to sustain a breakout above the consolidation. Consequently, any upward push will be a speculative stop-hunt that quickly runs out of volume and reverses.",
-            "Confluence 5: Fibonacci Retracement local premium zone of the M15 consolidation, MSNR re-test of broken support turned resistance, and Chart Patterns bearish continuation flag interact with Standard Deviation (a 2-3 SD move above the M15 mean of 4458.85) to define the exact mathematical boundary of the defensive staff. A standard deviation expansion to 4458.98 represents an extreme LTF deviation that aligns perfectly with the premium of the flag, offering an asymmetric entry point."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The HTF trend is strongly bearish with a clear consolidation range on LTF. The equal highs at 4458.98649 represent a highly liquid pool of buy-side liquidity. A preemptive sell limit placed just below the invalidation level captures the wick rejection as price sweeps this liquidity before continuing the HTF bearish trend."
-          },
-          "risk_profile": {
-            "expected_rr": "1:45",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
