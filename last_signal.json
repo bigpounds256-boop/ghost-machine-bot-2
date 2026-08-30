@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-08-30 06:40 UTC",
+  "generated_at": "2026-08-30 06:52 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.15870 - 1.15885",
+          "entry_price": "1.15875",
+          "invalidation_stop": "1.15935",
+          "take_profit": {
+            "primary_tp": "1.15680",
+            "extreme_tp": "1.15275",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC (Liquidity Sweep), Supply and Demand (Supply Zone), and Quarter Theory (QT) align with a bearish Trend (EMA50/200 and Ichimoku cloud). The recent H1 liquidity sweep to 1.15926 cleared buy stops above the range highs, mitigating a local supply zone (1.15880-1.15920) near the key Quarter Theory level of 1.15875. This mitigation aligns with the dominant bearish HTF trend, setting up a high-probability distribution phase.",
+            "Confluence 2: Candlestick Patterns (Wick Rejections), MSNR (Malaysian SNR), and CRT (Candle Range Theory) align with Momentum indicators (RSI turning down and Stochastic overbought rejection). Multiple H1/M15 upper wick rejections at the 1.15870-1.15880 resistance level (MSNR key level) indicate strong defensive selling pressure in the premium of the current candle range (CRT), validated by momentum indicators showing exhaustion and turning downwards from the range highs.",
+            "Confluence 3: Chart Patterns (Bearish Flag), BOS (Break of Structure), and FVG (Fair Value Gap) align with Volatility indicators (ATR compression and Bollinger Bands squeeze). The sideways consolidation on M15/M5 forms a classic bearish flag pattern following a major H4 Break of Structure (BOS) to the downside. The extremely low ATR of 0.0002 and contracting Bollinger Bands indicate a volatility squeeze, suggesting an imminent explosive expansion downwards to fill the unmitigated HTF liquidity pools below.",
+            "Confluence 4: Trendline (Descending Trendline), Supply and Demand, and SMC (Mitigation of Order Block) align with Volume indicators (declining volume on consolidation and flat OBV). Price is reacting to a local descending trendline and a minor supply zone, representing the mitigation of a bearish H1 order block. This consolidation is accompanied by declining volume and flat OBV, confirming a lack of buying interest and preparing the market for a rapid markdown phase.",
+            "Confluence 5: Quarter Theory (QT), Fibonacci Retracement, and Standard Deviation (SD) align with Volatility indicators (Keltner Channels upper band rejection). The entry price of 1.15875 aligns with the 1.15875 QT level, the 78.6% Fibonacci retracement of the local H1 bearish leg, and sits at the +2 Standard Deviation upper band of the local range. This confluence of mathematical and structural resistance provides a highly precise, low-risk preemptive entry point for the defensive staff."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "HTF trend is strongly bearish with clear H4 BOS. Local price action shows a liquidity sweep of equal highs followed by multiple upper wick rejections at the 1.15875-1.15880 resistance zone, forming a bearish flag. Volatility compression (ATR 0.0002) suggests an imminent downward expansion."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
