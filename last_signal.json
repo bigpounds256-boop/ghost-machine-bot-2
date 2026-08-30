@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-08-30 13:40 UTC",
+  "generated_at": "2026-08-30 13:53 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "78300.00 - 78410.00",
-          "entry_price": "78350.00",
-          "invalidation_stop": "78090.00",
-          "take_profit": {
-            "primary_tp": "79600.00",
-            "extreme_tp": "81400.00",
-            "risk_reward_ratio": "1:11.7"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC (Bullish Order Block), Supply and Demand (H1 demand zone), and Quarter Theory (78250 key level support) align with bullish trend indicators on H1/M15/M5. The aggressive H1 range expansion has established a high-probability demand zone and bullish order block between 78118 and 78190. As price retraces, the institutional order flow at the 78250 Quarter Theory level will act as a magnet, where buy orders are clustered, aligning with the bullish trend on H1/M15/M5 to trigger a sharp wick rejection.",
-            "Confluence 2: MSNR (Malaysian S/R flip), Break of Structure (BOS), and Chart Patterns (Double Bottom neckline retest) align with Volatility Indicators (M15 ATR of 150.47). The clean break of the 78330 resistance level represents a major bullish BOS and completes an H1 double bottom pattern. The retest of this neckline (now acting as support) coincides with high ATR volatility, ensuring that a rapid pullback into this S/R flip zone will find immediate defensive buy liquidity, preventing further downside.",
-            "Confluence 3: Fair Value Gap (FVG), Candle Range Theory (CRT), and Supply and Demand align with Momentum Indicators (RSI at 80.0). The massive range expansion on the H1 candle left an unmitigated FVG between 78242 and 78590. While the overbought RSI (80.0) indicates short-term exhaustion, a corrective pullback into this FVG will rebalance the market inefficiency. The defensive staff zone at 78350 sits perfectly within this gap, where buyers will step in to continue the dominant bullish momentum.",
-            "Confluence 4: Fibonacci Retracement, Trendline Breaks & Bounces, and SMC (Liquidity Sweep) align with Volume Indicators (Accumulation/Distribution). The breakout above the descending trendline from 81478 has shifted the market structure. A 0.5 to 0.618 Fibonacci retracement of the breakout leg (77962 to 78850) targets the 78301 - 78406 area. This zone will sweep any short-term sell-stop liquidity, supported by strong accumulation volume, leading to a preemptive wick rejection.",
-            "Confluence 5: Quarter Theory, Chart Patterns, and Supply and Demand align with Standard Deviation (SD) bands. The 78250 - 78500 quarter levels define the boundaries of the current accumulation range. A pullback to the -1SD to -2SD band relative to the recent M5/M15 expansion will align with the H1 demand zone, creating a highly compressed spring effect that will launch price back toward the HTF liquidity targets."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 13,
-            "confidence_percentage": "94.12%",
-            "dominant_bias_reason": "The H1, M15, and M5 timeframes have aligned in a strong bullish structure, confirmed by a major Break of Structure (BOS) above 78330 and a massive range expansion candle. While the H4 trend remains bearish, the LTF/MTF momentum is highly dominant, and a pullback to the 78330 S/R flip and FVG zone provides a high-confluence, low-risk entry with a 1:11.7 Risk-to-Reward ratio."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.7",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
