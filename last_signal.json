@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-08-30 15:54 UTC",
+  "generated_at": "2026-08-30 16:10 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "78950.00 - 79050.00",
-          "entry_price": "79015.00",
-          "invalidation_stop": "79180.00",
-          "take_profit": {
-            "primary_tp": "78150.00",
-            "extreme_tp": "77150.00",
-            "risk_reward_ratio": "1:11.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC mitigation of the H4 bearish order block aligns with the HTF bearish trend (EMA50/200 and Ichimoku cloud sloping downwards), as price rallies into a premium supply zone between 79000 and 79300 to sweep buy-side liquidity.",
-            "Confluence 2: Quarter Theory major psychological level at 79000 acts as a Malaysian SNR (MSNR) resistance flip (previous support turned resistance), while high M15 ATR (166.11) indicates expanding volatility primed for a sharp, preemptive wick-rejection.",
-            "Confluence 3: Fibonacci Retracement of the HTF drop aligns the 0.382 level at 79011 with the upper wicks of recent H1/M15 candles near 78966, while M15 RSI at 60.9 shows momentum reaching exhaustion as it approaches this key structural barrier.",
-            "Confluence 4: Candle Range Theory (CRT) indicates the current H4 candle is expanding towards its upper range limit near 79000. Since the HTF structure remains bearish with no H4 Break of Structure (BOS) to the upside, this expansion is met with volume exhaustion, validating the defensive staff.",
-            "Confluence 5: Chart Patterns show a bearish trendline descending from the 80249 swing high intersecting the 79000 level, forming a descending channel pattern on the HTF, with standard deviation bands projecting extreme resistance at 79015."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 11,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "HTF bearish trend on H4 aligns with a major supply zone, 0.382 Fib retracement, and the 79000 psychological level, presenting a high-probability preemptive wick-rejection scenario."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
