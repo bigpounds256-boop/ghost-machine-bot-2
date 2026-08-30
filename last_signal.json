@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-08-30 02:25 UTC",
+  "generated_at": "2026-08-30 02:39 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77980.00 - 78010.00",
+          "entry_price": "77995.00",
+          "invalidation_stop": "77910.00",
+          "take_profit": {
+            "primary_tp": "78300.00",
+            "extreme_tp": "78850.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Price is sweeping the short-term liquidity pool below the 78000 psychological Quarter Theory level, tapping into a fresh Malaysian SNR support zone. This liquidity grab is validated by the M15 RSI reaching an oversold state of 28.6, indicating seller exhaustion and a high probability of a sharp preemptive wick-rejection as buyers defend this key structural level.",
+            "Confluence 2: The H1 timeframe exhibits a bullish trend with a clear Break of Structure (BOS) to the upside. The current retracement is mitigating a high-probability H1 demand zone that overlaps with an unmitigated Fair Value Gap (FVG) between 77858 and 78014. The alignment of the bullish H1 trend with this demand mitigation provides the structural backing for a preemptive limit order.",
+            "Confluence 3: Multiple M15 candles show long lower wicks (rejections) at 77994, confirming a potential double bottom chart pattern. Under Candle Range Theory, this represents the manipulation phase seeking to establish the low of the session before expansion. The M15 ATR of 81.23 suggests that a dip into the 77980-78010 zone is within normal volatility limits, allowing for a clean wick-rejection entry.",
+            "Confluence 4: The entry zone aligns perfectly with the 0.382 Fibonacci retracement level (77968) of the recent H1 impulse move (77382 to 78330) and a test of the ascending trendline. This confluence is structurally reinforced by the price testing the lower Bollinger Band on the M15 timeframe, signaling an extreme deviation ripe for a mean-reversion bounce.",
+            "Confluence 5: The 78000 major quarter level acts as a pivotal demand zone where Malaysian SNR indicates historical buying interest. As price approaches this level, volume analysis shows selling pressure drying up (exhaustion), confirming that the defensive staff zone is highly likely to hold, allowing a preemptive entry with minimal drawdown."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 11,
+            "confidence_percentage": "88.23%",
+            "dominant_bias_reason": "The H1 trend is bullish with clear structural support and oversold momentum on the M15 timeframe (RSI 28.6), indicating a high-probability preemptive buy opportunity at the 78000 defensive staff zone, whereas the H4 bearish trend is currently in a retracement phase that has already mitigated key levels and is now exhausted."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
@@ -17,7 +56,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
