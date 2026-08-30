@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-08-30 09:09 UTC",
+  "generated_at": "2026-08-30 09:25 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "78150.00 - 78200.00",
-          "entry_price": "78175.00",
-          "invalidation_stop": "78225.00",
-          "take_profit": {
-            "primary_tp": "77600.00",
-            "extreme_tp": "77000.00",
-            "risk_reward_ratio": "1:11.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Bearish H4 trend aligns with H1/M15 sideways consolidation, indicating a bearish continuation pattern under SMC and Candle Range Theory.",
-            "Confluence 2: Malaysian SNR and Quarter Theory resistance at 78200 align with a prominent H1 supply zone and bearish Fair Value Gap.",
-            "Confluence 3: Fibonacci 0.618 retracement level of the recent micro-drop converges with the defensive staff zone at 78175.",
-            "Confluence 4: Volatility contraction (ATR 58.9) and neutral RSI (45.6) indicate an imminent expansion phase favoring the dominant bearish HTF trend.",
-            "Confluence 5: Declining volume on the minor LTF retracements confirms a lack of buying pressure, validating the preemptive sell-limit placement."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
-            "sell_conditions_met": 14,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "The dominant bearish HTF trend, combined with clear LTF resistance, supply zone mitigation, and FVG alignment, provides a high-probability sell setup."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
