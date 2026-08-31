@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31 00:54 UTC",
+  "generated_at": "2026-08-31 01:10 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.15950 - 1.16050",
-          "entry_price": "1.15985",
-          "invalidation_stop": "1.16135",
-          "take_profit": {
-            "primary_tp": "1.15400",
-            "extreme_tp": "1.14485",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Retracement into premium pricing of the bearish H4 Order Block, aligning with the H4 supply zone (1.1595-1.1605) and the 1.16000 Quarter Theory level, validated by bearishly aligned H4 EMA50/200 and Ichimoku Cloud resistance.",
-            "Confluence 2: Multiple long upper wicks on H1/H4 candles showing strong rejection at the 1.1595 MSNR resistance, coinciding with the HTF bearish BOS below 1.1580 and validated by M15 RSI at 69.2 indicating near-overbought exhaustion.",
-            "Confluence 3: Candle Range Theory (CRT) shows price trading at the extreme upper boundary of the H1/H4 range, mitigating a bearish H1 FVG and forming a potential M15 double top, validated by low M15 ATR (0.00035) indicating volatility compression.",
-            "Confluence 4: Price has retraced to the 0.618-0.707 Fibonacci Golden Pocket of the H4 drop (1.1650 to 1.14898), rejecting the descending trendline from the 1.1650 swing high, validated by declining volume in the VPVR low-volume node above 1.1595.",
-            "Confluence 5: Rejection of the 1.16000 Quarter Theory level at +2 Standard Deviation overextension from the short-term mean, aligning with the outer Fibonacci circle boundary and validated by bearish momentum on the H1 Awesome Oscillator."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 8,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The HTF trend is strongly bearish, and the current upward move is a corrective retracement into a premium pricing zone (0.618-0.707 Fibonacci Golden Pocket) near the 1.16000 Quarter Theory level. Multiple long upper wicks on H1/H4 indicate strong selling pressure, and the M15 RSI at 69.2 suggests momentum exhaustion. This aligns perfectly with a preemptive Sell-Limit order at the defensive staff zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
