@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31 08:08 UTC",
+  "generated_at": "2026-08-31 08:22 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -7,14 +7,14 @@
       "signal": {
         "trade_signal_doctrine": {
           "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77800.00 - 77870.00",
-          "entry_price": "77850.00",
-          "invalidation_stop": "77710.00",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "78250.00 - 78350.00",
+          "entry_price": "78280.00",
+          "invalidation_stop": "78480.00",
           "take_profit": {
-            "primary_tp": "78300.00",
-            "extreme_tp": "79250.00",
+            "primary_tp": "77100.00",
+            "extreme_tp": "76280.00",
             "risk_reward_ratio": "1:10"
           },
           "timeframes_used": [
@@ -25,18 +25,18 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: ICT/SMC & FVG Alignment - A clear M15 Fair Value Gap (FVG) exists between 77800.00 and 77872.66, created by the aggressive bullish expansion at 05:15. This represents an unmitigated liquidity imbalance where institutional buyers are expected to defend their positions.",
-            "Confluence 2: Fibonacci Retracement & Quarter Theory - The 0.5 Fibonacci retracement level of the recent swing from 77392.00 to 78322.56 lies at 77857.28, which perfectly aligns with the 77850.00 Quarter Theory psychological sub-level. This intersection provides a highly precise mathematical anchor for the defensive staff.",
-            "Confluence 3: Malaysian SNR & Demand Zone - The demand zone originating from the 77514.00 - 77762.00 range acts as a structural floor. Malaysian SNR principles identify the sharp wick rejections at 77000.00 and 77392.00 as major HTF support levels, validating the bullish bias.",
-            "Confluence 4: BOS & Trend Alignment - The M15 trend is confirmed bullish, supported by a clear Break of Structure (BOS) when price surpassed the previous swing high of 78185.89 to reach 78322.56. This structural shift confirms that order flow has transitioned to buy-side dominance.",
-            "Confluence 5: Momentum & Volatility Validation - The M15 RSI is currently overbought at 81.7, indicating that while the overall momentum is strongly bullish, a short-term mean-reversion pullback is imminent. The high ATR of 182.64 ensures sufficient volatility to fill our limit order within the defensive staff before resuming the upward expansion."
+            "Confluence 1: SMC Bearish Order Block mitigation combined with the 78300-78400 Supply Zone and Malaysian SNR resistance at 78300, aligned with the bearish H1 Trend.",
+            "Confluence 2: Mitigation of the H1 FVG (78185.89 - 78280.00) aligned with Candle Range Theory expansion exhaustion and an H1 shooting star candlestick pattern, validated by overbought M15 RSI at 77.4.",
+            "Confluence 3: Fibonacci Retracement golden pocket rejection (0.618 at 78258) combined with Quarter Theory rejection at 78250 and a bearish trendline bounce, aligned with M15 Bollinger Bands upper band rejection.",
+            "Confluence 4: HTF bearish structure maintained (no bullish BOS on H1) combined with a bearish flag chart pattern and supply zone re-entry, validated by Ichimoku Kumo cloud acting as overhead resistance.",
+            "Confluence 5: SMC internal liquidity sweep of minor highs combined with Malaysian SNR rejection at 78300 and Candle Range Theory value area re-entry, supported by high M15 ATR volatility of 188.20071."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The bullish scenario is heavily favored due to a clear M15 Break of Structure (BOS), an unmitigated Fair Value Gap (FVG) at 77800-77872, and strong alignment with the 0.5 Fibonacci retracement and Quarter Theory levels, while the bearish scenario lacks structural support despite overbought momentum."
+            "buy_conditions_met": 10,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The H1 trend is bearish, and the recent upward retracement has met significant resistance at the 78280-78350 zone. This zone represents a confluence of the H1 bearish FVG mitigation, the 0.618 Fibonacci retracement level, and the H1 shooting star candlestick pattern. With M15 RSI overbought at 77.4 and Bollinger Bands rejecting the upper limit, the Sell scenario achieves a high-confidence rating of 82.35%, making it the dominant bias."
           },
           "risk_profile": {
             "expected_rr": "1:10",
