@@ -1,95 +1,17 @@
 {
-  "generated_at": "2026-08-31 00:10 UTC",
+  "generated_at": "2026-08-31 00:25 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "78000.00 - 78150.00",
-          "entry_price": "78085.50",
-          "invalidation_stop": "78510.00",
-          "take_profit": {
-            "primary_tp": "77050.00",
-            "extreme_tp": "73840.50",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Integration of ICT/SMC (Bearish FVG mitigation), MSNR (resistance at 78118), and Trend Indicators (EMA50/200 bearish slope on M15/H1). The rapid drop to 77000 left an inefficiently traded H1 Fair Value Gap (77734.61 - 78311.60). A preemptive sell-limit at the 78085.50 defensive staff targets the mitigation of this gap where trend indicators show strong bearish alignment.",
-            "Confluence 2: Integration of Quarter Theory (78000 key psychological level), Supply/Demand (H1 supply zone at 78300-78450), and Volatility Indicators (high ATR of 311.205). The high volatility allows price to pull back deeply into the 78000 quarter level and the lower boundary of the supply zone, providing an optimal premium entry before the bearish expansion resumes.",
-            "Confluence 3: Integration of Candlestick Patterns (H4 bearish engulfing), Break of Structure (BOS on M15/H1 below 78118), and Volume Indicators. The massive bearish engulfing candle on H4 accompanied by high volume confirms institutional distribution, and the subsequent BOS validates that any pullback is a corrective leg to be sold.",
-            "Confluence 4: Integration of Fibonacci Retracement (0.5 - 0.618 OTE zone), Chart Patterns (bearish redistribution/flag), and Momentum Indicators. The 78085.50 entry sits precisely within the 50%-61.8% retracement zone of the breakdown leg, allowing the oversold M15 RSI (29.4) to cool off and reset momentum before the next impulsive wave down.",
-            "Confluence 5: Integration of CRT (Candle Range Theory), Standard Deviation (SD expansion), and MSNR. The current H4 candle's open-high-low-close profile indicates a corrective retracement back toward the mean (1-2 SD deviation) before expanding downwards to sweep the HTF liquidity below 77000."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 10,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The dominant bias is strongly bearish due to multi-timeframe alignment (H4, M15, M5 bearish), a clear bearish Break of Structure (BOS) on H1/M15, and a massive unmitigated H1 Fair Value Gap. The oversold M15 RSI (29.4) indicates a temporary corrective pullback is underway, which provides the perfect opportunity to establish a preemptive Sell-Limit order at the 78085.50 defensive staff zone before continuation."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.15980 - 1.16050",
-          "entry_price": "1.16015",
-          "invalidation_stop": "1.16135",
-          "take_profit": {
-            "primary_tp": "1.15360",
-            "extreme_tp": "1.14800",
-            "risk_reward_ratio": "1:10.1"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The market is in a structural H4 bearish trend. The current upward retracement has brought price into a premium zone, specifically targeting the major Quarter Theory level of 1.16000, which overlaps with a strong H4 supply zone. This creates a high-probability defensive staff zone where institutional sellers are expected to defend their positions, aligned with the dominant bearish trend indicators (EMA50/200 sloping downwards and price below the Ichimoku cloud).",
-            "Confluence 2: Following the bearish BOS on H4, price left an unmitigated FVG and broke below the key MSNR level of 1.16000. The current retracement acts as a retest of this broken structure and mitigates the FVG. As price reaches the upper Bollinger Band with low volatility (M15 ATR is 0.0004), it indicates exhaustion of the retracement, setting up a preemptive wick-rejection entry.",
-            "Confluence 3: Price action near the 1.16000 level shows clear signs of exhaustion with multiple long upper wicks on H1 and M15 candles, indicating aggressive selling pressure. Under CRT, price is at the extreme premium boundary of the daily range. This is validated by the M15 RSI reaching an overbought level of 74.8, confirming that the upward momentum is overextended and highly susceptible to a sharp reversal.",
-            "Confluence 4: The 1.16000 level aligns precisely with the 0.618 - 0.707 Fibonacci retracement of the recent H4 swing high to low. This zone represents a key liquidity pool where internal buy stops are swept. VPVR confirms a high volume node at this level, indicating strong historical interest and resistance, while CMF shows bearish divergence, suggesting that the upward move is on weak volume and institutional distribution is occurring.",
-            "Confluence 5: The defensive staff zone at 1.16015 is further reinforced by the intersection of the descending H4 trendline and the H1 supply block. This confluence of structural resistance is validated by Standard Deviation analysis, which shows price trading at +2SD from its short-term mean, indicating an extreme statistical deviation that is highly likely to mean-revert rapidly upon tapping the defensive staff."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The overall H4 trend is strongly bearish with a recent break of structure (BOS) to the downside. The current upward move is a corrective retracement into a premium supply zone, aligning with the 1.16000 major Quarter Theory level and the 0.618-0.707 Fibonacci retracement. Multiple timeframes (H4/H1/M15) show exhaustion with long upper wicks, and the M15 RSI is overbought at 74.8. This creates a highly confluent defensive staff zone for a preemptive sell-limit order with an exceptional risk-to-reward ratio of over 1:10."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.1",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
