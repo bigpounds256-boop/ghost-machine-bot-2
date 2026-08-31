@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31 03:25 UTC",
+  "generated_at": "2026-08-31 03:39 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4436.00 - 4442.00",
+          "entry_price": "4438.50",
+          "invalidation_stop": "4442.50",
+          "take_profit": {
+            "primary_tp": "4401.00",
+            "extreme_tp": "4390.00",
+            "risk_reward_ratio": "1:12"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Smart Money Concepts (SMC) alignment where the aggressive H1/M15 bearish expansion has left an unmitigated Fair Value Gap (FVG) and bearish Order Block between 4436.00 and 4442.00, acting as our primary defensive staff zone.",
+            "Confluence 2: Malaysian SNR (MSNR) and Candle Range Theory (CRT) show the 4438.50 level aligns with a significant historical rejection level and the open of the distribution range, validated by a bearish EMA50/200 trend alignment on the M15 timeframe.",
+            "Confluence 3: Fibonacci Retracement of the recent M15 impulse leg (4459.83 to 4400.09) places the 0.618 golden ratio precisely at 4437.00, overlapping with the defensive staff zone and supported by declining RSI momentum indicating a weak pullback.",
+            "Confluence 4: Quarter Theory (QT) level at 4437.50 acts as a psychological barrier, where a preemptive wick-rejection is expected as sellers defend the major quarter level, supported by a bearish Ichimoku cloud projection on H1.",
+            "Confluence 5: Break of Structure (BOS) on the M15 timeframe confirms bearish dominance, with the current minor M5 bullish retracement showing low volume characteristics on the average range, signaling an imminent exhaustion at the defensive staff."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment (H4/H1/M15) combined with a clear break of structure and an unmitigated premium FVG/OB zone that provides an ideal defensive staff for a high R:R preemptive sell limit."
+          },
+          "risk_profile": {
+            "expected_rr": "1:12",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
