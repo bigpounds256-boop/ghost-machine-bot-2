@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-08-31 01:54 UTC",
+  "generated_at": "2026-08-31 02:10 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77950.00 - 78150.00",
-          "entry_price": "78050.00",
-          "invalidation_stop": "78285.00",
-          "take_profit": {
-            "primary_tp": "77000.00",
-            "extreme_tp": "75700.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The aggressive sell-off to 77000.00 left an unmitigated H1 supply zone and bearish order block (SMC) between 78100.00 and 78300.00. As price retraces, it encounters the 78000.00 Quarter Theory psychological resistance, which aligns with the descending M15 EMA50 (Trend Indicator) acting as dynamic resistance to force a preemptive wick-rejection.",
-            "Confluence 2: The imbalance (FVG) created during the H1 drop remains open. As price attempts to fill this gap, it meets MSNR horizontal resistance at 78150.00, triggering immediate profit-taking and short-entry wicks (Candlestick Patterns) on the M15 timeframe, validated by the RSI (Momentum Indicator) remaining capped below its 50-midline to confirm dominant bearish momentum.",
-            "Confluence 3: The recent H4 bearish BOS below 77858.00 established a structural downtrend. The subsequent consolidation forms a bearish flag (Chart Pattern) on the M15/M5 timeframes, bounded by a descending trendline. A corrective bounce to the upper boundary of this flag at 78050.00 occurs under high ATR volatility (Volatility Indicator), setting up a high-probability preemptive rejection.",
-            "Confluence 4: Under Candle Range Theory (CRT), the 00:00 H1 candle's range represents a manipulation phase where price swept liquidity upward to the 0.618 Fibonacci retracement level (78185.89) and the Fibonacci Circle arc resistance. This sweep aligns with the VPVR high volume node (Volume Indicator) at 78100.00, indicating heavy institutional distribution that prevents further upward expansion.",
-            "Confluence 5: A micro-liquidity sweep (SMC) of the M5 swing highs at 77953.99 pushes price into the +2 Standard Deviation band and the upper Bollinger Band (Volatility Indicator). This immediate overextension triggers a bearish engulfing pattern (Candlestick Patterns) on the M5 timeframe, confirming that the defensive staff zone is actively rejecting buyers and preparing for the next leg down."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100%",
-            "dominant_bias_reason": "The multi-timeframe structure is strongly bearish (H4/H1/M15) following a major bearish BOS below 77858.00. Price has completed a corrective 0.618 Fibonacci retracement to 78185.89, mitigating an H1 FVG and rejecting the 78000.00 Quarter-Point. All 17 doctrine elements align to support a preemptive sell-limit entry at the defensive staff zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
