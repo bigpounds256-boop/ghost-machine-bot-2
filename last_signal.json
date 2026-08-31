@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31 16:26 UTC",
+  "generated_at": "2026-08-31 16:37 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=XAU%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
       }
     }
   }
