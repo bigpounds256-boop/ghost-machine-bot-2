@@ -1,23 +1,72 @@
 {
-  "generated_at": "2026-09-01 06:30 UTC",
+  "generated_at": "2026-09-01 06:57 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "500 Server Error: Internal Server Error for url: https://api.twelvedata.com/time_series?symbol=BTC%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "78400.00 - 78600.00",
+          "entry_price": "78500.00",
+          "invalidation_stop": "78320.00",
+          "take_profit": {
+            "primary_tp": "79220.00",
+            "extreme_tp": "80300.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Alignment of the 78500.00 Quarter Theory level with a high-probability M15 demand zone and bullish H4 trend structure.",
+            "Confluence 2: Presence of an unmitigated M15 Fair Value Gap (FVG) overlapping with the 0.618 Fibonacci retracement level of the recent swing leg.",
+            "Confluence 3: Convergence of the EMA50 dynamic support on the H1 timeframe with the lower boundary of the defensive staff zone.",
+            "Confluence 4: RSI momentum holding above the 50 level on the M15 timeframe, indicating bullish control during the corrective pullback.",
+            "Confluence 5: Volume profile showing low-volume node characteristics at the entry zone, suggesting rapid wick-rejection potential."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 14,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The higher-timeframe bullish trend aligns with key discount pricing at the 78500 quarter level, supported by unmitigated liquidity gaps and structural demand."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "500 Server Error: Internal Server Error for url: https://api.twelvedata.com/time_series?symbol=EUR%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "500 Server Error: Internal Server Error for url: https://api.twelvedata.com/time_series?symbol=XAU%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market exhibits conflicting signals across timeframes, with a bearish H4 trend contrasting with neutral, consolidating lower-timeframe structures near immediate support. This lack of structural alignment prevents the identification of a high-probability defensive staff zone.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 7,
+            "confidence_percentage": "41.18%",
+            "dominant_bias_reason": "The dominant bearish H4 trend suggests selling pressure, but immediate support on M15 and M5 indicates potential wick rejection upward, resulting in low confidence for both scenarios."
+          }
+        }
       }
     }
   }
