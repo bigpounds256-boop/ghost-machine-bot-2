@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-01 10:33 UTC",
+  "generated_at": "2026-09-01 10:48 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77758.69 - 77883.28",
-          "entry_price": "77820.00",
-          "invalidation_stop": "77450.00",
-          "take_profit": {
-            "primary_tp": "78800.00",
-            "extreme_tp": "79800.00",
-            "risk_reward_ratio": "1:10.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: HTF bullish structure on H4 aligns with Malaysian SNR support near 77750, where previous demand was initiated, validating a high-probability defensive staff zone.",
-            "Confluence 2: Candle Range Theory (CRT) indicates the current daily/H4 range expansion is reaching its lower deviation limit, coinciding with a bullish Fair Value Gap (FVG) mitigation on the H4 timeframe.",
-            "Confluence 3: Quarter Theory key psychological level at 78000 acts as a magnet, where price sweeps liquidity just below to tap the 77820 level before an anticipated rapid wick rejection.",
-            "Confluence 4: M15 RSI(14) is highly oversold at 29.2, indicating extreme short-term exhaustion that aligns with Keltner Channel lower boundary deviation, signaling an imminent mean-reversion bounce.",
-            "Confluence 5: Volume profile analysis indicates a high-volume node (HVN) resting just below 78000, providing structural defense where limit orders cluster, validated by a decelerating bearish momentum on the M5 timeframe."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 14,
-            "sell_conditions_met": 7,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "H4 macro bullish trend remains intact despite short-term H1/M15 bearish pullbacks. The confluence of oversold M15 RSI, key psychological support at 78000, and structural demand at 77750-77850 provides a high-confidence preemptive buy zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
