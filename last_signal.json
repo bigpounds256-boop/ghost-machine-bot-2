@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-01 08:59 UTC",
+  "generated_at": "2026-09-01 09:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77675.00 - 77750.00",
+          "entry_price": "77750.00",
+          "invalidation_stop": "77430.00",
+          "take_profit": {
+            "primary_tp": "78950.00",
+            "extreme_tp": "80950.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The price has swept the minor sell-side liquidity below 77820 down to 77801, entering the H4 demand zone (77675 - 77800) which aligns with the 77750 Quarter Theory level. This structural sweep is validated by the M15 RSI reaching an extreme oversold reading of 10.2, indicating that the downward momentum is exhausted and a sharp wick-rejection is highly probable.",
+            "Confluence 2: The rapid descent has fully mitigated the unmitigated H1 Fair Value Gap (FVG) from 08-31 14:00, tapping into the Malaysian SNR key support level at 77750. The presence of long lower wicks on the M5/M15 candles indicates strong absorption by buyers, while the high M15 ATR of 196.605 suggests that the volatility expansion is reaching its outer limits, setting up a defensive staff bounce.",
+            "Confluence 3: The pullback to 77750 represents a deep 0.618 Fibonacci retracement of the HTF bullish impulse (77000 to 79250). Since the HTF (H4) trend remains bullish with a prior Break of Structure (BOS) to the upside, this retracement forms a potential double bottom pattern on the lower timeframes (M5/M15) against the H4 EMA50/200 dynamic support, validating the preemptive buy limit.",
+            "Confluence 4: Under Candle Range Theory, the current session has expanded to its projected low range, tapping the H4 bullish order block. This zone aligns with a rising HTF trendline connecting the swing lows of 77000 and 77392. Despite the sharp price drop, the OBV and Accumulation/Distribution indicators show bullish divergence/holding, confirming institutional accumulation at these discount prices.",
+            "Confluence 5: The 77750 level is a major psychological Quarter level that sits deep within the HTF discount zone (SMC). This level aligns with the -2 Standard Deviation band of the Bollinger Bands and Fibonacci Circle projections, indicating an extreme statistical deviation that is highly likely to trigger an immediate, preemptive wick-rejection."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The HTF H4 trend is strongly bullish, and the current sharp sell-off has driven the M15 RSI to an extreme oversold level of 10.2. Price has swept minor liquidity to tap into a major H4 demand zone and the 77750 Quarter Theory level, which aligns with the 0.618 Fibonacci retracement. This confluence of extreme momentum exhaustion, structural support, and liquidity sweep makes a preemptive buy-limit at the defensive staff highly favorable, while a sell scenario is invalidated by trading directly into HTF demand and oversold conditions."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
