@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-01 18:13 UTC",
+  "generated_at": "2026-09-01 18:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "1.15850 - 1.15865",
+          "entry_price": "1.15855",
+          "invalidation_stop": "1.15825",
+          "take_profit": {
+            "primary_tp": "1.16050",
+            "extreme_tp": "1.16240",
+            "risk_reward_ratio": "1:12.8"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The corrective pullback on EUR/USD has reached the H4 bullish order block and demand zone, which overlaps with the 1.15875 half-quarter level. This zone is dynamically supported by the rising H4 EMA50, indicating a high-probability area for institutional buy mitigation.",
+            "Confluence 2: The horizontal support at 1.15850 is reinforced by multiple lower wick rejections on the M15 and H1 timeframes, forming a double bottom pattern. This structural floor aligns with an oversold M15 RSI (30.5), signaling that selling momentum is depleted and a bullish reversal is imminent.",
+            "Confluence 3: Despite the short-term sideways consolidation, the HTF bullish structure remains intact following the recent BOS. The price has retraced to fill the H4 FVG and is bouncing off the major bullish trendline. This confluence is validated by the price touching the lower Bollinger Band on M15 amid low ATR volatility, suggesting a spring-board effect.",
+            "Confluence 4: CRT shows clear range contraction and accumulation at the lower boundary of the daily range, just above the 1.15750 key quarter level. This accumulation within the 1.15800-1.15850 demand zone is accompanied by declining volume, confirming that the bearish move lacks institutional backing and is merely a liquidity grab.",
+            "Confluence 5: The price has retraced to the 0.786 Fibonacci level, representing a deep discount zone for buyers. This level aligns with a liquidity sweep of minor lows just above the 1.15850 support. The extreme extension is validated by the price trading at -2 SD from the mean, indicating a high probability of a rapid mean-reversion bounce."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The HTF trend is strongly bullish, and the price has retraced to a deep discount zone (0.786 Fib) at a major H4 demand zone and 1.15850 support. Multiple lower wicks on M15/H1 indicate strong defensive staff buying pressure, supported by an oversold RSI (30.5) and declining volume on the pullback."
+          },
+          "risk_profile": {
+            "expected_rr": "1:12.8",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
