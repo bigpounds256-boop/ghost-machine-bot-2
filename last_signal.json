@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01 03:12 UTC",
+  "generated_at": "2026-09-01 03:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4441.50 - 4443.50",
+          "entry_price": "4442.50",
+          "invalidation_stop": "4444.50",
+          "take_profit": {
+            "primary_tp": "4416.80",
+            "extreme_tp": "4412.50",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Mitigation of the M5 Bearish Order Block and Supply Zone (4441.11 - 4443.45) combined with Quarter Theory rejection of the 4450 level, aligned with the bearish H4 and M15 trend indicators showing strong downward expansion.",
+            "Confluence 2: Bearish Break of Structure (BOS) on M15/M5 below 4436.12 and the creation of an unmitigated M5 Fair Value Gap (FVG) between 4436.01 and 4437.29, validated by momentum indicators (M15 RSI at 37.9) confirming dominant seller control.",
+            "Confluence 3: Retracement to the 0.382 Fibonacci level (4442.32) of the recent bearish leg (4462.05 to 4430.12) which confluences with MSNR resistance at 4443.45, supported by high volatility (M15 ATR of 8.80952) facilitating a rapid tap and rejection.",
+            "Confluence 4: Candle Range Theory (CRT) distribution phase following the HTF liquidity sweep at 4462.05, where high volume on the breakdown confirms institutional defense of the 4442.50 defensive staff zone.",
+            "Confluence 5: Standard Deviation mean reversion to the short-term EMA/basis line within expanding Bollinger Bands, where Fibonacci circles project a precise preemptive wick-rejection at 4442.50 targeting the HTF sell-side liquidity pool below 4416.75."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 12,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.23%",
+            "dominant_bias_reason": "H4 and M15 trends are strongly bearish, supported by a bearish Break of Structure (BOS) on lower timeframes and the creation of an unmitigated M5 supply zone/FVG. The pullback to 4442.50 offers a high-probability preemptive entry at the defensive staff with a tight stop loss above the H1 swing high, targeting the HTF sell-side liquidity pool below 4416.75."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
