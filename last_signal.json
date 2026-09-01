@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01 17:13 UTC",
+  "generated_at": "2026-09-01 17:30 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,46 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "1.1585 - 1.1588",
+          "entry_price": "1.1586",
+          "invalidation_stop": "1.1582",
+          "take_profit": {
+            "primary_tp": "1.1600",
+            "extreme_tp": "1.1626",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The H4 bullish trend (EMA50/200 alignment) provides the macro bias. Price has retraced to the H4 demand zone (1.1580 - 1.1585), which aligns with a Malaysian SNR (MSNR) support level. This zone represents a key discount area where sell-side liquidity has been swept (SMC), setting up a high-probability reversal point.",
+            "Confluence 2: On the M15 and M5 timeframes, price is forming a double bottom pattern (Chart Patterns) with clear long lower rejection wicks (Candlestick Patterns) at the 1.1585 level. This accumulation at the low of the current session range (CRT) is validated by the RSI(14) on M15 turning up from 40.3 (Momentum), indicating that selling momentum is exhausted and buyers are stepping in.",
+            "Confluence 3: The price is holding above the 1.1575 quarter level (Quarter Theory) and has initiated a minor bullish Break of Structure (BOS) on the M5 timeframe by closing above 1.1590. This move is mitigating an unmitigated Fair Value Gap (FVG) on the lower timeframes. The low M15 ATR of 0.0005 (Volatility) indicates a volatility squeeze, which typically precedes an explosive expansion back toward the 1.1600 level.",
+            "Confluence 4: The defensive staff zone at 1.1586 aligns with the 0.786 Fibonacci retracement level of the recent swing and a major HTF bullish trendline. This confluence of structural support is where institutional buy orders are clustered (SMC). The Accumulation/Distribution and OBV (Volume) show bullish divergence/accumulation, confirming that the volume is supporting the defensive zone.",
+            "Confluence 5: The entry price of 1.1586 sits at the -2 Standard Deviation band of the Bollinger Bands (Volatility), indicating an extreme oversold condition within the bullish H4 trend. This aligns with the defensive arc of the Fibonacci Circles and the primary H4 demand zone, suggesting a highly probable preemptive wick-rejection."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 9,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The H4 trend is strongly bullish, and price has retraced to a major HTF demand zone and Malaysian SNR support at 1.1585. Multiple lower timeframe rejections, a double bottom pattern, and a volatility squeeze (ATR 0.0005) indicate that sell-side liquidity has been swept, setting up a high-probability preemptive buy-limit entry at the defensive staff zone with a tight stop loss and a 1:10 risk-to-reward ratio targeting the swing high liquidity."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
