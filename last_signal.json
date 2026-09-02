@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 10:12 UTC",
+  "generated_at": "2026-09-02 10:33 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.15760 - 1.15785",
-          "entry_price": "1.15768",
-          "invalidation_stop": "1.15835",
-          "take_profit": {
-            "primary_tp": "1.15360",
-            "extreme_tp": "1.15060",
-            "risk_reward_ratio": "1:10.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC premium pricing aligns with a bearish H1/M15 supply zone at 1.15760-1.15785 and the 1.15750 minor Quarter Theory level, validated by the EMA50/200 acting as overhead dynamic resistance to cap upward retracements.",
-            "Confluence 2: A clear Break of Structure (BOS) below the 1.15730 minor low is accompanied by an M15 bearish engulfing candlestick pattern and a bearish flag chart pattern, supported by momentum indicators as the M15 RSI (41.6) points to accelerating bearish momentum.",
-            "Confluence 3: Fibonacci Retracement shows a perfect 0.618 golden ratio confluence at 1.15777, overlapping with an internal SMC liquidity sweep of minor highs and Candle Range Theory (CRT) bearish expansion, while ATR (0.00048) and contracting Bollinger Bands indicate a high-probability volatility breakout.",
-            "Confluence 4: MSNR horizontal resistance at 1.15780 (previous support flipped to resistance) aligns with a descending trendline bounce from the 1.15966 swing high and an unmitigated M5 supply zone, validated by volume expansion on bearish legs indicating institutional distribution.",
-            "Confluence 5: SMC defensive staff mitigation is confirmed by H1 long upper wicks (wick-rejection), a structural magnet towards the 1.15500 major Quarter Theory level, and standard deviation bands showing the entry price sits at the upper boundary of the 1-SD bearish channel."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H1/M15 market structure has shifted bearish with a clean Break of Structure (BOS) below 1.15730, supported by a bearish engulfing candle and a rejection of the 0.618 Fibonacci retracement level. Overhead supply at 1.15760-1.15785 acts as a highly reliable defensive staff zone, while momentum (RSI 41.6) and volume expansion support a continuation towards HTF liquidity pools at 1.15360 and 1.15060."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
