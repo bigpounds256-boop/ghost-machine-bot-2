@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 03:29 UTC",
+  "generated_at": "2026-09-02 03:43 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.15750 - 1.15780",
-          "entry_price": "1.15770",
-          "invalidation_stop": "1.15740",
-          "take_profit": {
-            "primary_tp": "1.15930",
-            "extreme_tp": "1.16180",
-            "risk_reward_ratio": "1:13.6"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Quarter Theory (QT) at the 1.15750 level, Malaysian SNR (MSNR) historical support at 1.15770, and the HTF Demand Zone (1.15750 - 1.15780) interact to form a highly concentrated defensive staff. This structural confluence aligns with volatility indicators, as the M15 ATR (0.00035) and Bollinger Bands lower limit suggest price is at an extreme exhaustion point ready for a reversal.",
-            "Confluence 2: ICT/SMC mitigation of the previous bullish expansion origin, Break of Structure (BOS) on the HTF chart, and Candle Range Theory (CRT) low-range projection align with momentum indicators, as the M15 RSI is deeply oversold at 25.5, indicating that selling pressure is exhausted and primed for an immediate bullish wick rejection.",
-            "Confluence 3: Chart Patterns (potential double bottom with the Aug 31 low of 1.15781), Candlestick Patterns (predicted long lower wick rejection), and Trendline Bounces off the ascending trendline from the Aug 30 low align with the sideways/neutral trend across all timeframes, confirming that range-bound mean-reversion is highly favored.",
-            "Confluence 4: Quarter Theory (1.15750), Supply and Demand (unmitigated demand zone), and ICT/SMC liquidity sweep of the minor lows at 1.15772 align with qualitative volume exhaustion, indicating institutional defense of the range low as selling volume dries up.",
-            "Confluence 5: Fair Value Gap (FVG) mitigation, Malaysian SNR (MSNR) support, and Quarter Theory (QT) levels align with Fibonacci Retracement (0.382 of the HTF swing from 1.15061 to 1.16245 at 1.15792), Fibonacci Circles, and Standard Deviation (-2 SD from the H1 mean) alongside oversold momentum indicators, providing a precise mathematical anchor for the preemptive entry."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "94.1%",
-            "dominant_bias_reason": "The market is in a sideways/neutral trend across all timeframes, making range-bound mean-reversion highly favorable. The price is currently approaching a major HTF demand zone and the 1.15750 Quarter level, coinciding with an extremely oversold M15 RSI of 25.5 and a 0.382 Fibonacci retracement. This creates a high-probability defensive staff zone for a preemptive buy-limit entry with a very tight stop loss, offering an exceptional risk-to-reward ratio of over 1:13."
-          },
-          "risk_profile": {
-            "expected_rr": "1:13.6",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
