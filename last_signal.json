@@ -1,56 +1,17 @@
 {
-  "generated_at": "2026-09-02 02:57 UTC",
+  "generated_at": "2026-09-02 03:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.15765 - 1.15785",
-          "entry_price": "1.15775",
-          "invalidation_stop": "1.15740",
-          "take_profit": {
-            "primary_tp": "1.15935",
-            "extreme_tp": "1.16125",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Price has descended to the key 1.15750 Quarter Theory level, which directly overlaps with a major H4 demand zone (1.15750 - 1.15800). This area represents a high-density liquidity pool where institutional buy orders are resting (ICT/SMC). This structural support is validated by volatility indicators, as the price is currently trading outside the lower Bollinger Band on the M15 timeframe, signaling an extreme deviation that is highly likely to trigger a mean-reversion wick rejection.",
-            "Confluence 2: The M15 and M5 timeframes show clear wick rejections at the 1.15762 low, forming a hammer-like candlestick pattern. According to Candle Range Theory (CRT), the failure to close below the initial range low indicates strong defensive buying pressure. This bounce aligns with a major ascending trendline drawn from the HTF swing lows. Momentum indicators confirm this exhaustion, with the M15 RSI deeply oversold at 28.6, creating a bullish divergence as price makes a lower low but momentum begins to shift upward.",
-            "Confluence 3: The low of 1.15762 represents a precise 0.382 Fibonacci retracement of the major HTF bullish expansion from 1.15061 to 1.16245. On the M5 timeframe, a double bottom chart pattern has formed, followed by a minor Break of Structure (BOS/CHoCH) above 1.15813. This structural shift is supported by the flat/sideways posture of the EMA50 and EMA200 on the H1 timeframe, which indicates a range-bound environment where support levels are highly respected and likely to hold.",
-            "Confluence 4: The rapid descent on the H1 timeframe left behind an unmitigated Fair Value Gap (FVG) between 1.15850 and 1.15920. As price taps into the H4 demand zone, the On-Balance Volume (OBV) and Accumulation/Distribution indicators show a bullish divergence, indicating that smart money is actively absorbing sell orders (ICT/SMC) at these discounted prices. This volume accumulation at the defensive staff zone suggests a rapid upward expansion to fill the overhead FVG.",
-            "Confluence 5: The defensive staff zone is established just above the 1.15750 quarter level, where a double bottom pattern is maturing. The ATR on M15 is currently at 0.00035 (3.5 pips), which matches the exact distance of our tight stop loss (1.15740) from our entry price (1.15775). This alignment ensures that our stop loss is placed outside the normal market noise (1 ATR unit below the entry), protecting the trade from random volatility while capitalizing on the preemptive wick-rejection at the key quarter level."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "EUR/USD is trading at a major HTF demand zone and the 1.15750 key quarter level, with the M15 RSI deeply oversold at 28.6. Strong wick rejections at 1.15762 indicate institutional absorption, setting up a high-probability preemptive buy-limit opportunity with a tight invalidation stop below the quarter level."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
