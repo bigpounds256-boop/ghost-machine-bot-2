@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 00:38 UTC",
+  "generated_at": "2026-09-02 00:59 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.15850 - 1.15860",
-          "entry_price": "1.15855",
-          "invalidation_stop": "1.15835",
-          "take_profit": {
-            "primary_tp": "1.16055",
-            "extreme_tp": "1.16255",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Mitigation of a key H4 bullish order block and H1 demand zone at 1.15850, which aligns with a major Malaysian SNR support level. Since the HTF trend is sideways, buying at this range low is highly favored, validated by Trend Indicators (EMA50/200 and Ichimoku showing sideways/neutral consolidation).",
-            "Confluence 2: Price has deviated below the 1.15875 quarter level to sweep liquidity, forming multiple bottom wicks on H1. This Candle Range Theory (CRT) deviation combined with RSI momentum exhaustion (M15 RSI at 39.7) indicates a high-probability preemptive reversal at the defensive staff.",
-            "Confluence 3: A triple bottom pattern is forming as price bounces off the HTF horizontal support, filling a minor H1 FVG. The low ATR (0.00028) confirms volatility compression, setting the stage for a rapid wick-rejection and upward expansion.",
-            "Confluence 4: The market is sweeping sell-side liquidity resting just below the 1.15850 Malaysian SNR level. Bullish volume accumulation (OBV/CMF showing absorption of selling pressure) during this sweep confirms that institutional buyers are absorbing sell orders, validating a preemptive buy limit.",
-            "Confluence 5: The 1.15850 level aligns with the 0.382 Fibonacci retracement of the HTF swing (1.15061 to 1.16245) and the lower Bollinger Band limit. This confluence of structural retracement and statistical deviation supports a highly precise, low-risk preemptive entry."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "94.1%",
-            "dominant_bias_reason": "EUR/USD is consolidating at a major HTF range support and demand zone (1.15850 - 1.15860) with multiple H1 wick rejections, low ATR volatility compression, and RSI momentum exhaustion, indicating a high-probability preemptive bullish reversal."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
