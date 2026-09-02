@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 06:41 UTC",
+  "generated_at": "2026-09-02 07:01 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4325.00 - 4328.80",
+          "entry_price": "4327.80",
+          "invalidation_stop": "4334.20",
+          "take_profit": {
+            "primary_tp": "4285.00",
+            "extreme_tp": "4263.80",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The higher-timeframe H4 and H1 market structures exhibit a strong bearish trend with consecutive lower lows and lower highs. The recent upward retracement to 4328.81 has mitigated the H1 bearish order block (SMC) and filled the local liquidity void, aligning with the overall bearish trend. This structural alignment is validated by the bearish slope of the EMA50/200 and the price trading below the Ichimoku cloud on the H1 timeframe.",
+            "Confluence 2: The entry zone of 4327.80 aligns perfectly with a key Malaysian SNR level and the Quarter Theory level of 4325.00 - 4330.00. This zone acted as previous support on the H4 timeframe and has now flipped into a major defensive resistance barrier, validated by the M15 Bollinger Bands upper band rejection and the high ATR(14) of 8.2251 indicating sufficient volatility for a sharp reversal.",
+            "Confluence 3: The preemptive entry at 4327.80 corresponds precisely to the 61.8% Fibonacci retracement level (golden pocket) measured from the H1 swing high of 4355.21 to the swing low of 4283.20. This level is further reinforced by +2 Standard Deviations from the mean of the M15 consolidation range, indicating an extreme overextended retracement ready for mean reversion.",
+            "Confluence 4: On the M15 and M5 timeframes, Candle Range Theory (CRT) reveals a clear accumulation phase between 4283.20 and 4300.00, followed by a rapid manipulation phase up to 4328.81. The subsequent formation of multiple long upper wicks (shooting stars) on the M15 timeframe confirms aggressive seller absorption at the defensive staff, validated by the overbought RSI(14) at 70.0 starting to roll over.",
+            "Confluence 5: The H1 timeframe shows a major bearish Break of Structure (BOS) below 4314.80. The subsequent retracement back to 4327.80 occurred on declining volume (volume exhaustion), confirming a lack of buying pressure. This structure is set for a rapid expansion phase toward the HTF liquidity pool at 4283.20 and beyond, validated by the bearish MACD histogram momentum."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 17,
+            "confidence_percentage": "100.0",
+            "dominant_bias_reason": "The higher-timeframe H4 and H1 trends are strongly bearish, and the recent M15 bullish retracement has reached the key 61.8% Fibonacci golden pocket and Malaysian SNR level at 4327.80. Multiple M15/M5 wick rejections at this defensive staff, combined with an overbought RSI of 70.0, signal immediate bearish continuation toward the HTF liquidity pool below 4283.20."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
