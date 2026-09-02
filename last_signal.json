@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-02 13:12 UTC",
+  "generated_at": "2026-09-02 13:32 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "77000.00 - 77050.00",
+          "entry_price": "77015.00",
+          "invalidation_stop": "77085.00",
+          "take_profit": {
+            "primary_tp": "76265.00",
+            "extreme_tp": "75000.00",
+            "risk_reward_ratio": "1:10.7"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Price is retracing to mitigate the newly formed H1 supply zone at 77000.00 - 77050.00, which aligns with the 77000 Major Quarter level. This mitigation occurs under a dominant bearish trend where price is trading below the H1 EMA50/200, confirming a high-probability sell setup.",
+            "Confluence 2: The 77000 level acts as a strong Support-Become-Resistance (SBR) zone, further reinforced by a bearish trendline connecting the H1 highs of 77765.99 and 77049.40. Previous wick rejections at 77049.40 indicate strong selling pressure, while the RSI at 50.8 suggests momentum has reset from oversold levels, allowing for a clean downward expansion.",
+            "Confluence 3: A clear bearish BOS occurred when price broke below 76718.48 to reach 76264.00, leaving behind an unmitigated bearish FVG starting at 77049.40. Under CRT, the current retracement is testing the upper range of the defensive staff. The ATR of 230.69 allows for a precise entry within this volatility band before the next leg down.",
+            "Confluence 4: The 0.5 Fibonacci retracement level of the recent H1 swing leg (77765.99 to 76264.00) sits exactly at 77015.00, which resides within the H1 supply zone. This level acts as a defensive staff where early buyers' liquidity is swept, aligned with the dominant bearish volume observed on the H4/H1 drop.",
+            "Confluence 5: The lower timeframe structure shows a descending pattern with a potential double top forming at the 77000 Major Quarter level. This aligns with the bearish engulfing candle on H1 from 08:00, while momentum indicators on M15/M5 reset to overbought, signaling an imminent preemptive wick-rejection at the defensive staff."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "H4 and H1 trends are strongly bearish, supported by a clear bearish Break of Structure (BOS) on H1 down to 76264.00. The retracement to the 77000.00 - 77050.00 defensive staff zone aligns with the 0.5 Fibonacci level, SBR, and a bearish FVG, offering an exceptional risk-to-reward ratio of 1:10.7 with a tight invalidation stop just above the H1 candle highs."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.7",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
