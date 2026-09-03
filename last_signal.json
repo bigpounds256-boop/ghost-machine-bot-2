@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03 10:55 UTC",
+  "generated_at": "2026-09-03 11:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,46 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "4411.32 - 4418.72",
-          "entry_price": "4413.80",
-          "invalidation_stop": "4406.50",
-          "take_profit": {
-            "primary_tp": "4438.50",
-            "extreme_tp": "4486.80",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC (Bullish Order Block) + Supply/Demand (H1 Demand Zone) + Quarter Theory (4412.50 half-quarter level) + Trend Indicators (H1 EMA50/200 bullish alignment). The H1 bullish order block at 4411.32 acts as a high-probability demand zone. This zone is reinforced by the 4412.50 half-quarter level, where institutional buy orders are clustered. The H1 EMA50/200 are sloping upwards, confirming that this retracement is a high-probability buy-on-dip opportunity within a dominant bullish trend.",
-            "Confluence 2: FVG (Bullish Fair Value Gap) + BOS (Break of Structure) + Candlestick Patterns (M5 rejection wicks) + Momentum Indicators (M15 RSI cooling down to 47.1). The H1 bullish BOS at 4411.87 left behind an unmitigated FVG between 4411.87 and 4418.99. As price retraces, the M5 timeframe is already showing early signs of defensive staff wick rejections at 4420.48. The M15 RSI has cooled down to 47.1, indicating that the overbought conditions have been fully reset, preparing the market for a preemptive bullish reversal.",
-            "Confluence 3: Fibonacci Retracement (0.500 level) + MSNR (V-turn support) + CRT (Candle Range Theory) + Volatility Indicators (M15 ATR and Bollinger Bands). The 0.500 Fibonacci retracement of the Sep 3 rally sits exactly at 4412.00, aligning with the MSNR V-turn support at 4411.32. According to CRT, the current H4 candle is expanding downwards to sweep the lower range liquidity before a bullish expansion. This is validated by the M15 ATR of 6.68, which suggests the price is reaching its maximum daily volatility extension near the lower Bollinger Band, signaling an imminent mean-reversion bounce.",
-            "Confluence 4: Chart Patterns (Bull Flag/Falling Wedge) + Trendline Breaks & Bounces + SMC (Liquidity Sweep) + Volume Indicators (Decreasing volume on retracement). The H1 retracement forms a classic bull flag/falling wedge pattern, bouncing off the primary bullish trendline originating from 4302.00. This pattern is designed to sweep sell-side liquidity below the M15 minor low of 4418.72. The qualitative volume analysis shows decreasing volume on this bearish retracement compared to the high-volume breakout, confirming a lack of genuine selling pressure.",
-            "Confluence 5: Standard Deviation (SD) + Fibonacci Circles + SMC (Premium/Discount) + Momentum Indicators (Stochastic/CCI oversold). The price has retraced into the deep discount zone (below the 0.5 Fib level of 4412.00). Standard Deviation analysis indicates that a drop to 4413.80 puts the price at a -2 SD extreme relative to the H1 mean, while Fibonacci Circles provide arc support. This extreme deviation aligns with oversold readings on lower-timeframe momentum oscillators (Stochastic/CCI), validating a preemptive entry at the defensive staff."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The dominant bias is BUY because the higher-timeframe H1 trend is strongly bullish following a major breakout from the 4380 region. The current bearish retracement on M5/M15 is a discount-seeking phase that aligns with a highly confluent defensive staff zone between 4411.32 and 4418.72, supported by the 0.500 Fibonacci retracement, H1 bullish order block, and unmitigated FVG."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
