@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03 07:29 UTC",
+  "generated_at": "2026-09-03 07:41 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4432.50 - 4438.50",
+          "entry_price": "4434.50",
+          "invalidation_stop": "4439.80",
+          "take_profit": {
+            "primary_tp": "4381.50",
+            "extreme_tp": "4283.50",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC premium pricing and mitigation of the H4 supply zone (4438-4446) aligns with the HTF bearish Break of Structure (BOS) below 4330.64, validated by H4 Trend Indicators (EMA50/200 and Ichimoku cloud) confirming dominant bearish trend direction.",
+            "Confluence 2: MSNR resistance at 4438-4440 matches the Quarter Theory rejection from the 4450.00 major level, further validated by the H4 shooting star candlestick pattern and Volatility Indicators (Bollinger Bands upper band rejection with high ATR).",
+            "Confluence 3: Deep 0.886 Fibonacci retracement of the bearish leg (4455.93 to 4283.20) aligns with Candle Range Theory (CRT) daily high establishment and a bearish flag chart pattern, supported by Momentum Indicators (M15 RSI at 46.3 and Stochastic turning down).",
+            "Confluence 4: SMC liquidity sweep of previous session highs and mitigation of the bearish Fair Value Gap (FVG) on H4 coincides with a bounce off the HTF bearish trendline, validated by Volume Indicators (OBV and Accumulation/Distribution showing distribution).",
+            "Confluence 5: Standard Deviation (+2 SD rejection on H1) and Fibonacci Circles resistance align with the retest of the unmitigated M15 supply zone, validated by Trend Indicators (MACD bearish crossover and strong ADX trend strength)."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 7,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The HTF trend is strongly bearish on H4, supported by a bearish BOS and a clear shooting star rejection candle at the H4 supply zone (4438-4446). Price has completed a deep 0.886 Fibonacci retracement and is rejecting the +2 SD band, while momentum indicators (RSI < 50) and volume distribution confirm institutional selling pressure. Buy scenario fails due to lack of HTF trend alignment and bearish candlestick patterns."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
