@@ -1,62 +1,23 @@
 {
-  "generated_at": "2026-09-03 01:44 UTC",
+  "generated_at": "2026-09-03 01:58 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77170.00 - 77260.00",
-          "entry_price": "77215.00",
-          "invalidation_stop": "77140.00",
-          "take_profit": {
-            "primary_tp": "77950.00",
-            "extreme_tp": "78950.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC, Supply and Demand, and Quarter Theory. The M15 bullish expansion from 76968.00 created a clear Fair Value Gap (FVG) between 77109.48 and 77288.41, which overlaps with a newly formed demand zone and the 77250.00 minor quarter level. This is validated by the M15 RSI (59.2) showing strong bullish momentum without being overbought, confirming room for a healthy pullback into the defensive staff before continuation.",
-            "Confluence 2: MSNR, Candlestick Patterns, and Break of Structure (BOS). The aggressive breakout at 01:00 UTC resulted in a strong bullish engulfing candle on the M15 timeframe, breaking the local structure (BOS) at 77340.00. This breakout is anchored by the Malaysian SNR (MSNR) support level at 77171.50. The alignment of the bullish H1 trend confirms that the higher timeframe structure supports this upward expansion.",
-            "Confluence 3: Trendline Breaks & Bounces, Chart Patterns, and Fibonacci Retracement. An ascending trendline drawn from the 76264.00 low on Sep 2 aligns perfectly with the 0.618 Fibonacci retracement level (77189.00) of the recent impulse leg. This confluence is situated at the neckline of an emerging inverse head-and-shoulders pattern on the H1 timeframe. Volatility, measured by the M15 ATR of 178.18, indicates sufficient average range to execute a clean wick-rejection at this intersection.",
-            "Confluence 4: Candle Range Theory (CRT), Supply and Demand, and Standard Deviation. Under CRT, the range between 76968.00 and 77150.00 represents accumulation, followed by a manipulation sweep of the lows and subsequent distribution. The defensive staff zone is established at the -1 Standard Deviation band of this accumulation range, which directly overlaps with the H1 demand zone. This is supported by the bullish M5 trend, indicating immediate buying pressure on lower timeframes.",
-            "Confluence 5: ICT/SMC (Mitigation), MSNR, and Volume. The preemptive limit order at 77215.00 targets the mitigation of the unmitigated bullish order block on the M5 timeframe (77148.00 - 77216.00). This zone is reinforced by the MSNR level at 77171.50. The high volume observed during the initial breakout (qualitatively analyzed via the large body of the 01:00 H1 candle) validates the strength of this defensive staff zone, ensuring a high-probability wick-rejection."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The H1, M15, and M5 timeframes show strong bullish alignment with a clear break of structure (BOS) above 77340.00. A high-probability Fair Value Gap (FVG) and demand zone have formed between 77109.48 and 77288.41, aligning with the 0.618 Fibonacci retracement and MSNR support at 77171.50. This creates a highly confluent defensive staff zone for a preemptive buy-limit entry, overriding the bearish H4 trend which is currently undergoing a deep structural retracement."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
