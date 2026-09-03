@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-03 05:12 UTC",
+  "generated_at": "2026-09-03 05:49 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77105.00 - 77200.00",
+          "entry_price": "77135.00",
+          "invalidation_stop": "76945.00",
+          "take_profit": {
+            "primary_tp": "77900.00",
+            "extreme_tp": "79100.00",
+            "risk_reward_ratio": "1:10.3"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Smart Money Concepts (SMC) bullish order block mitigation at 76968 - 77100 and H1 FVG mitigation (77068 - 77356) align with the H1 bullish trend and dynamic EMA50/200 support, establishing a strong structural floor.",
+            "Confluence 2: Malaysian SNR (MSNR) key support at 77100 overlaps with the 77000 major psychological Quarter Theory level, while the high M15 ATR of 207.44 and lower Bollinger Band pierce validate a deep wick-rejection sweep.",
+            "Confluence 3: Candlestick Patterns (massive lower wick on the M15 05:15 candle) and Chart Patterns (H1/M15 double bottom) align with momentum indicators as the M15 RSI at 49.3 stabilizes and turns upward from near-oversold territory.",
+            "Confluence 4: Candle Range Theory (CRT) identifies the 77000-77800 range as accumulation, supported by the bullish Break of Structure (BOS) on H1 at 77520 and high volume absorption at the 77101.01 low.",
+            "Confluence 5: Fibonacci Retracement of the 76264 - 77900 swing places the entry price of 77135.00 precisely at the 0.618 golden ratio, reinforced by the 1.618 Fibonacci circle extension and a -2 Standard Deviation deviation from the short-term VWAP."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 11,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "H1 bullish trend structure remains intact with a massive wick rejection at the 77101.01 demand zone, mitigating the H1 FVG and aligning with the 0.618 Fibonacci retracement level and the 77000 major quarter level."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.3",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
