@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-03 01:12 UTC",
+  "generated_at": "2026-09-03 01:34 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "76950.00 - 77000.00",
-          "entry_price": "76965.00",
-          "invalidation_stop": "76850.00",
-          "take_profit": {
-            "primary_tp": "77550.00",
-            "extreme_tp": "78150.00",
-            "risk_reward_ratio": "1:10.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC bullish mitigation of the H1 order block interacts with a major Supply and Demand Zone (76950-77050) and the 77000 Quarter Theory psychological level. This structural cluster is validated by the M15 RSI(14) at 39.6, which indicates seller exhaustion and momentum deceleration as price approaches this high-liquidity defensive staff.",
-            "Confluence 2: MSNR (Malaysian SNR) key support at 76950.56 aligns with M15/M5 Candlestick Patterns showing progressive absorption (long lower wicks) and CRT (Candle Range Theory) accumulation at the lower boundary of the daily range. This is validated by the M15 ATR(14) of 157.25, which mathematically limits further downward expansion, projecting a high-probability wick rejection within our entry zone.",
-            "Confluence 3: A bullish Trendline Bounce on the H1 timeframe confluences with a previous Break of Structure (BOS) to the upside and an ICT/SMC liquidity sweep of the minor 76968 low. This structural alignment is validated by the H1 bullish trend indicators (EMA50/200 sloping upward), confirming that the macro-trend remains supportive of a preemptive long entry.",
-            "Confluence 4: Mitigation of an unmitigated H1 Fair Value Gap (FVG) between 76848.73 and 77010.24 confluences with the 77000 Quarter Theory pivot and an emerging M15 double bottom Chart Pattern. This is validated by volatility indicators (Bollinger Bands lower band touch), signaling a high-probability mean-reversion bounce from the defensive staff.",
-            "Confluence 5: H1 Demand Zone structural integrity confluences with CRT daily range low accumulation and MSNR historical wick support. This is validated by Volume Indicators (declining volume on the M15/M5 retracement), proving a lack of institutional selling pressure and confirming that the downward move is merely a liquidity grab before continuation."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H1 bullish trend remains intact with strong structural demand clustered around the 77000 Quarter Theory level. Multiple price action concepts (ICT/SMC, MSNR, FVG, and Demand Zones) align perfectly with momentum exhaustion (RSI 39.6) and volatility limits (ATR 157.25) to support a high-confidence preemptive buy-limit order at the defensive staff, while the sell scenario fails due to major structural support and lack of bearish momentum on lower timeframes."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
