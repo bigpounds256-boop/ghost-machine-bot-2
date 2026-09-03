@@ -1,62 +1,23 @@
 {
-  "generated_at": "2026-09-03 09:44 UTC",
+  "generated_at": "2026-09-03 09:56 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "4411.00 - 4416.00",
-          "entry_price": "4412.50",
-          "invalidation_stop": "4407.00",
-          "take_profit": {
-            "primary_tp": "4441.50",
-            "extreme_tp": "4470.00",
-            "risk_reward_ratio": "1:10.45"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC/ICT & FVG Integration. The H1 timeframe exhibits a clear Break of Structure (BOS) above 4396.18, leaving behind an unmitigated Fair Value Gap (FVG) between 4411.87 and 4418.71. This FVG overlaps with a bullish H1 Order Block at the base of the 12:00 expansion candle (4410.43). Trend indicators like the EMA50/200 align dynamically below this zone, validating it as a high-probability institutional demand area.",
-            "Confluence 2: Malaysian SNR & Quarter Theory. The price level of 4412.50 represents a minor Quarter Theory level situated just above the major 4400.00 psychological level. This level aligns with a strong Malaysian SNR support zone formed by the H1 11:00 resistance-turned-support at 4411.87. Momentum indicators like the M15 RSI (56.5) have sufficient cooling room to reach oversold territory precisely as price taps this defensive staff.",
-            "Confluence 3: Fibonacci Retracement & Volatility. A Fibonacci retracement drawn from the H1 swing low of 4364.10 to the swing high of 4442.07 places the golden 38.2% retracement level at 4412.28, matching our entry price of 4412.50. This is further reinforced by qualitative Fibonacci Circle arc support intersecting this price coordinate, while volatility indicators (M15 ATR of 7.85) suggest a 2-ATR mean-reversion pullback will exhaust its selling pressure exactly within this zone.",
-            "Confluence 4: Candle Range Theory (CRT) & Volume Profile. Under CRT, the H1 11:00 candle range (4389.32 - 4411.87) establishes the collection boundary. The high of this range (4411.87) acts as a magnet for a retest. Volume indicators qualitatively suggest that the massive bullish expansion occurred on high volume, while the current sideways consolidation on M15/M5 represents low-volume liquidity building, preparing for a preemptive wick-rejection at the defensive staff.",
-            "Confluence 5: Chart Patterns & Standard Deviation. The M15 and M5 timeframes show a sideways/neutral consolidation pattern resembling a bullish flag/pennant. Standard Deviation analysis indicates that a drop to 4412.50 represents a -2 SD deviation from the short-term mean, offering an exhausted selling state. This structural alignment supports a preemptive entry to capture the next HTF expansion leg toward the liquidity pool at 4442.07 and 4470.00."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.23",
-            "dominant_bias_reason": "Strong H1 bullish trend with clear BOS at 4396.18, leaving an unmitigated H1 FVG (4411.87 - 4418.71) and a demand zone that aligns perfectly with the 38.2% Fibonacci retracement (4412.28) and the minor Quarter Theory level (4412.50)."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.45",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
