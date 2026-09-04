@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04 02:30 UTC",
+  "generated_at": "2026-09-04 02:43 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.16230 - 1.16250",
-          "entry_price": "1.16245",
-          "invalidation_stop": "1.16190",
-          "take_profit": {
-            "primary_tp": "1.16410",
-            "extreme_tp": "1.16800",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H4 trend is strongly bullish, supported by EMA50/200 sloping upwards. Price is retracing into a bullish Order Block (OB) and Malaysian SNR support zone between 1.16230 and 1.16250, which represents a high-probability discount array for preemptive wick-rejection entry.",
-            "Confluence 2: Under Candle Range Theory (CRT), the current price of 1.16273 is trading in the discount portion of the daily range. This overlaps with a robust H1 demand zone (1.16212 - 1.16250). Low volatility (M15 ATR of 0.00031) and contracting Bollinger Bands suggest a compression phase preceding a bullish expansion.",
-            "Confluence 3: The entry price of 1.16245 is aligned with the 1.16250 Quarter level and the 0.382 Fibonacci retracement level (1.16247) of the recent H4 swing. Momentum indicators (M15 RSI at 58.5) show healthy consolidation above the midpoint, confirming that the bullish structure remains intact.",
-            "Confluence 4: The H4 timeframe exhibits a clear bullish Break of Structure (BOS) above 1.16298. On the lower timeframes (M15/M5), price is forming an ascending triangle/consolidation pattern above the high-volume node (VPVR) at 1.16250, indicating strong institutional accumulation.",
-            "Confluence 5: Multiple rejection wicks on the M15 and M5 timeframes near 1.16250 demonstrate active buy-side defense. This zone intersects with Fibonacci Circles and sits at -1 Standard Deviation from the H1 mean, providing a highly precise, low-risk defensive staff zone for a preemptive buy-limit order."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "Strong H4 bullish trend with a clear Break of Structure (BOS). Price is consolidating in a low-volatility squeeze at the 1.16250 Quarter level, which aligns with the 0.382 Fibonacci retracement, H1 demand zone, and Malaysian SNR support. Momentum remains bullishly neutral, favoring a preemptive long entry at the defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
