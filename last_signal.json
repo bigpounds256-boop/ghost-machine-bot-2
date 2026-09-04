@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-04 02:57 UTC",
+  "generated_at": "2026-09-04 03:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "80550.00 - 80680.00",
-          "entry_price": "80625.00",
-          "invalidation_stop": "80300.00",
-          "take_profit": {
-            "primary_tp": "82250.00",
-            "extreme_tp": "83875.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC, Supply and Demand, and Malaysian SNR concepts interact with Trend Indicators (EMA50/200). The strong H4/H1 bullish trend is supported by EMA50/200 alignment. Price is retracing into a high-probability H1 demand zone (80354.65 - 80613.52) which overlaps with a major Malaysian SNR level at 80600. This zone acts as a bullish Order Block where institutional buy orders are clustered, creating a defensive staff that will preemptively reject further downward movement.",
-            "Confluence 2: Break of Structure (BOS), Quarter Theory (QT), and Fair Value Gap (FVG) concepts align with Volatility Indicators (ATR). The recent HTF Break of Structure (BOS) above 79400 confirmed strong bullish dominance. As price pulls back toward the 80500 major psychological quarter level, it is mitigating the upper boundary of the H1 FVG. The high M15 ATR of 198.76 indicates that this rapid descent is a high-velocity liquidity sweep rather than a trend reversal, setting up a sharp wick rejection at the defensive staff.",
-            "Confluence 3: Chart Patterns, Candlestick Patterns, and Trendline Breaks & Bounces concepts align with Momentum Indicators (RSI). On the M15 and M5 timeframes, price is forming a triple bottom pattern around the 80682 level, characterized by multiple candles with long lower wicks showing absorption. This pattern is bouncing off the internal ascending trendline. The M15 RSI is deeply oversold at 26.0, signaling extreme momentum exhaustion of the sellers and validating a preemptive buy entry before the reversal is confirmed.",
-            "Confluence 4: Candle Range Theory (CRT), SMC (Liquidity Sweeps), and Supply and Demand concepts align with Volume Indicators (OBV/Accumulation). Under Candle Range Theory, the current H4 candle is in its manipulation phase, creating the lower wick by sweeping liquidity below the previous H4 low of 80682. This sweep taps directly into the H1 demand zone. The declining volume on lower timeframes (sideways M5 trend) indicates a lack of selling pressure, suggesting that smart money is accumulating long positions at this defensive staff.",
-            "Confluence 5: Fibonacci Retracement, Quarter Theory, and Malaysian SNR concepts align with Standard Deviation (SD). The pullback to 80682 represents a shallow 0.382 Fibonacci retracement of the massive impulse from 77101 to 82300, which is typical for strong bullish trends. This level aligns with the 80500 quarter level and the 80600 Malaysian SNR. Standard Deviation analysis shows price is trading at -2SD from the short-term mean, indicating an extreme statistical deviation that is highly likely to mean-revert rapidly, triggering our preemptive buy limit."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "HTF trends (H4/H1) are strongly bullish following a major Break of Structure. The current pullback to 80686.57 is a high-probability liquidity sweep into a key H1 demand zone and Malaysian SNR level (80600-80680). The M15 RSI is oversold at 26.0, indicating seller exhaustion. This creates a perfect setup for a preemptive wick-rejection entry at the defensive staff, whereas selling is counter-trend and highly risky."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
