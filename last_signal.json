@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05 05:42 UTC",
+  "generated_at": "2026-09-05 05:54 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is experiencing extreme volatility compression and flat consolidation around the 4428.90 level. There is a complete lack of structural expansion, clear liquidity pools, or validated defensive staff zones across the lower timeframes (H1, M15, M5), making any preemptive entry highly speculative.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "29.4%",
+            "dominant_bias_reason": "Both directional scenarios fail to reach the mandatory 80% confidence threshold because the current price action lacks structural momentum, volume expansion, and clear key zone validation."
+          }
+        }
       }
     }
   }
