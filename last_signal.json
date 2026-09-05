@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05 07:51 UTC",
+  "generated_at": "2026-09-05 08:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,13 +11,23 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is exhibiting extremely low volatility (M15 ATR of 0.26425) and flat consolidation around 4429.00, characteristic of weekend market closure. There is no clear structural expansion, trendline interaction, or volume to validate a high-probability defensive staff zone.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "23.5%",
+            "dominant_bias_reason": "While the HTF H4 trend is technically bullish, the recent aggressive drop from 4478 to 4407 followed by complete stagnation indicates a lack of active market participation. With RSI at 49.3 and ATR near zero, neither the Buy nor the Sell scenario can achieve the mandatory 80% confidence threshold (minimum 14/17 concepts aligned) required for execution."
+          }
+        }
       }
     }
   }
