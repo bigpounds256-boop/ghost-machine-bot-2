@@ -1,72 +1,23 @@
 {
-  "generated_at": "2026-09-05 06:30 UTC",
+  "generated_at": "2026-09-05 06:47 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "79500.00 - 79530.00",
-          "entry_price": "79515.00",
-          "invalidation_stop": "79395.00",
-          "take_profit": {
-            "primary_tp": "79850.00",
-            "extreme_tp": "80715.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Price is retracing to the M5 bullish order block and demand zone formed between 05:45 and 05:50, heavily reinforced by the 79500 Quarter Theory psychological level. The M15 ATR of 62.26 provides the necessary volatility buffer, ensuring that our preemptive limit order at 79515.00 sits safely within the defensive staff zone while the stop loss is protected below the ATR-implied volatility range of the recent 79442 swing low.",
-            "Confluence 2: The aggressive M5 break of structure (BOS) above 79600 established a new short-term bullish trend. A retracement to the 0.618 Fibonacci level (79517.60) aligns with the ascending micro-trendline support. This confluence is validated by the M15 RSI of 55.20, which is rising from neutral territory, indicating that momentum is shifting back to the buyers as the price mitigates this internal defensive zone.",
-            "Confluence 3: Under Candle Range Theory (CRT), the current H1 candle is expanding upward from the previous candle's range. The lower wicks on the M5 candles near 79500 indicate strong MSNR support (previous resistance turned support). This local bullish price action aligns with the higher-timeframe H4 bullish trend and EMA50/200 alignment, confirming that the overall market structure remains heavily biased to the upside.",
-            "Confluence 4: The rapid move from 79500 to 79640 left an unmitigated Fair Value Gap (FVG) on the lower timeframes. A preemptive return to 79515.00 fills this gap and completes the right shoulder of an inverse head and shoulders pattern on the M15 chart. This structural development is supported by qualitative Accumulation/Distribution volume indicators, which show steady accumulation during this consolidation phase, suggesting institutional backing at the defensive staff.",
-            "Confluence 5: The 79500 level represents a major Quarter Theory level that overlaps with the H4 demand origin established during the massive wick rejection to 78660 on September 4th. This level acts as a key MSNR structural flip. As the price approaches this zone, the M15 Bollinger Bands are contracting, indicating a volatility squeeze that typically precedes an explosive expansion, validating our preemptive entry at the lower band boundary."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 14,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "The higher-timeframe H4 trend is strongly bullish, supported by a massive wick rejection at 78660. Lower-timeframe M5/M15 structures show clear signs of accumulation and a bullish break of structure above 79600. Retracing to the 79500-79530 defensive staff zone offers a high-probability, low-risk preemptive entry with a tight stop below the 79442 swing low, targeting HTF liquidity clusters for a 1:10 Risk:Reward ratio."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is exhibiting extreme flatline consolidation with an exceptionally narrow range of less than 0.30 USD over the past 10 hours, which is characteristic of weekend market closure (Saturday, 2026-09-05). Volatility has completely collapsed with an M15 ATR of 0.2649, and momentum is entirely neutral with the M15 RSI flatlining at 49.9. Under these conditions of zero liquidity and inactive order flow, no valid predictive defensive staff zone, Fair Value Gap mitigation, or structural breakout can be identified. Placing preemptive orders in a closed market violates the core risk management principles of the doctrine.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "17.65%",
-            "dominant_bias_reason": "While the higher-timeframe H4 trend remains technically bullish, the lower-timeframe market structure across H1, M15, and M5 is completely frozen and inactive due to weekend market closure. Neither the buy scenario (17.65% confidence) nor the sell scenario (11.76% confidence) approaches the mandatory 80% doctrine threshold required for execution."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
