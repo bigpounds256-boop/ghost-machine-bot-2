@@ -1,56 +1,17 @@
 {
-  "generated_at": "2026-09-05 16:52 UTC",
+  "generated_at": "2026-09-05 17:04 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "79810.00 - 79860.00",
-          "entry_price": "79840.00",
-          "invalidation_stop": "79730.00",
-          "take_profit": {
-            "primary_tp": "80940.00",
-            "extreme_tp": "81400.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The breakout above the 79816/79862 resistance levels represents a Malaysian SNR shift from resistance to support (RBS), coinciding with the 79800 Quarter Theory level. This zone acts as a high-probability mitigation area for the bullish SMC order block, validated by the EMA50/200 golden cross on lower timeframes.",
-            "Confluence 2: The strong bullish engulfing candle on H1 broke the local structure (BOS), leaving behind an unmitigated M15 Fair Value Gap (FVG) between 79847.46 and 79891.98. This structural imbalance is supported by the RSI remaining in the bullish expansion zone (64.2), indicating that a retracement to this FVG will find strong buying pressure.",
-            "Confluence 3: Under Candle Range Theory, the price has expanded out of its initial accumulation range and is now returning to test the range high. This high aligns with a newly formed M15 demand zone and a rising trendline. The expanding Bollinger Bands and an ATR of 85.92 confirm that the volatility supports a rapid wick-rejection at this defensive staff zone.",
-            "Confluence 4: The 0.5 - 0.618 Fibonacci retracement level of the breakout leg (79678.62 to 79989.02) sits precisely at 79797 - 79834, overlapping with the 79800 Quarter Theory level. This zone represents a standard deviation discount area where internal liquidity is swept before continuation, validated by Fibonacci circles providing structural support.",
-            "Confluence 5: The breakout of the ascending triangle pattern on the M15 chart is confirmed by a significant volume expansion on the breakout candle. The subsequent retracement to the breakout point (BOS/MSNR) at 79840.00 provides a high-probability preemptive entry point, where volume profile (VPVR) shows a high-volume node acting as a defensive barrier."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4 and M5 trends are strongly bullish, and the recent H1 breakout above the 79816/79862 resistance range has established a clear bullish market structure. The retracement to the M15 Fair Value Gap (79847.46 - 79891.98) and the resistance-turned-support zone provides a highly confluent defensive staff zone for a preemptive buy-limit entry at 79840.00, with a tight stop below the H1 swing low of 79754.00."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=BTC%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=EUR%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
       }
     },
     "XAU/USD": {
