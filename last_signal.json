@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05 08:27 UTC",
+  "generated_at": "2026-09-05 08:39 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.16210 - 1.16240",
-          "entry_price": "1.16220",
-          "invalidation_stop": "1.16255",
-          "take_profit": {
-            "primary_tp": "1.16120",
-            "extreme_tp": "1.15850",
-            "risk_reward_ratio": "1:10.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC liquidity sweep of equal highs combined with MSNR resistance at 1.16220 and an H1 supply zone (1.16210-1.16250), aligned with the upper Bollinger Band acting as a dynamic volatility barrier.",
-            "Confluence 2: Candle Range Theory (CRT) premium pricing just below the 1.16250 Quarter Theory (QT) level, coinciding with an unmitigated H1 FVG and validated by an overbought M15 RSI of 76.4.",
-            "Confluence 3: Bearish Break of Structure (BOS) on H1 with a corrective retracement forming a double top pattern at the descending trendline, structurally validated by price trading below the H1/H4 EMA200.",
-            "Confluence 4: Multiple long upper wicks (pin bars) on H1/M15 charts confirming active supply and wick-rejection at the 1.16220 level, aligned with the dynamic resistance of the Ichimoku Cloud.",
-            "Confluence 5: Low ADX indicating a sideways/neutral range-bound market where range boundaries are highly respected, supported by declining volume on the corrective move up to the 1.16220 defensive staff."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 1,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100.0%",
-            "dominant_bias_reason": "All 17 doctrine concepts align to support a high-probability sell-limit entry at the 1.16220 defensive staff. The overbought M15 RSI (76.4) combined with multiple H1/M15 wick-rejections at the 1.16210-1.16220 supply zone and descending trendline resistance indicates strong bearish confluence, while the buy scenario lacks structural and momentum support."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
