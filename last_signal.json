@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-05 10:11 UTC",
+  "generated_at": "2026-09-05 10:29 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "79568.00 - 79600.00",
-          "entry_price": "79580.00",
-          "invalidation_stop": "79420.00",
-          "take_profit": {
-            "primary_tp": "79850.00",
-            "extreme_tp": "81200.00",
-            "risk_reward_ratio": "1:10.1"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The minor quarter level at 79500.00 acts as a psychological magnet, where a demand zone is established between 79440.00 and 79560.00. A liquidity sweep of the minor M15 lows down to 79568.00 mitigates this demand zone. The M15 ATR of 59.77 indicates that a dip into this zone represents a standard deviation move within the current consolidation, allowing for a highly precise, preemptive entry at 79580.00 with a tight stop just below the demand zone invalidation.",
-            "Confluence 2: The level of 79568.00 is a significant Malaysian SNR (MSNR) pullback level that aligns with the lower boundary of the M15 accumulation range defined by Candle Range Theory (CRT). The presence of bullish wicks (candlestick patterns) at this level on the M5/M15 charts shows strong absorption of selling pressure. This is validated by the M15 RSI at 46.8, which is in neutral-to-oversold territory, indicating that momentum is primed to shift bullishly as sellers exhaust themselves at this key structural floor.",
-            "Confluence 3: The recent M5 push from 79568.00 to 79735.97 created a bullish Break of Structure (BOS) by clearing the minor swing high of 79715.72, leaving behind an unmitigated FVG just above 79568.00. This structural shift occurs within an ascending triangle chart pattern on the H1 timeframe. This bullish development is fully aligned with the HTF trend, as price remains comfortably above the H4 EMA50/200, confirming that the path of least resistance is upward.",
-            "Confluence 4: Price is compressing along an ascending trendline that connects the higher lows of 78660.00, 79000.00, and 79442.00. This trendline intersects perfectly with the 79500.00 minor quarter level and the H1 demand zone. Under Ichimoku analysis, the H4 price action remains well above the Kumo cloud, indicating that this compression is a bullish reaccumulation phase rather than a reversal, setting the stage for a powerful bounce off the trendline.",
-            "Confluence 5: The massive drop on Sep 4 to 78660.00 swept sell-side liquidity and was immediately bought back, creating a long lower wick on the H4 chart. The subsequent sideways consolidation forms a classic Wyckoff accumulation pattern (chart pattern) below the H1 bearish FVG. The declining volume signature during this consolidation indicates seller exhaustion. Once the preemptive entry at 79580.00 is triggered, the anticipated breakout will target the HTF buy-side liquidity clusters above 81000.00, offering an exceptional risk-to-reward ratio."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 6,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4 trend is strongly bullish, and price is consolidating in a clear accumulation pattern (ascending triangle) above the minor quarter level of 79500.00. Multiple confluences, including a bullish BOS on M5, a strong demand zone at 79568.00, and neutral RSI, support a preemptive BUY-LIMIT entry at 79580.00. The sell scenario is counter-trend and lacks structural support, yielding only 35.3% confidence."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.1",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
