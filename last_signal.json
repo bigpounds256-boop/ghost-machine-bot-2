@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-05 10:40 UTC",
+  "generated_at": "2026-09-05 10:54 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "79500.00 - 79600.00",
-          "entry_price": "79580.00",
-          "invalidation_stop": "79390.00",
-          "take_profit": {
-            "primary_tp": "81400.00",
-            "extreme_tp": "82300.00",
-            "risk_reward_ratio": "1:14.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Price Action Concepts: ICT/SMC (mitigation of H4 FVG), Supply and Demand (H1/M15 demand zone at 79440-79500), Malaysian SNR (strong support level tested multiple times). Indicator Alignment: Fibonacci Retracement (0.5 retracement of the HTF swing from 76968 to 82300 at 79634). Reasoning: The price is undergoing a healthy corrective pullback to mitigate the massive H4 FVG and test the H1/M15 demand zone. This zone aligns with the 0.5 Fibonacci retracement level and a major Malaysian SNR support level, creating a high-probability defensive staff zone where buyers are heavily positioned.",
-            "Confluence 2: Price Action Concepts: Candle Range Theory (CRT) (accumulation within the Asian/early London session range), Chart Patterns (triple bottom on M15/H1), Candlestick Patterns (long lower wicks showing wick-rejection). Indicator Alignment: Volatility Indicators (M15 ATR at 61.21 and Bollinger Bands contracting). Reasoning: The M15/H1 timeframes show a clear triple bottom pattern forming within the lower boundary of the daily accumulation range. The long lower wicks indicate strong preemptive buying pressure (wick-rejection). This is happening as Bollinger Bands contract and ATR stabilizes, signaling an imminent high-volatility bullish expansion from this defensive staff.",
-            "Confluence 3: Price Action Concepts: Quarter Theory (QT) (79500 minor quarter level), Break of Structure (BOS) (M15 minor BOS above 79715.72), Trendline Breaks & Bounces (bounce off the local ascending trendline from 78660). Indicator Alignment: Trend Indicators (H4 bullish trend, EMA50/200 sloping upwards). Reasoning: The HTF trend remains strongly bullish as confirmed by the upward-sloping EMA50/200. Price is bouncing off a local ascending trendline that intersects with the 79500 minor quarter level. The minor BOS on M15 confirms that buyers are actively defending this level, setting the stage for a continuation of the HTF bullish trend.",
-            "Confluence 4: Price Action Concepts: ICT/SMC (liquidity sweep of minor lows), Supply and Demand (unmitigated H1 demand block), Candlestick Patterns (rejection wicks at 79442). Indicator Alignment: Momentum Indicators (M15 RSI at 45.0 and Stochastic near oversold). Reasoning: The price swept the liquidity below the minor lows but failed to close below 79442, leaving a series of rejection wicks. This unmitigated H1 demand block is validated by the M15 RSI resetting to 45.0 and Stochastic reaching oversold territory, indicating that the downward momentum is exhausted and a sharp reversal is highly probable.",
-            "Confluence 5: Price Action Concepts: Malaysian SNR (key structural level at 79500), Chart Patterns (bullish flag/consolidation on H1), Break of Structure (BOS) (HTF bullish structure intact). Indicator Alignment: Volume Indicators (VPVR high volume node / POC support). Reasoning: The consolidation on H1 resembles a bullish flag pattern just above the key structural Malaysian SNR level of 79500. VPVR shows a high volume node (POC) acting as a strong defensive shelf. Since the HTF bullish structure is fully intact, this volume accumulation at support validates a preemptive long entry before the next expansion phase."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The HTF trend is strongly bullish, and the price has pulled back to a major confluence of support including the 0.5 Fibonacci retracement, the 79500 minor quarter level, and a strong H1/M15 demand zone. Multiple wick-rejections at 79442 confirm active buyer defense, while momentum indicators are fully reset, presenting a high-probability, low-risk preemptive buying opportunity."
-          },
-          "risk_profile": {
-            "expected_rr": "1:14.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
