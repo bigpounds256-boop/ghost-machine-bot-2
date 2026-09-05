@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05 16:30 UTC",
+  "generated_at": "2026-09-05 16:41 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,46 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.16210 - 1.16225",
+          "entry_price": "1.16220",
+          "invalidation_stop": "1.16235",
+          "take_profit": {
+            "primary_tp": "1.16125",
+            "extreme_tp": "1.16010",
+            "risk_reward_ratio": "1:14"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Integration of Malaysian SNR (MSNR), Candle Range Theory (CRT), and Supply/Demand Zones. The repeated H1/M15 wick rejections at the 1.1622 resistance level define a clear MSNR key barrier and the upper boundary of the CRT consolidation range. This aligns with a localized H4 supply zone, validated by the flat EMA50/200 trend indicators which confirm a range-bound environment where selling the range high is statistically favored.",
+            "Confluence 2: Integration of ICT / Smart Money Concepts (SMC), Candlestick Patterns, and Chart Patterns. The rectangle chart pattern shows price repeatedly sweeping internal buy-side liquidity (BSL) just below 1.16225, leaving behind multiple shooting star and long upper wick candlestick patterns on the H1 and M15 timeframes. This distribution behavior is validated by momentum indicators (RSI at 40.9 and Stochastic turning down from overbought), indicating a lack of buying pressure to break out.",
+            "Confluence 3: Integration of Quarter Theory (QT), Fair Value Gap (FVG), and Supply/Demand Zones. The 1.1622 entry zone sits immediately below the major 1.1625 quarter level, which acts as a psychological ceiling. This zone overlaps with an unmitigated bearish FVG from the H4 drop on Sep 4. Volatility indicators (extremely low M15 ATR of 0.0005 and flat Bollinger Bands) confirm a tight squeeze, making an explosive breakout unlikely without first sweeping the range lows.",
+            "Confluence 4: Integration of Fibonacci Retracement, Standard Deviation (SD), and Chart Patterns. A Fibonacci retracement from the Sep 4 swing high (1.16336) to swing low (1.15848) places the 1.1622 level near the 0.786 deep retracement zone. This level also represents a +2 Standard Deviation deviation from the consolidation mean, aligning with the upper boundary of the rectangle pattern. Volume indicators (low overall volume with spikes on upper wicks) confirm absorption of buyers at this extreme.",
+            "Confluence 5: Integration of ICT / SMC (Liquidity Pools), Break of Structure (BOS), and Candle Range Theory (CRT). While no HTF BOS has occurred, the internal structure shows a clear intent to target the sell-side liquidity (SSL) resting below the 1.1612 range low. The CRT daily open structure suggests that after failing to expand above 1.1622, the price must expand downwards to seek liquidity. This is validated by the flat Ichimoku cloud and low ADX, confirming range-bound mechanics where price oscillates between the defensive staff (1.1622) and the liquidity pool (1.1612/1.1601)."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The market is in an extremely tight sideways consolidation with repeated, highly precise wick rejections at the 1.1622 resistance level (defensive staff). 15 out of 17 doctrine checks align for a sell-limit order at the top of this range, targeting the sell-side liquidity below 1.1612, offering an exceptional risk-to-reward ratio of over 1:10 with a tight invalidation stop just above the range highs."
+          },
+          "risk_profile": {
+            "expected_rr": "1:14",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
