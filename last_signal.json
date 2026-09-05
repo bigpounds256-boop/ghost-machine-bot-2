@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05 09:28 UTC",
+  "generated_at": "2026-09-05 09:41 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,17 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extreme low-volatility, sideways consolidation phase across all analyzed timeframes (H4, H1, M15, M5). The M15 ATR(14) is exceptionally low at 0.00023 (2.3 pips), and the RSI is neutral at 47.4. There is a complete lack of directional momentum, trend alignment, volume, or structural breaks (BOS/CHoCH). No valid predictive defensive staff zone can be established because price is printing micro-ranges with dojis and spinning tops, indicating a weekend or holiday market state with no institutional participation. Under the Preemptive Predictive Wick-Rejection doctrine, entering in these conditions carries high risk of chop and invalidation, failing to meet the mandatory 80% confidence threshold for execution.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 7,
-            "sell_conditions_met": 7,
-            "confidence_percentage": "41.18%",
-            "dominant_bias_reason": "Both scenarios score equally low at 41.18% due to a complete lack of trend, momentum, volume, and structural expansion. The market is in an ultra-tight consolidation with an ATR of only 2.3 pips, making any preemptive entry highly speculative and non-compliant with the 80% execution threshold."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
