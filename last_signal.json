@@ -1,23 +1,33 @@
 {
-  "generated_at": "2026-09-06 07:00 UTC",
+  "generated_at": "2026-09-06 07:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extreme flatline consolidation state with virtually identical candle metrics across H4, H1, M15, and M5 timeframes (Open: 4428.95, High: 4429.15, Low: 4428.88). This indicates a frozen data feed or weekend market closure with zero real volatility (M15 ATR is 0.2629). Under the Preemptive Predictive Wick-Rejection doctrine, entering a trade in a completely illiquid, frozen market is highly invalid as no reliable defensive staff zone can be established. Although the HTF trend is bearish, the lack of momentum, volume, and structural expansion yields a confidence level of 64.7% for the Sell scenario and 5.9% for the Buy scenario, both falling well below the mandatory 80% execution threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 11,
+            "confidence_percentage": "64.7%",
+            "dominant_bias_reason": "The dominant bias is bearish due to the H4 bearish trend, bearish HTF BOS, and unmitigated supply zones above 4440.00. However, the current price action is completely frozen in a 0.27-dollar range with zero volume and flat momentum (RSI 50.4), failing to meet the 80% confidence threshold required for a preemptive defensive staff entry."
+          }
+        }
       }
     }
   }
