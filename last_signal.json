@@ -1,43 +1,23 @@
 {
-  "generated_at": "2026-09-06 09:11 UTC",
+  "generated_at": "2026-09-06 09:28 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, low-volatility sideways consolidation across all analyzed timeframes (H4, H1, M15, M5). The M15 ATR is compressed at 0.00016 (1.6 pips), and the price is flatlining around 1.16196. While a Sell scenario has minor alignment near the range resistance (1.1622 - 1.1625) using concepts like Supply/Demand, Quarter Theory, and Malaysian SNR, the lack of trend alignment, momentum confirmation, volume data, and structural breaks (BOS/FVG) keeps the confidence score at 41.18%, well below the mandatory 80% threshold required by the doctrine. Therefore, no high-probability predictive defensive staff zone can be established, and the system remains flat.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 1,
-            "sell_conditions_met": 7,
-            "confidence_percentage": "41.18%",
-            "dominant_bias_reason": "The dominant bias is Sell due to price trading in the premium of the local consolidation range near the 1.1622-1.1625 resistance zone, aligned with Quarter Theory and Malaysian SNR. However, due to the lack of trend, momentum, and volume confirmation, the confidence is only 41.18%, which is below the 80% execution threshold."
-          }
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is exhibiting extreme flatline consolidation with virtually identical candle metrics across H4, H1, M15, and M5 timeframes (price bound within a tight 0.26 USD range). This behavior is characteristic of a weekend market close or data freeze. Volatility is non-existent (M15 ATR is 0.26268), momentum is completely neutral (M15 RSI at 50.6), and there are no structural expansions, volume signals, or valid defensive staff zones. Under the doctrine, a minimum of 80% confidence (14 out of 17 aligned concepts) is required for execution. Neither scenario comes close to this threshold.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 0,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "5.88%",
-            "dominant_bias_reason": "The H4 trend is technically bearish, which gives the sell scenario a nominal single-concept alignment. However, the lack of lower-timeframe structure, volume, momentum, or any actionable SMC/MSNR/CRT patterns prevents any trade execution."
-          }
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
