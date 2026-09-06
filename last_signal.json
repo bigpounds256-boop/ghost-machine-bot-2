@@ -1,17 +1,66 @@
 {
-  "generated_at": "2026-09-06 13:01 UTC",
+  "generated_at": "2026-09-06 13:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "80010.00 - 80080.00",
+          "entry_price": "80045.00",
+          "invalidation_stop": "80125.00",
+          "take_profit": {
+            "primary_tp": "79580.00",
+            "extreme_tp": "77650.00",
+            "risk_reward_ratio": "1:29.9"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC, Supply/Demand, and Quarter Theory interact with Trend Indicators (EMA/Ichimoku). The H4 bearish trend is respected as price approaches the major psychological 80000 level (Quarter Theory), which aligns with an unmitigated H4 supply zone (80100-80200). This zone acts as a defensive staff where institutional sell orders are clustered, validated by the flat/bearish EMA50 on H1 acting as dynamic overhead resistance, preventing a clean breakout.",
+            "Confluence 2: MSNR, Candlestick Patterns, and CRT interact with Volatility Indicators (Bollinger Bands/ATR). Malaysian SNR identifies strong resistance at 80010-80100. Multiple H1/M15 candles show long upper wicks (Candlestick Patterns) rejecting this zone, indicating aggressive selling pressure. Candle Range Theory (CRT) shows the current H4 candle's high is failing to sustain above the open of previous bearish expansions, while the upper Bollinger Band on M15 contracts near 80050, defining a clear volatility boundary for a preemptive wick-rejection entry.",
+            "Confluence 3: BOS, FVG, and Chart Patterns interact with Momentum Indicators (RSI). The H4 structure remains bearish following the recent Break of Structure (BOS) below 80500. The current sideways consolidation (Chart Pattern) is a distribution phase mitigating a bearish Fair Value Gap (FVG) on the H1 timeframe. As price taps the 80045 entry, the M15 RSI (currently 58.1) is projected to reach overbought territory (>70) and diverge, signaling momentum exhaustion at the range high.",
+            "Confluence 4: SMC Liquidity Sweeps, Trendline Bounces, and Quarter Theory interact with Volume Indicators (VPVR). A minor ascending trendline on M5 is set to break as price sweeps buy-stop liquidity above the 80000 psychological level (Quarter Theory). This liquidity sweep mitigates the defensive staff. VPVR analysis qualitatively shows a low-volume node above 80100, which acts as a structural ceiling, while the high-volume node (POC) sits lower at 79850, acting as a powerful downside magnet once the sweep is completed.",
+            "Confluence 5: Fibonacci Retracement, CRT, and Supply/Demand zones interact with Volatility Indicators (ATR). The 80045 entry sits precisely at the 0.5 Fibonacci retracement level of the recent H4 impulse leg down. This level overlaps with the M15 supply zone and CRT range-high boundaries. The M15 ATR of 67.11 allows us to place a highly optimized, tight stop loss at 80125 (just outside 1.5x ATR from the entry), ensuring structural protection above the HTF invalidation level while maximizing the risk-to-reward ratio."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The H4 trend is firmly bearish, and the lower timeframes (H1/M15/M5) are in a sideways consolidation directly below the major 80000 psychological level. Multiple wick rejections on H1/M15 confirm that the 80010-80100 zone is acting as a highly active defensive staff. A preemptive sell-limit order at 80045 targets the liquidity sweep of these highs before continuation downward, protected by a tight stop just above the HTF invalidation level of 80107.99."
+          },
+          "risk_profile": {
+            "expected_rr": "1:29.9",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely low-volatility sideways consolidation with an ATR of 0.0001 (1 pip) and flatlined price action across all timeframes (H4, H1, M15, M5). There is no clear structural break (BOS), no valid Fair Value Gaps (FVG), and no mitigation of key supply/demand zones. Although the M15 RSI is oversold at 21.8, the lack of volatility, volume, and structural alignment prevents the identification of a high-probability predictive defensive staff zone.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 0,
+            "confidence_percentage": "5.88%",
+            "dominant_bias_reason": "A minor bullish bias exists solely due to the oversold M15 RSI (21.8), but without multi-timeframe structural alignment, volume, or volatility, the confidence is extremely low. Under the strict rules of the doctrine, a minimum of 80% confidence is required to execute, making this a clear No Trade scenario."
+          }
+        }
       }
     },
     "XAU/USD": {
