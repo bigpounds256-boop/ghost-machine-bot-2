@@ -1,27 +1,17 @@
 {
-  "generated_at": "2026-09-06 12:11 UTC",
+  "generated_at": "2026-09-06 12:33 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely low-volatility, sideways consolidation across all timeframes (H4, H1, M15, M5) with an M15 ATR of only 0.0001 (1 pip). There is no clear structural trend, no break of structure (BOS), and no institutional volume to validate a high-probability entry. Although the M15 RSI is oversold at 20.8, the lack of volatility expansion, unmitigated Fair Value Gaps (FVGs), or clear candlestick rejection patterns prevents the identification of a reliable predictive defensive staff zone. Entering under these conditions violates the strict 80% confidence threshold required by the doctrine.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 0,
-            "confidence_percentage": "17.65%",
-            "dominant_bias_reason": "The dominant bias is weakly bullish due to the oversold M15 RSI (20.8) and price hovering near the lower boundary of the minor intraday range (1.1612 - 1.1615). However, because trend indicators (EMA, Ichimoku, ADX), volume, and volatility (ATR 0.0001) are completely flat and neutral, there is no momentum or structural alignment to support a high-confidence preemptive buy-limit order. Sell conditions are completely absent as selling at the bottom of a tight range into oversold momentum is structurally invalid."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
