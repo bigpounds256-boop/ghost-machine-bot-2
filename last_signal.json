@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06 15:42 UTC",
+  "generated_at": "2026-09-06 15:53 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,13 +11,52 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "1.16070 - 1.16090",
+          "entry_price": "1.16080",
+          "invalidation_stop": "1.16055",
+          "take_profit": {
+            "primary_tp": "1.16205",
+            "extreme_tp": "1.16330",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Price action has executed a clean ICT liquidity sweep of the previous H1 session low (1.16091) down to 1.16069, tapping directly into a major H4 demand zone (1.16050 - 1.16090). This level aligns with a key MSNR rejection level where historical buyers stepped in. This structural demand is validated by the M15 RSI reaching an oversold state of 29.0, indicating seller exhaustion and a high probability of a sharp, preemptive wick rejection at the defensive staff.",
+            "Confluence 2: Price is consolidating just above the major Quarter Theory level of 1.16000, specifically reacting within the 1.16070-1.16090 defensive staff. The M15/M5 candlestick patterns show long lower wicks, indicating immediate absorption of sell orders. CRT shows range contraction at the lower boundary of the H4 sideways range. This contraction is confirmed by the extremely low M15 ATR of 0.00024 and price hugging the lower Bollinger Band, signaling a high-probability volatility expansion back toward the range mean.",
+            "Confluence 3: On the M5 timeframe, a minor double bottom chart pattern has formed, followed by a minor BOS of the swing high at 1.16094. This impulsive move has left an unmitigated M15 FVG between 1.16090 and 1.16110. The VPVR shows a high volume node resting above at 1.1615-1.1620, which acts as a gravitational pull, ensuring that a preemptive limit order at 1.16080 will capture the wick-rejection before price expands upward.",
+            "Confluence 4: The retracement to 1.16080 represents a deep 78.6% Fibonacci retracement of the recent H4 swing up (1.15955 to 1.16248), mitigating the origin of the previous bullish expansion. This zone coincides with a bounce off a minor descending trendline on the M15 chart. Since the HTF trend is sideways/neutral, the flat EMA50/200 and thin Ichimoku cloud confirm that price is highly likely to mean-revert from this extreme discount zone back to the equilibrium.",
+            "Confluence 5: The defensive staff zone at 1.16070-1.16090 represents a critical MSNR support level that overlaps with the lower boundary of the CRT daily range. This demand zone is highly defensive, as any push below 1.16069 would invalidate the local bullish structure. Standard Deviation analysis shows the current price is trading at -2 SD from the M15 mean, indicating an extreme statistical anomaly that supports a preemptive buy-limit entry to capture the rapid mean-reversion wick rejection."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The Buy scenario meets 15 out of 17 doctrine checks (88.2% confidence), driven by a clean liquidity sweep of the H1 low into a major H4 demand zone, extreme oversold momentum (M15 RSI at 29.0), and low volatility compression (ATR 0.00024) indicating an imminent bullish mean-reversion expansion. The Sell scenario fails due to extreme discount pricing and lack of structural breakdown."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
