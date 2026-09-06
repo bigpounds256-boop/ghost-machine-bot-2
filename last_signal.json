@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-06 02:12 UTC",
+  "generated_at": "2026-09-06 02:30 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "79830.00 - 79880.00",
+          "entry_price": "79868.00",
+          "invalidation_stop": "79780.00",
+          "take_profit": {
+            "primary_tp": "80750.00",
+            "extreme_tp": "81420.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Price is retracing into a highly defined demand zone between 79830 and 79880, which aligns with an unmitigated bullish order block on the H1 timeframe (originating from the 79868.01 low). This zone acts as a strong Malaysian SNR support level and is validated by the 0.5 to 0.618 Fibonacci retracement levels of the recent swing from 79694.00 to 80067.45.",
+            "Confluence 2: Under Quarter Theory, the 80000 level is a major psychological barrier. Price has broken above it and is now retracing to the minor quarter level of 79875. Candle Range Theory indicates accumulation during the Asian session, with the current price in the discount zone of the daily range. This forms a potential bull flag chart pattern on the M15 timeframe, supported by the M15 RSI at 63.5, which remains in bullish territory and indicates strong underlying momentum.",
+            "Confluence 3: The H1 timeframe shows a bullish Break of Structure (BOS) as price surpassed the previous swing high of 79947.99 to reach 80067.45. The current retracement is bouncing off a short-term bullish trendline. Candlestick patterns on the H4 timeframe show rising lows and long lower rejection wicks, confirming that the HTF bullish trend (with EMA50 safely above EMA200) is actively defending this zone.",
+            "Confluence 4: The defensive staff zone at 79868.00 sits just above major sell-side liquidity pools. By placing a preemptive buy-limit order here, we exploit the Malaysian SNR support and demand zone dynamics. The M15 ATR of 95.83 provides the necessary volatility buffer, ensuring our tight stop loss at 79780.00 is placed safely below the HTF structural invalidation level.",
+            "Confluence 5: The accumulation range defined by Candle Range Theory shows that volume has been concentrated on the upside, as reflected by a rising OBV indicator. The bullish BOS on the H1 timeframe confirms that buyers are in control, and the retracement to the 79875 minor quarter level represents a high-probability entry point to capture the next leg of the HTF continuation towards the primary liquidity targets."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 16,
+            "sell_conditions_met": 10,
+            "confidence_percentage": "94.12%",
+            "dominant_bias_reason": "The HTF (H4) trend is strongly bullish with rising lows and a clear Break of Structure (BOS) on the H1 timeframe. The Buy scenario meets 16 out of 17 doctrine conditions (94.12% confidence), supported by a highly defined defensive staff zone at 79868.00, which aligns with a bullish order block, Malaysian SNR support, and the 0.5-0.618 Fibonacci retracement levels."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
