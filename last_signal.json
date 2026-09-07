@@ -1,56 +1,17 @@
 {
-  "generated_at": "2026-09-07 01:01 UTC",
+  "generated_at": "2026-09-07 01:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.1620 - 1.1625",
-          "entry_price": "1.1622",
-          "invalidation_stop": "1.1626",
-          "take_profit": {
-            "primary_tp": "1.1608",
-            "extreme_tp": "1.1582",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Price is retracing into a premium pricing zone, testing the 1.16250 Quarter Theory level which confluences with a clear M15/H1 bearish supply zone (origin of the drop to 1.1607). This mitigation of the supply zone is validated by the M15 RSI rising to 65.1, indicating that the short-term bullish retracement is reaching overbought exhaustion and is primed for a preemptive wick-rejection.",
-            "Confluence 2: Multiple upper wicks on the M15 and M5 candles near 1.1620 demonstrate strong defensive selling pressure. This aligns with the 50% equilibrium of the H1 candle range (CRT) and the MSNR resistance level at 1.1620-1.1622. The Bollinger Bands upper band is being actively tested and rejected here, confirming a high-probability wick-rejection point.",
-            "Confluence 3: The sharp drop from 1.16423 to 1.1607 created a bearish Break of Structure (BOS) on the lower timeframes, establishing a bearish market structure. The subsequent corrective move up to 1.1622 forms a bearish flag/double top pattern, testing the counter-trendline. This is validated by the MACD showing a loss of bullish momentum on the M15 timeframe as it approaches the zero line.",
-            "Confluence 4: The aggressive spike to 1.16423 swept buy-side liquidity before leaving a bearish FVG/unmitigated gap between 1.1620 and 1.1625. As price returns to fill this gap, it taps into the defensive staff zone. The low M15 ATR of 0.00029 indicates a compression phase, suggesting that a high-velocity expansion downward is imminent once the defensive staff is mitigated.",
-            "Confluence 5: The 1.16250 key quarter level acts as a psychological barrier, reinforced by the MSNR resistance and the upper boundary of the CRT range. VPVR shows a high-volume node (POC) just below this level, indicating that institutional sellers are defending this zone. The lack of buying volume on the retracement confirms that the move is corrective, validating a preemptive sell-limit order."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The market is in a sideways/neutral regime across all timeframes, making range-bound plays highly favorable. A massive liquidity sweep and wick rejection at 1.16423 established a strong bearish bias. The subsequent drop broke lower-timeframe structure (BOS), and the current corrective retracement to 1.1622 mitigates a bearish FVG and supply zone just below the 1.16250 Quarter Theory level. With M15 RSI at 65.1 indicating exhaustion and multiple upper wicks confirming defensive selling, a preemptive sell-limit order at 1.1622 offers an exceptional 1:10 risk-to-reward ratio with a tight 4-pip stop loss."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
