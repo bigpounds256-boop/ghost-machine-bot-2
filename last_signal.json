@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-07 11:57 UTC",
+  "generated_at": "2026-09-07 12:14 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "79550.00 - 79650.00",
-          "entry_price": "79585.00",
-          "invalidation_stop": "79695.00",
-          "take_profit": {
-            "primary_tp": "79050.00",
-            "extreme_tp": "78450.00",
-            "risk_reward_ratio": "1:10.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC, Supply/Demand, and Trend Indicators. The H4 and H1 timeframes exhibit a clear bearish market structure with consecutive lower highs and lower lows. A prominent H1 bearish supply zone (order block) is established between 79596 and 79759. This aligns with the downward-sloping EMA50 and EMA200 on the M15 timeframe, which act as dynamic overhead resistance, validating a preemptive sell-limit entry at the 79585.00 defensive staff.",
-            "Confluence 2: Malaysian SNR (MSNR), Quarter Theory (QT), and Volatility Indicators. The entry price of 79585.00 sits directly within the MSNR resistance zone (79550-79650) and is reinforced by the 79500 Medium Quarter Level and 79750 Minor Quarter Level. This structural ceiling is validated by the upper band of the M15 Bollinger Bands, which is currently contracting and sloping downwards, indicating that any upward wick into this zone will face immediate volatility-based rejection.",
-            "Confluence 3: Candle Range Theory (CRT), Candlestick Patterns, and Momentum Indicators. The H1 candle at 07:00 (O:79659.28, C:79397.83) represents a strong bearish expansion that defined a new trading range. Subsequent M15 candles have failed to close above the 50% equilibrium of this range, forming multiple long upper wicks (rejections) at 79530 and 79550. This price action is supported by the M15 RSI(14) at 46.2, which remains capped below the 50-neutral line, confirming bearish momentum dominance.",
-            "Confluence 4: Break of Structure (BOS), Fair Value Gap (FVG), and Volume Indicators. The aggressive drop to 79001.10 created a clear bearish Break of Structure (BOS) on the H1 timeframe, leaving behind an unmitigated Fair Value Gap (FVG) between 79487.01 and 79644.55. A preemptive sell-limit at 79585.00 targets the mitigation of this FVG. This is validated by the VPVR (Volume Profile), which shows a high-volume node (HVN) just above 79600, acting as a heavy barrier to any bullish retracement.",
-            "Confluence 5: Fibonacci Retracement, Standard Deviation, and Chart Patterns. The entry price of 79585.00 aligns precisely with the 0.618 Fibonacci retracement level (79572.80) of the recent H1 swing high (79926.04) to swing low (79001.10) impulse leg. This level is further reinforced by the +2 Standard Deviation band of the short-term VWAP on the M5 timeframe and a bearish flag pattern visible on the M15 timeframe, indicating a high-probability preemptive wick-rejection point."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The dominant bias is heavily bearish due to aligned H4/H1 market structures, a clear bearish Break of Structure (BOS) on H1, and the presence of an unmitigated bearish FVG and supply zone. Momentum (RSI 46.2) and trend indicators (EMA/Ichimoku) confirm bearish control, while the buy scenario fails on 15 out of 17 structural and indicator checks."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
