@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-07 13:01 UTC",
+  "generated_at": "2026-09-07 13:13 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "79610.00 - 79640.00",
+          "entry_price": "79625.00",
+          "invalidation_stop": "79665.00",
+          "take_profit": {
+            "primary_tp": "79282.00",
+            "extreme_tp": "79010.00",
+            "risk_reward_ratio": "1:15.3"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC Bearish Order Block and H1 Supply Zone (79650 - 79825) aligned with a bearish Break of Structure (BOS) below 79540.38. The preemptive entry targets the mitigation of this supply zone before continuation, supported by bearish H4/H1 EMA50/200 trend indicators.",
+            "Confluence 2: Unmitigated M15 Fair Value Gap (FVG) between 79629.99 and 79659.27 overlapping with Malaysian SNR (MSNR) resistance at 79650 and the Quarter Theory (QT) psychological level of 79750. Volatility indicators (Bollinger Bands upper band) align near 79650 to project a sharp mean-reversion rejection.",
+            "Confluence 3: Bearish descending channel (Chart Pattern) on H1/M15 with price bouncing to the upper boundary, intersecting a descending trendline from 80559.99. M15/M5 Candlestick Patterns show shooting star/pin bar rejections at 79627.43, while momentum indicators (RSI at 59.5) reject the 60 level.",
+            "Confluence 4: Candle Range Theory (CRT) shows the current H4 candle's high (79627.43) sweeping liquidity of previous H1 swing highs into the H1 supply zone, indicating institutional distribution. Volume indicators (OBV/VPVR) show a high-volume node acting as resistance with declining volume on the retracement.",
+            "Confluence 5: Fibonacci Retracement of the recent swing down (79926.04 to 79001.1) places the 0.618-0.707 golden pocket at 79573 - 79655, overlapping with the 79650 QT level. Momentum indicators (MACD) show bearish histogram expansion, confirming HTF sellers remain dominant."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment across H4 and H1 trends, with price retracing into an unmitigated M15 FVG and H1 supply zone (79610 - 79640). Rejection of the 79627.43 high confirms selling pressure at the descending trendline, supported by declining volume and RSI rejecting the 60 level."
+          },
+          "risk_profile": {
+            "expected_rr": "1:15.3",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
