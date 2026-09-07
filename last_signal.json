@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-07 11:10 UTC",
+  "generated_at": "2026-09-07 11:32 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "79480.00 - 79550.00",
-          "entry_price": "79515.00",
-          "invalidation_stop": "79695.00",
-          "take_profit": {
-            "primary_tp": "79050.00",
-            "extreme_tp": "77550.00",
-            "risk_reward_ratio": "1:10.9"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H1 bearish order block formed between 79530.47 and 79644.55 acts as a major supply zone. This zone directly overlaps with the 79500 Quarter Theory psychological level, where institutional sell orders are clustered. This confluence is validated by the EMA50/200 bearish alignment on the M15 timeframe, which acts as dynamic resistance, preventing price from sustaining any upward retracement and forcing a preemptive wick-rejection.",
-            "Confluence 2: The aggressive downside expansion on H1 broke key market structure (BOS) below 79568.6, leaving behind an unmitigated Fair Value Gap (FVG) between 79530.47 and 79644.55. This FVG aligns with a prominent MSNR resistance level. As price retraces into this zone, the M15 RSI at 51.2 indicates that momentum is failing to shift bullish, confirming that the retracement is merely a liquidity grab before continuation.",
-            "Confluence 3: The H1 candle at 11:00 closed at its absolute low (79304.22), establishing strong bearish continuation. Under Candle Range Theory (CRT), the current H4 candle is expanding downwards from its open. This expansion is guided by a descending trendline on the M15 timeframe. The M15 ATR of 102.41571 provides the necessary volatility for a swift wick-rejection at the 79515.00 defensive staff, ensuring a rapid transition from entry to profit.",
-            "Confluence 4: The 0.382 Fibonacci retracement of the recent swing high to low (80426.00 to 79001.10) sits precisely at 79545.60, reinforcing the local supply zone. This level forms the upper boundary of a descending triangle chart pattern on the M15 timeframe. VPVR analysis indicates a high-volume node just above this zone, meaning any upward attempt will face heavy absorption, leading to a sharp rejection back into the downtrend.",
-            "Confluence 5: The +1 Standard Deviation of the short-term VWAP intersects with the 0.382 Fibonacci circle arc at 79525.00, marking the outer boundary of the defensive staff. This intersection aligns with the upper Bollinger Band on the M5 timeframe, suggesting immediate exhaustion upon contact. This setup is designed to sweep internal liquidity pools before plunging to target the major HTF sell-side liquidity resting below 79000.00, eventually reaching the major support pool at 77550.00."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100%",
-            "dominant_bias_reason": "Strong multi-timeframe bearish alignment across H4, H1, and M15. Price is rejecting key quarter levels and descending trendlines, with a clear bearish FVG and order block acting as a defensive staff at 79515.00."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.9",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
@@ -56,7 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
