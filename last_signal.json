@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-07 10:31 UTC",
+  "generated_at": "2026-09-07 10:45 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "79480.00 - 79530.00",
-          "entry_price": "79510.00",
-          "invalidation_stop": "79590.00",
-          "take_profit": {
-            "primary_tp": "79050.00",
-            "extreme_tp": "78660.00",
-            "risk_reward_ratio": "1:10.6"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC mitigation of the H1 bearish order block aligns with Malaysian SNR (MSNR) resistance at 79500 and the 79500 Quarter Theory level, validated by the bearish slope of the EMA50/200 on the H1 timeframe.",
-            "Confluence 2: H1 Candle Range Theory (CRT) shows downward expansion that broke market structure (BOS) below 79540, leaving an unmitigated Fair Value Gap (FVG) starting at 79530.47, with the M15 RSI at 38.4 confirming dominant bearish momentum.",
-            "Confluence 3: A bearish trendline connecting recent H1 lower highs intersects the H1 supply zone (79500-79550) where bearish wicks on M15 indicate active distribution, supported by an M15 ATR of 145.67 indicating sufficient volatility for a sharp rejection.",
-            "Confluence 4: Fibonacci retracement levels (0.5 at 79463.5 and 0.618 at 79572.8) align with a bearish flag chart pattern on M15, preparing to sweep liquidity below 79001.1, validated by a qualitatively declining OBV and high volume node resistance overhead.",
-            "Confluence 5: The 79500 Quarter Theory level acts as a defensive staff barrier, coinciding with Malaysian SNR and the H1 FVG, while Bollinger Bands expand downwards on the H1 timeframe to open up space for a deep extension."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "Strong multi-timeframe bearish alignment (H4/H1/M15) combined with a clear break of structure (BOS) below 79540, leaving an unmitigated H1 FVG and supply zone at the 79500 Quarter Theory level. Indicators (RSI 38.4, bearish EMAs, expanding Bollinger Bands) validate a high-probability preemptive wick-rejection at the defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.6",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
