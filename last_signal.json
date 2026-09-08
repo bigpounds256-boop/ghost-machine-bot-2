@@ -1,17 +1,56 @@
 {
-  "generated_at": "2026-09-08 03:12 UTC",
+  "generated_at": "2026-09-08 03:30 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "79100.00 - 79195.00",
+          "entry_price": "79105.00",
+          "invalidation_stop": "79285.00",
+          "take_profit": {
+            "primary_tp": "78680.00",
+            "extreme_tp": "77305.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC (Bearish Order Block), Supply and Demand (Supply Zone), and Quarter Theory (79000 level) align with Trend Indicators (EMA50/200 sloping downwards on H1/M15). The bearish order block on H1 at 79300-79485 acts as a strong defensive staff where sellers are heavily positioned.",
+            "Confluence 2: Break of Structure (BOS), Candlestick Patterns (Bearish Engulfing), and Candle Range Theory (CRT) align with Momentum Indicators (RSI at 39.7). The H1 bearish engulfing candle led to a clean BOS on M15 below 78930, confirming that the expansion phase is downwards and pullbacks are high-probability sells.",
+            "Confluence 3: Fair Value Gap (FVG), Malaysian SNR (MSNR), and Trendline Breaks & Bounces align with Volatility Indicators (ATR of 171.86). A prominent bearish FVG on M15 between 79002 and 79100 overlaps with the MSNR resistance at 79100 and a descending trendline, where high ATR ensures a sharp wick-rejection.",
+            "Confluence 4: Fibonacci Retracement (0.5 - 0.618), Chart Patterns (Bearish Flag), and SMC (Liquidity Sweep) align with Volume Indicators (OBV declining). The 0.5 Fib retracement of the recent M15 impulse leg sits at 79105, representing a premium pricing area where liquidity will be swept before continuation.",
+            "Confluence 5: Standard Deviation (SD), Quarter Theory (79250 level), and Supply and Demand align with Volatility Indicators (Bollinger Bands upper band acting as dynamic resistance). A preemptive limit order at 79105.00 captures the wick-rejection as price spikes to test the defensive staff before resuming the HTF bearish trend."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 16,
+            "confidence_percentage": "94.12%",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment across H4, H1, and M5, with a clear Break of Structure (BOS) on M15, a bearish FVG between 79002 and 79100, and price trading below the 79000 Quarter Theory psychological level. The preemptive sell-limit at 79105.00 targets the 0.5 Fibonacci retracement level within the defensive staff zone, offering an exceptional risk-to-reward ratio with a tight invalidation stop above the H1 FVG boundary."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
