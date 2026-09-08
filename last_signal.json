@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08 05:11 UTC",
+  "generated_at": "2026-09-08 05:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.1621 - 1.1623",
-          "entry_price": "1.1622",
-          "invalidation_stop": "1.1620",
-          "take_profit": {
-            "primary_tp": "1.1634",
-            "extreme_tp": "1.1642",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC mitigation of the H1 bullish order block combined with a strong H1 demand zone (1.1621 - 1.1623) and candlestick patterns showing long lower wicks on M15/H1 candles. This is validated by the momentum indicator (M15 RSI at 31.1), which is deeply oversold, indicating exhaustion of the bearish move and an imminent reversal.",
-            "Confluence 2: Malaysian SNR support level at 1.1622 aligns with a minor ascending trendline from the 1.1607 low and the origin of the previous M15 Break of Structure (BOS) at 1.16278. This is validated by volatility indicators (low ATR of 0.00029 and tightly contracted Bollinger Bands), suggesting a volatility squeeze ready to expand from key support.",
-            "Confluence 3: Candle Range Theory (CRT) indicates an accumulation phase near the low of the session range, where a sweep of the 1.1625 key quarter level (Quarter Theory) forms a double bottom chart pattern on M5/M15. This is validated by volume indicators (VPVR showing a high volume node at 1.1625 acting as a magnet, with low volume below 1.1622, indicating a lack of selling pressure).",
-            "Confluence 4: Mitigation of an unmitigated H1 Fair Value Gap (FVG) between 1.1621 and 1.1624, combined with an SMC liquidity sweep of the minor lows at 1.16228 and demand zone defense. This is validated by trend indicators (EMA50/200 being flat on H4/H1), confirming a sideways/neutral market where buying at the range low is highly favored.",
-            "Confluence 5: Fibonacci Retracement shows a deep discount entry at the 0.886 level (retracement of the move from 1.1621 to 1.16348) aligning with Malaysian SNR support at 1.1622. This is validated by the Standard Deviation tool showing price trading at -2 SD from the mean on M15, indicating an extreme statistical deviation ripe for mean reversion."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "EUR/USD is consolidating in a sideways range on all timeframes. Price has retraced to a deep discount zone (1.1621 - 1.1623) which aligns with a major H1 demand zone, a bullish order block, and Malaysian SNR support. With M15 RSI oversold at 31.1 and price at -2 SD, a preemptive buy limit at 1.1622 offers an exceptional 1:10 Risk:Reward ratio targeting the HTF liquidity cluster at 1.1642, with a tight invalidation stop at 1.1620."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
