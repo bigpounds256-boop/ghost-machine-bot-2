@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-09 02:31 UTC",
+  "generated_at": "2026-09-09 02:45 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "78930.00 - 78980.00",
-          "entry_price": "78955.00",
-          "invalidation_stop": "79085.00",
-          "take_profit": {
-            "primary_tp": "78275.00",
-            "extreme_tp": "77655.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC bearish mitigation block, H4 Supply Zone (78930 - 79100), and Quarter Theory (79000 Large Quarter) align with the bearish EMA50/200 trend indicators on H4, confirming the current upward move is a corrective retracement into a premium defensive staff zone.",
-            "Confluence 2: Malaysian SNR (MSNR resistance at 78930), Candle Range Theory (CRT premium expansion), and H1 FVG (unmitigated gap between 78930 and 79266) align with the M15 RSI at 62.4, indicating that bullish momentum is exhausting as price approaches the key wick-rejection zone.",
-            "Confluence 3: Retest of the broken H4 counter-trendline, bearish flag chart pattern, and bearish candlestick patterns (multiple long upper wicks on H4 at 78978.39 and 78994.5) align with Volatility indicators (M15 ATR of 122.23), confirming that the defensive staff zone is highly likely to produce a sharp preemptive wick rejection.",
-            "Confluence 4: HTF bearish Break of Structure (BOS) below 78680, SMC liquidity sweep of minor LTF highs, and Quarter Theory (79000 level) align with Volume indicators (declining volume on the M15/M5 bullish retracement), showing a lack of buying pressure to sustain a breakout above the defensive staff.",
-            "Confluence 5: Fibonacci Retracement (0.618-0.786 retracement of the recent H4 leg down), Fibonacci Circles, and Standard Deviation (+2 SD deviation on LTF) align with the bearish Ichimoku cloud on H1, validating the 78955.00 entry price as a high-probability turning point for a rapid continuation toward the 77620.01 liquidity pool."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "H4 market structure is strongly bearish with clear lower highs and lower lows, supported by a bearish BOS. The current M15/H1 bullish bounce is a low-volume corrective retracement into a major H4 supply zone and the 79000 Large Quarter level. Preemptive entry at the 78955.00 defensive staff captures the wick rejection before HTF continuation."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
