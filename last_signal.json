@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 00:14 UTC",
+  "generated_at": "2026-09-09 00:42 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -9,13 +9,13 @@
           "asset": "BTC/USD",
           "bias": "SELL",
           "trade_type": "SELL-LIMIT",
-          "entry_zone": "78625.00 - 78665.00",
-          "entry_price": "78645.00",
-          "invalidation_stop": "78745.00",
+          "entry_zone": "78680.00 - 78745.00",
+          "entry_price": "78715.00",
+          "invalidation_stop": "78795.00",
           "take_profit": {
-            "primary_tp": "78410.00",
-            "extreme_tp": "77620.00",
-            "risk_reward_ratio": "1:10.25"
+            "primary_tp": "77650.00",
+            "extreme_tp": "77150.00",
+            "risk_reward_ratio": "1:13.3"
           },
           "timeframes_used": [
             "H4",
@@ -25,21 +25,21 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: Mitigation of the H1 bearish order block and H1 supply zone (78,662.75 - 78,822.47) just below the 78,750 Quarter Theory level, aligning with the dominant H4 bearish trend where EMA50 is below EMA200 and the Ichimoku cloud remains bearish.",
-            "Confluence 2: Price is testing the key MSNR resistance at 78,662.75, which represents the high of the current H4 Candle Range Theory (CRT) range. This is validated by volatility indicators as the price tests the upper Bollinger Band on M15 with an ATR of 103.94, indicating an imminent mean-reversion rejection.",
-            "Confluence 3: A bearish Break of Structure (BOS) on H4 was confirmed by the break below 78,179.98. The current corrective upward move is testing the bearish trendline and mitigating the H1 bearish FVG, while the M15 RSI at 58.5 is turning down, showing buyer exhaustion.",
-            "Confluence 4: Lower timeframe Chart Patterns show a bearish flag/distribution structure below the 78,750 quarter level. This is supported by volume indicators showing declining volume on the M15/M5 upward retracement, indicating a lack of buying pressure and a liquidity sweep of minor internal highs.",
-            "Confluence 5: Immediate wick rejections on the M5 timeframe near 78,625 confirm that the defensive staff is active. This aligns with Standard Deviation analysis showing the price trading at +2 SD of its short-term range, indicating an overextended state ripe for a preemptive short entry."
+            "Confluence 1: Price action executed a clean liquidity sweep of the minor buy-side liquidity (BSL) at 78662.75, tapping into the H1 resistance level at 78747.23, which resulted in a strong wick rejection on the H1 candle. This rejection aligns with the dominant bearish trend on the H4 timeframe where EMA50 and EMA200 are in a bearish configuration, indicating that the upward move was merely a liquidity grab before continuation.",
+            "Confluence 2: The preemptive entry zone sits within a key H1 supply zone (78750 - 78900) which coincides with the 78750 Quarter Theory level. This zone also aligns with the mitigation of an unmitigated bearish FVG on the H1 timeframe. The rejection at the upper Bollinger Band on the M15 timeframe, combined with high ATR volatility, confirms that the price is reacting strongly to this premium supply zone.",
+            "Confluence 3: On the lower timeframes (M5), the price has executed a bearish Break of Structure (BOS) by breaking below the higher low at 78646.00. This shift in market structure marks the transition of the H4 candle from its expansion phase to its distribution phase under Candle Range Theory, forming a bearish double-top pattern. This structural shift is validated by the M15 RSI declining from overbought territory (now at 54.3), confirming loss of bullish momentum.",
+            "Confluence 4: The high of 78747.23 represents a precise 0.618 Fibonacci retracement of the recent H4 downswing (79485.00 to 77620.01), which intersects with a bearish trendline bounce. This mitigation of the premium retracement level occurred on declining volume, as shown by the flat OBV, indicating buying exhaustion and a high probability of a preemptive wick-rejection.",
+            "Confluence 5: The defensive staff zone is located at the +2 Standard Deviation band of the short-term price range, representing an extreme overextended state. This aligns with the Malaysian SNR resistance and the bearish H1 order block. The Stochastic and CCI indicators are showing a bearish crossover from the overbought zone, confirming that the defensive staff is highly likely to hold and reject any further upward attempts."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
+            "buy_conditions_met": 6,
             "sell_conditions_met": 15,
             "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The H4 trend is strongly bearish with a confirmed Break of Structure (BOS) to the downside. The current upward move is a low-volume corrective retracement into a premium H1 supply zone and the 78,750 quarter level, aligning with the 0.707-0.786 Fibonacci OTE zone. Multiple timeframes show wick rejections at the H4 range high, supported by bearish indicator alignments across trend, momentum, volatility, and volume."
+            "dominant_bias_reason": "The dominant bias is strongly bearish due to the H4 bearish trend, a clear liquidity sweep of the 78662.75 high on H1, and a precise 0.618 Fibonacci retracement rejection at 78747.23. Lower timeframe structure has shifted bearish via an M5 BOS, while momentum and volume indicators confirm buying exhaustion at the H1 supply zone."
           },
           "risk_profile": {
-            "expected_rr": "1:10.25",
+            "expected_rr": "1:13.3",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
@@ -50,46 +50,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.16340 - 1.16360",
-          "entry_price": "1.16345",
-          "invalidation_stop": "1.16375",
-          "take_profit": {
-            "primary_tp": "1.16210",
-            "extreme_tp": "1.16045",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC liquidity sweep of H1/H4 highs combined with H4 supply zone (1.1634 - 1.1636) and anticipated wick-rejection candlestick pattern, validated by the upper Bollinger Band acting as dynamic resistance.",
-            "Confluence 2: Malaysian SNR (MSNR) key resistance at 1.1635, Quarter Theory transitional level, and Candle Range Theory session high projection, validated by overbought M15 RSI at 73.6 signaling exhaustion.",
-            "Confluence 3: Double Top chart pattern on H1/H4 and trendline rejection, preempting a lower timeframe Break of Structure (BOS), validated by flat EMA50/200 confirming a sideways/neutral range-bound market.",
-            "Confluence 4: Mitigation of an unmitigated bearish FVG and premium supply zone, validated by thinning volume and declining OBV/VROC on lower timeframes indicating a lack of breakout momentum.",
-            "Confluence 5: Fibonacci Retracement (0.786 of the recent H4 swing) and Quarter Theory 1.1635 level alignment, validated by Standard Deviation showing price at an extreme +2.5 SD deviation ripe for mean reversion."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The market is in a clear sideways/neutral regime across all timeframes. Price is currently trading near the range highs (1.1631) with M15 RSI heavily overbought at 73.6. A cluster of liquidity and supply rests between 1.1634 and 1.1636. A preemptive Sell-Limit at 1.16345 targets the wick-rejection of this liquidity pool with a tight 3-pip stop loss, offering an exceptional 1:10 risk-to-reward ratio to the extreme target."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
