@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 11:58 UTC",
+  "generated_at": "2026-09-09 12:13 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4408.00 - 4413.00",
+          "entry_price": "4411.50",
+          "invalidation_stop": "4417.50",
+          "take_profit": {
+            "primary_tp": "4351.50",
+            "extreme_tp": "4315.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC liquidity sweep of the 4412.86 high up to 4416.18 directly mitigated the H4 bearish supply zone, forming a prominent shooting star candlestick pattern on H4. This rapid expansion pierced the upper Bollinger Band (+2SD deviation) on the M15 timeframe, signaling an overextended move ripe for a mean-reversion wick-rejection.",
+            "Confluence 2: Rejection occurred precisely at the intersection of the Malaysian SNR resistance level (4411.11 - 4412.86) and the 4412.50 half-quarter level (Quarter Theory). This zone aligns with the descending bearish trendline on the H4 timeframe drawn from the 4443.20 swing high, further validated by the H4 EMA200 and Ichimoku cloud overhead resistance keeping the dominant HTF bearish trend intact.",
+            "Confluence 3: On the lower timeframes (M5), the price broke structure (BOS) by closing below the recent higher low of 4403.34. Under Candle Range Theory, the deviation above the H1 range high followed by a close back inside the range confirms a failed expansion, validated by the M15 RSI (14) rolling over from 55.3 and bearish momentum divergence on the M5 Stochastic.",
+            "Confluence 4: The rally to 4416.18 represents a precise 0.707/0.786 Fibonacci retracement of the primary H4 bearish leg (4443.20 to 4341.97), terminating directly inside the H4 supply zone. On the M5 timeframe, this rejection has started forming a double top pattern, confirmed by volume indicators (OBV/CMF) showing distribution and declining buying volume on the retest of the highs.",
+            "Confluence 5: The H4 shooting star candle mitigated the unmitigated bearish order block from the 09-08 drop, while the lower timeframe (M5) displacement has left minor unmitigated gaps. The price spike to 4416.18 represents a +3 Standard Deviation move away from the H1 mean, which is highly unsustainable, and the subsequent bearish pin bar on the H1 timeframe confirms that the defensive staff zone is holding."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The higher timeframe (H4) trend is strongly bearish, and the recent rally to 4416.18 represents a highly precise liquidity sweep and mitigation of the H4 supply zone / bearish order block. This is confirmed by a prominent shooting star on H4, a bearish pin bar on H1, and a bearish break of structure on M5. All core indicators (Trend, Momentum, Volatility, Volume) align to support a preemptive sell-limit entry at the defensive staff zone with an exceptional 1:10 Risk:Reward ratio."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
