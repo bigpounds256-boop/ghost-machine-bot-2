@@ -1,72 +1,23 @@
 {
-  "generated_at": "2026-09-09 09:30 UTC",
+  "generated_at": "2026-09-09 09:47 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "79150.00 - 79270.00",
-          "entry_price": "79250.00",
-          "invalidation_stop": "79100.00",
-          "take_profit": {
-            "primary_tp": "80000.00",
-            "extreme_tp": "80750.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Smart Money Concepts (SMC) and Malaysian SNR (MSNR) align at the 79250.00 Quarter Theory level, where a clear demand zone and historical support reject lower prices.",
-            "Confluence 2: Candle Range Theory (CRT) and Fair Value Gap (FVG) mitigation on the H1 timeframe indicate an unmitigated gap between 79159.03 and 79277.43, validated by a bullish EMA alignment.",
-            "Confluence 3: Break of Structure (BOS) on the M15 timeframe confirms a shift to bullish momentum, supported by an RSI recovery above the 70 level indicating strong buying pressure.",
-            "Confluence 4: Fibonacci Retracement of the recent H1 swing low to swing high aligns the 0.618 golden ratio precisely within the defensive staff zone, backed by rising average volume.",
-            "Confluence 5: Bollinger Bands and ATR volatility expansion on the lower timeframes suggest a temporary mean-reversion wick down to the key demand zone before continuation upward."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 14,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "The dominant bias is BUY due to strong multi-timeframe alignment on H1 and M15, a clear bullish Break of Structure (BOS), and an unmitigated Fair Value Gap (FVG) resting directly at the 79250.00 Quarter Theory support level."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Both Buy and Sell scenarios fail to meet the mandatory 80% confidence threshold. The market is in a highly compressed sideways/neutral state across all timeframes (H4, H1, M15, M5) with low volatility (M15 ATR of 0.00051) and neutral momentum (M15 RSI at 47.8). No high-probability predictive defensive staff zone can be established with sufficient confluence.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 11,
-            "sell_conditions_met": 8,
-            "confidence_percentage": "64.71%",
-            "dominant_bias_reason": "The Buy scenario has a slightly higher confidence (64.71%) due to price reacting at the 0.618 Fibonacci retracement level (1.16321) and showing minor wick rejections at the 1.16309 support level on M15/M5. However, the lack of trend alignment, weak momentum, and absence of a clear Break of Structure (BOS) or unmitigated Fair Value Gaps (FVG) prevent the setup from reaching the required 80% execution threshold."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
