@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-09 13:48 UTC",
+  "generated_at": "2026-09-09 14:00 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "79100.00 - 79200.00",
+          "entry_price": "79150.00",
+          "invalidation_stop": "79030.00",
+          "take_profit": {
+            "primary_tp": "79750.00",
+            "extreme_tp": "80550.00",
+            "risk_reward_ratio": "1:11.6"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Smart Money Concepts (SMC) & Supply/Demand Zone Mitigation. The H1 bullish expansion from 78638 broke local structure (BOS at 79400). The subsequent retracement to 79103.81 mitigated the newly formed H1 demand zone (79100-79200). This aligns with the EMA50/200 trend indicators on M15, which act as dynamic support, validating the structural shift.",
+            "Confluence 2: Malaysian SNR (MSNR) & Quarter Theory. The 79100 level represents a significant MSNR key support level, coinciding with the 79000 major psychological quarter and 79250 minor quarter. This zone is validated by the M15 RSI remaining in bullish territory (57.2), indicating that buyers are defending the key structural level.",
+            "Confluence 3: Candle Range Theory (CRT) & Candlestick Patterns. The intraday price action shows a clear accumulation phase between 78400-78800, followed by a manipulation sweep to 78725, and now an expansion phase. The M15 candle at 13:30 printed a massive wick rejection (low of 79103.81), confirming the presence of a defensive staff zone. This is supported by ATR volatility (210.75) which justifies a tight preemptive stop.",
+            "Confluence 4: Fibonacci Retracement & Circles. Drawing a Fibonacci retracement from the H1 swing low of 78725.29 to the swing high of 79760.00 places the golden 0.618 retracement level exactly at 79120.50. The preemptive entry at 79150.00 sits right above this level, aligning with Fibonacci circles and the lower Bollinger Band boundary to provide a high-probability reversal anchor.",
+            "Confluence 5: Volume Profile (VPVR) & Standard Deviation. The 79100-79200 zone represents a high-volume node (HVN) on the VPVR, indicating heavy historical transaction density. A -2 Standard Deviation deviation from the M5/M15 mean price aligns perfectly with this zone, suggesting an oversold exhaustion point where sellers are trapped, leading to a rapid wick-rejection."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The H1 and M15 trends are strongly bullish, supported by a massive wick rejection at the 79103.81 level which mitigated the 0.618 Fibonacci retracement and a major psychological Quarter Theory level (79000). The bearish H4 trend is treated as a secondary pullback phase that is currently being reversed by lower-timeframe structural shifts (BOS at 79400)."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11.6",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
