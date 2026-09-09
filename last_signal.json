@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-09 05:11 UTC",
+  "generated_at": "2026-09-09 05:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "78910.00 - 78940.00",
-          "entry_price": "78928.65",
-          "invalidation_stop": "78850.00",
-          "take_profit": {
-            "primary_tp": "79215.83",
-            "extreme_tp": "79715.15",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The strong H1 bullish expansion candle closed above the previous swing high of 78928.65, executing a clear Break of Structure (BOS). This level now acts as a key MSNR support flip. The alignment of H1, M15, and M5 trends confirms that the path of least resistance is upward, making this S/R flip a high-probability defensive staff zone where buyers will preemptively defend the structure.",
-            "Confluence 2: The bullish expansion created a demand zone on M5 (78912.59 - 78938.64) and left an unmitigated M15 FVG between 78945.99 and 79080.89. The M15 ATR of 137.35 indicates that a standard volatility contraction/pullback from the high of 79215.83 will land precisely within this FVG and tap the top of the M5 demand zone, allowing for a preemptive limit order entry to capture the wick-rejection.",
-            "Confluence 3: The 0.5 Fibonacci retracement of the breakout leg (78638.01 to 79215.83) sits at 78926.92, which is nestled just below the 79000 major psychological quarter level. This level forms the neckline of an intraday Inverse Head and Shoulders pattern. As the M15 RSI at 60.7 cools down from overbought territory, it provides the necessary momentum reset for price to bounce off this Fib/Quarter confluence.",
-            "Confluence 4: Under Candle Range Theory (CRT), the market accumulated below 78700, swept the lows, and then expanded. This expansion broke the H4 descending trendline with high volume, confirming institutional participation. The defensive staff zone at 78928.65 represents the premium boundary of the previous accumulation range, where a retest is expected to find strong buying volume to fuel the next leg up.",
-            "Confluence 5: Standard deviation analysis of the M5 price action shows that a pullback to 78928.65 represents a healthy 1.5 SD reversion to the mean, aligning with the middle Bollinger Band on the H1 timeframe. This intersection with the Fibonacci circle support arc and the M5 demand zone provides a highly precise, low-risk entry point for a preemptive long position."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong bullish breakout on H1/M15 with clear BOS above 78928.65, leaving an unmitigated FVG and M5 demand zone that aligns with the 0.5 Fibonacci retracement and MSNR support flip, while the H4 bearish trend is being actively reversed."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
