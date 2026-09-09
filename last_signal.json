@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 09:12 UTC",
+  "generated_at": "2026-09-09 09:30 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -9,13 +9,13 @@
           "asset": "BTC/USD",
           "bias": "BUY",
           "trade_type": "BUY-LIMIT",
-          "entry_zone": "79200.00 - 79280.00",
+          "entry_zone": "79150.00 - 79270.00",
           "entry_price": "79250.00",
-          "invalidation_stop": "79170.00",
+          "invalidation_stop": "79100.00",
           "take_profit": {
-            "primary_tp": "79760.00",
-            "extreme_tp": "80550.00",
-            "risk_reward_ratio": "1:16.25"
+            "primary_tp": "80000.00",
+            "extreme_tp": "80750.00",
+            "risk_reward_ratio": "1:10"
           },
           "timeframes_used": [
             "H4",
@@ -25,21 +25,21 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: ICT/SMC & Supply/Demand Zone. The H1/M15 bullish order block and demand zone at 79150-79270 represents a major institutional buying area. A preemptive entry at 79250.00 taps the top of this zone where buy orders are clustered.",
-            "Confluence 2: MSNR & Quarter Theory. The 79250.00 level is a major Quarter Theory level that aligns perfectly with the Malaysian SNR support (previous resistance turned support at 79264-79277).",
-            "Confluence 3: Candle Range Theory (CRT) & BOS. The Asian session accumulation range high was broken with strong displacement (BOS) on H1/M15. The retracement to 79250.00 represents a retest of the CRT manipulation/expansion boundary.",
-            "Confluence 4: Trendline & Fibonacci Retracement. The 79250.00 entry aligns with the 0.5 Fibonacci retracement level (79199.00) of the recent impulse move (78638.00 to 79760.00) and the ascending trendline on M15.",
-            "Confluence 5: Indicator Alignment (Trend, Momentum, Volatility). The H1, M15, and M5 trends are strongly bullish (EMA50/200 sloping up). The overbought M15 RSI (82.1) cools down during the retracement to 79250.00, while the M15 ATR (164.2) validates a healthy ~500 USD pullback into the defensive staff zone."
+            "Confluence 1: Smart Money Concepts (SMC) and Malaysian SNR (MSNR) align at the 79250.00 Quarter Theory level, where a clear demand zone and historical support reject lower prices.",
+            "Confluence 2: Candle Range Theory (CRT) and Fair Value Gap (FVG) mitigation on the H1 timeframe indicate an unmitigated gap between 79159.03 and 79277.43, validated by a bullish EMA alignment.",
+            "Confluence 3: Break of Structure (BOS) on the M15 timeframe confirms a shift to bullish momentum, supported by an RSI recovery above the 70 level indicating strong buying pressure.",
+            "Confluence 4: Fibonacci Retracement of the recent H1 swing low to swing high aligns the 0.618 golden ratio precisely within the defensive staff zone, backed by rising average volume.",
+            "Confluence 5: Bollinger Bands and ATR volatility expansion on the lower timeframes suggest a temporary mean-reversion wick down to the key demand zone before continuation upward."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 14,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The lower timeframe trends (H1, M15, M5) are strongly bullish, indicating a powerful short-term reversal that is overriding the HTF bearish trend. A limit order at the 79250.00 defensive staff zone allows us to capture the continuation of this bullish momentum after a healthy pullback, cooling down the overbought RSI."
+            "buy_conditions_met": 14,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The dominant bias is BUY due to strong multi-timeframe alignment on H1 and M15, a clear bullish Break of Structure (BOS), and an unmitigated Fair Value Gap (FVG) resting directly at the 79250.00 Quarter Theory support level."
           },
           "risk_profile": {
-            "expected_rr": "1:16.25",
+            "expected_rr": "1:10",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
@@ -50,13 +50,23 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Both Buy and Sell scenarios fail to meet the mandatory 80% confidence threshold. The market is in a highly compressed sideways/neutral state across all timeframes (H4, H1, M15, M5) with low volatility (M15 ATR of 0.00051) and neutral momentum (M15 RSI at 47.8). No high-probability predictive defensive staff zone can be established with sufficient confluence.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 11,
+            "sell_conditions_met": 8,
+            "confidence_percentage": "64.71%",
+            "dominant_bias_reason": "The Buy scenario has a slightly higher confidence (64.71%) due to price reacting at the 0.618 Fibonacci retracement level (1.16321) and showing minor wick rejections at the 1.16309 support level on M15/M5. However, the lack of trend alignment, weak momentum, and absence of a clear Break of Structure (BOS) or unmitigated Fair Value Gaps (FVG) prevent the setup from reaching the required 80% execution threshold."
+          }
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
