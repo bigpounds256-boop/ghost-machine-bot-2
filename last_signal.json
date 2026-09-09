@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 04:11 UTC",
+  "generated_at": "2026-09-09 04:32 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,17 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely compressed, low-volatility sideways consolidation across all analyzed timeframes (H4, H1, M15, and M5 are all sideways/neutral). The M15 ATR(14) is exceptionally low at 0.00029 (2.9 pips), and the RSI(14) is sitting at a completely neutral 51.6. Under these conditions, key trend-following and momentum indicators (EMA50/200, Ichimoku, ADX, MACD, Stochastic, CCI) are flat and lack directional alignment. Furthermore, there is no active Break of Structure (BOS) or clear Fair Value Gap (FVG) to exploit. Because the market lacks structural expansion and directional momentum, neither the Buy nor the Sell scenario can gather the required 80% confidence threshold (Buy at 17.65% and Sell at 29.41%). Consequently, the doctrine mandates a strict NO TRADE stance to preserve capital until a high-probability expansion and defensive staff zone emerge.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "29.41%",
-            "dominant_bias_reason": "The Sell scenario has a slightly higher count due to price trading near the upper boundary of the local consolidation range (1.16330 - 1.16350) with visible upper wicks indicating minor resistance. However, because trend, momentum, and volume indicators are completely flat and neutral, the overall confidence remains extremely low and well below the 80% execution threshold."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
