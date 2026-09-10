@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-10 13:29 UTC",
+  "generated_at": "2026-09-10 13:45 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77350.00 - 77500.00",
-          "entry_price": "77450.00",
-          "invalidation_stop": "77550.00",
-          "take_profit": {
-            "primary_tp": "76676.00",
-            "extreme_tp": "76450.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H1 and M15 charts show a massive bearish expansion that broke key structural levels, leaving behind a prominent bearish Order Block (ICT/SMC) and Supply Zone between 77350 and 77500. This zone aligns with Malaysian SNR resistance where previous support flips to resistance. This structural confluence is validated by the H4/H1 EMA50/200 and Ichimoku Cloud, which are sloping downwards, confirming strong bearish trend alignment.",
-            "Confluence 2: The aggressive sell-off created a significant H1/M15 Fair Value Gap (FVG) starting at 77166 up to 77650, following a major HTF Break of Structure (BOS) below 77620. The 77500 Quarter Theory level sits directly inside this FVG, acting as a psychological and structural magnet for a corrective retest. This is supported by high M15 ATR (251.33) and Bollinger Bands expansion, indicating that any upward retracement into this zone will face high-volatility rejection.",
-            "Confluence 3: The H4 and H1 timeframes exhibit massive bearish engulfing candles with large real bodies and minimal lower wicks, indicating dominant selling pressure. According to Candle Range Theory (CRT), the premium of the current expansion range lies near the 77450 level. A bearish trendline drawn from H4 lower highs aligns with this zone. Although the M15 RSI is oversold at 15.4, suggesting a short-term corrective bounce, the overall momentum indicators on higher timeframes remain strongly bearish, validating a sell-limit entry at the premium of the range.",
-            "Confluence 4: A Fibonacci retracement from the H1 swing high of 78054.84 to the swing low of 76676.07 places the golden 0.5 - 0.618 retracement levels at 77365.45 and 77528.15. This retracement zone overlaps perfectly with the newly established M5/M15 supply zone and the premium mitigation level of the current bearish leg. This confluence is validated by declining OBV and negative Accumulation/Distribution, showing that the breakdown was backed by institutional distribution, making a deep retracement highly likely to be rejected.",
-            "Confluence 5: On the M5 and M15 timeframes, price is forming a bearish flag/consolidation pattern just below the broken support of 77620. This consolidation represents a pause before the next leg down, following the clear BOS. The Malaysian SNR level at 77500 acts as the ceiling of this pattern. Standard Deviation analysis shows the price trading at extreme oversold bands, which justifies a preemptive limit order at the 77450 defensive staff to capture the wick-rejection as price mean-reverts to the SD basis before continuing its downward trajectory."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.23",
-            "dominant_bias_reason": "All major timeframes (H4, H1, M15, M5) are aligned in a strong bearish trend. The aggressive breakdown has left behind a clear Fair Value Gap, a fresh supply zone, and a broken structure below the 77500 quarter level. While the M15 RSI is oversold, this merely facilitates the necessary corrective bounce into our defensive staff zone at 77450, where we preemptively enter a short position to target the next expansion leg down."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
