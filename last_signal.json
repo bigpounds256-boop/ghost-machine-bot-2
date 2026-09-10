@@ -1,17 +1,56 @@
 {
-  "generated_at": "2026-09-10 15:46 UTC",
+  "generated_at": "2026-09-10 15:56 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "77400.00 - 77600.00",
+          "entry_price": "77485.00",
+          "invalidation_stop": "77965.00",
+          "take_profit": {
+            "primary_tp": "76680.00",
+            "extreme_tp": "72685.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC & FVG Alignment. The H1 timeframe shows a clear Break of Structure (BOS) to the downside, leaving an unmitigated Fair Value Gap (FVG) between 77412 and 77840. The defensive staff zone is established at the 77500 level to preemptively capture the wick-rejection as price retraces to mitigate this imbalance.",
+            "Confluence 2: Quarter Theory & MSNR. The entry price of 77485.00 aligns directly with the major 77500.00 Quarter level, which acts as a key psychological resistance. This level confluences with Malaysian SNR (MSNR) resistance derived from previous H1 support-turned-resistance.",
+            "Confluence 3: Trend & EMA Alignment. Multi-timeframe trend analysis (H4, H1, M15) confirms a dominant bearish structure. The price is trading below the EMA50 and EMA200, validating that any upward retracement into the defensive staff zone is a high-probability sell-limit opportunity.",
+            "Confluence 4: Volatility & Bollinger Bands. The M15 ATR of 324.88 indicates sufficient volatility for a sharp retracement and subsequent rejection. Bollinger Bands show the price expanding downwards, with the upper band aligning near our invalidation level, confirming structural protection.",
+            "Confluence 5: Momentum & Volume. The M15 RSI at 35.8 indicates strong bearish momentum. The volume profile (VPVR) shows a high-volume node near 77800, meaning the defensive staff zone at 77485.00 sits right at the lower boundary of heavy distribution, ensuring strong overhead supply."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment (H4/H1/M15) combined with an unmitigated H1 FVG, major Quarter Theory resistance at 77500, and bearish momentum indicators confirming high-probability distribution."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
