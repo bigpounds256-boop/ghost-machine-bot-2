@@ -1,62 +1,23 @@
 {
-  "generated_at": "2026-09-10 00:34 UTC",
+  "generated_at": "2026-09-10 01:00 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "4398.00 - 4402.00",
-          "entry_price": "4401.50",
-          "invalidation_stop": "4403.50",
-          "take_profit": {
-            "primary_tp": "4390.00",
-            "extreme_tp": "4373.50",
-            "risk_reward_ratio": "1:14"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Bearish market structure alignment across H4 and M15 timeframes confirming dominant sell pressure.",
-            "Confluence 2: Price rejection at the 4400.00 psychological quarter level coinciding with a key supply zone.",
-            "Confluence 3: Bearish order block mitigation on the M15 timeframe with negative momentum on the RSI.",
-            "Confluence 4: Fibonacci 0.618 retracement level convergence with the defensive staff zone.",
-            "Confluence 5: Volume distribution patterns indicating institutional selling at premium pricing."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
-            "sell_conditions_met": 14,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "The dominant bearish trend on the H4 timeframe aligns with key supply zones and psychological resistance at 4400.00, providing a high-probability sell setup."
-          },
-          "risk_profile": {
-            "expected_rr": "1:14",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
