@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-10 04:59 UTC",
+  "generated_at": "2026-09-10 05:10 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "78450.00 - 78550.00",
+          "entry_price": "78480.00",
+          "invalidation_stop": "78610.00",
+          "take_profit": {
+            "primary_tp": "77950.00",
+            "extreme_tp": "77000.00",
+            "risk_reward_ratio": "1:11"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: HTF Bearish Structure Alignment. The H4 and H1 timeframes exhibit a clear bearish trend with consecutive lower highs and lower lows, establishing a dominant sell bias. This aligns with Ichimoku cloud resistance and descending EMA50/200 dynamics on the hourly chart.",
+            "Confluence 2: Supply Zone and Malaysian SNR Integration. A strong supply zone is identified between 78450 and 78550, validated by the H1 wick rejections at 78550 and 78508. This area confluences with Malaysian SNR resistance levels, indicating significant defensive sell pressure.",
+            "Confluence 3: Candle Range Theory (CRT) and Wick Rejection. CRT analysis of the recent H1 and M15 sessions shows accumulation within the lower range, with expansion attempts immediately rejected at the range high (78550). This predictive wick-rejection behavior confirms the presence of institutional defensive staff orders.",
+            "Confluence 4: Fair Value Gap (FVG) and Quarter Theory. An unmitigated bearish FVG exists on the H1 timeframe just below the 78500 major quarter level. The preemptive sell-limit order is placed within this gap to capture the premium mitigation before continuation.",
+            "Confluence 5: Momentum and Volatility Alignment. The M15 RSI at 58.5 indicates a temporary bullish retracement into overbought territory within a larger bearish structure, while the ATR of 133.6 supports sufficient volatility for a rapid expansion downward once the defensive staff is triggered."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The dominant bearish trend on H4 and H1, combined with clear supply zone mitigation, unmitigated FVGs, and repeated wick rejections at the 78500 quarter level, provides a high-probability sell setup that meets the strict 80% doctrine threshold."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
