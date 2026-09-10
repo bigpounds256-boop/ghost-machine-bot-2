@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-10 09:58 UTC",
+  "generated_at": "2026-09-10 10:13 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "78110.00 - 78170.00",
-          "entry_price": "78135.00",
-          "invalidation_stop": "78215.00",
-          "take_profit": {
-            "primary_tp": "77335.00",
-            "extreme_tp": "76935.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC bearish order block, H1 supply zone, and Quarter Theory 78000 level resistance align with bearish EMA50/200 trend direction.",
-            "Confluence 2: Malaysian SNR resistance at 78110, M15 wick-rejection candlestick patterns, and CRT lower range expansion align with RSI momentum below 50.",
-            "Confluence 3: M15 Break of Structure (BOS), unmitigated H1 Fair Value Gap (FVG), and bearish trendline bounce align with ATR volatility expansion.",
-            "Confluence 4: Fibonacci 0.618 retracement at 78135, bearish flag chart pattern, and supply zone mitigation align with declining OBV volume.",
-            "Confluence 5: SMC liquidity sweep of minor highs, Quarter Theory 78100 level, and Standard Deviation bands align with Ichimoku cloud overhead resistance."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 14,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "Strong bearish trend alignment across H4, H1, and M15 timeframes, with price trading below the 78000 Quarter Theory level and key supply zones."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
