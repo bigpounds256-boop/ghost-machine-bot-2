@@ -1,17 +1,66 @@
 {
-  "generated_at": "2026-09-10 12:38 UTC",
+  "generated_at": "2026-09-10 12:59 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market exhibits strong bearish alignment across all timeframes, but the extreme oversold condition on the M15 RSI (11.2) prevents a high-confidence preemptive entry. Entering shorts at these levels risks expansion against the position, while counter-trend longs lack structural confirmation, resulting in neither scenario reaching the mandatory 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 11,
+            "confidence_percentage": "64.7%",
+            "dominant_bias_reason": "Strong bearish trend alignment is offset by extreme oversold momentum indicators, indicating a high probability of a short-term retracement before any high-probability trend continuation can be established."
+          }
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "1.15995 - 1.16039",
+          "entry_price": "1.16010",
+          "invalidation_stop": "1.15970",
+          "take_profit": {
+            "primary_tp": "1.16280",
+            "extreme_tp": "1.16410",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Price executed a clean liquidity sweep of the HTF swing low at 1.15985, dipping to 1.15935 to collect sell-side liquidity before rapidly reclaiming the 1.16000 Large Quarter Point. This sweep tapped directly into an unmitigated HTF demand zone (1.15900 - 1.16000). This price action is validated by the M15 RSI reaching an oversold extreme of 27.4, signaling seller exhaustion and a high-probability bullish reversal.",
+            "Confluence 2: The sudden expansion down to 1.15935 represents a classic fakeout/deviation below the key MSNR support level of 1.16000. Under Candle Range Theory, this deviation outside the established daily consolidation range (1.16300 - 1.16400) is rejected, as evidenced by the long lower wick on the M15 candle at 22:30 and the subsequent bullish engulfing structure on the M5 timeframe. This high-volatility rejection is confirmed by the elevated M15 ATR of 0.0009, indicating strong institutional absorption at the range lows.",
+            "Confluence 3: Following the liquidity sweep, the M5 timeframe shows a clear Market Structure Shift (MSS) with a bullish Break of Structure (BOS) above the minor swing high of 1.16068. This displacement created a high-probability bullish Fair Value Gap (FVG) between 1.15994 and 1.16039. Since the HTF trend remains sideways/neutral, this LTF structural shift indicates a transition from a temporary sell-off back into the primary range-bound regime, supported by flat HTF EMAs.",
+            "Confluence 4: The price action at the lows forms a classic Wyckoff Spring pattern, where a sharp drive below the 1.16000 Large Quarter Point traps breakout sellers in a demand zone before reversing. The high volume associated with the capitulation candle followed by decreasing volume on the subsequent M5 candles indicates that supply has been fully absorbed by smart money, setting the stage for a preemptive long entry at the defensive staff.",
+            "Confluence 5: Measuring the HTF range, the sweep below 1.16000 places price in an extreme discount zone. On a standard deviation basis, the move to 1.15935 represents a -3 SD deviation from the 20-period mean, which is highly unsustainable. This extreme extension aligns with the oversold M15 RSI (27.4) and suggests a rapid mean-reversion back toward the 0.5 and 0.618 Fibonacci retracement levels of the decline (around 1.16150 - 1.16250)."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 14,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The market completed a major liquidity sweep of the HTF swing low (1.15985) and the 1.16000 Large Quarter Point, followed by strong bullish displacement on the M5 timeframe that broke local structure and left a bullish FVG. With the M15 RSI deeply oversold at 27.4 and price at a -3 SD deviation, a high-probability mean-reversion buy is favored over a continuation sell."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
