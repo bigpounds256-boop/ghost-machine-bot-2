@@ -1,95 +1,17 @@
 {
-  "generated_at": "2026-09-10 08:58 UTC",
+  "generated_at": "2026-09-10 09:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "78200.00 - 78235.00",
-          "entry_price": "78210.00",
-          "invalidation_stop": "78245.00",
-          "take_profit": {
-            "primary_tp": "77910.00",
-            "extreme_tp": "77650.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Bearish BOS on H1 below 78147.98 confirms structural shift, leaving behind an unmitigated FVG. The preemptive entry at 78210.00 mitigates the lower boundary of this FVG/order block, aligning with the bearish EMA50/200 trend filter.",
-            "Confluence 2: Confluence of MSNR resistance at 78215 and the minor quarter level of 78250 forms a strong defensive staff zone. This is validated by the RSI remaining in the bearish control zone (39.1), indicating that any retracement to 78210.00 will face heavy selling pressure.",
-            "Confluence 3: CRT range expansion downwards from the 07:00 H1 candle, combined with M15 bearish engulfing and a retest of the broken ascending trendline. High ATR of 162.85 ensures sufficient volatility for a clean expansion down to the target.",
-            "Confluence 4: Retest of the M15 Head and Shoulders neckline at 78200 aligns with the newly formed supply zone at 78210. Low volume on this retracement confirms buying exhaustion, validating our preemptive sell-limit order at the defensive staff.",
-            "Confluence 5: The 0.5 Fibonacci retracement level of the recent M15 swing leg sits exactly within our defensive staff zone. As price breaks structure on M5, it aligns with the SD expansion downwards, targeting the major liquidity pool below the 78000 Quarter Theory level."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Multi-timeframe bearish alignment across H4, H1, and M15 with a clear break of structure (BOS) on H1, rejection of the 78250 minor quarter level, and a strong supply zone established at 78200-78235. Momentum (RSI 39.1) and trend indicators (EMA50/200) strongly support the bearish continuation."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.16345 - 1.16360",
-          "entry_price": "1.16352",
-          "invalidation_stop": "1.16325",
-          "take_profit": {
-            "primary_tp": "1.16415",
-            "extreme_tp": "1.16622",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC mitigation of the bullish order block combined with a demand zone at 1.1635 and CRT accumulation phase, aligned with upward-sloping EMA50/200 trend indicators acting as dynamic support.",
-            "Confluence 2: Trendline bounce off the upward-sloping support line, validated by bullish rejection wicks on M15 and holding above the 1.16250 quarter level, aligned with Bollinger Bands contracting at the lower band.",
-            "Confluence 3: Bullish Break of Structure (BOS) above 1.1639 followed by a retracement to fill the unmitigated M15 Fair Value Gap (FVG) and sweep internal liquidity, aligned with RSI holding the 50 midpoint.",
-            "Confluence 4: Malaysian SNR support at 1.1635 forming the base of an ascending channel pattern, aligned with the 0.618 Fibonacci retracement level of the recent swing.",
-            "Confluence 5: HTF liquidity pool target above the 1.16500 quarter level for structural continuation, aligned with price trading at -1 Standard Deviation of the short-term range."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 14,
-            "sell_conditions_met": 13,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "The bullish scenario presents a higher confidence level of 82.35% compared to the bearish scenario (76.47%). This is driven by the clear series of higher lows on H4 and H1, a bullish Break of Structure (BOS) on M15, and the presence of an unmitigated Fair Value Gap (FVG) and demand zone at 1.1635, which acts as our predictive defensive staff zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
