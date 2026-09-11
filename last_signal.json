@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-11 10:45 UTC",
+  "generated_at": "2026-09-11 10:57 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "77164.01 - 77266.00",
+          "entry_price": "77235.50",
+          "invalidation_stop": "77515.00",
+          "take_profit": {
+            "primary_tp": "76485.00",
+            "extreme_tp": "74440.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The unmitigated bearish FVG on the M15 timeframe between 77164.01 and 77266.00 overlaps with the 77250 Quarter Theory psychological resistance level and the M15 bearish Order Block. This zone is further reinforced by the H4 and M15 bearish EMA50/200 and Ichimoku cloud alignment, which act as dynamic overhead resistance, ensuring that any preemptive pullback into this premium array will face strong selling pressure.",
+            "Confluence 2: The 77230 - 77250 area represents a prominent MSNR swap zone (previous H1 support flipping to resistance) and a Drop-Base-Drop supply zone. This structural barrier is validated by the H1 bearish engulfing candlestick pattern. Volatility indicators support this, as the M15 ATR(14) of 135.065 provides the necessary range for a pullback to this level, which aligns perfectly with the descending middle Bollinger Band acting as dynamic resistance.",
+            "Confluence 3: The recent bearish Break of Structure (BOS) below 77069.06 and 77144.59 to 76865.58 confirms a bearish flag chart pattern on the M15/M5 timeframes. A pullback to the broken minor ascending trendline (retest as resistance) at 77235.50 is supported by the M15 RSI(14) of 34.3, which remains firmly in the bearish control zone (<50), indicating that the upward retracement is a low-volume corrective phase before the next bearish expansion.",
+            "Confluence 4: Under Candle Range Theory, the H4 candle open at 77230.7 establishes a premium manipulation zone above it. A preemptive entry at 77235.50 (just below the 77250 QT level) targets the liquidity sweep of internal minor highs. This is validated by volume indicators (OBV/CMF) showing a clear volume-price divergence, where the pullback is characterized by declining volume, confirming a lack of buying interest at premium prices.",
+            "Confluence 5: The 77235.50 entry price aligns precisely with the 0.618 Fibonacci golden pocket (77257.65) and 0.5 retracement (77182.79) of the recent M15 swing high-to-low leg (77500.00 to 76865.58). This confluence of the Fib retracement with the MSNR swap zone and supply zone is statistically validated by Standard Deviation analysis, showing that the entry zone lies within the +1.5 to +2.0 SD premium band of short-term price distribution, maximizing the probability of a sharp wick-rejection."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 0,
+            "sell_conditions_met": 17,
+            "confidence_percentage": "100%",
+            "dominant_bias_reason": "The H4 and M15 timeframes are in a strong bearish trend, supported by a bearish Break of Structure (BOS) on the M15 timeframe. An unmitigated bearish FVG exists between 77164.01 and 77266.00, which perfectly aligns with the 0.618 Fibonacci retracement, the 77250 Quarter Theory psychological level, and a prominent MSNR swap zone. All 17 doctrine concepts align to support a high-probability preemptive SELL-LIMIT order at 77235.50, targeting the major HTF liquidity pool at 76485.00 and an extreme expansion target at 74440.00."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
