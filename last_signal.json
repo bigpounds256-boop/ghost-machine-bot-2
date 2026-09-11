@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11 16:56 UTC",
+  "generated_at": "2026-09-11 17:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,46 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "4332.50 - 4341.50",
-          "entry_price": "4338.50",
-          "invalidation_stop": "4329.00",
-          "take_profit": {
-            "primary_tp": "4403.00",
-            "extreme_tp": "4433.50",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC, Supply & Demand, and Trend Indicators. Price is mitigating the H1 bullish FVG (4341.41 - 4381.32) and approaching the H1 demand zone (4332.37 - 4341.41). This aligns with the bullish H1 trend (EMA50/200 sloping upwards), indicating a high-probability reversal zone.",
-            "Confluence 2: MSNR, Quarter Theory, and Momentum Indicators. The Malaysian SNR level at 4341.41 (previous resistance turned support) coincides with the 4350.00 psychological Quarter Theory level. The M15 RSI is extremely oversold at 28.4, signaling that momentum is exhausted and a bullish bounce is imminent.",
-            "Confluence 3: Fibonacci Retracement, Candlestick Patterns, and Volatility Indicators. The 0.618 Fibonacci retracement level of the recent swing (4297.93 to 4403.80) sits at 4338.37, which is within our entry zone. The H4 candle shows a massive wick rejection at 4297.93, and the M15 ATR of 11.94 suggests that the retracement to 4338.50 is a normal volatility fluctuation before continuation.",
-            "Confluence 4: BOS, CRT, and Volume Indicators. A clear Break of Structure (BOS) occurred on H1 when price cleared 4376.18. Under Candle Range Theory (CRT), the range of the H1 accumulation candle (4329.79 - 4341.41) acts as the defensive staff. This is supported by high volume on the initial expansion and declining volume on the current retracement.",
-            "Confluence 5: Chart Patterns, Trendline Breaks & Bounces, and Multi-timeframe Alignment. A potential double bottom or inverse head-and-shoulders pattern is forming on the lower timeframes (M15/M5) as price bounces off the 0.5 fib (4351.23). This aligns with the HTF trendline bounce and the multi-timeframe transition from neutral to bullish."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.23%",
-            "dominant_bias_reason": "The massive liquidity sweep at 4297.93 followed by a strong H1 BOS to the upside and the mitigation of the H1 FVG/demand zone, combined with an oversold M15 RSI (28.4), provides a high-probability preemptive buy setup at the 0.618 Fibonacci retracement level."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
