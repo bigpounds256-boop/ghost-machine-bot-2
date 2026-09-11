@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-11 03:31 UTC",
+  "generated_at": "2026-09-11 03:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "76890.00 - 76940.00",
+          "entry_price": "76910.00",
+          "invalidation_stop": "77025.00",
+          "take_profit": {
+            "primary_tp": "76480.00",
+            "extreme_tp": "75750.00",
+            "risk_reward_ratio": "1:10.08"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Bearish Order Block (ICT/SMC) and H1 Supply Zone align with Malaysian SNR resistance at the 77000 psychological level, validated by the bearish slope of the EMA50/200 trend indicators.",
+            "Confluence 2: Candle Range Theory (CRT) manipulation phase is marked by a bearish pin bar rejection wick at the 77000 Quarter Theory level, validated by M15 RSI remaining capped below 50.",
+            "Confluence 3: Bearish Break of Structure (BOS) below 76817.60 and a trendline bounce off a descending channel are validated by expanding Bollinger Bands and a high M15 ATR of 157.43.",
+            "Confluence 4: An unmitigated bearish Fair Value Gap (FVG) on lower timeframes sits within the supply zone, with declining OBV and negative CMF confirming institutional distribution.",
+            "Confluence 5: The 0.618 Fibonacci retracement level of the recent swing leg aligns with the 77000 Quarter Theory level, validated by a +2 Standard Deviation rejection on the M15 Bollinger Bands."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment across H4 and H1, with a clear break of structure (BOS) to the downside, a successful liquidity sweep and rejection of the 77000 psychological level (0.618 Fib), and momentum/volume indicators confirming dominant seller control."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.08",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
