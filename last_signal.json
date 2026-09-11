@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-11 15:31 UTC",
+  "generated_at": "2026-09-11 15:45 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77850.00 - 78050.00",
-          "entry_price": "78020.00",
-          "invalidation_stop": "77450.00",
-          "take_profit": {
-            "primary_tp": "79850.00",
-            "extreme_tp": "83750.00",
-            "risk_reward_ratio": "1:10.05"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC mitigation of the H1 bullish order block interacts with the 77800-78100 demand zone and the 78000 Quarter Theory level, validated by the bullish alignment of the H1 EMA50/200. The aggressive upward expansion broke H1 structure, leaving a high-interest demand zone centered around the 78000 level. As price retraces, the dynamic EMA support acts as a magnet, aligning with the demand zone to trigger a preemptive wick-rejection.",
-            "Confluence 2: An unmitigated M15 Fair Value Gap (FVG) between 77938.06 and 78815.84 overlaps with a Break of Structure (BOS) of the 77959 level and a strong H1 bullish engulfing candlestick pattern, validated by the M15 RSI (67.2) pulling back to find support. The strong bullish engulfing candle on H1 caused a clean BOS, leaving an unmitigated FVG. The pullback into this FVG allows RSI to cool down from overbought levels, resetting momentum at the exact point where buyers are waiting to defend the newly established structure.",
-            "Confluence 3: Malaysian SNR (MSNR) support at 78000 aligns with a bullish trendline bounce and a chart pattern retest of the broken H1 neckline, validated by the high M15 ATR of 625.44. The breakout above the H1 neckline created a bullish trendline. The high ATR indicates that the retracement will likely be a sharp, rapid wick down to the MSNR support at 78000, where the trendline and neckline intersect, providing a highly volatile but precise defensive staff entry.",
-            "Confluence 4: Candle Range Theory (CRT) expansion and discount retracement aligns with the 0.5 - 0.618 Fibonacci retracement zone (77514.61 - 77968.29) and an SMC liquidity sweep of minor M5 lows, validated by declining volume on the pullback. CRT shows the current H4 candle is in a retracement phase seeking discount pricing. This discount aligns perfectly with the golden pocket retracement zone. The declining volume on this pullback confirms a lack of selling pressure, indicating that the move is a liquidity sweep designed to tap the defensive staff before continuation.",
-            "Confluence 5: The 78000 Quarter Theory level overlaps with a Standard Deviation (SD) defensive staff zone at -1.5 SD of the current M15 range and an unmitigated demand zone, validated by the lower Bollinger Band alignment. The 78000 level represents a major institutional pivot. Standard deviation analysis places the defensive staff at -1.5 SD, which perfectly overlaps with the lower Bollinger Band and the unmitigated demand zone, creating a highly concentrated zone of support where a preemptive limit order will capture the exact wick-rejection."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The bullish scenario meets 15 out of 17 doctrine checks (88.24% confidence), driven by strong H1/M15 bullish structure, a massive unmitigated FVG at 78000, and perfect alignment of the 0.5-0.618 Fibonacci retracement with the Quarter Theory psychological level. The bearish scenario only meets 3 checks (17.6% confidence) due to counter-trend momentum on lower timeframes."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.05",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
