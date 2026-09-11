@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11 11:44 UTC",
+  "generated_at": "2026-09-11 11:57 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,46 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "4325.00 - 4331.00",
-          "entry_price": "4329.50",
-          "invalidation_stop": "4324.50",
-          "take_profit": {
-            "primary_tp": "4354.50",
-            "extreme_tp": "4379.50",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC liquidity sweep of the 4301.81 low followed by a strong bullish displacement to 4360.33 establishes a bullish Market Structure Shift (MSS) on H1. This is supported by a Break of Structure (BOS) above 4333.71, while the M15 RSI at 28.2 indicates deep seller exhaustion, signaling a high-probability preemptive reversal at the newly formed demand zone.",
-            "Confluence 2: Malaysian SNR (MSNR) support aligns with the 4330.00 Quarter Theory level, where institutional buy orders are heavily clustered. The M5 hammer candlestick pattern at 21:35 rejects 4329.79, confirming the defensive staff is holding, while the M15 ATR of 6.54306 provides the necessary volatility to fuel a rapid mean-reversion bounce off the lower Bollinger Band.",
-            "Confluence 3: Candle Range Theory (CRT) shows range contraction on the M15 timeframe, indicating accumulation as price completes the right shoulder of an Inverse Head and Shoulders pattern. This pattern mitigates the H1 Fair Value Gap (FVG) between 4326.38 and 4328.59, while the H1 EMA50/200 acts as dynamic trend support to prevent further downside.",
-            "Confluence 4: A retest of the broken M5/M15 descending trendline overlaps with the 4325.00 major Quarter Theory support and the mitigation of the M15 bullish order block. The VPVR volume profile shows a high volume node at 4330.00, confirming institutional interest and providing a solid volume shelf that acts as a defensive barrier.",
-            "Confluence 5: Fibonacci Retracement of the 4301.81 to 4360.33 impulse places the current price in the 0.5 - 0.618 Golden Zone (4324.17 - 4331.08), which directly overlaps with the H1 demand zone. This is validated by an oversold Stochastic/CCI momentum crossover on M15, confirming that the bearish momentum has fully dissipated."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The market swept major liquidity at 4301.81 and executed a strong bullish displacement to 4360.33, shifting the H1 trend to bullish. The current retracement to 4329.79 represents a high-probability mitigation of the H1 demand zone and FVG, coinciding with the 4330.00 Quarter Theory level and the 0.5-0.618 Fibonacci Golden Zone. Deep oversold conditions on M15 RSI (28.2) and an M5 hammer rejection confirm the presence of a strong defensive staff, supporting a preemptive buy-limit entry with a tight SL and a 1:10 R:R target."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
