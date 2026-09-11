@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-11 06:36 UTC",
+  "generated_at": "2026-09-11 06:53 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "77310.00 - 77380.00",
+          "entry_price": "77350.00",
+          "invalidation_stop": "77445.00",
+          "take_profit": {
+            "primary_tp": "76580.00",
+            "extreme_tp": "76240.00",
+            "risk_reward_ratio": "1:11.68"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC liquidity sweep of minor swing highs (77347.45) into the H1/H4 supply zone (77400-77544) near the 77500 major quarter level, validated by HTF bearish trend indicators (EMA50/200 and Ichimoku cloud overhead resistance).",
+            "Confluence 2: M5 Break of Structure (BOS) below 77229.05 following a sharp rejection from 77431.48, creating a long upper wick on H1 (Candlestick Patterns/CRT), aligned with momentum indicators (M15 RSI at 66.5 rolling over and AO showing bearish momentum).",
+            "Confluence 3: Bearish FVG creation on M5/M15 aligning with Malaysian SNR resistance at 77350-77400 and an M5 double top rejection pattern, supported by high volatility (M15 ATR of 125.54 and Bollinger Bands expansion).",
+            "Confluence 4: Preemptive entry at the 0.618 Fibonacci retracement level (77350.00) within the premium pricing zone, mitigating the M5 bearish order block (SMC) and the 77250 minor quarter level, where volume indicators show distribution and drying volume on the retracement.",
+            "Confluence 5: Retest of the broken H1 bullish trendline from below merging with the defensive staff zone, validated by the price rejecting the +2SD Bollinger Band (Standard Deviation), indicating exhaustion of the corrective move."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "HTF bearish trend alignment, liquidity sweep of minor swing highs into H1/H4 supply zone, followed by M5 BOS and bearish FVG creation, validating a preemptive sell-limit entry at the 0.618 Fibonacci retracement level."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11.68",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
