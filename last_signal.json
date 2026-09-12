@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12 14:56 UTC",
+  "generated_at": "2026-09-12 15:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely low-volatility, flat consolidation typical of a weekend close (Saturday, 2026-09-12). The M15 ATR is extremely compressed at 0.25817, and the price has been bound within a microscopic 26-cent range (4348.30 - 4348.56) for over 17 hours. Under the Preemptive Predictive Wick-Rejection / Defensive Staff doctrine, there is no clear structure, no valid Fair Value Gaps (FVGs), no Malaysian SNR setups, and no clear Break of Structure (BOS) on the lower timeframes to establish a high-probability defensive staff zone. Trend indicators are conflicting (H4 bearish, but H1/M15/M5 sideways/neutral), and momentum (RSI at 49.1) is completely neutral. Consequently, neither the Buy nor the Sell scenario can achieve the mandatory 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "29.41%",
+            "dominant_bias_reason": "The dominant bias is technically bearish due to the H4 trend and the price trading below the 4350 minor quarter level. However, due to the extreme lack of volatility, volume, and structural development on lower timeframes (H1/M15/M5), no actionable defensive staff zone can be identified. Both scenarios fail to meet the 80% confidence threshold required for execution."
+          }
+        }
       }
     }
   }
