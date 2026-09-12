@@ -1,101 +1,23 @@
 {
-  "generated_at": "2026-09-12 03:27 UTC",
+  "generated_at": "2026-09-12 03:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77310.00 - 77340.00",
-          "entry_price": "77315.00",
-          "invalidation_stop": "77385.00",
-          "take_profit": {
-            "primary_tp": "76615.00",
-            "extreme_tp": "76050.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H1 bearish order block formed between 77339 and 77424 acts as a major supply zone. This aligns with the rejection of the 77250 minor quarter level, validated by the price trading below the H1 EMA50 and EMA200, confirming strong bearish trend alignment.",
-            "Confluence 2: The market structure shows a clear bearish BOS on HTF, with price making lower highs. The MSNR resistance at 77340 aligns with the descending trendline connecting recent swing highs. This is validated by the M15 Bollinger Bands, where the upper band is being rejected, indicating a high-probability wick-rejection point.",
-            "Confluence 3: Under CRT, the price has retraced into the premium zone of the current dealer range and is showing immediate rejection via long upper wicks on the M15 and H1 timeframes. This rejection occurs right at the lower boundary of the unmitigated H1 FVG (77372 - 77490), validated by the M15 RSI failing to cross above 50/51, indicating a lack of bullish momentum to sustain higher prices.",
-            "Confluence 4: The defensive staff zone is established within the 0.618 to 0.786 Fibonacci retracement level (77299 - 77320) of the recent M15 impulse leg. This zone sits inside a bearish flag continuation pattern and a local M15 supply zone. The M15 ATR of 67.32 justifies a tight stop loss of 70 USD, allowing for a highly asymmetric risk-to-reward entry.",
-            "Confluence 5: The 1-2 Standard Deviation upper band on the M5/M15 timeframes aligns perfectly with the 77300 quarter level, where a minor internal liquidity sweep of the 03:00 high is expected. This preemptive wick-rejection is supported by declining volume on the upward retracement, indicating a lack of buying pressure and confirming the defensive staff's strength."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 0,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100%",
-            "dominant_bias_reason": "HTF H4 and H1 trends are strongly bearish, with price rejecting premium levels and key supply zones. All 17 price action concepts and indicator alignments support a preemptive sell-limit entry at the defensive staff zone (77310.00 - 77340.00) with a tight stop above the local swing high, targeting the major HTF liquidity pool below 76500."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.16040 - 1.16060",
-          "entry_price": "1.16050",
-          "invalidation_stop": "1.16085",
-          "take_profit": {
-            "primary_tp": "1.15925",
-            "extreme_tp": "1.15700",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC/ICT Bearish Order Block mitigation and Supply Zone alignment at 1.16050, validated by repeated upper wick rejections on M15/M5 and a downward-sloping H4/H1 EMA50/200 trend indicator.",
-            "Confluence 2: Malaysian SNR (MSNR) resistance flip at 1.16050 combined with Quarter Theory psychological level (1.16000) and H1 bearish Break of Structure (BOS), supported by a high-volume node on the VPVR.",
-            "Confluence 3: Candle Range Theory (CRT) range-high rejection within a M15 Bearish Flag chart pattern, aligning with a descending trendline and a constricting upper Bollinger Band indicating an imminent breakout.",
-            "Confluence 4: Fibonacci Retracement of 50%-61.8% (1.16042 - 1.16072) of the recent H1 impulse leg down, clearing internal buy-side liquidity into the supply zone while the H1 RSI remains in a dominant bearish regime.",
-            "Confluence 5: Standard Deviation (+2 SD) deviation from the M15 consolidation mean at 1.16050, triggering preemptive wick rejections with a tight stop-loss at 1.16085 mathematically protected outside the M15 ATR (0.00042) boundary."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4 bearish trend is highly dominant, and the current sideways consolidation on H1/M15 represents a bearish flag/redistribution phase. Price is repeatedly rejecting the 1.16050 defensive staff zone (upper wicks on M15/M5), which aligns perfectly with the 50%-61.8% Fibonacci retracement of the recent impulse down, a strong H1 supply zone, and the upper Bollinger Band. Sell confidence is 88.2%, well above the 80% execution threshold."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
