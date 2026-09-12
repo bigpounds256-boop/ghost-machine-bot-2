@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12 09:55 UTC",
+  "generated_at": "2026-09-12 10:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,46 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.16060 - 1.16080",
+          "entry_price": "1.16072",
+          "invalidation_stop": "1.16092",
+          "take_profit": {
+            "primary_tp": "1.15920",
+            "extreme_tp": "1.15695",
+            "risk_reward_ratio": "1:18.8"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC (Bearish Order Block), Supply and Demand (H1 Supply Zone at 1.1607-1.1615), and Break of Structure (bearish BOS on H4 below 1.15988) interact to establish a strong bearish regime. This is validated by Trend Indicators (EMA50/200 bearish alignment on H4 and price trading below the Ichimoku Kumo cloud), confirming that the current upward movement is a corrective retracement into institutional supply.",
+            "Confluence 2: MSNR (Malaysian SNR resistance at 1.16073), Candlestick Patterns (multiple upper wicks/rejections at 1.1605-1.1606), and Quarter Theory (psychological level of 1.16000 acting as a pivot) align to define a clear defensive barrier. This is validated by Momentum Indicators (M15 RSI at 59.3 showing overbought exhaustion on lower timeframes like M5 Stochastic/CCI), indicating that the corrective move is losing steam as it approaches the key resistance level.",
+            "Confluence 3: CRT (Candle Range Theory consolidation range), Trendline Breaks & Bounces (bearish trendline from H4 swing highs), and SMC (Liquidity sweep of equal highs) interact to engineer a liquidity trap. This is validated by Volatility Indicators (M15 ATR at 0.00038 showing a low volatility squeeze and Bollinger Bands contracting), indicating that an imminent high-velocity expansion will sweep the equal highs into the trendline before reversing.",
+            "Confluence 4: Fibonacci Retracement (61.8% golden pocket at 1.16072), Supply and Demand (unmitigated supply origin), and SMC (Premium pricing of the consolidation range) align to pinpoint the exact entry. This is validated by Volume Indicators (VPVR showing a low volume node above 1.1606 and CMF showing distribution/negative money flow), confirming that price can easily sweep up to this level on low volume before encountering heavy institutional sell orders.",
+            "Confluence 5: Standard Deviation (1-2 SD expansion of the consolidation range), Chart Patterns (Bearish rectangle/redistribution pattern), and SMC (HTF liquidity pool target at 1.15691) interact to project the path of least resistance. This is validated by Momentum Indicators (TRIX and Awesome Oscillator showing bearish divergence/momentum on H1), confirming that the underlying trend momentum remains firmly bearish despite the sideways price action."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The higher-timeframe H4 trend is strongly bearish, supported by a bearish BOS and a clear redistribution rectangle on H1/M15. The 15 aligned doctrine concepts point to a preemptive sell-limit entry at the 61.8% Fibonacci retracement (1.16072), which sits perfectly at the Malaysian SNR resistance and the unmitigated supply origin, offering an exceptional risk-to-reward ratio of 1:18.8 with a tight stop loss above the defensive staff zone."
+          },
+          "risk_profile": {
+            "expected_rr": "1:18.8",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
