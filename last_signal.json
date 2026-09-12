@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12 02:31 UTC",
+  "generated_at": "2026-09-12 02:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.16035 - 1.16057",
-          "entry_price": "1.16045",
-          "invalidation_stop": "1.16080",
-          "take_profit": {
-            "primary_tp": "1.15925",
-            "extreme_tp": "1.15695",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC bearish order block and fresh H1 supply zone at 1.16050 align with the 1.16000 major quarter level, while the bearish H4 trend (EMA50/200) confirms high-probability trend-continuation order flow.",
-            "Confluence 2: Candlestick patterns show persistent upper wicks rejecting 1.16040-1.16050 at the upper boundary of the CRT range, validated by Bollinger Bands contraction and low ATR (0.0004) signaling imminent bearish expansion.",
-            "Confluence 3: Retest of the broken H1 ascending trendline from below within a bearish flag chart pattern, supported by a bearish H4 BOS and M15 RSI at 38.5 confirming dominant seller momentum.",
-            "Confluence 4: Retracement mitigates the unmitigated H1 bearish FVG and the origin of the 1.16167 drop, while the VPVR high volume node at 1.16000 acts as a heavy overhead supply barrier to sweep internal liquidity.",
-            "Confluence 5: Entry zone aligns with the 0.5 Fibonacci retracement (1.16042) of the H1 swing and +2 Standard Deviation of the M5 consolidation, validated by lower-timeframe Stochastic/CCI turning down from overbought."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100%",
-            "dominant_bias_reason": "The H4 trend is strongly bearish, and the H1/M15/M5 sideways consolidations are repeatedly rejecting the 1.16000-1.16050 resistance zone with prominent upper wicks. All 17 doctrine checks align for a Sell scenario, including key SMC order blocks, FVG mitigation, Fibonacci retracements, and bearish momentum (RSI 38.5), while the Buy scenario lacks structural and indicator support."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
