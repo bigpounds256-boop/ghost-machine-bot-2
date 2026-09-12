@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-12 09:28 UTC",
+  "generated_at": "2026-09-12 09:41 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77380.00 - 77425.00",
-          "entry_price": "77415.00",
-          "invalidation_stop": "77525.00",
-          "take_profit": {
-            "primary_tp": "76950.00",
-            "extreme_tp": "76150.00",
-            "risk_reward_ratio": "1:11.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The price is retracing upwards to test a descending trendline on the H1 timeframe, which aligns with a major supply zone near the 77500 quarter level. This confluence is validated by the EMA50 sloping downwards on H1, acting as dynamic resistance and confirming the bearish trend.",
-            "Confluence 2: The upward retracement is mitigating a premium H1 FVG (created during the aggressive sell-off on 2026-09-11) and testing a key MSNR resistance level at 77380-77420. This is aligned with the Ichimoku cloud on H1, which remains bearish with the price trading below the Kumo, indicating that the overall trend is heavily bearish.",
-            "Confluence 3: The M15 and M5 timeframes show clear exhaustion with multiple long upper wicks (rejections) near 77380, forming an ascending wedge pattern. This occurs after a major bearish BOS on the H1 timeframe. The M15 RSI is at 69.9, indicating overbought conditions and a high probability of a bearish reversal at this defensive staff.",
-            "Confluence 4: Under CRT, the price has reached the upper boundary of its current session range, which coincides with the 77375 minor quarter level and a strong supply zone. The M15 ATR of 44.945 suggests that the upward move is reaching its maximum expected volatility extension, making a preemptive wick-rejection highly probable.",
-            "Confluence 5: The price is attempting to sweep liquidity above the recent minor highs (77382.71) to test the MSNR resistance and the descending trendline. This aligns with the upper Bollinger Band on the M15 timeframe, signaling standard deviation exhaustion and validating the preemptive entry at the defensive staff."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong alignment of bearish HTF trends (H4/H1), premium mitigation of H1 FVG/Supply zone, overbought M15 RSI (69.9) indicating exhaustion, and multiple upper wicks confirming selling pressure at the 77380-77420 defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
