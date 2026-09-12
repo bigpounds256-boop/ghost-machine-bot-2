@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12 02:57 UTC",
+  "generated_at": "2026-09-12 03:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4349.15 - 4351.23",
+          "entry_price": "4349.85",
+          "invalidation_stop": "4354.25",
+          "take_profit": {
+            "primary_tp": "4328.60",
+            "extreme_tp": "4298.50",
+            "risk_reward_ratio": "1:11.6"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The H1 bearish order block at 4358.83 - 4370.63 establishes a strong supply zone. As price approaches the 4350.00 Quarter Theory level, it aligns with the downward-sloping EMA50/200 on the H1 timeframe, creating a high-probability defensive staff where sellers will preemptively defend the bearish trend.",
+            "Confluence 2: The bearish Break of Structure (BOS) on the H4 timeframe below 4351.23 left an unmitigated FVG between 4349.15 and 4351.23. This FVG overlaps with the MSNR resistance level at 4349.15. The extreme squeeze in the M15 Bollinger Bands indicates that volatility is compressed, and a preemptive entry at this FVG boundary will capture the explosive expansion phase.",
+            "Confluence 3: Under Candle Range Theory, the tight consolidation (dojis and spinning tops) on the M15/M5 timeframes represents an accumulation phase. We anticipate a brief manipulation spike to sweep the minor highs near 4349.15 before the distribution phase begins. This aligns with the M15 RSI hovering at 50.8, which is poised to reject downwards as momentum shifts back to the dominant H4/H1 bearish trend.",
+            "Confluence 4: A bearish trendline drawn from the H4 swing highs (4403.80 to 4370.63) projects resistance directly into the 4350.00 Quarter Theory level. This trendline acts as a barrier protecting the liquidity pools resting above the consolidation. The extremely low volume ratio confirms that this is a low-liquidity weekend accumulation, making the preemptive wick-rejection at the trendline highly effective before the market opens and distributes lower.",
+            "Confluence 5: The 0.382 Fibonacci retracement of the recent swing leg from 4370.63 to 4342.89 aligns precisely at 4353.45, while the 1 Standard Deviation upper band of the consolidation sits near 4349.85. This confluence of the SD boundary and Fibonacci retracement within the H1 supply zone, coupled with the compressed M15 ATR of 0.25793, validates the entry price of 4349.85 as the optimal preemptive wick-rejection point."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 17,
+            "confidence_percentage": "100.0%",
+            "dominant_bias_reason": "The H4 and H1 timeframes are strongly bearish, and price is currently consolidating in an extremely tight range just below the 4350.00 Quarter Theory level and the H4 FVG (4349.15 - 4351.23). All 17 doctrine concepts, including SMC order blocks, Malaysian SNR, Candle Range Theory, and indicator alignments (EMA, RSI, ATR, Bollinger Bands), point to a preemptive sell-limit entry at 4349.85 to capture the next leg down to the HTF liquidity pools near 4298.50."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11.6",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
