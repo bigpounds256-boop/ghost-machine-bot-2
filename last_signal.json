@@ -1,21 +1,11 @@
 {
-  "generated_at": "2026-09-13 00:59 UTC",
+  "generated_at": "2026-09-13 01:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The higher timeframe bearish trend conflicts with lower timeframe neutral consolidation, preventing the alignment of sufficient confluences to meet the required 80% confidence threshold.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 9,
-            "confidence_percentage": "52.9%",
-            "dominant_bias_reason": "Bearish structure on H4 and H1 is currently neutralized by sideways price action on M15 and M5, resulting in a lack of clear predictive wick-rejection zones."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
