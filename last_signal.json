@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13 17:42 UTC",
+  "generated_at": "2026-09-13 17:54 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,46 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.16050 - 1.16060",
+          "entry_price": "1.16052",
+          "invalidation_stop": "1.16072",
+          "take_profit": {
+            "primary_tp": "1.15952",
+            "extreme_tp": "1.15852",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The extremely low ATR (0.00032) and narrow Bollinger Bands indicate a volatility squeeze, which typically precedes a violent expansion. Since price is consolidating directly under the 1.16050 Quarter Theory level, the repeated wick rejections represent a systematic sweep of buy-side liquidity (SMC) at the MSNR horizontal resistance ceiling, suggesting the impending expansion will be to the downside.",
+            "Confluence 2: The persistent upper wicks on the H1 and H4 candles demonstrate strong selling pressure and immediate rejection whenever price attempts to penetrate the supply zone (1.16050-1.16064). This range contraction (CRT) at the upper boundary is validated by the RSI remaining below the 50-midline (47.1), confirming that bearish momentum is quietly controlling the range.",
+            "Confluence 3: The overall HTF trend is bearish, as indicated by the downward-sloping EMA50/200 following the sharp drop from 1.1640. The current rectangle consolidation acts as a bearish continuation flag. A preemptive entry at the flat resistance trendline allows us to capture the entire downward swing before the actual bearish BOS occurs at the range low (1.15943).",
+            "Confluence 4: The consolidation above the 1.16000 psychological level represents a temporary pause to mitigate the premium pricing of the range before continuing down to fill the unmitigated bearish FVGs below. The declining volume during this consolidation confirms a lack of buying interest at these higher prices, supporting a preemptive sell entry at the 1.16050 level.",
+            "Confluence 5: When price reaches the 1.16050-1.16060 MSNR resistance, it is trading at +2 Standard Deviations from the range mean, representing an overextended state. This statistical deviation, combined with the immediate H4 candlestick wick rejections, indicates that the range high is heavily defended by institutional limit orders, making a preemptive sell-limit order highly reliable."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "The HTF trend is bearish, and the current price is consolidating in a tight rectangle range (bearish flag) with a highly defined resistance ceiling at 1.16050-1.16064. Repeated wick rejections at this level indicate institutional distribution and liquidity sweeps. A preemptive sell-limit at 1.16052 with a tight stop at 1.16072 offers an exceptional 1:10+ risk-reward ratio targeting the HTF liquidity pool below."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
