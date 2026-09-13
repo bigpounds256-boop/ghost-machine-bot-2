@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-13 06:38 UTC",
+  "generated_at": "2026-09-13 07:00 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77320.00 - 77340.00",
-          "entry_price": "77325.00",
-          "invalidation_stop": "77355.00",
-          "take_profit": {
-            "primary_tp": "77060.00",
-            "extreme_tp": "76950.00",
-            "risk_reward_ratio": "1:12.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H4 bearish trend aligns with a pullback into the H1 bearish order block and supply zone at the 77300-77350 quarter level, where EMA50/200 acts as dynamic overhead resistance, prompting a preemptive sell-limit entry.",
-            "Confluence 2: Sharp rejection wicks at the 77325-77341 MSNR resistance level indicate premium range manipulation under Candle Range Theory. This occurs during a Bollinger Band squeeze with low ATR, signaling an imminent high-volatility bearish expansion.",
-            "Confluence 3: Following a bearish BOS on the H4 timeframe, price retraced to fill the unmitigated H1/M15 FVG, bouncing off the bearish trendline. RSI at 53.7 confirms there is ample momentum room for a downward continuation.",
-            "Confluence 4: The retracement to the 0.618 Fibonacci level (~77335) coincides with the H1 supply zone and is marked by prominent rejection wicks. Declining volume on this upward move confirms a lack of buying pressure, validating the preemptive wick-rejection entry.",
-            "Confluence 5: Multi-timeframe analysis shows the H4 bearish trend dominating while lower timeframes (H1/M15/M5) consolidate. The mitigation of premium liquidity near the 77350 quarter level aligns with Stochastic/CCI turning down from overbought, signaling immediate bearish continuation."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4 bearish trend is highly dominant, and the lower timeframes (H1, M15, M5) show a clear corrective pullback into a premium supply zone (77320-77340) with strong rejection wicks. This aligns with a bearish FVG, 0.618 Fibonacci retracement, and contracting volatility, indicating a high-probability preemptive wick-rejection opportunity."
-          },
-          "risk_profile": {
-            "expected_rr": "1:12.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
@@ -56,46 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "4348.50 - 4348.56",
-          "entry_price": "4348.54",
-          "invalidation_stop": "4348.68",
-          "take_profit": {
-            "primary_tp": "4347.14",
-            "extreme_tp": "4345.74",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Integration of SMC (liquidity sweep of equal highs), Supply and Demand (H1 supply zone at 4348.56), and Candlestick Patterns (repetitive upper wick rejections at 4348.55869), aligned with Trend Indicators (H4 bearish trend, EMA50/200 sloping downwards overhead, keeping the bias firmly short).",
-            "Confluence 2: Integration of MSNR (Malaysian S&R resistance level at 4348.56), Quarter Theory (4350 psychological resistance acting as a ceiling), and CRT (Candle Range Theory premium boundary manipulation), aligned with Momentum Indicators (M15 RSI at 43.8 showing bearish control and Stochastic turning down from the overbought boundary of the micro-range).",
-            "Confluence 3: Integration of BOS (H4 bearish Break of Structure below 4351.23), Chart Patterns (bearish rectangle/consolidation flag on M15/M5), and Trendline Breaks & Bounces (rejection of the descending H4 trendline), aligned with Volatility Indicators (extreme Bollinger Band squeeze and low M15 ATR of 0.25665 signaling an imminent high-velocity expansion to the downside).",
-            "Confluence 4: Integration of SMC (mitigation of the premium of the local consolidation range), Supply and Demand (unmitigated supply order block on H1), and CRT (collection of buy-stop liquidity above the range high), aligned with Volume Indicators (declining volume on consolidation indicating a lack of buying pressure, preparing for a volume-backed bearish breakout).",
-            "Confluence 5: Integration of Fibonacci Retracement (rejection of the 0.382/0.5 retracement level of the recent H4 impulse leg), Standard Deviation (+2 SD of the M15 range sitting exactly at 4348.56), and Fibonacci Circles (time-price resistance intersection), aligned with Momentum Indicators (MACD histogram printing bearish momentum on the H1 timeframe, confirming the path of least resistance is down)."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
-            "sell_conditions_met": 17,
-            "confidence_percentage": "100.0%",
-            "dominant_bias_reason": "H4 bearish trend aligns perfectly with the multi-timeframe consolidation resistance at 4348.56. The extreme Bollinger Band squeeze and low ATR indicate an imminent downside breakout, supported by 17/17 aligned bearish concepts and indicators."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
