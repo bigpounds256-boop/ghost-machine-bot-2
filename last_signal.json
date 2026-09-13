@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13 10:56 UTC",
+  "generated_at": "2026-09-13 11:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,17 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely tight, low-volatility consolidation range across all analyzed timeframes (H4, H1, M15, M5) centered directly on the 1.16000 psychological key level. Volatility is exceptionally compressed (M15 ATR is 0.00032) and momentum is completely neutral (M15 RSI is 51.4). There is no clear directional bias, trend alignment, or high-probability defensive staff zone available. Both buy and sell scenarios fail to meet the mandatory 80% confidence threshold required by the doctrine.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "23.5%",
+            "dominant_bias_reason": "Both scenarios exhibit extremely low confidence due to the complete lack of trend, momentum, or volume confirmation. The market is in a low-volatility squeeze directly at the 1.16000 psychological level, making any preemptive entry highly risky and prone to whipsaws. The doctrine dictates remaining flat until a clear expansion and structure break occur."
+          }
+        }
       }
     },
     "XAU/USD": {
