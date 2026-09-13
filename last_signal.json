@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13 11:11 UTC",
+  "generated_at": "2026-09-13 11:28 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,23 +11,23 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely tight, low-volatility consolidation range across all analyzed timeframes (H4, H1, M15, M5) centered directly on the 1.16000 psychological key level. Volatility is exceptionally compressed (M15 ATR is 0.00032) and momentum is completely neutral (M15 RSI is 51.4). There is no clear directional bias, trend alignment, or high-probability defensive staff zone available. Both buy and sell scenarios fail to meet the mandatory 80% confidence threshold required by the doctrine.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "23.5%",
-            "dominant_bias_reason": "Both scenarios exhibit extremely low confidence due to the complete lack of trend, momentum, or volume confirmation. The market is in a low-volatility squeeze directly at the 1.16000 psychological level, making any preemptive entry highly risky and prone to whipsaws. The doctrine dictates remaining flat until a clear expansion and structure break occur."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extreme flatline/consolidation state across all analyzed timeframes (H4, H1, M15, M5), characterized by identical open, high, low, and close values over consecutive hours (e.g., H1 open consistently at 4348.36302, high at 4348.55869, and low at 4348.29786). This indicates a complete freeze in price discovery, likely due to weekend market closure or an absolute lack of liquidity. Volatility is virtually non-existent, with the M15 ATR(14) compressed to 0.25828, and Bollinger Bands are completely squeezed. Under these conditions, a reliable predictive defensive staff zone cannot be established, and the risk of execution failure or slippage is extremely high.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 10,
+            "confidence_percentage": "58.8%",
+            "dominant_bias_reason": "The dominant bias is technically bearish (Sell) due to the bearish H4 trend, bearish HTF Break of Structure (BOS), unmitigated bearish Fair Value Gaps (FVG) above, and the 4350 Quarter Theory level acting as overhead resistance. However, because the market is completely flatlined with neutral momentum (RSI at 55.8) and zero volatility expansion, the Sell scenario only meets 10 out of 17 doctrine checks (58.8% confidence). Since this is well below the mandatory 80% execution threshold, the doctrine strictly dictates a NO TRADE stance."
+          }
+        }
       }
     }
   }
