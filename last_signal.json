@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-13 04:12 UTC",
+  "generated_at": "2026-09-13 04:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "77223.08 - 77244.80",
-          "entry_price": "77235.00",
-          "invalidation_stop": "77265.00",
-          "take_profit": {
-            "primary_tp": "77065.00",
-            "extreme_tp": "76935.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: H4 bearish trend establishes a strong downward bias. Retracement to the 77250 Quarter Theory level (psychological resistance) overlaps with the M15 supply zone and unmitigated bearish FVG (77223.08 - 77244.80), creating a high-probability defensive staff zone where sellers are expected to defend, leading to a preemptive wick-rejection.",
-            "Confluence 2: Breakdown below the minor ascending trendline on M5/M15 and subsequent Break of Structure (BOS) below previous higher lows at 77241.51 and 77244.78 confirm seller dominance. The MSNR resistance at 77250 aligns with this structural shift, while the neutral-bearish RSI of 49.2 indicates momentum is shifting downwards, validating a sell-limit entry on the retracement.",
-            "Confluence 3: Under Candle Range Theory (CRT), the range between 77270 and 77310 represents accumulation, followed by manipulation up to 77341, and a strong distribution phase marked by bearish engulfing candlestick patterns on M15. This distribution forms a bearish flag pattern, while the ATR of 47.94 ensures sufficient volatility for a quick retracement to tap our defensive staff.",
-            "Confluence 4: The 0.382 to 0.5 Fibonacci retracement of the recent bearish leg (77310.78 to 77184.01) sits precisely within our defensive staff zone (77223.08 - 77244.80). This zone is backed by high volume on the initial breakdown, indicating institutional supply, allowing a preemptive entry to target the liquidity resting below the recent lows.",
-            "Confluence 5: The M15 bearish order block near 77250 (Quarter Theory) is reinforced by the Standard Deviation mean-reversion bands on M5, which show the 77235.00 entry is within the 1-SD premium zone. This alignment ensures that any upward retracement into the defensive staff will face heavy resistance, leading to a rapid rejection and continuation towards the HTF liquidity targets."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "The dominant bias is SELL due to the strong H4 bearish trend, a clear Break of Structure (BOS) on M15/M5, and the presence of an unmitigated bearish Fair Value Gap (FVG) between 77223.08 and 77244.80. This FVG aligns perfectly with the 77250 Quarter Theory psychological level and the 0.382-0.5 Fibonacci retracement, providing a highly robust defensive staff zone for a preemptive sell-limit entry."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
