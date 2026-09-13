@@ -1,21 +1,11 @@
 {
-  "generated_at": "2026-09-13 02:29 UTC",
+  "generated_at": "2026-09-13 02:43 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in a state of low-volatility sideways consolidation across lower timeframes (H1, M15, M5) while the H4 trend remains bearish. This lack of directional alignment across timeframes prevents the formation of a high-probability defensive staff zone, resulting in confidence scores below the 80% execution threshold.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 8,
-            "confidence_percentage": "47.06%",
-            "dominant_bias_reason": "The dominant bias is slightly bearish due to the H4 bearish trend, but the sideways consolidation on lower timeframes fails to provide the necessary momentum or volume confirmation required by the doctrine."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
