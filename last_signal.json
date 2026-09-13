@@ -1,62 +1,33 @@
 {
-  "generated_at": "2026-09-13 00:36 UTC",
+  "generated_at": "2026-09-13 00:59 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The higher timeframe bearish trend conflicts with lower timeframe neutral consolidation, preventing the alignment of sufficient confluences to meet the required 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 9,
+            "confidence_percentage": "52.9%",
+            "dominant_bias_reason": "Bearish structure on H4 and H1 is currently neutralized by sideways price action on M15 and M5, resulting in a lack of clear predictive wick-rejection zones."
+          }
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.16055 - 1.16065",
-          "entry_price": "1.16060",
-          "invalidation_stop": "1.16080",
-          "take_profit": {
-            "primary_tp": "1.15940",
-            "extreme_tp": "1.15860",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Price is consolidating within a highly defined rectangle range between 1.15940 and 1.16060, centered around the 1.16000 major quarter level. As price approaches the range high at 1.16060, it meets the upper boundary of the flat Bollinger Bands, which indicates a volatility limit. This setup facilitates a preemptive SMC liquidity sweep of the equal highs resting just above 1.16060, where buy stops will be harvested before a rapid reversal.",
-            "Confluence 2: A major Malaysian SNR resistance level is established at 1.16060, coinciding with a strong H4/H1 supply zone. This zone is characterized by repeated, aggressive candlestick upper wicks (wick rejections) on the M15 and M5 timeframes, showing that sellers are actively defending this level. The M15 RSI is currently at 57.6 and rising towards the overbought threshold, indicating that momentum will exhaust precisely as price taps the supply zone, triggering a sharp rejection.",
-            "Confluence 3: Under Candle Range Theory, the daily range is currently expanding towards the premium array. The overall HTF trend remains bearish/neutral, with the H4 EMA50 and EMA200 sloping downwards, acting as dynamic resistance. A minor ascending trendline on the M5 timeframe is expected to break once price hits the 1.16060 defensive staff, leading to a bearish Break of Structure (BOS) as the market resumes its primary HTF downward trajectory.",
-            "Confluence 4: Measuring the recent bearish swing from 1.16167 to 1.15918, the 0.618 Fibonacci retracement level aligns perfectly at 1.16072, just above our supply zone. This area represents an unmitigated premium supply block. VPVR analysis indicates a high-volume node at 1.16000, with volume rapidly thinning out above 1.16050, meaning any push into 1.16060 will lack volume support, leading to an immediate preemptive wick-rejection as the order block is mitigated.",
-            "Confluence 5: The 1.16060 level represents a +2 Standard Deviation deviation from the mean price of the current consolidation range, making it an extreme statistical boundary. This level aligns with the minor quarter level of 1.16050/1.16060, forming a massive multi-touch double/triple top pattern. The MACD on the H1 timeframe is showing bearish divergence/loss of momentum, and the ADX is low (reflecting a sideways trend), which mathematically validates that range-extreme reversals at these standard deviation boundaries are highly probable."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 12,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The Sell scenario meets 15 out of 17 doctrine checks (88.2% confidence), driven by the extraordinary confluence of repeated H4/H1 wick rejections at the 1.16060 range resistance, alignment with the bearish HTF trend, and precise structural confluence with the 0.618 Fibonacci retracement and the +2 Standard Deviation boundary of the consolidation range."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
