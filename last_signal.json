@@ -1,23 +1,33 @@
 {
-  "generated_at": "2026-09-13 07:00 UTC",
+  "generated_at": "2026-09-13 07:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely tight, low-volatility consolidation range (1.1594 - 1.1606) across all analyzed timeframes (H4, H1, M15, M5), all of which are classified as sideways/neutral. With M15 ATR at a mere 0.00045 (4.5 pips) and RSI at 56.0, there is a complete absence of trend, momentum, and volume. No clear Break of Structure (BOS) or Fair Value Gaps (FVG) exist to establish a high-probability defensive staff zone. Under the strict rules of the doctrine, neither the Buy nor the Sell scenario meets the mandatory 80% confidence threshold required for execution.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "29.4%",
+            "dominant_bias_reason": "The sell scenario has a slightly higher alignment due to the repeated wick rejections at the 1.1606 horizontal resistance (MSNR) and the psychological resistance of the 1.16000 Quarter Theory level. However, due to the lack of trend, volume, momentum, and structural breaks (BOS), the confidence score of 29.4% falls far short of the 80% execution threshold, rendering the market untradable under the doctrine."
+          }
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
