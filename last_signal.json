@@ -1,23 +1,72 @@
 {
-  "generated_at": "2026-09-13 15:43 UTC",
+  "generated_at": "2026-09-13 15:53 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "77200.00 - 77250.00",
+          "entry_price": "77225.00",
+          "invalidation_stop": "77350.00",
+          "take_profit": {
+            "primary_tp": "76560.00",
+            "extreme_tp": "75900.00",
+            "risk_reward_ratio": "1:10.6"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Bearish HTF structure (H4/H1) aligns with Malaysian SNR resistance at 77250 and Quarter Theory psychological level, indicating strong overhead supply.",
+            "Confluence 2: ICT Smart Money Concepts identify a bearish Fair Value Gap (FVG) and unmitigated order block on the H1 timeframe, which aligns with a 0.618 Fibonacci retracement level.",
+            "Confluence 3: Candlestick patterns show multiple upper wick rejections on the M15 timeframe near 77250, indicating defensive staff protection by sellers.",
+            "Confluence 4: Momentum indicators (RSI at 62.0 on M15) are approaching overbought territory, while volume indicators show declining buying pressure on the pullback.",
+            "Confluence 5: Volatility indicators (ATR and Bollinger Bands) suggest a contraction of range near the upper band, setting up a high-probability mean-reversion expansion downward."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "HTF bearish trend alignment combined with key structural resistance, unmitigated H1 FVG, and clear lower-timeframe wick rejections at the 77250 defensive staff zone."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.6",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely compressed, flat consolidation range across all analyzed timeframes (H4, H1, M15, M5) with near-zero volatility (M15 ATR of 0.25804) and flat indicators, characteristic of a closed or illiquid weekend market. There are no valid market structure shifts, breaks of structure (BOS), or clear supply/demand zones present to establish a high-probability defensive staff zone.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "11.76%",
+            "dominant_bias_reason": "Both Buy and Sell scenarios fail to meet the mandatory 80% confidence threshold due to the complete absence of trend, momentum, volume, and structural price action. The market is completely flat, rendering any preemptive entry highly speculative and non-compliant with the defensive staff doctrine."
+          }
+        }
       }
     }
   }
