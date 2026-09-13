@@ -1,23 +1,82 @@
 {
-  "generated_at": "2026-09-13 07:25 UTC",
+  "generated_at": "2026-09-13 07:39 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market exhibits conflicting signals across timeframes, with a bearish H4 trend opposing sideways consolidation on H1, M15, and M5. Momentum is neutral-to-weak (RSI 42.0) without clear exhaustion, and the lack of volume validation prevents confirming institutional presence at key defensive staff zones.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 9,
+            "confidence_percentage": "52.9%",
+            "dominant_bias_reason": "While the dominant bias is bearish due to the H4 trend and lower highs, the sideways lower-timeframe structure and lack of clear liquidity sweeps keep confidence well below the mandatory 80% execution threshold."
+          }
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.16055 - 1.16064",
+          "entry_price": "1.16060",
+          "invalidation_stop": "1.16072",
+          "take_profit": {
+            "primary_tp": "1.15950",
+            "extreme_tp": "1.15700",
+            "risk_reward_ratio": "1:30"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC bearish supply zone and Malaysian SNR resistance at 1.16060 align with the bearish HTF trend where the H4 EMA50/200 and Ichimoku cloud act as overhead resistance, capping any bullish retracement and setting up a high-probability preemptive wick-rejection.",
+            "Confluence 2: Candle Range Theory (CRT) shows range contraction around the 1.16000 major quarter level, where repeated long upper wicks demonstrate strong defensive selling pressure as momentum indicators (Stochastic/CCI) reach overbought extremes at the range high.",
+            "Confluence 3: Bearish rectangle chart pattern formed after a major HTF bearish Break of Structure (BOS) is undergoing volatility compression (M15 ATR at 0.00044 and tight Bollinger Bands squeeze), indicating an imminent explosive expansion down to fill unmitigated HTF FVGs.",
+            "Confluence 4: Horizontal range ceiling bounce at 1.16060 acts as a liquidity sweep of minor highs, validated by VPVR showing the highest volume node (POC) at 1.16000 and flat OBV/CMF indicating distribution, confirming the defensive staff will hold.",
+            "Confluence 5: The 1.16060 entry zone represents a +2.5 Standard Deviation extension from the 1.16000 mean and aligns with the 0.618 Fibonacci retracement of the recent minor bearish leg, providing a precise mathematical anchor for the preemptive limit order."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "HTF trend is bearish, and price is consolidating in a tight sideways range between 1.1594 and 1.1606. The range high at 1.16060 represents a highly reliable defensive staff zone characterized by repeated wick rejections, low volatility compression (Bollinger Band squeeze), and distribution volume. A preemptive SELL-LIMIT at 1.16060 with a tight 1.2-pip SL offers an exceptional 1:30 R:R targeting the HTF liquidity pool at 1.15700."
+          },
+          "risk_profile": {
+            "expected_rr": "1:30",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Extreme low volatility and flatlining price action across H1, M15, and M5 timeframes indicate a lack of structural expansion, volume, or clear liquidity pools, preventing the identification of a high-probability defensive staff zone.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 6,
+            "confidence_percentage": "35.29%",
+            "dominant_bias_reason": "The dominant bias is technically bearish due to the H4 trend, but the complete lack of volatility and flat candle structures across lower timeframes prevents any executable entry setup."
+          }
+        }
       }
     }
   }
