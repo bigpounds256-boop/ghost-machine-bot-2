@@ -1,21 +1,11 @@
 {
-  "generated_at": "2026-09-14 13:14 UTC",
+  "generated_at": "2026-09-14 13:35 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The higher-timeframe H4 trend is sideways/neutral, and lower-timeframe M15/M5 trends are also neutral, presenting conflicting structural signals. While H1 shows bullish characteristics, the immediate M15 momentum is bearish (RSI at 38.8) and price is pulling back. Due to these misalignments across multiple timeframes, neither the buy nor the sell scenario meets the strict 80% confidence threshold required by the doctrine.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 9,
-            "sell_conditions_met": 10,
-            "confidence_percentage": "58.8%",
-            "dominant_bias_reason": "Sell conditions slightly outnumber buy conditions due to immediate bearish momentum on the M15 timeframe and recent wick rejections at the 78000 level on the H1 timeframe. However, because the overall H4 structure remains neutral and sideways, overall confidence is insufficient to trigger a preemptive defensive staff entry."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
@@ -27,7 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
