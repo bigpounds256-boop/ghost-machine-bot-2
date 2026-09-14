@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-14 12:14 UTC",
+  "generated_at": "2026-09-14 12:37 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77810.00 - 77860.00",
+          "entry_price": "77835.00",
+          "invalidation_stop": "77685.00",
+          "take_profit": {
+            "primary_tp": "78350.00",
+            "extreme_tp": "79350.00",
+            "risk_reward_ratio": "1:10.1"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The M5 demand zone (77811.45 - 77851.40) is nested within the major 77750 Quarter Theory level, acting as a high-probability institutional order block. This zone is validated by the M15 ATR (167.98), which projects a standard volatility contraction limit right into this defensive staff area, ensuring a high-probability preemptive wick-rejection.",
+            "Confluence 2: The strong H1 bullish engulfing candle at 12:00 broke structure (BOS) above the minor swing highs, confirming bullish dominance. The pullback to 77835.00 retests the MSNR breakout level (77776/77892) which aligns with the upward-sloping EMA50 on the lower timeframes, providing dynamic trend support.",
+            "Confluence 3: Under CRT, the 12:00 H1 candle range (77710.47 - 77999.99) establishes a premium/discount boundary where the 77835.00 entry lies deep in discount territory. This discount zone overlaps with an unmitigated M15 FVG (77850.48 - 77978) and is supported by the M15 RSI at 60.5, which indicates healthy bullish momentum that is not yet overbought, allowing room for a deep pullback before continuation.",
+            "Confluence 4: A bullish continuation flag pattern on the M15 timeframe is forming above a rising trendline. The entry at 77835.00 preempts a liquidity sweep of the minor M5 lows before bouncing off the trendline. This is validated by the VPVR high volume node situated between 77700 and 77800, which acts as a strong volume-based shelf.",
+            "Confluence 5: The defensive staff zone at 77810.00 - 77860.00 represents a confluence of the 77750 Quarter level and MSNR support. This zone aligns with the top of the Ichimoku Kumo cloud on the H1 timeframe, which is currently acting as a strong leading support span, validating the preemptive entry point."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong multi-timeframe bullish alignment on H4 and H1, supported by a clear H1 bullish engulfing candle and a high-probability defensive staff zone at the 0.5-0.618 Fibonacci retracement level, nested within an unmitigated M15 FVG and M5 demand zone."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.1",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
