@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-14 02:58 UTC",
+  "generated_at": "2026-09-14 03:13 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77280.00 - 77350.00",
-          "entry_price": "77310.00",
-          "invalidation_stop": "76950.00",
-          "take_profit": {
-            "primary_tp": "78050.00",
-            "extreme_tp": "81000.00",
-            "risk_reward_ratio": "1:10.25"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC (BOS of the 77450 swing high), FVG (unmitigated M15 FVG between 77170.76 and 77279.89), and Quarter Theory (77250/77500 levels) align with the bullish M15/M5 trend indicators (EMA50/200 golden cross and bullish Ichimoku cloud breakout).",
-            "Confluence 2: Supply and Demand (demand zone established at 77000-77200), Candlestick Patterns (H1 bullish engulfing candle at 02:00), and Trendline Breakout (descending trendline from 79890 broken to the upside) are validated by the rising MACD histogram on H1.",
-            "Confluence 3: Liquidity Sweep (sweep of 76388.72 below the 76500 equal lows), Malaysian SNR (77450 resistance turned support), and Candle Range Theory (expansion out of the H1 consolidation range) are supported by the high M15 ATR (271.77) indicating strong volatility and momentum.",
-            "Confluence 4: Fibonacci Retracement (0.382 - 0.5 retracement zone of the recent expansion at 77027 - 77177), SMC (mitigation of the M15 FVG), and Quarter Theory (77250 support) align with the strong RSI (72.1) indicating powerful upward momentum.",
-            "Confluence 5: Chart Patterns (double bottom/liquidity run on H4), Candlestick Patterns (H4 long lower wick rejection), and Supply and Demand (unmitigated H1 demand block) are validated by expanding Bollinger Bands on M15 showing volatility expansion."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "Strong bullish expansion on H1/M15 with a clear BOS of 77450, supported by a liquidity sweep at 76388.72 and an unmitigated M15 FVG. Indicators (RSI, ATR, MACD) confirm powerful upward momentum, making the Buy scenario highly confident at 88.2%."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.25",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
