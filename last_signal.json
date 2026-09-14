@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-14 11:31 UTC",
+  "generated_at": "2026-09-14 11:46 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77520.00 - 77600.00",
-          "entry_price": "77580.00",
-          "invalidation_stop": "77350.00",
-          "take_profit": {
-            "primary_tp": "78350.00",
-            "extreme_tp": "79890.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC and Malaysian SNR align at the 77500 Quarter Theory psychological level, where an unmitigated M15 Fair Value Gap (FVG) rests just above the H1 demand zone.",
-            "Confluence 2: Trendline bounce confluence on the M15 timeframe aligns with a bullish EMA50/200 dynamic support structure, indicating strong structural defense.",
-            "Confluence 3: Candlestick pattern analysis shows a clear liquidity sweep of minor low structures, supported by an oversold RSI momentum alignment on the M5 timeframe.",
-            "Confluence 4: Bollinger Bands lower band alignment on M15 coincides with the 0.618 Fibonacci retracement level, validating the defensive staff zone.",
-            "Confluence 5: Volume profile (VPVR) high volume node aligns with the entry zone, indicating strong institutional interest and order block mitigation."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 14,
-            "sell_conditions_met": 6,
-            "confidence_percentage": "82.35%",
-            "dominant_bias_reason": "The bullish alignment across H1 and M15 timeframes, combined with key demand zone mitigation at the 77500 psychological level, provides a high-probability preemptive buy setup."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
