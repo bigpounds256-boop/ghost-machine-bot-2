@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-14 05:43 UTC",
+  "generated_at": "2026-09-14 05:58 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77440.00 - 77504.00",
-          "entry_price": "77485.00",
-          "invalidation_stop": "77250.00",
-          "take_profit": {
-            "primary_tp": "77850.00",
-            "extreme_tp": "79835.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H1 bullish market structure shift (BOS) above 77450 aligns with the bullish H1/M15 EMA trend alignment. This structural shift creates a high-probability discount zone where institutional buyers are expected to defend their positions, driving price back up.",
-            "Confluence 2: The unmitigated H1 FVG (77170.76 - 77504.01) overlaps directly with a major H1 demand zone. As price retraces into this zone, the M15 ATR (171.29) suggests the downward momentum will exhaust near the top of this FVG, leading to a preemptive wick rejection.",
-            "Confluence 3: The Malaysian SNR level (previous resistance turned support at 77450) aligns with the 77500 major quarter level. As M15 RSI cools down to 56.8, it indicates a healthy reset of momentum, allowing the 77450-77500 support cluster to act as a launchpad.",
-            "Confluence 4: The 0.382 Fibonacci retracement level of the H1 swing (77016 to 77869.82) sits at 77543.67, right above our entry. The M15 hammer candlestick at 05:30 on declining volume confirms that selling pressure is drying up as price approaches the defensive staff.",
-            "Confluence 5: A bullish flag pattern on the M15 timeframe is consolidating within the daily candle range (CRT). This consolidation aligns with the bullish H1/M15 multi-timeframe trend, indicating that the sideways M5 movement is merely a temporary pause before the next leg up."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 17,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "100%",
-            "dominant_bias_reason": "The buy scenario meets all 17 doctrine checks. Strong multi-timeframe alignment (H1/M15 bullish), an unmitigated H1 FVG, a clear BOS above 77450, and a key Malaysian SNR level (RBS) at 77450 create an exceptionally high-probability defensive staff zone. The sell scenario only meets 1 check (the local H1 bearish candle) and lacks structural or indicator support."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
