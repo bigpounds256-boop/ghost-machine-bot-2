@@ -1,23 +1,101 @@
 {
-  "generated_at": "2026-09-14 02:13 UTC",
+  "generated_at": "2026-09-14 02:28 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77125.00 - 77210.00",
+          "entry_price": "77175.00",
+          "invalidation_stop": "76980.00",
+          "take_profit": {
+            "primary_tp": "78000.00",
+            "extreme_tp": "79125.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Bullish BOS on M5/M15 above 77170, Malaysian SNR support at 77120, and Quarter Theory 77250 breakout, aligned with M5 bullish trend and EMA50/200 crossing upwards.",
+            "Confluence 2: M5 FVG between 77122.01 and 77207.84, Demand zone at 77000-77120, and H4 Candle Range Theory expansion, validated by expanding Bollinger Bands and high M15 ATR.",
+            "Confluence 3: Double Bottom pattern on M15/H1, H1 Bullish Engulfing candlestick pattern, and descending trendline breakout, supported by strong momentum with M15 RSI at 70.4.",
+            "Confluence 4: Fibonacci 0.236 retracement at 77179.57, Quarter Theory 77000 major psychological level, and ICT liquidity sweep of 76388.72, validated by rising OBV and CMF volume indicators.",
+            "Confluence 5: Malaysian SNR key support at 77000, H1 demand origin, and M15 BOS, confirmed by MACD bullish crossover and rising Awesome Oscillator momentum."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong bullish breakout on M5/M15 with a clear double bottom on H1, supported by a high-volume expansion and a well-defined M5 FVG/defensive staff zone at 77125-77210, while the sell scenario lacks structural or momentum confirmation."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.15890 - 1.15915",
+          "entry_price": "1.15895",
+          "invalidation_stop": "1.15915",
+          "take_profit": {
+            "primary_tp": "1.15845",
+            "extreme_tp": "1.15695",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC premium pricing mitigation, M15 bearish FVG (1.15882 - 1.15918), and Quarter Theory 1.15900 minor level resistance align with M15 RSI remaining below 50, confirming bearish momentum.",
+            "Confluence 2: Malaysian SNR support-to-resistance flip at 1.15900, M15 supply zone (1.15890 - 1.15915), and bearish candlestick wick rejections on M15/M5 align with downward-sloping EMA50/200 dynamic resistance.",
+            "Confluence 3: H1/M15 Break of Structure (BOS) below 1.15950, bearish trendline bounce from H1 swing highs, and Candle Range Theory (CRT) distribution expansion align with H1 MACD trading below the zero line.",
+            "Confluence 4: Retest of a Head and Shoulders neckline chart pattern on M15, internal range liquidity grab, and psychological round number 1.15900 magnet align with Bollinger Bands expanding downwards as price taps the middle band.",
+            "Confluence 5: Fibonacci retracement of the recent swing high to low, unmitigated M5 order block supply zone, and minor M5 BOS align with low M15 ATR(14) of 0.00036, indicating tight consolidation before expansion."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong bearish alignment across multiple timeframes following a clear H1/M15 Break of Structure (BOS) below 1.15950. Price is currently retracing into a premium M15 Fair Value Gap (FVG) and a Malaysian SNR flip zone at the 1.15900 minor quarter level, while trend and momentum indicators confirm bearish dominance."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
