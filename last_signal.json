@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-15 10:44 UTC",
+  "generated_at": "2026-09-15 10:58 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "76750.00 - 76880.00",
-          "entry_price": "76810.00",
-          "invalidation_stop": "76690.00",
-          "take_profit": {
-            "primary_tp": "78050.00",
-            "extreme_tp": "79550.00",
-            "risk_reward_ratio": "1:10.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC, Supply/Demand, and Trend Indicators. Price has retraced into a major H4 bullish demand zone (76600-76900) and mitigated the H4 bullish order block. This aligns with the bullish H4 EMA50/200 and Ichimoku cloud support, indicating the macro bullish trend remains intact despite the short-term H1/M15 bearish retracement.",
-            "Confluence 2: MSNR, Quarter Theory, and Volatility. The defensive staff zone is established between 76750 (minor quarter level) and 76880, aligning with Malaysian SNR support. The M15 ATR (146.84) indicates that a sweep into this zone represents a standard deviation exhaustion point near the lower Bollinger Band, setting up a high-probability preemptive wick-rejection.",
-            "Confluence 3: Candlestick Patterns, Chart Patterns, and Momentum. The M15 timeframe shows a double bottom attempt with a strong bullish hammer/pin bar at 10:30 (O:76892, C:76986.01, leaving a long lower wick to 76872.9). This is supported by the M15 RSI at 39.7, which is turning upwards from near-oversold territory, signaling a loss of bearish momentum.",
-            "Confluence 4: CRT, BOS, and Volume. Candle Range Theory (CRT) indicates accumulation at the lower boundary of the H1 range. A minor M5 Break of Structure (BOS/CHOCH) occurred as price reclaimed 76986.01, supported by qualitative volume accumulation (A/D) at the range lows, confirming institutional absorption of sell-side liquidity.",
-            "Confluence 5: Fibonacci Retracement, Standard Deviation, and MTF Alignment. The entry zone at 76810.00 aligns precisely with the 0.786 Fibonacci retracement level of the H4 swing low (76046) to swing high (79600) and sits at -2 Standard Deviations from the H1 mean. This multi-timeframe alignment of deep discount pricing and statistical deviation validates the preemptive buy-limit order."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 8,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4 macro trend is strongly bullish, and price has retraced to a deep discount zone (0.786 Fib) at key Malaysian SNR and Quarter Theory support (76750-76810). Strong bullish wick rejections on M15/M5 confirm institutional accumulation, while H1/M15 bearish momentum is exhausted near -2SD and RSI oversold boundaries."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
