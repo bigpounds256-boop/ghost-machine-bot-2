@@ -1,56 +1,17 @@
 {
-  "generated_at": "2026-09-15 08:30 UTC",
+  "generated_at": "2026-09-15 08:47 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "76650.00 - 76750.00",
-          "entry_price": "76715.00",
-          "invalidation_stop": "76590.00",
-          "take_profit": {
-            "primary_tp": "78150.00",
-            "extreme_tp": "79550.00",
-            "risk_reward_ratio": "1:11.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC, Supply & Demand, and Quarter Theory align as price mitigates the major H4 demand zone (76622.97 - 76842.01) intersecting the 76750 minor quarter level. This structural confluence is validated by the M15 RSI being extremely oversold at 25.2, indicating seller exhaustion at key HTF support.",
-            "Confluence 2: Candle Range Theory (CRT) and Candlestick Patterns show strong lower wick rejections on the M5 and M15 timeframes near 76703.59, reacting off the Malaysian SNR (MSNR) support level at 76800. This high-volatility sweep is validated by the elevated M15 ATR of 187.5, confirming ideal conditions for a preemptive wick-rejection entry.",
-            "Confluence 3: Fibonacci Retracement, Trendline Bounces, and Chart Patterns converge as the price completes a deep 0.786 retracement of the HTF swing (76046.58 to 79600.00) at 76807. This level aligns with an ascending HTF trendline and a potential LTF double bottom, while H4 EMA50/200 trend indicators remain bullishly aligned.",
-            "Confluence 4: SMC Liquidity Sweeps and Fair Value Gaps (FVG) interact as the current bearish LTF expansion sweeps internal sell-side liquidity to fill an unmitigated H4 FVG. This sweep is validated by the VPVR High Volume Node (HVN) acting as a defensive shelf, allowing a preemptive entry before the LTF bullish BOS occurs.",
-            "Confluence 5: Quarter Theory, Supply & Demand, and Candle Range Theory establish the defensive staff zone between 76650 and 76750. This accumulation boundary is validated by the price reaching an extreme -2 Standard Deviation band on LTF Bollinger Bands, indicating a high-probability mean-reversion wick rejection."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "HTF trend remains strongly bullish while LTF is extremely oversold (M15 RSI 25.2) and mitigating a major H4 demand zone/0.786 Fib level. Preemptive wick rejection is highly favored at the 76750 quarter level."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "XAU/USD": {
