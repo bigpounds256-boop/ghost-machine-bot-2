@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-14 23:48 UTC",
+  "generated_at": "2026-09-15 00:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=BTC%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "78100.00 - 78150.00",
+          "entry_price": "78135.00",
+          "invalidation_stop": "78040.00",
+          "take_profit": {
+            "primary_tp": "79100.00",
+            "extreme_tp": "79600.00",
+            "risk_reward_ratio": "1:10.15"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC (HTF Bullish Trend), Supply and Demand (H1 Demand Zone mitigation), and Malaysian SNR (Support level at 78130-78150) align with Trend indicators (H4/H1 EMA50/200 bullish alignment), confirming that the higher timeframe order flow is highly supportive of a long position at this discount.",
+            "Confluence 2: Quarter Theory (78000 Large Quarter level), Fair Value Gap (mitigation of the H1 FVG), and Break of Structure (HTF bullish BOS) align with Momentum indicators (M15 RSI at 10.2), signaling extreme seller exhaustion and an imminent preemptive wick rejection at the defensive staff.",
+            "Confluence 3: Candle Range Theory (CRT range low expansion), Candlestick Patterns (H1 long lower wick rejection), and SMC (liquidity sweep of LTF lows) align with Volatility indicators (M15 ATR at 180.99), confirming that the rapid sweep below 78164.01 is a high-volatility stop-run ripe for immediate reversal.",
+            "Confluence 4: Chart Patterns (potential LTF double bottom), Supply and Demand (mitigation of the origin of the H1 impulse), and Trendline Breaks & Bounces (HTF bullish trendline bounce) align with Volume indicators (drying volume on M5 near the low), showing a complete lack of selling pressure at the defensive zone.",
+            "Confluence 5: Fibonacci Retracement (0.382-0.5 golden zone), SMC (discount pricing), and Quarter Theory (defense of the 78000 level) align with Volatility indicators (Bollinger Bands lower band tag on M15/M5), indicating an extreme price deviation that is highly likely to trigger a sharp mean-reversion bounce."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "HTF trends (H4/H1) are strongly bullish, and the recent sharp drop has mitigated a key H1 demand zone and swept LTF liquidity. The M15 RSI is extremely oversold at 10.2, indicating complete seller exhaustion. This creates a perfect environment for a preemptive wick-rejection entry at the defensive staff (78135.00) with a tight stop below the HTF invalidation level."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.15",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=EUR%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=XAU%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
