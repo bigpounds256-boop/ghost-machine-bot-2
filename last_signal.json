@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-15 07:12 UTC",
+  "generated_at": "2026-09-15 07:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "4284.00 - 4288.00",
+          "entry_price": "4286.50",
+          "invalidation_stop": "4281.00",
+          "take_profit": {
+            "primary_tp": "4315.00",
+            "extreme_tp": "4345.00",
+            "risk_reward_ratio": "1:10.6"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC, Supply/Demand, and Trend Indicators. The HTF H1 trend is bullish, and price has retraced to mitigate the H1 bullish order block and demand zone at 4282.47 - 4285.75. This aligns with the EMA50/200 dynamic support on the hourly timeframe, indicating a high-probability structural bounce.",
+            "Confluence 2: FVG, Candle Range Theory (CRT), and Volatility Indicators. A massive unmitigated H1 Fair Value Gap (FVG) exists between 4275.17 and 4286.51. Price is currently consolidating within this range (CRT), and the M15 ATR of 6.26109 suggests the downward expansion is exhausting as it reaches the lower Bollinger Band, setting up a preemptive wick rejection.",
+            "Confluence 3: Fibonacci Retracement, Quarter Theory, and Momentum Indicators. The retracement from the swing low of 4253.79 to the swing high of 4317.97 finds precise support at the 0.5 Fibonacci level (4285.88), which confluences with the 4287.50 micro-quarter level. Simultaneously, the M15 RSI is oversold at 34.0, signaling momentum exhaustion.",
+            "Confluence 4: Trendline Breaks & Bounces, Chart Patterns, and Volume. Price is testing the ascending trendline drawn from the 4253.79 low. On the M5/M15 timeframes, a falling wedge pattern is forming with declining volume, indicating a lack of selling pressure and preparing for a sharp preemptive reversal.",
+            "Confluence 5: Malaysian SNR (MSNR), Standard Deviation, and Candlestick Patterns. The 4282.47 - 4285.75 level represents a key MSNR support. Price is currently trading at -2 Standard Deviations from the short-term mean, and recent M5 candles are printing long lower wicks (rejection candles), validating the defensive staff zone."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 16,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "94.12%",
+            "dominant_bias_reason": "The bullish bias is heavily supported by HTF H1 trend alignment, mitigation of a major H1 FVG/demand zone, precise 0.5 Fibonacci retracement, and extreme momentum exhaustion on lower timeframes (M15 RSI at 34.0). Bearish conditions fail as selling at these key support levels represents a low-probability, high-risk chase."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.6",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
