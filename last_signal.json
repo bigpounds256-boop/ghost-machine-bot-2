@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-15 02:46 UTC",
+  "generated_at": "2026-09-15 03:00 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "77500.00 - 77650.00",
+          "entry_price": "77615.00",
+          "invalidation_stop": "77465.00",
+          "take_profit": {
+            "primary_tp": "79115.00",
+            "extreme_tp": "79615.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Retracement into the H4 bullish demand zone (77379.41 - 77596.32) aligns with the 77500 major psychological Quarter Theory level. This structural confluence is validated by HTF trend indicators (H4/H1 EMA50/200 and Ichimoku cloud remaining strongly bullish), indicating that the current M15 bearish move is a corrective pullback into institutional buy liquidity.",
+            "Confluence 2: The 0.618 Fibonacci retracement level of the swing from 76388.72 to 79600.00 sits precisely at 77615.43, overlapping with a key Malaysian SNR flip zone (previous H4 resistance acting as support). This mathematical anchor is validated by volatility indicators (M15 ATR of 146.185 and Bollinger Bands), which suggest that a drop to 77615.00 represents an exhaustion of the short-term sell-off at the lower band boundary.",
+            "Confluence 3: Candlestick patterns on H1 and M15 show emerging long lower wicks (such as the 01:00 H1 candle sweeping to 77750.00 before closing higher), indicating active absorption. This price action occurs as the market approaches the primary H4 ascending trendline, preserving the HTF bullish structure (no bearish BOS), while momentum indicators (M15 RSI at 23.8) signal extreme oversold conditions ripe for a sharp reversal.",
+            "Confluence 4: Candle Range Theory (CRT) identifies the 77500 - 77650 area as a deep discount zone relative to the weekly range. This zone is reinforced by volume indicators (VPVR high volume node and Accumulation/Distribution), which show significant historical transaction density in this region, ensuring that a preemptive limit order at 77615.00 will be met with immediate buy-side liquidity.",
+            "Confluence 5: Lower-timeframe chart patterns (potential falling wedge on M15/M5) point to a structural compression into the defensive staff zone. This compression is validated by Standard Deviation analysis showing the price trading at -2.5 SD from the H1 mean, indicating a highly stretched state that will trigger a rapid wick-rejection upon tapping the 77615.00 entry price."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The HTF trend remains strongly bullish on H4 and H1, and the current M15 bearish move is a corrective retracement into a high-confluence defensive staff zone (77500-77650) consisting of the 0.618 Fibonacci level, H4 demand zone, and oversold M15 RSI (23.8). This creates an asymmetric risk-reward opportunity for a preemptive buy-limit order."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
