@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-15 23:48 UTC",
+  "generated_at": "2026-09-16 00:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=BTC%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=EUR%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.15430 - 1.15450",
+          "entry_price": "1.15435",
+          "invalidation_stop": "1.15465",
+          "take_profit": {
+            "primary_tp": "1.15275",
+            "extreme_tp": "1.15135",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC, Supply Zone, and Fib Retracement with Trend Alignment. The bearish order block (SMC) on H1/M15 between 1.15430 and 1.15450 represents a strong supply zone where institutional sell orders are clustered. This aligns with the 0.618 Fibonacci retracement level of the recent swing down, providing a high-probability defensive staff zone validated by the bearish EMA50/200 trend alignment.",
+            "Confluence 2: Malaysian SNR, Trendline, and Candlestick Patterns with ADX Alignment. Multiple upper wick rejections (Candlestick Patterns) at 1.15440-1.15447 establish a robust horizontal MSNR resistance. This level intersects with a descending trendline drawn from the H1 swing highs, confirming structural bearish alignment validated by a strengthening bearish ADX trend indicator.",
+            "Confluence 3: Candle Range Theory, Candlestick Patterns, and Chart Patterns with Volatility Alignment. M15 and M5 candles exhibit prominent upper wicks near 1.15440, indicating aggressive selling pressure. CRT shows range contraction and premium sweeps within a descending triangle chart pattern, signaling an imminent bearish expansion validated by a low ATR of 0.00039 indicating a Bollinger Bands volatility squeeze.",
+            "Confluence 4: Break of Structure, Quarter Theory, and SMC with Momentum Alignment. Price has achieved a minor BOS to the downside on the M15 timeframe by breaking below 1.15359. This bearish momentum is validated by the Quarter Theory, as price is rejected from the 1.15450 half-quarter level and remains capped below the 1.15500 major quarter level, aligning with the bearish RSI of 44.1.",
+            "Confluence 5: FVG, Chart Patterns, and SMC with Volume Alignment. The unmitigated bearish FVG on M15 interacts with the descending triangle chart pattern, drawing price upward into the premium SMC zone before a rapid reversal. This is validated by the declining OBV and negative CMF, which confirm a lack of buying volume on the retracement."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The H4 trend is strongly bearish, and H1/M15 timeframes show a clear sideways-to-bearish consolidation with multiple upper wick rejections at the 1.15440-1.15450 resistance zone. The 15 aligned concepts (including SMC supply, MSNR, CRT, Trendline, Candlestick wicks, BOS, QT, and indicator alignments) confirm a high-probability preemptive sell-limit setup at the defensive staff zone."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=XAU%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
