@@ -1,56 +1,17 @@
 {
-  "generated_at": "2026-09-16 01:11 UTC",
+  "generated_at": "2026-09-16 01:29 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "75915.00 - 75980.00",
-          "entry_price": "75950.00",
-          "invalidation_stop": "76015.00",
-          "take_profit": {
-            "primary_tp": "75150.00",
-            "extreme_tp": "74980.00",
-            "risk_reward_ratio": "1:12.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC premium mitigation of the H1 bearish order block intersects with Quarter Theory (rejection of the 76000 psychological level) and a bearish Fair Value Gap (FVG) between 75942 and 76186, validated by Trend Indicators (H1/H4 EMA50/200 sloping downwards, confirming bearish dominance).",
-            "Confluence 2: Supply and Demand Zones (retesting the strong supply zone at 75950-76150) align with Candlestick Patterns (preemptive wick rejection of the H1 lower highs) and MSNR (Malaysian SNR resistance level at 75950), validated by Momentum Indicators (M15 RSI at 50.3 rising into overbought territory on lower timeframes, signaling exhaustion of the corrective move).",
-            "Confluence 3: Break of Structure (BOS) on H4/H1 below 75605 combines with Candle Range Theory (CRT manipulation sweep of the previous H4 candle high at 75915.49) and Chart Patterns (bearish flag consolidation on M15/M5), validated by Volatility Indicators (M15 ATR of 206.74 and Bollinger Bands constricting, indicating an imminent high-volatility expansion downward from the upper band).",
-            "Confluence 4: Trendline Breaks & Bounces (retest and bounce off the descending H4 trendline) merges with ICT/SMC liquidity sweep of short-term buy-side liquidity above 75915 and Quarter Theory (76000 resistance), validated by Volume Indicators (declining volume on the M15/M5 upward retracement, confirming lack of buying pressure and distribution).",
-            "Confluence 5: Fibonacci Retracement (0.382 - 0.5 retracement of the H1 swing high-to-low leg) aligns with Supply and Demand Zones (unmitigated supply) and MSNR (key resistance intersection), validated by Standard Deviation (SD) projecting a 1-2 SD expansion of the M5 consolidation range to peak rejection at 75950."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 16,
-            "confidence_percentage": "94.12%",
-            "dominant_bias_reason": "Strong HTF bearish alignment across H4 and H1 trends, combined with a clear bearish Break of Structure (BOS) and an unmitigated Fair Value Gap (FVG) / Supply Zone resting just below the 76000 Quarter level. The M15/M5 sideways consolidation represents a corrective retracement with declining volume, setting up a high-probability preemptive wick-rejection entry at the 75950.00 defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:12.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
