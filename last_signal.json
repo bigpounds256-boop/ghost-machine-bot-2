@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-17 09:11 UTC",
+  "generated_at": "2026-09-17 09:32 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "76720.00 - 76774.00",
-          "entry_price": "76745.50",
-          "invalidation_stop": "76815.00",
-          "take_profit": {
-            "primary_tp": "76050.00",
-            "extreme_tp": "75100.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H4 bearish trend is dominant, and price is executing a corrective pullback into an unmitigated H4 Supply Zone (76680 - 77143) while mitigating a bearish Fair Value Gap (FVG) between 76512 and 76930. This structural mitigation aligns with the bearish EMA50 and Ichimoku cloud resistance on the H4 timeframe, causing a high-probability institutional order block activation where sell orders are clustered.",
-            "Confluence 2: Price is reacting to the Malaysian SnR (MSNR) swap zone and the Quarter Theory half-quarter level of 76875. This structural ceiling is validated by repeated H1/M15 candlestick patterns showing long upper wicks (wick-rejections) at 76680-76774. This exhaustion is confirmed by the M15 RSI at 69.4 (near overbought) and overbought Stochastic oscillators, signaling a momentum shift from bullish to bearish.",
-            "Confluence 3: Under Candle Range Theory (CRT), the Asian session accumulated volume within the 76055-76500 range, followed by a London session manipulation expansion upward to sweep buy-side liquidity above the 76682 swing high. This manipulation forms a bearish double-top chart pattern on the M15 timeframe, coinciding with the upper Bollinger Band and high ATR volatility, indicating an imminent mean-reversion rejection.",
-            "Confluence 4: The HTF bearish bias is established by a clear H4 Break of Structure (BOS) below 75605. The current retracement to the 0.382 Fibonacci level (76798) taps directly into the premium supply zone. This retracement is characterized by declining OBV and low VPVR volume nodes above 76700, proving a lack of buying pressure to sustain higher prices and validating the defensive staff zone.",
-            "Confluence 5: A descending HTF trendline from the 79600 swing high acts as dynamic resistance, intersecting with the preemptive defensive staff zone. The M5/M15 timeframes show a bearish engulfing candlestick pattern forming as price tests the upper Keltner Channel boundary, while the CCI rolls over from overbought territory, confirming a predictive wick-rejection at the trendline intersection."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 16,
-            "confidence_percentage": "94.12%",
-            "dominant_bias_reason": "The HTF H4 trend is strongly bearish with a clear Break of Structure (BOS) to the downside. The current H1 bullish move is a corrective pullback mitigating a premium H4 supply zone and FVG. Multiple lower-timeframe wick rejections at 76680-76774, combined with overbought M15 RSI (69.4) and declining volume, confirm a high-probability predictive wick-rejection at the defensive staff zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
