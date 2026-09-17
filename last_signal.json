@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-17 04:13 UTC",
+  "generated_at": "2026-09-17 04:31 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "76400.00 - 76442.00",
+          "entry_price": "76415.00",
+          "invalidation_stop": "76465.00",
+          "take_profit": {
+            "primary_tp": "75650.00",
+            "extreme_tp": "75080.00",
+            "risk_reward_ratio": "1:15.3"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The H4 bearish trend establishes a dominant downward bias. As price retraces to the M15 supply zone (76400.00 - 76442.00), which aligns with the 76500 Quarter Theory level, it mitigates the bearish order block formed at the 04:00 H4 open (76442.00). This confluence of structural resistance and trend alignment triggers a preemptive sell-limit entry.",
+            "Confluence 2: The current H4 candle's open at 76442.00 acts as the high of the session's bearish expansion. The M15 timeframe shows a clear break of structure (BOS) below 76300.00, confirmed by consecutive bearish engulfing candles on the M5 timeframe. This structural shift is validated by the RSI remaining in the bearish control zone (46.3), indicating that momentum supports a continuation lower from the defensive staff.",
+            "Confluence 3: A Fibonacci retracement drawn from the H4 swing high of 77676.99 to the swing low of 75632.70 places the 0.382 retracement level at 76413.50, which perfectly overlaps with the M5 supply zone and a bearish trendline bounce. The high M15 ATR (190.61) indicates sufficient volatility to drive a rapid rejection from this defensive staff zone, leading to a swift downward expansion.",
+            "Confluence 4: The sweep of buy-side liquidity at 76774.08 on the H1 timeframe completed a bearish flag pattern on the H4 chart. Price is now rejecting downwards, breaking below the MSNR key support-turned-resistance level at 76250.00. The lack of buying volume on the minor retracements confirms that the path of least resistance is down towards the HTF sell-side liquidity pools.",
+            "Confluence 5: Standard deviation analysis shows the 76415.00 entry zone sits at the +2SD upper boundary of the short-term M5 Bollinger Bands, aligning with the 76500 Quarter Theory threshold. This represents an overextended state within a bearish HTF structure, making the defensive staff zone highly reliable for a preemptive wick-rejection entry without waiting for confirmation."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 13,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The H4 trend is bearish, and the recent H1 upward move swept liquidity at 76774.08 before forming a clear bearish rejection. The current H4 candle has opened at 76442.00 and expanded downwards, breaking M15/M5 structure. A preemptive sell-limit order placed at the M5 supply zone (76415.00) offers an exceptional risk-to-reward ratio of over 1:15, targeting the major HTF sell-side liquidity pools below 75632.70 and 75064.82."
+          },
+          "risk_profile": {
+            "expected_rr": "1:15.3",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
