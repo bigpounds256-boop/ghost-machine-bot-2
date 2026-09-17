@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-17 07:00 UTC",
+  "generated_at": "2026-09-17 07:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.14810 - 1.14840",
+          "entry_price": "1.14825",
+          "invalidation_stop": "1.14915",
+          "take_profit": {
+            "primary_tp": "1.14580",
+            "extreme_tp": "1.13925",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC & FVG Mitigation with Trend Alignment. H4 and H1 trends are strongly bearish following a major structural break (BOS) below 1.1530. The preemptive entry at 1.14825 mitigates the lower boundary of the H1 Fair Value Gap (FVG) and the bearish Order Block, aligning with the dominant HTF flow.",
+            "Confluence 2: MSNR & Supply Zone Interaction. The zone between 1.14810 and 1.14840 represents a Malaysian SNR swap zone (previous support turned resistance) and a fresh H1 Supply Zone. Price action shows repeated wick rejections (H1 high of 1.14841), confirming sellers are defending this level.",
+            "Confluence 3: Candlestick Patterns & Candle Range Theory (CRT). The M15 and H1 timeframes exhibit clear upper wicks (wick-rejection) at 1.14841. CRT shows range contraction/consolidation on M15/M5 after a massive H1 expansion down, indicating a high-probability preemptive entry point at the range high before the next expansion.",
+            "Confluence 4: Indicator Alignment (Momentum & Volatility). The M15 RSI is highly overbought at 76.7, while price is trading near the upper Bollinger Band (2SD deviation). This extreme momentum divergence in a bearish HTF trend validates a rapid wick-rejection at the defensive staff.",
+            "Confluence 5: Fibonacci & Quarter Theory. The entry price of 1.14825 sits precisely at the 38.2% Fibonacci retracement of the recent H1 impulse leg and aligns with the 1.14750/1.14800 Quarter Theory level, providing psychological and mathematical confluence for the defensive staff."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35",
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment (H4/H1) combined with overbought M15 RSI (76.7) and clear wick rejections at the 1.14810-1.14840 supply zone/FVG boundary."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
