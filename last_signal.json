@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-17 05:44 UTC",
+  "generated_at": "2026-09-17 05:56 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "76500.00 - 76600.00",
-          "entry_price": "76545.00",
-          "invalidation_stop": "76815.00",
-          "take_profit": {
-            "primary_tp": "75650.00",
-            "extreme_tp": "73845.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The HTF bearish trend is dominant, and the recent H1 bullish retracement has mitigated the H4 supply zone at 76600-76774. This mitigation aligns with the HTF bearish BOS, confirming that the bearish order flow remains intact as trend indicators (EMA50/200) point downwards.",
-            "Confluence 2: Multiple long upper wicks on the H1 and M15 timeframes indicate strong selling pressure and wick rejection at the 76600 MSNR resistance level. This rejection occurs at the upper boundary of the H4 candle range, validated by volatility indicators (rejection at the upper Bollinger Band) which suggests a high-probability reversal.",
-            "Confluence 3: A clear double top pattern has formed on the H1/M15 timeframes near the 76750 quarter level, failing to sustain higher prices. This pattern aligns with the rejection of the 76500 level and is validated by momentum indicators (RSI turning down), confirming a shift in momentum from buyers to sellers.",
-            "Confluence 4: The price rejected precisely at the 0.382 Fibonacci retracement level (76561) of the HTF bearish impulse, which coincides with the HTF bearish trendline. This rejection swept minor buy-side liquidity and is validated by volume indicators showing high relative volume on the rejection wicks, indicating institutional distribution.",
-            "Confluence 5: The preemptive entry zone at 76545 mitigates the bearish FVG on the H1 timeframe and retests the broken support level (now resistance). This level represents the equilibrium of the recent range and is validated by Standard Deviation analysis showing the price is overextended at +2 SD, making it a prime defensive staff zone for a preemptive short."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 11,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The HTF H4 trend is bearish, and the recent H1 bullish retracement has run into a major H4 supply zone (76600-76774), resulting in multiple long upper rejection wicks. The price has rejected the 0.382 Fibonacci retracement level of the HTF bearish move, and a double top has formed on the H1/M15 timeframes. With 15 out of 17 doctrine checks aligned for the sell scenario, we have an 88.2% confidence level, making this an executable SELL-LIMIT trade."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
