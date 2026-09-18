@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18 05:42 UTC",
+  "generated_at": "2026-09-18 05:57 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.14835 - 1.14855",
-          "entry_price": "1.14845",
-          "invalidation_stop": "1.14895",
-          "take_profit": {
-            "primary_tp": "1.14575",
-            "extreme_tp": "1.14345",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Rejection of the major 1.15000 quarter level aligns with a premium H4 supply zone and bearish order block (ICT/SMC). This rejection is supported by the dominant bearish trend on the H4 EMA50/200, indicating that the HTF trend is ready to resume its downward expansion.",
-            "Confluence 2: The strong bearish H1 candle at 15:00 represents a clear range expansion to the downside (CRT), breaking the short-term market structure (BOS) on M5. This shift is validated by the RSI turning down from the 50 level, confirming that sellers are taking control of momentum.",
-            "Confluence 3: The breakdown has left an unmitigated FVG on M5/M15 just below the sharp MSNR resistance peak at 1.14921, while simultaneously breaking the short-term ascending trendline. The expanding Bollinger Bands and steady ATR confirm that the volatility supports a swift corrective pullback to this defensive staff zone before continuation.",
-            "Confluence 4: The pullback to 1.14921/1.14977 represents a deep 50%-61.8% Fibonacci retracement into premium pricing, forming a bearish lower high/double top pattern. This distribution phase is confirmed by OBV/CMF showing heavy selling pressure, validating the preemptive sell-limit placement.",
-            "Confluence 5: As price trades below the 1.14875 minor quarter level, it establishes a new local supply zone. The rejection of the +1 SD band on the lower timeframes confirms that the price is overextended to the upside within its bearish channel, justifying a preemptive entry at the defensive staff zone of 1.14845."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The H4 bearish trend is highly dominant, with price recently mitigating a premium supply zone and the 1.15000 major quarter level. The recent M5/M15 breakdown has confirmed a market structure shift (MSS) to the downside, leaving an unmitigated FVG and a clear defensive staff zone at 1.14835 - 1.14855. All core indicators (Trend, Momentum, Volatility, Volume) align with a bearish continuation, yielding an 88.2% confidence score."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
