@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-18 15:29 UTC",
+  "generated_at": "2026-09-18 15:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Expecting value: line 22 column 5 (char 2285)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
