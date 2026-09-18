@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-18 11:12 UTC",
+  "generated_at": "2026-09-18 11:28 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.14740 - 1.14766",
+          "entry_price": "1.14750",
+          "invalidation_stop": "1.14790",
+          "take_profit": {
+            "primary_tp": "1.14630",
+            "extreme_tp": "1.14350",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC bearish order flow on H4/H1 aligns with the M15 supply zone and the 1.14750 Quarter Theory level, validated by the bearish slope of the EMA50/200, creating a high-probability defensive staff zone for a preemptive sell entry.",
+            "Confluence 2: Bearish BOS on the M15 timeframe below 1.14714 left behind an unmitigated FVG, accompanied by strong bearish candlestick patterns and expanding Bollinger Bands, confirming high-volatility bearish expansion.",
+            "Confluence 3: Price is reacting to a descending trendline on the H1 timeframe, which aligns with the Malaysian SNR resistance level at 1.14750, targeting the sweep of sell-side liquidity below 1.14632 and 1.14562 with bearish volume expansion.",
+            "Confluence 4: Under Candle Range Theory, the current session is in a bearish expansion phase, where a minor relief pullback of the oversold RSI (29.8) to the 1.14750 premium supply zone offers an optimal entry before continuation.",
+            "Confluence 5: The defensive staff zone at 1.14750 aligns with the 0.618 - 0.786 Fibonacci retracement of the latest M5 impulse leg, placing the entry in a premium pricing zone with a tight ATR-validated stop-loss at 1.14790."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 14,
+            "confidence_percentage": "82.35%",
+            "dominant_bias_reason": "The H4 bearish trend is highly dominant, with price breaking below the 1.14750 quarter level and establishing a clear bearish structure (BOS) on lower timeframes. While the M15 RSI is oversold (29.8), this indicates strong bearish momentum rather than an immediate reversal, and a minor pullback to the 1.14750 defensive staff zone offers an optimal premium entry for continuation towards HTF liquidity targets."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
