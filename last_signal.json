@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-18 04:30 UTC",
+  "generated_at": "2026-09-18 04:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "76985.00 - 77050.00",
-          "entry_price": "77035.00",
-          "invalidation_stop": "76920.00",
-          "take_profit": {
-            "primary_tp": "77590.00",
-            "extreme_tp": "78250.00",
-            "risk_reward_ratio": "1:10.56"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC, MSNR, and FVG with Trend Indicators (EMA/Ichimoku). The H1 bullish expansion broke key structural resistance at 77179.47, creating a Malaysian SNR (MSNR) resistance-to-support flip at 77042.20. This level is reinforced by an unmitigated H1 Fair Value Gap (FVG) spanning from 77042.20 to 77227.08. This structural demand aligns with the upward-sloping EMA 50 and a bullish Ichimoku Kumo cloud on the H1 timeframe, ensuring that any preemptive pullback to this defensive staff is supported by both dynamic and static trend-following indicators.",
-            "Confluence 2: Quarter Theory, Demand Zones, and BOS with Volatility Indicators (ATR/Bollinger Bands). The aggressive Break of Structure (BOS) above 77179.47 was driven by high-volatility expansion, as evidenced by the elevated M15 ATR of 165.15 and Bollinger Bands flaring outward. This momentum establishes a strong M5 demand zone between 76981.94 and 77045.02, which directly confluences with the major 77000 psychological level (Quarter Theory). The defensive staff is positioned here to capture the predictive wick-rejection as volatility contracts back to this high-liquidity threshold.",
-            "Confluence 3: Fibonacci Retracement, Candlestick Patterns, and SMC with Momentum Indicators (RSI/MACD). The massive bullish engulfing candlestick on the H1 timeframe at 03:00 represents a strong institutional order block (SMC). Applying a Fibonacci retracement to this expansion leg (76644.00 to 77597.83) places the 0.618 Golden Pocket at 77008.36, right inside our defensive staff. This retracement is validated by the M15 RSI at 80.7 and a bullish MACD crossover, indicating that the underlying momentum remains highly supportive of a rapid wick-rejection and continuation upon tapping this deep discount zone.",
-            "Confluence 4: Candle Range Theory (CRT), Chart Patterns, and Demand Zones with Volume Indicators (OBV/VPVR). Under Candle Range Theory, the H4 candle starting at 00:00 established its low (manipulation) at 76296.00 before distributing upward to 77597.83. The subsequent consolidation on the M5 timeframe forms a bullish flag pattern. This pattern rests directly above a high-volume node on the VPVR and rising OBV, confirming that institutional accumulation is concentrated within the 77000 - 77050 demand zone, making it the premier defensive staff for a preemptive limit order.",
-            "Confluence 5: Trendline Bounces, BOS, and Quarter Theory with Standard Deviation (SD) Bands. The LTF ascending trendline, which connects the swing lows from 76259.98 to 76644.00, projects directly into the 77000 major Quarter level. This trendline confluence, combined with the recent H1 BOS, aligns with the -2 Standard Deviation band on the M5 timeframe during a temporary mean-reversion pullback. This precise mathematical intersection ensures that a preemptive buy-limit order placed at 77035.00 sits at the absolute terminal point of the corrective wave, maximizing the risk-to-reward ratio."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "94.12%",
-            "dominant_bias_reason": "Strong multi-timeframe bullish alignment across H4, H1, M15, and M5. The massive expansion leg from 76644.00 to 77597.83 has left an unmitigated H1 FVG and a highly defined M5 demand zone that confluences perfectly with the 77000 major Quarter Theory level and the 0.618 Fibonacci retracement. Volatility and momentum indicators strongly support a preemptive buy-limit order at the defensive staff to capture the next leg of the HTF continuation."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.56",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
