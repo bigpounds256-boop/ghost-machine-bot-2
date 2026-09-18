@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-18 06:35 UTC",
+  "generated_at": "2026-09-18 06:52 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "77450.00 - 77510.00",
-          "entry_price": "77495.00",
-          "invalidation_stop": "77425.00",
-          "take_profit": {
-            "primary_tp": "78250.00",
-            "extreme_tp": "79600.00",
-            "risk_reward_ratio": "1:10.8"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The 77500 major quarter level acts as a psychological support, aligning with the M15 demand zone (77442.93 - 77511.02) and a bullish H1 order block. This zone is validated by the EMA50/200 golden crossover on the H1 timeframe, indicating strong institutional buying pressure.",
-            "Confluence 2: A clear H1/M15 BOS occurred when price broke above the swing high of 77597.83. The subsequent pullback to the 77488 - 77500 MSNR support level is met with aggressive M5 wick rejections (lows at 77488.00 and 77498.79), confirming that buyers are actively defending this level, supported by RSI at 74.6 showing strong bullish momentum.",
-            "Confluence 3: Under CRT, the current H1 range is defined by the high of 77715.48 and low of 77442.93. The defensive staff zone lies in the discount portion of this range, where an unmitigated M15 FVG and liquidity pool reside. The high ATR of 197.46 indicates sufficient volatility to sweep local liquidity before a rapid wick-rejection.",
-            "Confluence 4: A bullish trendline connecting the M15 lows of 76981.94 and 77216.76 projects directly into the 77450 - 77510 demand zone, forming a classic bullish flag pattern. The rising OBV confirms that this consolidation is characterized by institutional accumulation rather than distribution.",
-            "Confluence 5: The defensive staff zone at 77495.00 aligns precisely with the 0.5 Fibonacci retracement level (77466.12) of the recent expansion leg (77216.76 to 77715.48) and sits within -1 to -2 Standard Deviations of the short-term mean, validated by momentum indicators resetting in bullish territory."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong multi-timeframe bullish alignment (H4/H1/M15) with clear structural breakout (BOS of 77597.83) and aggressive buyer defense at the 77500 major quarter level, supported by high momentum and volume accumulation."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.8",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
