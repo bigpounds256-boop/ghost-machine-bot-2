@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18 09:30 UTC",
+  "generated_at": "2026-09-18 09:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.14890 - 1.14920",
-          "entry_price": "1.14895",
-          "invalidation_stop": "1.14935",
-          "take_profit": {
-            "primary_tp": "1.14580",
-            "extreme_tp": "1.14450",
-            "risk_reward_ratio": "1:11"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC bearish order block mitigation, Supply and Demand fresh H1 supply zone (1.14890-1.14920), and FVG mitigation align with the H4 bearish trend, validated by the H4 EMA50/200 sloping downwards.",
-            "Confluence 2: MSNR clean resistance at 1.14900, Quarter Theory key psychological level, and Candlestick Patterns showing long upper wicks on M15/H1 indicate strong preemptive selling pressure, validated by contracting Bollinger Bands on M15.",
-            "Confluence 3: Break of Structure (HTF BOS at 1.14635), Trendline Breaks & Bounces (retest of broken H1 trendline from below), and Chart Patterns (potential double top on M15) align, validated by M15 RSI turning down from 53.3 and Stochastic bearish crossover.",
-            "Confluence 4: Candle Range Theory (CRT) premium pricing, SMC internal range liquidity sweep, and the defensive staff zone align, validated by VPVR showing a high volume node at 1.1480 with decreasing volume on the upward retracement.",
-            "Confluence 5: Fibonacci Retracement (0.382 at 1.14890), Quarter Theory (1.14900), and Candlestick Patterns (M5 bearish engulfing tendencies) align, validated by the Standard Deviation indicator showing price reaching +1.5 SD on M15."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88%",
-            "dominant_bias_reason": "The H4 bearish trend aligns with the mitigation of the unmitigated H1 FVG and fresh supply zone at 1.14890-1.14920. Multiple confluences including MSNR resistance at 1.14900, 0.382 Fibonacci retracement, and contracting Bollinger Bands support a preemptive sell-limit entry at the defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
