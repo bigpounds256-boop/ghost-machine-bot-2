@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-19 01:02 UTC",
+  "generated_at": "2026-09-19 01:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81180.00 - 81290.00",
+          "entry_price": "81250.00",
+          "invalidation_stop": "81080.00",
+          "take_profit": {
+            "primary_tp": "81740.00",
+            "extreme_tp": "82950.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The strong bullish expansion broke the previous H1 structure high at 81400 (BOS). This expansion left an unmitigated M15 Fair Value Gap (FVG) between 81100 and 81271.02. A preemptive pullback to the 81250 minor quarter level mitigates this FVG, aligning with the bullish EMA50/200 and Ichimoku cloud support on H1, which confirms the continuation of the dominant trend.",
+            "Confluence 2: The 81100 level acts as a strong MSNR role-reversal level (previous resistance turned support) and forms the base of the M15 demand zone (80976 - 81100) created by the H1 bullish engulfing candlestick pattern. As price retraces, the M15 RSI (currently 63.4) and Stochastic will cool down to oversold/neutral territories, providing the necessary momentum fuel for a sharp wick-rejection at the defensive staff.",
+            "Confluence 3: Under CRT, the current H1 candle is expanding the range, and a healthy retracement into the 50% equilibrium (81256.78) and the 0.618 Fibonacci retracement level (81187.01) of the recent swing leg is expected. This zone perfectly overlaps with the 81250 QT level. The M15 ATR of 163.54 indicates that a pullback of this size is well within normal volatility limits, allowing price to test the lower Bollinger Band on lower timeframes before rejecting.",
+            "Confluence 4: A bullish trendline drawn from the H4 lows (77216.76 to 80555.54) intersects near the defensive staff zone. A quick dip into this zone will sweep internal sell-side liquidity below the minor M5 swing lows (81262) without breaking the macro structure, completing a bullish flag chart pattern. This is validated by rising OBV and positive CMF, indicating institutional accumulation during the pullback.",
+            "Confluence 5: The defensive staff zone at 81250.00 represents a high-confluence demand node. Standard Deviation bands and Fibonacci Circles projected from the H4 swing low confirm that 81250.00 is a key mathematical exhaustion point for any short-term corrective wave. A preemptive limit order here capitalizes on the immediate wick-rejection as the market seeks to establish a higher low before breaking structure (BOS) above 81741.00."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 17,
+            "sell_conditions_met": 0,
+            "confidence_percentage": "100%",
+            "dominant_bias_reason": "The multi-timeframe trend is strongly bullish across H4, H1, and M5. The recent expansion broke key structural resistance at 81400, leaving an unmitigated M15 FVG and a clear demand zone around the 81250 Quarter Theory level. All 17 doctrine checks align for a high-probability buy-limit entry at the defensive staff, whereas the sell scenario has zero structural or indicator support."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
