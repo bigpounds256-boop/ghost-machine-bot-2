@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19 04:56 UTC",
+  "generated_at": "2026-09-19 05:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extreme flatline consolidation with virtually zero volatility (M15 ATR of 0.26079) and identical candle metrics across H1, M15, and M5 timeframes, indicating a weekend market close or complete lack of liquidity. Under the Preemptive Predictive Wick-Rejection doctrine, entering a trade requires active volatility, clear structural sweeps, and a minimum of 80% confidence. Both Buy and Sell scenarios score only 29.41% confidence due to the absence of momentum, volume, clear candlestick patterns, or structural breaks. No valid defensive staff zone can be identified in these market conditions.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "29.41%",
+            "dominant_bias_reason": "Neither bias is dominant as the market is completely flatlined with identical candle ranges, indicating zero liquidity and market closure. Both scenarios fail to meet the mandatory 80% confidence threshold."
+          }
+        }
       }
     }
   }
