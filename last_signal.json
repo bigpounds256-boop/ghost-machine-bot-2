@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19 08:57 UTC",
+  "generated_at": "2026-09-19 09:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,17 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extreme low-volatility, flat consolidation state across all analyzed timeframes (H4, H1, M15, M5) with an M15 ATR of just 0.00009 (0.9 pips) and a neutral RSI of 47.6. There are no clear structural breaks (BOS), fair value gaps (FVG), or valid supply/demand zones to establish a high-probability defensive staff zone. Both buy and sell scenarios fail to meet the mandatory 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 1,
+            "confidence_percentage": "5.88%",
+            "dominant_bias_reason": "No dominant bias can be established. Price action is completely flat and illiquid (typical of a weekend or market close), meaning any preemptive limit order would lack structural backing and face high risk of random slippage or spread expansion without genuine market participation."
+          }
+        }
       }
     },
     "XAU/USD": {
