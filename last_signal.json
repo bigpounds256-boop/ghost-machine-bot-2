@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-19 11:42 UTC",
+  "generated_at": "2026-09-19 11:54 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81000.00 - 81100.00",
+          "entry_price": "81050.00",
+          "invalidation_stop": "80800.00",
+          "take_profit": {
+            "primary_tp": "81700.00",
+            "extreme_tp": "83550.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Integration of ICT/SMC, Supply and Demand Zones, and Trend Indicators. The H1 bullish order block (81,000 - 81,100) acts as a high-probability demand zone. This aligns with the bullish EMA50/200 trend alignment on H4/H1, where dynamic support is expected to trigger a preemptive wick-rejection.",
+            "Confluence 2: Integration of Quarter Theory (QT), MSNR (Malaysian SNR), and Momentum Indicators. The major psychological level at 81,000.00 acts as a key Malaysian SNR support. As price approaches this level, the M15 RSI (currently neutral at 49.6) and Stochastic are projected to reach oversold conditions, validating a sharp defensive bounce.",
+            "Confluence 3: Integration of Candlestick Patterns, CRT (Candle Range Theory), and Volatility Indicators. The H4 hammer pattern (low at 80,911.12) establishes the lower boundary of the current candle range. With M15 ATR at 109.88 and Bollinger Bands contracting, a preemptive limit order at 81,050.00 captures the defensive staff wick-rejection before volatility expands upward.",
+            "Confluence 4: Integration of Break of Structure (BOS), Chart Patterns, and Volume Indicators. The HTF bullish breakout above 79,600 (BOS) has transitioned into a bullish flag consolidation pattern on H1. Rising OBV and high volume nodes (VPVR) at 81,000 confirm institutional accumulation, supporting a continuation of the primary trend.",
+            "Confluence 5: Integration of FVG / Unmitigated Gaps, Fibonacci Retracement, and Standard Deviation (SD). An unmitigated M15 FVG near 81,075 overlaps with the 0.618 Fibonacci retracement level (81,007) of the recent swing. This confluence is further reinforced by the -1 Standard Deviation band of the H1 VWAP, providing a highly precise predictive entry."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 7,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "Strong HTF bullish trend on H4 aligns with a deep consolidation on H1/M15 back to the 81,000 major quarter support level. Multiple confluences including the 0.618 Fibonacci retracement, H1 demand zone, and resetting momentum indicators point to a high-probability preemptive wick-rejection at the defensive staff."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
@@ -17,7 +56,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely tight, low-volatility consolidation around 4380.10. H1, M15, and M5 trends are completely sideways/neutral. M15 ATR is exceptionally compressed at 0.26087 and RSI is neutral at 47.4. There is a complete absence of volume and expansion, meaning no valid predictive defensive staff zone can be identified with high probability.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "35.3%",
+            "dominant_bias_reason": "The H4 trend is bullish and H4 structure shows a bullish break of structure (BOS), but the lower timeframes are completely flat with no volume or momentum, failing to provide the necessary confluences to reach the 80% execution threshold."
+          }
+        }
       }
     }
   }
