@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-19 07:08 UTC",
+  "generated_at": "2026-09-19 07:25 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "80850.00 - 80950.00",
-          "entry_price": "80925.00",
-          "invalidation_stop": "80810.00",
-          "take_profit": {
-            "primary_tp": "81700.00",
-            "extreme_tp": "82100.00",
-            "risk_reward_ratio": "1:10.2"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC bullish order flow mitigation of discount array in the H1 demand zone (80844-80976) following a major HTF bullish BOS above 79600, validated by upward-sloping H4/H1 EMA50/200 trend indicators.",
-            "Confluence 2: Malaysian SNR key support at 80900 and Quarter Theory psychological level sweep below 81000, marked by long lower wicks on M15/M5 candles and volatility expansion near the lower Bollinger Band as indicated by M15 ATR of 99.04.",
-            "Confluence 3: Mitigation of M15/H1 Fair Value Gaps (FVG) within a Candle Range Theory (CRT) accumulation range, bouncing off an ascending trendline while the M15 RSI resets to 44.0 to signal bearish momentum exhaustion.",
-            "Confluence 4: Double bottom chart pattern on M15/M5 at 80911 and 80925 representing an ICT liquidity sweep of minor lows into an unmitigated demand zone, supported by the VPVR high volume node acting as a structural shelf.",
-            "Confluence 5: Deep 0.886 Fibonacci retracement (80946) aligning with the 80900 minor quarter level and lower timeframe bullish pin bars, validated by price reaching a -2SD standard deviation indicating extreme mean reversion potential."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "94.12%",
-            "dominant_bias_reason": "HTF trends on H4 and H1 are strongly bullish, supported by a major structural breakout (BOS) above 79600. The current pullback to 80911-80925 represents a deep discount mitigation (0.886 Fib) into a high-volume VPVR support shelf and H1 demand zone. Multiple lower timeframe wicks confirm strong defensive buying pressure, while RSI resets to 44.0, making the preemptive buy-limit highly favorable with a tight invalidation below the H4 swing low."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.2",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
@@ -52,13 +13,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extreme low-volatility flatline state with sideways/neutral trends across all timeframes (H4, H1, M15, M5). The M15 ATR(14) is extremely compressed at 0.00008 (less than 1 pip) and the RSI is perfectly neutral at 50.0. Price action shows consecutive identical candles with virtually zero range (1.14854 - 1.14867) across H1, M15, and M5 timeframes, indicating a weekend or market-close freeze. No valid predictive defensive staff zones, Breaks of Structure (BOS), Fair Value Gaps (FVG), or liquidity sweeps can be identified under these conditions.",
+          "reason": "The market is in an extremely low-volatility, flat, sideways state with M15 ATR(14) at 0.00009 (0.9 pips) and RSI at 50.0. Price action across H4, H1, M15, and M5 shows complete stagnation with virtually identical open, high, low, and close values for multiple consecutive hours, indicating a weekend market closure or extreme illiquidity. No valid market structure shifts (MSS), breaks of structure (BOS), fair value gaps (FVG), or clear supply/demand zones can be identified on lower timeframes. Indicators like Bollinger Bands are extremely contracted, MACD is flatlined, and volume is non-existent. Consequently, neither the Buy nor the Sell scenario can achieve the mandatory 80% confidence threshold.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
+            "buy_conditions_met": 3,
             "sell_conditions_met": 2,
-            "confidence_percentage": "11.76%",
-            "dominant_bias_reason": "Both buy and sell scenarios fail to meet the mandatory 80% confidence threshold. The complete absence of volume, momentum, and structural expansion prevents the formulation of any high-probability preemptive limit orders. Operating in a zero-liquidity flatline violates the core risk-preservation rules of the Defensive Staff doctrine."
+            "confidence_percentage": "17.65%",
+            "dominant_bias_reason": "No dominant bias can be established due to absolute stagnation in price action. Both buy and sell setups fail to meet the minimum 80% confidence threshold required by the doctrine."
           }
         }
       }
@@ -67,44 +28,15 @@
       "asset_class": "metals",
       "signal": {
         "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "4379.65 - 4379.95",
-          "entry_price": "4379.75",
-          "invalidation_stop": "4377.50",
-          "take_profit": {
-            "primary_tp": "4396.78",
-            "extreme_tp": "4420.00",
-            "risk_reward_ratio": "1:17.9"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC (Bullish Order Block), Supply and Demand (Demand Zone at 4375.41), and Quarter Theory (4375.00 key level) align with the upward-sloping H4 EMA50 trend indicator, creating a highly resilient defensive staff zone where institutional buy orders are clustered.",
-            "Confluence 2: MSNR (Malaysian SNR support at 4379.62), Trendline Breaks & Bounces (bullish trendline bounce), and Break of Structure (H4 bullish BOS at 4380.28) are validated by the M15 RSI momentum indicator holding firmly above 50, confirming buyers are defending this internal liquidity pool.",
-            "Confluence 3: Candle Range Theory (CRT accumulation range), Chart Patterns (bullish flag/pennant), and Candlestick Patterns (long lower wicks on H4/H1) align with the Volatility Indicators (M15 ATR at 0.26294 and squeezed Bollinger Bands), signaling an imminent explosive expansion to the upside.",
-            "Confluence 4: Fibonacci Retracement (0.786 deep discount level at 4379.98), Fair Value Gap (H4 unmitigated FVG), and SMC (Liquidity Sweep of consolidation lows) are supported by the Volume Indicators (declining volume on OBV/VPVR), indicating seller exhaustion and institutional absorption.",
-            "Confluence 5: Standard Deviation (SD bands), Fibonacci Circles, and Quarter Theory (4380.00 minor quarter level) align with the Ichimoku Cloud trend indicator (price holding above the H4 Kumo/Span A), confirming the defensive staff zone is highly secure against sustained bearish pressure."
-          ],
+          "status": "NO TRADE",
+          "reason": "The market is in an extremely tight, low-volatility consolidation range (4379.97 - 4380.25) with an M15 ATR of only 0.2627. This flat price action occurs on a Saturday (2026-09-19), indicating weekend market closure or extreme illiquidity. There are no valid structural breaks, trendline interactions, candlestick patterns, or volume indicators to support a high-probability preemptive entry. Both buy and sell scenarios fail to meet the minimum 80% confidence threshold required by the doctrine.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The HTF trend is strongly bullish on H4 with a clear Break of Structure at 4380.28. Price is currently in a tight accumulation range (4379.97 - 4380.25) with extremely low volatility (M15 ATR 0.26294), forming a bullish flag. A preemptive BUY-LIMIT at 4379.75 captures the liquidity sweep of the consolidation lows before the anticipated bullish expansion, supported by the 0.786 Fibonacci retracement and H4 demand zone."
-          },
-          "risk_profile": {
-            "expected_rr": "1:17.9",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 1,
+            "confidence_percentage": "17.65%",
+            "dominant_bias_reason": "Although the HTF (H4) trend remains bullish, the lower timeframes (H1, M15, M5) are completely sideways and flat. The lack of volatility, volume, and clear structural setups prevents the identification of a reliable defensive staff zone for a preemptive entry."
+          }
         }
       }
     }
