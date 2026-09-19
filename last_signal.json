@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-19 09:11 UTC",
+  "generated_at": "2026-09-19 09:26 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81250.00 - 81300.00",
+          "entry_price": "81295.00",
+          "invalidation_stop": "81185.00",
+          "take_profit": {
+            "primary_tp": "81740.00",
+            "extreme_tp": "82500.00",
+            "risk_reward_ratio": "1:11"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The bullish order block formed on the M15 timeframe at 81100-81242 acts as a strong demand zone. This zone directly overlaps with the key 81250 Quarter Theory level, creating a psychological and structural support shelf. As price retraces, the EMA50/200 dynamic support on lower timeframes aligns with this zone, causing institutional buy orders to trigger preemptively, preventing further downside and initiating a wick-rejection.",
+            "Confluence 2: The recent bullish expansion broke the H1 swing high structure (BOS), leaving behind an unmitigated H1 Fair Value Gap between 81250 and 81292. This FVG confluences with the Malaysian SNR level where previous resistance at 81250 flips into support. The strong momentum indicated by the M15 RSI at 75.7 ensures that any dip into this FVG is met with aggressive buying pressure, causing a rapid wick-rejection at the defensive staff.",
+            "Confluence 3: The breakout from the M15 bullish flag pattern is characterized by strong bullish expansion candles. A rising trendline connecting the H1 lows provides a diagonal support vector that intersects the flag's breakout retest zone. With the M15 ATR at 129.32, the expected volatility range of a single candle perfectly projects a downward wick into the 81295 area before reversing, validating the preemptive entry point.",
+            "Confluence 4: Under Candle Range Theory, the H1 candle's initial balance and range expansion suggest that the corrective phase of the current candle will seek internal liquidity. The 0.382 Fibonacci retracement level of the current daily expansion leg sits at 81267, which aligns with the high-volume node on the VPVR. This concentration of volume acts as a defensive barrier where liquidity is swept, triggering a sharp reversal.",
+            "Confluence 5: Standard Deviation expansion targets project the next major liquidity pool at the 82500 Quarter Theory level (1.5 SD deviation from the mean). This target is supported by Fibonacci Circle arcs acting as time-price resistance boundaries. The Bollinger Bands are expanding rapidly, confirming that the volatility expansion is directed upward, validating a high R:R trade targeting the extreme TP of 82500."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 17,
+            "sell_conditions_met": 1,
+            "confidence_percentage": "100.0%",
+            "dominant_bias_reason": "All 17 structural, price action, and indicator concepts align to support a bullish continuation from the H1/M15 defensive staff zone at 81295.00, while the sell scenario lacks structural validation."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
@@ -13,13 +52,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extreme low-volatility, flat consolidation state across all analyzed timeframes (H4, H1, M15, M5) with an M15 ATR of just 0.00009 (0.9 pips) and a neutral RSI of 47.6. There are no clear structural breaks (BOS), fair value gaps (FVG), or valid supply/demand zones to establish a high-probability defensive staff zone. Both buy and sell scenarios fail to meet the mandatory 80% confidence threshold.",
+          "reason": "The market is in an extremely low-volatility, flat consolidation state typical of a weekend market close (Saturday, 2026-09-19). Across all analyzed timeframes (H4, H1, M15, M5), price action is completely stagnant with a neutral bias. The M15 ATR is virtually zero (0.00009), and the RSI is dead-center at 50.0. There are no structural breaks (BOS), no Fair Value Gaps (FVG), no clear supply/demand zones, and no volume or momentum to support a high-probability preemptive entry. Both buy and sell scenarios fail to meet the mandatory 80% confidence threshold required by the doctrine.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 1,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "5.88%",
-            "dominant_bias_reason": "No dominant bias can be established. Price action is completely flat and illiquid (typical of a weekend or market close), meaning any preemptive limit order would lack structural backing and face high risk of random slippage or spread expansion without genuine market participation."
+            "buy_conditions_met": 0,
+            "sell_conditions_met": 0,
+            "confidence_percentage": "0.0%",
+            "dominant_bias_reason": "Neither bias is dominant. The market is completely flat and illiquid due to the weekend close, resulting in a total lack of trend, momentum, volatility, or structural expansion. No predictive defensive staff can be established under these conditions."
           }
         }
       }
@@ -27,7 +66,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is experiencing an extreme flatline consolidation at 4380.01 with an exceptionally low M15 ATR of 0.26143 and RSI at 50.0. Over the last 12 hours, price action has been compressed within a 0.28-point range. This complete absence of volatility, momentum, and structural expansion prevents the formation of a valid predictive defensive staff zone, keeping both buy and sell confidence levels well below the mandatory 80% execution threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 7,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "41.18%",
+            "dominant_bias_reason": "The dominant bias is technically bullish due to the H4 trend, but the extreme compression across H1, M15, and M5 timeframes indicates a complete lack of market participation. Without structural expansion, liquidity sweeps, or volume validation, a preemptive entry cannot be safely executed."
+          }
+        }
       }
     }
   }
