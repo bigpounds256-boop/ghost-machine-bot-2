@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-19 08:26 UTC",
+  "generated_at": "2026-09-19 08:41 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
@@ -13,13 +13,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is exhibiting extreme compression and flat consolidation with an ATR of 0.00009 (0.9 pips), indicating a complete lack of volatility and liquidity. There are no valid structural breaks (BOS), no fair value gaps (FVG), and no clear supply/demand zones. Trend indicators (EMA, Ichimoku) are completely tangled and flat, while momentum (RSI at 57.1) remains neutral. Under the Preemptive Predictive Wick-Rejection doctrine, entering in these conditions is strictly prohibited as no reliable defensive staff zone can be identified.",
+          "reason": "The market is exhibiting extremely low volatility (M15 ATR of 0.00009) and is in a tight sideways consolidation across all timeframes (H4, H1, M15, M5 are all sideways/neutral). This flat price action, combined with the lack of volume and momentum (RSI at 42.9), prevents the formation of a high-probability predictive defensive staff zone. Both Buy (52.94%) and Sell (64.71%) scenarios fail to meet the mandatory 80% confidence threshold required by the doctrine for execution.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "11.76%",
-            "dominant_bias_reason": "Neither bias can be established. Both buy and sell setups fail 15 out of 17 doctrine checks due to the absence of trend, momentum, volume, and structural expansion. The market is in a state of absolute dormancy, making any trade execution mathematically invalid under the doctrine's strict 80% confidence threshold."
+            "buy_conditions_met": 9,
+            "sell_conditions_met": 11,
+            "confidence_percentage": "64.71%",
+            "dominant_bias_reason": "The dominant bias is slightly bearish (Sell) due to the higher-timeframe bearish structure from 1.15420, rejection of the 0.382 Fibonacci retracement level at 1.14883, and RSI holding below 50 (42.9). However, due to the severe compression and lack of volatility, no trade can be executed until a clear expansion and break of the consolidation range occurs."
           }
         }
       }
@@ -29,13 +29,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extreme low-volatility consolidation phase, flatlining on H1, M15, and M5 timeframes with an M15 ATR of only 0.26254 due to weekend market conditions (Saturday, 2026-09-19). No valid predictive defensive staff zone, FVGs, or structural breaks can be identified on lower timeframes. Both Buy and Sell scenarios fail to meet the mandatory 80% confidence threshold.",
+          "reason": "The market is in an extremely low-volatility, flat consolidation phase with price action completely frozen on a Saturday (2026-09-19), indicating weekend market closure. There is no structural momentum, volume, or valid predictive defensive staff zone. Multi-timeframe alignment is absent as H1, M15, and M5 trends are entirely sideways/neutral with RSI flat at 50.6. Neither buy nor sell scenarios meet the mandatory 80% confidence threshold required for execution.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "17.6%",
-            "dominant_bias_reason": "Although the HTF (H4) trend remains bullish, the lower timeframes (H1, M15, M5) are completely flat with virtually zero volume and extremely compressed volatility. This lack of structure, momentum, and volume prevents the formation of any reliable predictive wick-rejection or defensive staff zones, making any entry highly speculative and non-compliant with the doctrine."
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "29.4%",
+            "dominant_bias_reason": "The overall HTF trend is bullish on the H4 timeframe, giving a slight structural edge to the buy side. However, due to the weekend market closure and complete lack of volatility, volume, and actionable price action setups, both biases fail to reach the 80% execution threshold."
           }
         }
       }
