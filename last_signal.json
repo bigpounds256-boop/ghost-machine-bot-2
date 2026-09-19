@@ -1,43 +1,23 @@
 {
-  "generated_at": "2026-09-19 08:41 UTC",
+  "generated_at": "2026-09-19 08:57 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is exhibiting extremely low volatility (M15 ATR of 0.00009) and is in a tight sideways consolidation across all timeframes (H4, H1, M15, M5 are all sideways/neutral). This flat price action, combined with the lack of volume and momentum (RSI at 42.9), prevents the formation of a high-probability predictive defensive staff zone. Both Buy (52.94%) and Sell (64.71%) scenarios fail to meet the mandatory 80% confidence threshold required by the doctrine for execution.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 9,
-            "sell_conditions_met": 11,
-            "confidence_percentage": "64.71%",
-            "dominant_bias_reason": "The dominant bias is slightly bearish (Sell) due to the higher-timeframe bearish structure from 1.15420, rejection of the 0.382 Fibonacci retracement level at 1.14883, and RSI holding below 50 (42.9). However, due to the severe compression and lack of volatility, no trade can be executed until a clear expansion and break of the consolidation range occurs."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extremely low-volatility, flat consolidation phase with price action completely frozen on a Saturday (2026-09-19), indicating weekend market closure. There is no structural momentum, volume, or valid predictive defensive staff zone. Multi-timeframe alignment is absent as H1, M15, and M5 trends are entirely sideways/neutral with RSI flat at 50.6. Neither buy nor sell scenarios meet the mandatory 80% confidence threshold required for execution.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "29.4%",
-            "dominant_bias_reason": "The overall HTF trend is bullish on the H4 timeframe, giving a slight structural edge to the buy side. However, due to the weekend market closure and complete lack of volatility, volume, and actionable price action setups, both biases fail to reach the 80% execution threshold."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
