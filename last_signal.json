@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20 09:12 UTC",
+  "generated_at": "2026-09-20 09:30 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,17 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is in an extreme, ultra-low-volatility consolidation phase with a total range of only 1.4 pips (1.14853 to 1.14867) across all analyzed timeframes (H4, H1, M15, M5). The M15 ATR(14) is near-zero at 0.00007, and the RSI is perfectly flat at 50.0. There are no structural breaks (BOS), no Fair Value Gaps (FVG), and no volume expansion. This complete lack of momentum and structural definition makes it impossible to establish a reliable defensive staff zone or identify a high-probability preemptive entry.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "11.76%",
-            "dominant_bias_reason": "Neither scenario achieves the mandatory 80% confidence threshold. The market is flatlining in a tight horizontal channel with flat moving averages, neutral momentum indicators, and no clear liquidity sweeps or structural imbalances. Under the defensive staff doctrine, trading in these conditions is strictly avoided due to the absence of directional edge and high risk of spread-induced invalidation."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
