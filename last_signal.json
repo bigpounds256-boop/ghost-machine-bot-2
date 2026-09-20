@@ -1,17 +1,66 @@
 {
-  "generated_at": "2026-09-20 13:30 UTC",
+  "generated_at": "2026-09-20 13:40 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "80360.00 - 80460.00",
+          "entry_price": "80425.00",
+          "invalidation_stop": "80295.00",
+          "take_profit": {
+            "primary_tp": "81300.00",
+            "extreme_tp": "81900.00",
+            "risk_reward_ratio": "1:11.3"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT/SMC bullish order block mitigation on M15/M5 combined with Malaysian SNR key support at 80356.00 and a demand zone between 80360.00 and 80460.00, aligned with Volatility indicators where the M15 ATR of 102.56 confirms that a ~130-pip retracement is well within normal market noise, allowing for a precise, non-random entry.",
+            "Confluence 2: Break of Structure (BOS) on M5/M15 (price broke above minor swing highs at 80566.00 and 80650.58), Candlestick Patterns showing a strong bullish engulfing candle on M15 at 12:45, and Candle Range Theory (CRT) indicating accumulation in the lower portion of the daily range, validated by Momentum indicators as the M15 RSI holds at 54.3, indicating active bullish control.",
+            "Confluence 3: Fibonacci Retracement of the recent M5 impulse (80356.00 to 80650.58) hitting the 0.618 golden pocket at 80468.58, Quarter Theory holding above the 80250.00 minor quarter level, and Trendline Bounces off the minor ascending trendline on M5, aligned with Trend indicators as the H4 EMA50/200 and Ichimoku cloud remain strongly bullish.",
+            "Confluence 4: Fair Value Gap (FVG) on H1/H4 acting as a strong bullish magnet above 80650.00, Chart Patterns showing a falling wedge/bullish flag on M5, and ICT/SMC sell-side liquidity sweep below 80500.00, validated by Volume indicators showing declining volume on the retracement back to 80425.00, confirming a corrective pullback rather than a structural reversal.",
+            "Confluence 5: Standard Deviation (SD) showing price is at -1 to -2 SD from the short-term mean representing an extreme value buy, combined with Malaysian SNR and ICT/SMC order block mitigation, validated by Momentum indicators showing bullish divergence/crossover on lower-timeframe Stochastic and MACD near the oversold boundary."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 11,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The HTF trend remains strongly bullish on H4, and the recent drop swept sell-side liquidity before rejecting strongly. Lower timeframes (M5/M15) have broken structure to the upside and are now retracing to a high-confluence demand zone (defensive staff) at 80425.00, which aligns with the 0.618 Fibonacci retracement, the 80250 minor quarter, and bullish RSI momentum."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11.3",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is experiencing extreme compression with H4, H1, M15, and M5 trends all sideways/neutral. The M15 ATR(14) of 7e-05 indicates virtually non-existent volatility, and price is locked in a micro-range of 1.5 pips (1.14852 to 1.14867). There are no structural breaks (BOS), Fair Value Gaps (FVG), or clear Malaysian SNR (MSNR) levels to anchor a predictive defensive staff zone. Preemptive entry under these conditions carries high risk of chop with no structural invalidation level.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "17.65%",
+            "dominant_bias_reason": "Both Buy and Sell scenarios fail to reach the 80% execution threshold. Sell conditions met score slightly higher at 17.65% due to the M15 RSI at 33.3 indicating minor bearish momentum, but this is highly unreliable in a flat market. Without trend, volume, or volatility expansion, the doctrine mandates a flat position."
+          }
+        }
       }
     },
     "XAU/USD": {
