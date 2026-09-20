@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-09-20 01:11 UTC",
+  "generated_at": "2026-09-20 01:29 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "81100.00 - 81150.00",
-          "entry_price": "81125.00",
-          "invalidation_stop": "80890.00",
-          "take_profit": {
-            "primary_tp": "81950.00",
-            "extreme_tp": "83475.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Integration of ICT/SMC (Bullish Order Block), Supply and Demand (Fresh M15 Demand Zone), and Quarter Theory (81250 level) validated by Trend Indicators (EMA50/200 on H1 sloping upwards). The strong displacement from the 80904.46 low created a fresh M15 demand zone (81062.82 - 81204.06) that overlaps with the 81250 Quarter Theory level. As price retraces, the upward-sloping H1 EMA50/200 acts as dynamic support, validating this zone as a high-probability defensive staff where institutional buy orders are resting.",
-            "Confluence 2: Integration of Fair Value Gap (M15 FVG), Break of Structure (BOS), and Candlestick Patterns (Wick Rejections) validated by Volatility Indicators (M15 ATR of 89.38). The bullish BOS of the H1 minor swing high at 81280 left an unmitigated M15 FVG between 81095.49 and 81204.06. Given the M15 ATR of 89.38, a normal volatility contraction will drive a quick, preemptive wick-rejection into this gap, tapping the defensive staff before reversing sharply.",
-            "Confluence 3: Integration of Fibonacci Retracement (0.618 level), MSNR (Malaysian SNR), and Chart Patterns (Bull Flag) validated by Momentum Indicators (M15 RSI at 69.3). The consolidation on H1/M15 forms a classic bull flag pattern. The 61.8% Fibonacci retracement of the recent impulse leg (80904.46 to 81373.34) aligns perfectly with the MSNR support level at 81100. The M15 RSI at 69.3 shows strong bullish momentum, indicating that any dip into the 61.8% level will be rapidly bought up, preventing a deeper trend reversal.",
-            "Confluence 4: Integration of ICT/SMC (Liquidity Sweep), Supply and Demand (Unmitigated Demand), and Quarter Theory (81000 level) validated by Volume Indicators (OBV showing accumulation). The sweep of the 81000 liquidity pool down to 80904.46 cleared out weak long positions, transferring supply to strong hands. This accumulation is reflected in a rising HTF OBV, confirming that the subsequent return to the unmitigated demand zone at 81125.00 represents a high-probability mitigation play rather than a genuine breakdown.",
-            "Confluence 5: Integration of Standard Deviation (SD), Fibonacci Circles, and CRT (Candle Range Theory) validated by Volatility Indicators (Bollinger Bands contracting on M15). Under Candle Range Theory, the current session is in a retracement phase within a larger bullish expansion. The -1.5 to -2 Standard Deviation band of the contracting M15 Bollinger Bands converges with the Fibonacci Circle golden ratio expansion at 81125.00, defining the exact mathematical boundary of the defensive staff where price volatility is expected to exhaust and reject."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The HTF trend is strongly bullish on H4, supported by a recent liquidity sweep of 80904.46 and a subsequent bullish BOS. The retracement on lower timeframes (H1/M15/M5) is corrective, forming a bull flag that converges perfectly with an unmitigated M15 FVG, a fresh demand zone, and the 61.8% Fibonacci retracement level at 81125.00, providing a high-probability preemptive buy-limit entry."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
