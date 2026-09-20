@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20 11:11 UTC",
+  "generated_at": "2026-09-20 11:29 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,17 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "The market is exhibiting an extremely compressed, flat state with virtually zero volatility and volume, characteristic of weekend illiquidity on Sunday, 2026-09-20. H4, H1, M15, and M5 candles show nearly identical OHLC values with a total range of less than 0.26 USD. M15 ATR is extremely low at 0.25978 and RSI is neutral at 48.4. Under the Preemptive Predictive Wick-Rejection / Defensive Staff doctrine, a high-confidence entry requires clear structural expansion, liquidity sweeps, and defined HTF/LTF order flow. The complete absence of price expansion, Fair Value Gaps (FVGs), Break of Structure (BOS), or reliable chart/candlestick patterns makes it impossible to identify a valid defensive staff zone. Qualitative analysis of indicators suggests Bollinger Bands are extremely pinched, MACD and Stochastic are completely flat/neutral, and volume indicators like OBV and CMF are completely stagnant. Executing any trade in this environment carries extreme risk of spread-widening and random slippage without structural backing.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 1,
-            "confidence_percentage": "11.76%",
-            "dominant_bias_reason": "Although the HTF H4 trend is technically classified as bullish, the lower timeframes (H1, M15, M5) are completely flat and neutral. There is no volume, momentum, or structural development to support either a buy or sell bias. Both scenarios fall far below the mandatory 80% confidence threshold required for execution."
-          }
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
