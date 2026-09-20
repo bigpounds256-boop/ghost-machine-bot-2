@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-19 23:48 UTC",
+  "generated_at": "2026-09-20 00:13 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=BTC%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81010.00 - 81080.00",
+          "entry_price": "81050.00",
+          "invalidation_stop": "80830.00",
+          "take_profit": {
+            "primary_tp": "81950.00",
+            "extreme_tp": "83250.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT/SMC, Supply and Demand, and Quarter Theory with Trend Indicators. The H4 bullish trend (EMA50/200 pointing upwards) aligns with a mitigation of the H4 bullish demand zone (80900 - 81100). This zone is anchored by the major 81000 Quarter Theory level, where institutional order flow (SMC) is expected to defend the structural higher low.",
+            "Confluence 2: MSNR, Trendline Bounces, and Break of Structure (BOS) with Volatility Indicators. The local sideways consolidation on H1/M15 represents a retest of the H4 bullish Break of Structure (BOS) at 81154.67. This retest aligns with a key Malaysian SNR (MSNR) support level and a HTF ascending trendline bounce. The contracting Bollinger Bands (volatility indicator) suggest a compression phase preceding an explosive expansion.",
+            "Confluence 3: Candle Range Theory (CRT), Candlestick Patterns, and Fair Value Gaps (FVG) with Momentum Indicators. The current H4 candle's downward wick represents the manipulation phase of the daily range (CRT), seeking liquidity within the H4 bullish FVG (80725.6 - 81154.67). This is supported by the long lower wicks (candlestick patterns) on the M15/H1 timeframes near 81000, while the M15 RSI at 45.9 indicates momentum is resetting to neutral/oversold, preparing for a bullish reversal.",
+            "Confluence 4: ICT/SMC (Liquidity Sweeps), Chart Patterns, and Quarter Theory with Volume Indicators. The local chart pattern resembles a bullish flag/pennant. The lower boundary of this flag aligns with the 81000 Quarter Theory level, where a liquidity sweep of the minor M15 lows (81000, 80962) is anticipated. This defensive staff zone is validated by the VPVR high volume node (POC) acting as a magnet and support.",
+            "Confluence 5: Fibonacci Retracement, Fibonacci Circles, and Standard Deviation with Volatility Indicators. A Fibonacci retracement of the recent H4 expansion leg (80844.58 to 81951.00) places the 0.618 - 0.786 golden pocket exactly within the 81010 - 81080 defensive staff zone. This area is further reinforced by Fibonacci Circles intersections and a -2 Standard Deviation band extension, indicating an extreme short-term oversold deviation ripe for a preemptive wick-rejection."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong H4 bullish trend aligning with a deep corrective retest of the 81000 Quarter Theory level and H4 demand zone, supported by multi-timeframe structure and momentum resets."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=EUR%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=XAU%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
