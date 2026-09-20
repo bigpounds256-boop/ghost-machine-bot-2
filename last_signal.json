@@ -1,17 +1,27 @@
 {
-  "generated_at": "2026-09-20 07:37 UTC",
+  "generated_at": "2026-09-20 07:52 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is exhibiting extreme flatline consolidation with a total range of less than 1.5 pips over the past 24 hours, characteristic of weekend market closure (September 20, 2026 is a Sunday). All timeframes (H4, H1, M15, M5) are strictly sideways/neutral. Volatility is virtually non-existent with an M15 ATR of 0.7 pips, and RSI is neutral at 42.1. There are no structural breaks (BOS), no Fair Value Gaps (FVG), no clear supply/demand zones, and no indicator alignments to support a high-probability directional bias. Under the Preemptive Predictive Wick-Rejection doctrine, entering in these conditions carries unacceptable risk with no structural edge.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 0,
+            "sell_conditions_met": 0,
+            "confidence_percentage": "0.0%",
+            "dominant_bias_reason": "Both Buy and Sell scenarios fail to meet the required 80% confidence threshold. Out of 17 doctrine checks, 0 conditions are met for either side due to the complete absence of trend, momentum, volume, and structural expansion. Indicators such as EMA50/200, Ichimoku, MACD, and Bollinger Bands are completely flat and overlapping, while Fibonacci tools cannot be anchored due to the lack of swing highs or lows. We remain flat until market open introduces liquidity and structural expansion."
+          }
+        }
       }
     },
     "XAU/USD": {
@@ -19,13 +29,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is in an extreme flatline state with virtually zero volatility (M15 ATR of 0.25993) and price locked in a micro-range of 4379.97 to 4380.24 across H4, H1, M15, and M5 timeframes. This behavior indicates weekend or holiday market closure. There are no valid breaks of structure (BOS), fair value gaps (FVG), or volume-based confirmations to establish a predictive defensive staff zone. Under the doctrine, trading in these conditions is strictly prohibited as no edge can be mathematically or qualitatively validated.",
+          "reason": "The market is exhibiting an extreme state of compression with virtually zero volatility, as evidenced by an M15 ATR of 0.25395 and a completely neutral RSI of 50.2. Every single M5, M15, and H1 candle over the last 36 hours has opened at exactly 4380.04417 and remained confined within a microscopic 0.26 USD range (4379.97848 - 4380.24123). This indicates a completely frozen or inactive weekend market feed. There are no valid lower-timeframe structural breaks (BOS), Fair Value Gaps (FVG), or clear supply/demand zones being tested. Under the Preemptive Predictive Wick-Rejection doctrine, entering a trade in these conditions is highly speculative and lacks any statistical edge. Both Buy and Sell scenarios fail to meet the mandatory 80% confidence threshold.",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 3,
             "sell_conditions_met": 2,
             "confidence_percentage": "17.65%",
-            "dominant_bias_reason": "While the HTF (H4) trend is technically bullish, the complete lack of lower timeframe structure, momentum (RSI at 47.9), and volume makes any directional execution impossible. Neither scenario comes close to the 80% confidence threshold."
+            "dominant_bias_reason": "The HTF (H4) trend is technically bullish, but the lower timeframes (H1, M15, M5) are completely flat and sideways. The extreme compression and lack of volume/momentum make it impossible to establish a high-probability directional bias. Therefore, the dominant bias is neutral, and no trade is executed."
           }
         }
       }
