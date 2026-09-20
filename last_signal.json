@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20 06:49 UTC",
+  "generated_at": "2026-09-20 07:00 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is exhibiting extreme consolidation and flat price action, with XAU/USD tightly bound within a microscopic range of approximately 0.26 USD (4379.97848 to 4380.24122) across H4, H1, M15, and M5 timeframes. This absolute lack of volatility (ATR at 0.26015) and neutral momentum (RSI at 44.3) results in a complete absence of structural expansion, unmitigated Fair Value Gaps (FVGs), or valid Breaks of Structure (BOS). Under the Preemptive Predictive Wick-Rejection doctrine, a defensive staff zone cannot be reliably established because there are no clear swing points, trendlines, or supply/demand imbalances to anchor a preemptive limit order. Executing any trade in this environment carries high risk of capital lockup or random stop-outs due to spread expansion.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "23.53%",
+            "dominant_bias_reason": "Although the HTF (H4) trend remains technically bullish, the lower timeframes (H1, M15, M5) are completely flat and neutral. Buy conditions met only 4 out of 17 checks (H4 trend, Quarter Theory 4380 level, CRT range accumulation, and Bollinger Bands squeeze). Sell conditions met only 3 out of 17 checks (RSI below 50, CRT range distribution, and Quarter Theory resistance). Neither scenario comes close to the mandatory 80% (14/17) execution threshold, requiring a strict defensive stand-aside."
+          }
+        }
       }
     }
   }
