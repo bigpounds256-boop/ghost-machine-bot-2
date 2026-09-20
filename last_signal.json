@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20 16:11 UTC",
+  "generated_at": "2026-09-20 16:29 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,17 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "The market is in an extreme low-volatility consolidation phase with an ATR(14) of only 0.8 pips (8e-05) and a total trading range of less than 1.5 pips over multiple days. There is a complete absence of structural expansion, Break of Structure (BOS), Fair Value Gaps (FVG), or trend direction across all timeframes (H4, H1, M15, M5 are all sideways/neutral). Under the Preemptive Predictive Wick-Rejection / Defensive Staff doctrine, a minimum of 80% confidence (14/17 aligned concepts) is required to execute. Since both Buy and Sell scenarios score only 11.76% due to the lack of trend, momentum, volume, and structural setups, no trade can be executed. Entering in these conditions violates the core risk-to-reward principles of the doctrine.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "11.76%",
+            "dominant_bias_reason": "Both scenarios are equally weak due to the absolute flatline in price action. The market is locked in a tight 1.14852 - 1.14867 range, indicating a lack of institutional participation or a weekend/holiday market state. No dominant bias can be established until a high-volume expansion breaks the current consolidation and establishes a clear HTF order flow, creating valid defensive staff zones and liquidity targets."
+          }
+        }
       }
     },
     "XAU/USD": {
