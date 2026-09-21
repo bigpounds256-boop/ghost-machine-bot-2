@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21 03:11 UTC",
+  "generated_at": "2026-09-21 03:32 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,46 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "XAU/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "4368.00 - 4372.00",
-          "entry_price": "4369.50",
-          "invalidation_stop": "4378.50",
-          "take_profit": {
-            "primary_tp": "4341.00",
-            "extreme_tp": "4275.00",
-            "risk_reward_ratio": "1:10.5"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC bearish mitigation of the 4380-4384 liquidity sweep, rejection from the major H1 supply zone, and Quarter Theory rejection at the 4375 key level, aligning with the bearish H1 trend validated by EMA50/200 downward slope.",
-            "Confluence 2: BOS on M15/M5 below 4364.50, creation of an unmitigated bearish FVG on H1 between 4377.40 and 4365.79, and break of Malaysian SNR support at 4365.00, aligned with bearish momentum on the M15 RSI (39.9).",
-            "Confluence 3: CRT showing H1/H4 candles opening near highs and closing near lows, strong bearish engulfing candlestick patterns on H1, and newly formed M5/M15 supply zone at 4368.00 - 4372.00, aligned with downward-expanding Bollinger Bands and M15 ATR of 8.42.",
-            "Confluence 4: Bearish trendline connecting H1 swing highs, SMC mitigation of internal liquidity pools, and M5 double top chart pattern neckline retest, validated by qualitative volume analysis (OBV/VPVR) showing heavy distribution at the highs.",
-            "Confluence 5: Quarter Theory targeting the 4350 and 4275 major quarters, Fibonacci Retracement entry at the 0.618 level of the recent M15 drop, and SMC targeting HTF sell-side liquidity pools, supported by bearish M5 and H1 trend alignment."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 1,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong bearish alignment across H1/M5 timeframes, characterized by a liquidity sweep at 4384.53, a clear break of structure (BOS) below 4364.50, and the creation of a defensive supply zone at 4368.00 - 4372.00, supported by bearish momentum (RSI 39.9) and high volatility (ATR 8.42)."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.5",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
