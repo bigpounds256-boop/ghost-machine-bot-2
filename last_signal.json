@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21 05:57 UTC",
+  "generated_at": "2026-09-21 06:14 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,46 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.14710 - 1.14730",
-          "entry_price": "1.14725",
-          "invalidation_stop": "1.14695",
-          "take_profit": {
-            "primary_tp": "1.14875",
-            "extreme_tp": "1.15025",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC Liquidity Sweep + Supply/Demand Zone + Quarter Theory + Momentum Indicators. The price sweeps the internal sell-side liquidity below the H1 consolidation lows (1.14738-1.14746) to tap into the H4 demand zone (1.14720-1.14740) near the 1.14750 Quarter Theory level. This structural mitigation aligns with the oversold M15 RSI(14) of 29.6, indicating that the downward momentum is exhausted and primed for a sharp reversal.",
-            "Confluence 2: Fibonacci Retracement + MSNR + Candlestick Patterns + Volatility Indicators. The 0.618 Fibonacci retracement level of the H4 swing (1.14551 to 1.15005) sits precisely at 1.14724, which overlaps with a major Malaysian SNR pullback level. The M15 candle at 15:45 prints a pin-bar/hammer pattern rejecting 1.14721, while the price touches the lower Bollinger Band (-2SD), signaling a high-probability mean-reversion bounce.",
-            "Confluence 3: Break of Structure (BOS) + Candle Range Theory (CRT) + Trendline Bounce + Trend Indicators. While the HTF trend is sideways/neutral, the price is bouncing off a long-term H4 trendline drawn from 1.14551. The CRT suggests the daily range low is being established here. A successful defense of this zone prevents a bearish BOS of the HTF structure, aligning with flat EMA50/200 and Ichimoku clouds that confirm range-bound behavior.",
-            "Confluence 4: Fair Value Gap (FVG) + Chart Patterns + Standard Deviation + Volume Indicators. The entry zone mitigates an unmitigated H4 FVG (1.14737-1.14757) and forms a potential double bottom pattern on the M5 chart. This is supported by a high-volume node on the VPVR at 1.14750, indicating strong institutional interest and defensive positioning at this standard deviation boundary.",
-            "Confluence 5: Preemptive Wick-Rejection + Fibonacci Circles + Momentum Oscillators + Volume Accumulation. The predictive wick-rejection doctrine identifies the 1.14725 level as the ultimate defensive staff where buyers will front-run the deeper 1.14551 pool. This level intersects with a key Fibonacci Circle arc, while the Accumulation/Distribution (A/D) line shows bullish divergence against the lower lows in price, confirming institutional accumulation."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "The EUR/USD is trading at a major H4 demand zone and the 0.618 Fibonacci retracement level (1.14724) of the recent swing. With M15 RSI oversold at 29.6 and a clear liquidity sweep of intraday lows, the Buy scenario presents a highly asymmetric opportunity with a tight 3-pip stop loss, yielding a 1:10 Risk-to-Reward ratio to the HTF swing high."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
