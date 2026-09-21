@@ -1,23 +1,62 @@
 {
-  "generated_at": "2026-09-20 23:47 UTC",
+  "generated_at": "2026-09-21 00:12 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=BTC%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81201.24 - 81289.58",
+          "entry_price": "81253.13",
+          "invalidation_stop": "81110.00",
+          "take_profit": {
+            "primary_tp": "81950.00",
+            "extreme_tp": "82685.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT/SMC, Supply/Demand, and Trend Indicators. The H4/H1 bullish trend (EMA50/200 and Ichimoku cloud support) aligns with a newly formed bullish demand zone and H1 Order Block at 81178.01. The preemptive entry at 81253.13 targets the mitigation of this demand zone before continuation.",
+            "Confluence 2: BOS, FVG, and Momentum Indicators. The bullish Break of Structure (BOS) above the H1 swing high of 81332.01 left an unmitigated Fair Value Gap (FVG) between 81262.01 and 81332.01. RSI at 58.0 confirms strong bullish momentum, validating that the first test of this FVG will trigger a sharp wick-rejection.",
+            "Confluence 3: MSNR, Quarter Theory, and Volatility Indicators. The Malaysian SNR level at 81222.85 (previous resistance turned support) aligns with the 81250 Quarter Theory level. ATR of 216.74 indicates sufficient volatility to sweep down to this defensive staff zone, where Bollinger Bands' middle band acts as dynamic support.",
+            "Confluence 4: CRT, Candlestick Patterns, and Volume Indicators. Candle Range Theory (CRT) shows the 23:00 H1 candle acting as an accumulation range, followed by a strong bullish expansion candle at 00:00. Rising OBV and VPVR high-volume node at 81200 confirm institutional accumulation, supporting a preemptive limit order.",
+            "Confluence 5: Fibonacci Retracement, Standard Deviation, and MTF Alignment. The 0.618 Fibonacci retracement of the immediate H1 swing (81135.15 to 81444) sits at 81253.13, aligning with the -1SD of the M5 VWAP. Multi-timeframe alignment (H4, H1, M15 bullish) ensures high-probability continuation from this defensive staff."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "Strong multi-timeframe bullish alignment (H4/H1/M15) combined with a fresh H1 Break of Structure (BOS) and an unmitigated Fair Value Gap (FVG) resting directly on the 0.618 Fibonacci retracement level. Sell scenario lacks structural and momentum support, presenting counter-trend risk."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=EUR%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "429 Client Error: Too Many Requests for url: https://api.twelvedata.com/time_series?symbol=XAU%2FUSD&interval=4h&outputsize=30&apikey=87f1b78d434040b69ee7493dd2035218&order=desc"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
