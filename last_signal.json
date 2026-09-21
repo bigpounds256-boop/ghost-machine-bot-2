@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21 03:32 UTC",
+  "generated_at": "2026-09-21 03:46 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,46 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.14810 - 1.14825",
+          "entry_price": "1.14815",
+          "invalidation_stop": "1.14845",
+          "take_profit": {
+            "primary_tp": "1.14550",
+            "extreme_tp": "1.14315",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The M15 bearish order block formed at 1.14811 - 1.14844 represents a major institutional supply zone. The subsequent break of structure (BOS) below the 1.14766 minor swing low confirms that sellers have seized control. This structural shift is validated by the EMA50 crossing below the EMA200 on the lower timeframes, indicating a transition from a sideways range to a bearish expansion phase.",
+            "Confluence 2: The 1.14810 level acts as a key MSNR role-reversal level (previous support turned resistance) which aligns closely with the 1.14800 quarter level. The rejection of the 1.15000 major quarter level with a long upper wick candlestick pattern on the H1 timeframe indicates strong institutional distribution. This is supported by the M15 RSI residing at 44.7 (below the 50 median line), confirming bearish momentum is accelerating as price approaches the entry zone.",
+            "Confluence 3: Under CRT, the Asian session established a tight accumulation range, followed by a manipulation sweep to 1.15005. The current distribution phase has left an unmitigated Fair Value Gap (FVG) on the M15 timeframe between 1.14811 and 1.14774. This FVG lies directly within our identified supply zone. The low M15 ATR of 0.00031 indicates compressed volatility, suggesting that a preemptive limit order at the 1.14815 defensive staff will capture the expansion move with minimal slippage.",
+            "Confluence 4: The 1.14815 entry price represents the 0.618 Fibonacci retracement level of the recent impulsive leg down from 1.14857 to 1.14749. This level confluences with the retest of a broken minor ascending trendline and the neckline of a head-and-shoulders chart pattern. Bollinger Bands are expanding downwards on the M15 timeframe, confirming that the retest of the middle band (basis) at 1.14815 will act as a dynamic defensive barrier.",
+            "Confluence 5: Standard deviation analysis of the current range shows that 1.14815 represents a +1.5 SD deviation from the short-term volume-weighted mean, making it a highly efficient entry point for shorts. The VPVR shows a high volume node at 1.14850, which will act as heavy overhead resistance, protecting our tight stop loss at 1.14845. The ultimate target is the sell-side liquidity pool resting below the 1.14551 HTF swing low, ensuring a high R:R trade."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 0,
+            "sell_conditions_met": 17,
+            "confidence_percentage": "100%",
+            "dominant_bias_reason": "EUR/USD has rejected the 1.15000 major quarter level, established a bearish structure with lower lows and lower highs across H1, M15, and M5, and left an unmitigated defensive staff zone (FVG/Order Block) at 1.14810 - 1.14825. All 17 price action, indicator, and Fibonacci concepts align to support a high-probability preemptive short entry."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
