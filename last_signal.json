@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-22 18:53 UTC",
+  "generated_at": "2026-09-22 21:46 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "86050.00 - 86150.00",
+          "entry_price": "86115.00",
+          "invalidation_stop": "85940.00",
+          "take_profit": {
+            "primary_tp": "86700.00",
+            "extreme_tp": "87865.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: SMC, Supply/Demand, and Trend Indicators. The H4 and H1 bullish trends (EMA50/200 sloping upwards, Ichimoku Kumo support) align with a mitigation of the H1 bullish demand zone (85900 - 86100). Price is returning to this unmitigated order block to sweep sell-side liquidity before continuing the HTF expansion.",
+            "Confluence 2: MSNR, Quarter Theory (QT), and Volatility Indicators. The 86000 psychological level acts as a Major Quarter Level and strong Malaysian SNR support. This is reinforced by the M15 ATR (170.74) and Bollinger Bands, where the lower band limits downward expansion, predicting a sharp wick-rejection at the defensive staff zone.",
+            "Confluence 3: CRT, Candlestick Patterns, and Momentum Indicators. Under Candle Range Theory, the current M5/M15 sideways consolidation represents the manipulation phase at a discount. The formation of lower wicks on H1/M15 candles indicates strong buying pressure, while the M15 RSI at 35.3 shows momentum is deeply oversold and primed for a bullish reversal.",
+            "Confluence 4: BOS, Chart Patterns, and Volume Indicators. The HTF structure shows a clear bullish Break of Structure (BOS) above 86620, with the current pullback forming a classic bull flag chart pattern. Declining volume on this pullback (as seen in OBV/CMF stabilization) confirms a lack of selling pressure, validating a preemptive long entry.",
+            "Confluence 5: Fibonacci Retracement, Fibonacci Circles, and Standard Deviation. The defensive staff zone at 86115.00 aligns perfectly with the 0.5 - 0.618 Fibonacci golden pocket (measured from the 85114.00 swing low to the 87395.67 swing high). This is mathematically supported by Fibonacci circle arcs and a -2 Standard Deviation deviation from the mean, signaling an imminent mean-reversion bounce."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 17,
+            "sell_conditions_met": 0,
+            "confidence_percentage": "100%",
+            "dominant_bias_reason": "HTF bullish trend alignment, strong demand zone mitigation at the 86000 Quarter Theory level, oversold M15 RSI, and perfect Fibonacci golden pocket confluence."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
@@ -17,7 +56,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "Expecting value: line 22 column 5 (char 1831)"
       }
     }
   }
