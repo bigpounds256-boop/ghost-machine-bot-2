@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22 10:44 UTC",
+  "generated_at": "2026-09-22 15:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,52 +11,13 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "EUR/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.14360 - 1.14410",
-          "entry_price": "1.14385",
-          "invalidation_stop": "1.14335",
-          "take_profit": {
-            "primary_tp": "1.14750",
-            "extreme_tp": "1.14950",
-            "risk_reward_ratio": "1:11.3"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: SMC, MSNR, and Quarter Theory with Volatility (ATR). The sharp liquidity sweep below the major psychological level of 1.14500 (Quarter Theory) down to 1.14345 represents a classic SMC stop-hunt. This level acts as a strong Malaysian S&R (MSNR) rejection point. The high ATR (0.00091) ensures that the rapid expansion away from this level leaves behind a highly reactive defensive staff zone, where a preemptive limit order can capture the secondary test of this liquidity pool.",
-            "Confluence 2: FVG, Supply & Demand, and Candlestick Patterns with Momentum (RSI). The aggressive rejection candle at 18:30 (Candlestick Pattern) created a strong M5 Demand Zone and left an unmitigated Fair Value Gap (FVG) between 1.14401 and 1.14489. As RSI(14) recovers to 51.2 from oversold territory, it confirms returning bullish momentum, validating that a preemptive entry within this FVG will meet strong defensive buying pressure before any deeper invalidation.",
-            "Confluence 3: BOS, CRT, and Chart Patterns with Trend (EMA). The M5 structure shifted bullishly with a Break of Structure (BOS) above 1.14637, confirming a double-bottom chart pattern at 1.14345. According to Candle Range Theory (CRT), the rapid expansion and subsequent contraction back to the 1.14500 level indicate a re-accumulation phase. This aligns with flat/supportive short-term EMAs, suggesting the sideways trend is ready to bounce from the range floor.",
-            "Confluence 4: Fibonacci Retracement, SMC, and Quarter Theory with Volume (Accumulation). A deep Fibonacci retracement (0.786) of the recent impulse (1.14345 to 1.14708) aligns precisely at 1.14385, which sits just above the institutional order block (SMC) and the 1.14400 minor Quarter Theory level. Qualitative volume analysis indicates heavy accumulation during the initial sweep, meaning a return to this zone will trigger resting institutional buy orders.",
-            "Confluence 5: Standard Deviation (SD), MSNR, and FVG with Volatility (Bollinger Bands). The initial drop to 1.14345 pushed price beyond the 2-Standard Deviation lower Bollinger Band, representing an extreme volatility exhaustion point. The subsequent rapid snapback created a high-probability MSNR level and an unmitigated FVG. Entering preemptively at 1.14385 exploits this volatility contraction, placing our stop-loss safely outside the HTF invalidation level."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "94.1%",
-            "dominant_bias_reason": "The market completed a major liquidity sweep below the 1.14500 Quarter Theory level down to 1.14345, followed by a strong bullish displacement that broke minor structure (BOS) and left an unmitigated M5 Fair Value Gap (FVG). A preemptive buy-limit order inside the defensive staff zone (1.14360 - 1.14410) offers an exceptional 1:11.3 risk-to-reward ratio with a tight stop-loss placed just below the HTF invalidation level."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.3",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
