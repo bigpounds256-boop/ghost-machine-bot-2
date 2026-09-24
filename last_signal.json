@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24 20:38 UTC",
+  "generated_at": "2026-09-24 23:29 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,46 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "XAU/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "4278.14 - 4280.93",
+          "entry_price": "4278.50",
+          "invalidation_stop": "4281.50",
+          "take_profit": {
+            "primary_tp": "4268.50",
+            "extreme_tp": "4243.50",
+            "risk_reward_ratio": "1:11.67"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Bearish Order Block (SMC), unmitigated supply zone (Supply and Demand), and the 4280.00 psychological level (Quarter Theory) align with the dominant H4 bearish trend and downward-sloping EMA50/200 (Trend Indicators), establishing a highly fortified defensive staff zone.",
+            "Confluence 2: An unmitigated M15 Fair Value Gap (FVG) between 4271.86 and 4278.14 created by the aggressive 08:00 bearish engulfing candle (Candlestick Patterns) is being retested correctively (Candle Range Theory), with dynamic resistance provided by the upper Bollinger Band near 4279.50 (Volatility Indicators).",
+            "Confluence 3: A lower-timeframe Break of Structure (BOS) below 4273.94 is followed by a corrective ascending channel/bear flag (Chart Patterns) retesting the broken structure (Trendline Breaks & Bounces), while the M15 RSI at 49.4 (Momentum Indicators) leaves ample room for a corrective rise before rejection.",
+            "Confluence 4: The 0.786 Fibonacci retracement of the recent expansion down sits at 4278.17, placing the entry deep in premium territory (SMC), while declining volume on the upward retracement (Volume Indicators) confirms a lack of buying pressure, indicating a corrective move susceptible to preemptive wick-rejection.",
+            "Confluence 5: The previous high at 4280.93 acts as a strong MSNR resistance level, where a preemptive entry at 4278.50 anticipates a wick-rejection before a double top can fully form, supported by the +2 Standard Deviation band (SD) defining the extreme boundary of the current consolidation range."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 16,
+            "confidence_percentage": "94.1%",
+            "dominant_bias_reason": "The H4 trend is strongly bearish, and lower timeframes show a corrective bear flag retracement into an unmitigated M15 FVG and bearish Order Block at the 4280.00 Quarter level, with declining volume confirming a lack of buying pressure."
+          },
+          "risk_profile": {
+            "expected_rr": "1:11.67",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     }
   }
