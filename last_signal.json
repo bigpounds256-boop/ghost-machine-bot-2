@@ -1,62 +1,23 @@
 {
-  "generated_at": "2026-09-24 01:37 UTC",
+  "generated_at": "2026-09-24 06:48 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "83650.00 - 83850.00",
-          "entry_price": "83720.00",
-          "invalidation_stop": "83390.00",
-          "take_profit": {
-            "primary_tp": "85300.00",
-            "extreme_tp": "87100.00",
-            "risk_reward_ratio": "1:10.24"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: HTF Demand Zone & SMC Discount Mitigation. The H4 trend is strongly bullish, and the current pullback has reached the discount zone. The defensive staff is anchored within the H4 demand zone (83500.01 - 83996.00) created by the massive wick rejection on 2026-09-23 16:00. This aligns with the EMA 200 on H1 providing dynamic support, validating institutional order block mitigation.",
-            "Confluence 2: Malaysian SNR & Quarter Theory Alignment. The entry price of 83720.00 is strategically placed just above the 83750.00 sub-quarter level (Quarter Theory) and aligns with a major historical resistance-turned-support level (MSNR look-left level). This level is validated by the M15 RSI being deeply oversold at 23.4, indicating that sellers are exhausted exactly as they test this key structural barrier.",
-            "Confluence 3: Candle Range Theory (CRT) & Fibonacci Retracement. Under CRT, the current H4 candle is executing its manipulation phase, sweeping below the 84000 psychological level to collect sell-side liquidity before the expansion phase begins. This sweep terminates precisely at the 0.5 Fibonacci retracement level (83702.00) calculated from the 80126.04 swing low to the 87278.54 swing high, validated by the M15 ATR of 123.02 which supports a clean, rapid wick-rejection.",
-            "Confluence 4: Chart Pattern & Standard Deviation Mean Reversion. A potential H1 double bottom pattern is forming as price retests the major liquidity pool near 83500. This structural pattern is validated by Standard Deviation analysis, which shows price trading at an extreme -2.5 SD deviation from the H1 mean, signaling a high-probability mean-reversion bounce back toward the H4 bullish trend.",
-            "Confluence 5: BOS & Volume Absorption. The HTF structure remains bullish following the Break of Structure (BOS) above 84887.19. The current pullback is a healthy retest of this broken structure. Volume analysis (A/D and OBV) reveals that the previous deep drop to 83500 was met with massive buying volume (absorption), confirming that smart money is actively defending this zone, setting up a preemptive wick-rejection."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "HTF bullish trend alignment, deep mitigation of H4 demand zone, 0.5 Fibonacci retracement confluence, and extreme oversold momentum (M15 RSI at 23.4) supporting a preemptive wick-rejection at the defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10.24",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
       }
     }
   }
