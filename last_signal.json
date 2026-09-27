@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-09-27 15:21 UTC",
+  "generated_at": "2026-09-27 19:10 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "84605.00 - 84640.00",
+          "entry_price": "84625.00",
+          "invalidation_stop": "84545.00",
+          "take_profit": {
+            "primary_tp": "85150.00",
+            "extreme_tp": "85450.00",
+            "risk_reward_ratio": "1:10.3"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: The M15 and M5 structures have undergone a bullish Break of Structure (BOS) by violating the swing high at 84687.32. This shift in market structure aligns with the dominant H4 bullish trend, where the EMA50/200 on lower timeframes are beginning to fan out in a bullish configuration, confirming that the path of least resistance is upward.",
+            "Confluence 2: A prominent unmitigated M5 Fair Value Gap (FVG) exists between 84604.45 and 84637.73, which overlaps directly with a newly established demand zone (the 18:10-18:15 base). The M15 ATR of 108.45 indicates that a normal volatility contraction/pullback will naturally target this high-liquidity pocket, allowing for a clean preemptive entry.",
+            "Confluence 3: The 84500 major quarter level acts as a psychological anchor, reinforced by Malaysian SNR (MSNR) support where previous resistance has flipped to support. As price retraces toward this level, the M15 RSI (currently at 68.7) will cool down toward the 50-midline, resetting momentum and preparing the market for a secondary bullish impulse.",
+            "Confluence 4: Drawing a Fibonacci retracement from the local swing low of 84476.78 to the swing high of 84843.00 places the 0.618 - 0.705 Golden Pocket (84584 - 84616) in direct confluence with our entry zone. This zone represents a -1 to -2 Standard Deviation deviation from the short-term mean, where a preemptive limit order will capture the wick-rejection of the bullish engulfing pattern's origin.",
+            "Confluence 5: Under Candle Range Theory, the current H4 candle is expanding its range upward after accumulating near the 84400 low. This expansion forms a bullish flag/continuation pattern on the M15 chart, supported by rising volume on the breakout candles, indicating institutional participation and validating the preemptive defensive staff zone."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong multi-timeframe alignment where H4 and M5 are bullish, while H1 and M15 are transitioning from neutral to bullish. The presence of an unmitigated M5 FVG and demand zone within the Fibonacci Golden Pocket, combined with the defense of the 84500 major quarter level, provides an exceptionally high-probability preemptive buy setup."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.3",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
