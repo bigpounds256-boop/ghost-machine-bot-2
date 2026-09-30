@@ -1,62 +1,23 @@
 {
-  "generated_at": "2026-09-30 12:03 UTC",
+  "generated_at": "2026-09-30 17:49 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "83920.00 - 83980.00",
-          "entry_price": "83950.00",
-          "invalidation_stop": "84065.00",
-          "take_profit": {
-            "primary_tp": "83300.00",
-            "extreme_tp": "82800.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The H4 bearish trend aligns with the mitigation of a bearish H1 Order Block (SMC) at the 83950-84000 key resistance zone (MSNR). This structural resistance is validated by the H4 EMA50/200 sloping downwards, confirming that the HTF trend remains firmly bearish despite the lower-timeframe counter-trend rally.",
-            "Confluence 2: Price is rejecting the major Large Quarter level of 84000 (QT), leaving prominent upper wicks on the M15 and M5 timeframes (Candlestick Patterns). This rejection occurs as the M15 RSI reaches an extremely overbought reading of 81.2 (Momentum Alignment), signaling immediate exhaustion and a high probability of a sharp mean-reversion move.",
-            "Confluence 3: The entry zone at 83950 aligns precisely with the 0.618 Fibonacci retracement level of the recent H4 impulse leg (84563 to 82956) and sits within a major H1 Supply Zone. High M15 ATR of 179.2 (Volatility Alignment) indicates that the market is prone to rapid wick expansions and sharp rejections at these key premium levels.",
-            "Confluence 4: On the M5 timeframe, price has executed a local Break of Structure (BOS/CHoCH) by breaking below the 11:45 low of 83872. This shift occurs at the extreme premium of the daily Candle Range (CRT), accompanied by volume exhaustion on the buying side, confirming that buyers lack the momentum to sustain prices above 84000.",
-            "Confluence 5: The preemptive entry targets the mitigation of an unmitigated bearish FVG on the H1 timeframe, completing a double-top distribution pattern (Chart Patterns) near 83980. This setup aligns the bearish HTF structure (H4) with the overextended LTF structure (M15/M5), providing a high-probability, low-risk entry point."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "HTF H4 trend is bearish, M15 RSI is extremely overbought at 81.2, and price is showing clear wick rejections at the 83950-84000 major quarter level and 0.618 Fibonacci retracement, signaling a high-probability preemptive short opportunity."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
