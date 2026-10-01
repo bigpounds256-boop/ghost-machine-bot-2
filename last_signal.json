@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01 00:53 UTC",
+  "generated_at": "2026-10-01 06:47 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,13 +11,52 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.13180 - 1.13220",
+          "entry_price": "1.13189",
+          "invalidation_stop": "1.13259",
+          "take_profit": {
+            "primary_tp": "1.13000",
+            "extreme_tp": "1.12489",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: Integration of SMC Bearish Order Block, Supply Zone, and Quarter Theory (1.13250 minor quarter level) aligned with Trend Indicators (EMA50/200 sloping downwards on H1/M15), confirming the validity of the defensive staff zone.",
+            "Confluence 2: Integration of MSNR (Support turned Resistance at 1.13189), Break of Structure (BOS below H4/H1 swing lows), and Candlestick Patterns (strong H1 Bearish Engulfing) aligned with Momentum Indicators (RSI at 35.2 confirming dominant bearish momentum).",
+            "Confluence 3: Integration of Candle Range Theory (CRT premium pricing), Fair Value Gap (FVG on M15/M5), and Trendline Bounce aligned with Volatility Indicators (M15 ATR at 0.00053 supporting a precise, high-probability wick-rejection at the entry price).",
+            "Confluence 4: Integration of Fibonacci Retracement (0.618 golden ratio of the recent M15 impulse leg), Chart Patterns (Bearish Flag continuation), and Quarter Theory (1.13000 target) aligned with Volume Indicators (VPVR showing high volume node resistance at 1.13190).",
+            "Confluence 5: Integration of Multi-timeframe Alignment (H4/H1 bearish market structure), SMC Liquidity Pools (targeting sell-side liquidity below 1.13000), and Standard Deviation bands aligned with Trend Indicators (Ichimoku price action trading below the Kumo cloud)."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 1,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "The dominant bias is SELL due to strong multi-timeframe bearish alignment on H4 and H1, a clean break of structure (BOS) below the 1.13189 key support level, and the formation of a bearish order block/supply zone at 1.13180 - 1.13220. Momentum is strongly bearish with RSI at 35.2, and the 1.13250 minor quarter level acts as a solid ceiling for a preemptive limit entry."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
