@@ -1,56 +1,17 @@
 {
-  "generated_at": "2026-10-06 08:10 UTC",
+  "generated_at": "2026-10-06 15:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "85410.00 - 85520.00",
-          "entry_price": "85495.00",
-          "invalidation_stop": "85270.00",
-          "take_profit": {
-            "primary_tp": "86450.00",
-            "extreme_tp": "87750.00",
-            "risk_reward_ratio": "1:10"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The market swept sell-side liquidity (SSL) at 85136.11, tapping into the key MSNR support level at 85300. This sweep provided the necessary liquidity for institutional buyers to drive a strong displacement upward, breaking the descending trendline on the H1 timeframe. This structural shift aligns with the dominant H4 bullish trend, confirming that the HTF buyers are resuming control.",
-            "Confluence 2: The rapid displacement created an unmitigated M15 FVG between 85410.00 and 85521.97, which overlaps with a newly formed demand zone. This zone is centered around the 85500 major psychological Quarter Theory level. The M15 ATR of 138.75 confirms that a retracement into this zone is highly probable and represents a standard mean-reversion move before continuation, making it the ideal defensive staff for a preemptive limit order.",
-            "Confluence 3: The 0.382 to 0.500 Fibonacci retracement levels (85521.70 - 85448.09) of the impulse move align perfectly with the M15 FVG. This area is validated by the bullish BOS of the 85749.11 high and the strong bullish marubozu candlestick pattern on the M15 timeframe. The M15 RSI at 55.8 is rising out of neutral territory, indicating that momentum is building to support a continuation once the retracement mitigates this defensive zone.",
-            "Confluence 4: An Inverse Head and Shoulders pattern has completed on the lower timeframes (M5/M15), with the neckline at 85518.36 being broken. This neckline now acts as a Resistance-turned-Support (RBS) level. Under Candle Range Theory, the strong expansion of the 08:00 M15 candle suggests that the open and mid-range of this candle will act as a defensive barrier, aligning with the bullish M5 trend and the EMA50/200 golden cross.",
-            "Confluence 5: A preemptive buy-limit order at 85495.00 allows us to enter at the exact point of mitigation within the demand zone, just below the 85500 Quarter level. This entry point is supported by the high volume observed during the breakout, indicating institutional accumulation. By entering preemptively, we capture the full HTF continuation toward the swing highs without waiting for wick confirmation, keeping our risk minimal and our R:R maximized."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 16,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "94.12%",
-            "dominant_bias_reason": "The HTF H4 trend is strongly bullish, and the lower timeframes (M5/M15) have completed a liquidity sweep of the 85136.11 lows followed by a strong bullish displacement and market structure shift (BOS) above 85749.11. This breakout has left an unmitigated M15 FVG and demand zone at the 85500 Quarter level, which aligns perfectly with the 0.382-0.500 Fibonacci retracement levels. All major indicators (RSI, ATR, Trend) support a preemptive buy-limit entry at the defensive staff zone for a high R:R continuation play."
-          },
-          "risk_profile": {
-            "expected_rr": "1:10",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
