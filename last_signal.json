@@ -1,17 +1,66 @@
 {
-  "generated_at": "2026-10-10 15:09 UTC",
+  "generated_at": "2026-10-10 19:18 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "82980.00 - 83010.00",
+          "entry_price": "82995.00",
+          "invalidation_stop": "82935.00",
+          "take_profit": {
+            "primary_tp": "83170.00",
+            "extreme_tp": "83595.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT/SMC Bullish Order Block combined with unmitigated M15 FVG between 82980.00 and 83010.00 aligns with the recent H1 Break of Structure (BOS) above 82951.88, structurally validated by H1 EMA50 staying sloped upwards below current price.",
+            "Confluence 2: Major Quarter Theory level at 83000.00 serves as a psych-level anchor, merging with MSNR rally-base-rally support and Candle Range Theory (CRT) low-wick defense, supported by M15 RSI resting at a neutral 49.3 for momentum reset.",
+            "Confluence 3: Ascending micro-trendline bounce originating from 82545.82 and 82640.00 intersects with an M15 bullish pennant consolidation pattern, while M15 ATR at 62.89 defines precise structural volatility bounds.",
+            "Confluence 4: Demand Zone defense on H1/M15 showing lower-wick rejection tail candles on M15 retesting broken swing resistance, validated by H1 MACD maintaining its bullish crossover above the zero signal line.",
+            "Confluence 5: Fibonacci 0.382 retracement level at 82985.00 aligns with VPVR high-volume node support and -1 Standard Deviation lower channel boundary, further confirmed by an M15 Bollinger Band squeeze indicating impending explosive upward continuation."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 6,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "H1 trend is structurally bullish following a clear BOS above 82951.88, holding key 83000 quarter-level defensive staff support while momentum (M15 RSI 49.3) has fully reset for the next impulse toward HTF liquidity."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Multi-timeframe trend alignment across H4, H1, M15, and M5 is strictly sideways/neutral. Price is compressed around 1.1203 following a double-sided liquidity sweep (high of 1.12517 and low of 1.11894) without establishing a directional Break of Structure (BOS) or holding external Fair Value Gaps. Momentum (RSI 53.3) and volatility (M15 ATR 0.00083) confirm complete market equilibrium at the Point of Control. No valid predictive defensive staff zone meets the mandatory 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "23.5%",
+            "dominant_bias_reason": "Neither Buy nor Sell scenarios provide sufficient structural confluence. Buy scenario aligns only with lower wick liquidity sweeps and retention above the 1.12000 Quarter Theory level, but fails on HTF trend, BOS, and demand zone confirmation. Sell scenario aligns with upper wick rejection at 1.12517, but fails on structure break, indicator expansion, and supply zone retention. Both scenarios score 23.5% (4/17 checks), far below the mandatory 80% execution threshold."
+          }
+        }
       }
     },
     "XAU/USD": {
@@ -19,13 +68,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Price is currently locked in an extreme low-volatility squeeze (M15 ATR 0.24713, RSI 50.6) across lower timeframes (H1, M15, M5 all sideways/neutral) without clean multi-timeframe alignment or an active predictive defensive staff zone. H4 macro trend is bullish, but lower timeframes lack displacement, BOS, or actionable Fair Value Gaps to frame a tight, high R:R preemptive wick-rejection entry.",
+          "reason": "Market is locked in severe micro-consolidation with price flattened into a narrow 0.25-point channel (4195.74 - 4196.00) across H1, M15, and M5 timeframes. M15 ATR has collapsed to 0.2417, indicating negligible volatility. There is no active lower-timeframe Break of Structure (BOS), unmitigated Fair Value Gap (FVG), or clear structural defensive staff zone to anchor a preemptive limit order. Multi-timeframe alignment fails as HTF bullish trend conflicts with completely flat/neutral H1/M15/M5 momentum and volatility, placing confidence well below the mandatory 80% threshold for both scenarios.",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 6,
             "sell_conditions_met": 4,
             "confidence_percentage": "35.29%",
-            "dominant_bias_reason": "Although H4 retains a macro bullish trend, lower timeframe price action (H1, M15, M5) is completely sideways with flat momentum (RSI 50.6) and zero volume/volatility expansion. Neither Buy (35.29%) nor Sell (23.53%) reaches the mandatory 80% confidence threshold required for trade execution under the doctrine."
+            "dominant_bias_reason": "HTF (H4) remains structurally bullish above the 4195.00 Quarter Theory level, giving Buy a minor theoretical edge over Sell. However, with severe LTF compression, flat Bollinger Bands/ADX, neutral RSI (57.0), and absence of predictive wick-rejection structure, neither scenario reaches the required 80% confidence threshold."
           }
         }
       }
