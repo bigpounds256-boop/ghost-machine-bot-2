@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10 02:36 UTC",
+  "generated_at": "2026-10-10 09:01 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,7 +17,17 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Market is in an extreme low-volatility, flat consolidation state across H1, M15, and M5 timeframes with M15 ATR compressed to 0.24884. Lack of multi-timeframe trend alignment (H4 bullish vs H1/M15/M5 neutral), absent lower-timeframe Break of Structure (BOS), and absence of an actionable predictive defensive staff/FVG zone keep both Buy and Sell scenarios well below the mandatory 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "35.29%",
+            "dominant_bias_reason": "Buy scenario meets 6/17 checks (supported by HTF H4 bullish structure and positioning above 4185 demand), while Sell scenario meets 5/17 checks (supported by stalling beneath the 4200 Quarter Level resistance). However, neither direction satisfies the minimum 14/17 (82.35%) threshold due to tight range compression, lack of lower-timeframe BOS, flat momentum (RSI 55.6), and unaligned MTF structure."
+          }
+        }
       }
     }
   }
