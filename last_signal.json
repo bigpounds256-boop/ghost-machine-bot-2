@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12 08:35 UTC",
+  "generated_at": "2026-10-12 18:14 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,17 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "All timeframes (H4, H1, M15, M5) display a sideways/neutral trend context. A sharp M15 bearish impulse pushed price down to 1.11908, pushing M15 RSI into oversold territory (27.5) directly above major H4 range support at 1.11843-1.11854. Selling at current levels requires chasing an oversold move into HTF support, whereas buying against the recent lower timeframe bearish displacement lacks multi-timeframe trend and structure alignment. Neither the Buy nor Sell scenario achieves the required 80% doctrine confidence threshold.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 9,
-            "sell_conditions_met": 10,
-            "confidence_percentage": "58.8%",
-            "dominant_bias_reason": "The Sell scenario holds a minor edge (10/17 = 58.8%) due to M15 bearish displacement and FVG formation, while the Buy scenario scores 9/17 (52.9%) on oversold momentum (RSI 27.5) and HTF support proximity. However, both fall well below the mandatory 80% threshold required for a predictive defensive staff order placement."
-          }
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
