@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15 04:34 UTC",
+  "generated_at": "2026-10-15 09:27 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,7 +11,17 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Neither the Buy scenario (13/17 concepts aligned = 76.47%) nor the Sell scenario (7/17 concepts aligned = 41.18%) meets the mandatory 80% (14/17) confidence threshold. While H1 displays a bullish structure, MTF alignment is weak as H4, M15, and M5 remain sideways/neutral. Additionally, lower-timeframe Fair Value Gaps are mitigated, CRT expansion is absent, and Volume Ratio data is unconfirmed (N/A).",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 13,
+            "sell_conditions_met": 7,
+            "confidence_percentage": "76.47%",
+            "dominant_bias_reason": "Buy scenario leads due to H1 bullish trend, H1 Break of Structure above 1.12118, support at the 1.12000 Quarter Level, and RSI holding above 50 (52.9). However, it falls short of the 80% execution threshold due to non-aligned timeframes (H4/M15/M5 neutral), fully mitigated nearby FVGs, lack of active CRT expansion, and missing volume metrics."
+          }
+        }
       }
     },
     "XAU/USD": {
