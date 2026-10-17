@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17 12:59 UTC",
+  "generated_at": "2026-10-17 16:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -9,13 +9,13 @@
           "asset": "BTC/USD",
           "bias": "SELL",
           "trade_type": "SELL-LIMIT",
-          "entry_zone": "81650.00 - 81720.00",
-          "entry_price": "81685.00",
-          "invalidation_stop": "81785.00",
+          "entry_zone": "81480.00 - 81530.00",
+          "entry_price": "81496.00",
+          "invalidation_stop": "81625.00",
           "take_profit": {
-            "primary_tp": "80850.00",
+            "primary_tp": "80810.00",
             "extreme_tp": "79800.00",
-            "risk_reward_ratio": "1:18.85"
+            "risk_reward_ratio": "1:5.3 Primary / 1:13.1 Extreme"
           },
           "timeframes_used": [
             "H4",
@@ -23,23 +23,23 @@
             "M15",
             "M5"
           ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) sitting at the 0.618 Fib retracement and M15 FVG within supply; resting SELL-LIMIT order eliminates need for confirmation wicks.",
           "confluences": [
-            "Confluence 1: H4 Bearish Market Structure and Break of Structure (BOS) combined with Quarter Theory (81750 minor quarter level) and Supply/Demand Dynamics, validated by Trend Indicators (H4 EMA50/200 bearish structure and Ichimoku Cloud overhead resistance). The sequence of lower highs from 84146 down to 81770 establishes a strong bearish macro flow where corrective retracements into the 81680-81750 supply zone are absorbed by institutional sellers.",
-            "Confluence 2: Unmitigated M15 Fair Value Gap (FVG) overlapping Candle Range Theory (CRT) range-top resistance and Malaysian SNR (MSNR) role-reversal level at 81680, supported by Momentum Indicators (M15 RSI at 29.7 confirming persistent downside pressure). Price expansions above 81650 encounter heavy structural seller defense, enforcing lower-high containment.",
-            "Confluence 3: Descending M15/H1 Trendline Resistance dynamic ceiling working together with a Bearish Flag Chart Pattern and upper Wick-Rejection Candlestick Patterns across H1 bars (07:00-11:00 UTC wicks targeting 81690-81770), aligned with Volatility Indicators (M15 ATR of 61.92 specifying the defensive staff boundaries). Rejection at the upper boundary predicts wick formation prior to structural impulse expansion.",
-            "Confluence 4: ICT Liquidity Sweep of internal buy-side liquidity resting above local M15 micro-highs (81650-81690) in combination with 0.618 Fibonacci Retracement of the recent M15 drop and active M15 Supply Zone, confirmed by Volume Indicators (VPVR Point of Control distribution at 81700 and declining On-Balance Volume). Preemptive order placement traps late buyers into institutional defensive mitigation.",
-            "Confluence 5: Fibonacci Circles time-price arc confluence converging at the 81680-81720 predictive rejection node alongside Standard Deviation (+2 SD upper volatility band limit), confirmed by H1 MACD negative expansion. This interaction validates exhaustion of micro corrective waves at the defensive staff, creating high-probability alignment for a SELL-LIMIT execution."
+            "Confluence 1: SMC Unmitigated FVG (81468-81550) and institutional H1 Supply Zone combine with M15 Break of Structure (BOS) down to 81302.20, while H4/M5 Trend Indicators (EMA50 below EMA200, MACD negative) confirm macro bearish momentum, validating corrective retracements as prime supply retests.",
+            "Confluence 2: Malaysian Support/Demand Resistance (MSNR) flipped at 81500-81520 intersects the Major Quarter Theory (QT) level at 81500. H1 Candlestick Patterns display persistent upper wicks (rejections at 81616.01 and 81610.01), aligned with M15 Momentum RSI at 40.7 (< 50 threshold) confirming sellers maintain total micro-structure control.",
+            "Confluence 3: Fibonacci 0.618 Retracement level (81496.00) calculated from the recent swing down (81616.01 to 81302.20) aligns exactly with the predictive defensive staff zone (81480-81530). Candle Range Theory (CRT) expansion downward coupled with Volatility Indicator M15 ATR (80.21) provides precise math for an invalidation ceiling at 81625.00 to protect against volatile noise.",
+            "Confluence 4: Chart Pattern bear flag consolidation on M15 retests the breakdown line of the H4/H1 descending trendline originating from 82640. The upper flag boundary coincides with the unmitigated Fair Value Gap, while Volume Indicators show contracting buy volume on pullbacks and strong distribution spikes on down-leg expansions.",
+            "Confluence 5: Multi-Timeframe Alignment (H4 Bearish, M5 Bearish, H1 breaking lower) points directly toward downstream sell-side liquidity pools under 80809 (10/16 low) and 79800 (10/15 low). Standard Deviation volatility bands project expansion toward these HTF targets, supporting a Primary TP at 80810.00 (1:5.3 R:R) and an Extreme TP at 79800.00 (1:13.1 R:R)."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
+            "buy_conditions_met": 2,
             "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "H4 macro trend is strictly bearish following sustained lower highs (84146 to 81770) and HTF BOS down to 80809. M15 RSI (29.7) demonstrates strong downside impulse while current price (81513.36) consolidates below the 81750 minor quarter supply barrier. 15 of 17 doctrine concepts align decisively for a preemptive short at the defensive staff."
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong macro bearish alignment across H4/M5, active M15 BOS to lower lows (81302.20), bearish RSI momentum (40.7), and clear unmitigated supply/FVG overhead at 81480-81530 create high-probability short confluence."
           },
           "risk_profile": {
-            "expected_rr": "1:18.85",
+            "expected_rr": "1:5.3 Primary / 1:13.1 Extreme",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
@@ -58,13 +58,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is locked in extreme compression (a 0.28 point range between 4164.58 and 4164.86) across H1, M15, and M5 timeframes. With M15 RSI at 46.0, low ATR (0.259), and an absence of LTF market structure breaks, FVGs, or clear predictive wick-rejection zones, neither scenario achieves the required 80% confidence threshold.",
+          "reason": "Market is in an extreme low-volatility micro-consolidation across H1, M15, and M5 timeframes (M15 ATR 0.24738, price range < 0.30 gold points). Lack of multi-timeframe trend alignment, structural impulses, and actionable predictive defensive staff zones prevents reaching the required 80% confidence threshold for either Buy or Sell execution.",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 6,
             "sell_conditions_met": 5,
             "confidence_percentage": "35.29%",
-            "dominant_bias_reason": "While H4 retains macro bullish alignment near the 0.618 Fib retracement of the recent swing, LTF timeframes (H1, M15, M5) are completely sideways without volume, displacement, or structural order flow alignment, failing to generate a high-probability defensive staff zone."
+            "dominant_bias_reason": "Although HTF (H4) maintains a overall bullish structure, lower timeframes (H1, M15, M5) are strictly sideways/neutral with doji compression, neutral momentum (M15 RSI 54.8), and zero active Fair Value Gaps or clear Liquidity Sweeps near current market price."
           }
         }
       }
