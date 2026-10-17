@@ -1,62 +1,43 @@
 {
-  "generated_at": "2026-10-17 20:51 UTC",
+  "generated_at": "2026-10-17 22:50 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "81650.00 - 81660.00",
-          "entry_price": "81655.00",
-          "invalidation_stop": "81710.00",
-          "take_profit": {
-            "primary_tp": "81195.00",
-            "extreme_tp": "80810.00",
-            "risk_reward_ratio": "1:15.4"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: Smart Money Concepts (ICT Bearish Supply/Order Block mitigation) interacts with Malaysian SNR key resistance at 81658.00 and Candlestick Patterns showing repeated M15/M5 upper wick rejections. As price fills the intraday Fair Value Gap, H4 bearish trend EMA alignment triggers institutional sell liquidity off the defensive staff zone.",
-            "Confluence 2: Candle Range Theory (CRT) upper wick sweeps above 81658.00 intersect with Quarter Theory minor quarter level (81650.00) and Supply/Demand zone capping. Momentum Indicator alignment via M15 RSI at 79.4 indicates extreme overbought exhaustion, driving a predictive wick-rejection at the resting limit level.",
-            "Confluence 3: H4 bearish Break of Structure (BOS) aligns with M15 Triple Top chart pattern distribution at 81658.00-81659.00 and bearish Trendline resistance bounce. Volatility alignment via M15 ATR(14) at 69.56 highlights a >6x ATR overextension from the 81190.71 low, forcing price contraction at the upper Bollinger Band boundary.",
-            "Confluence 4: Fibonacci Retracement (38.2% to 50% retracement zone of recent H4/H1 swing move) coincides with Malaysian SNR resistance and ICT liquidity sweep. Volume indicators confirm volume exhaustion on bullish expansion bars near 81658.00, confirming defensive staff integrity.",
-            "Confluence 5: Multi-Timeframe Confluence (dominant H4 macro bearish trend overwhelming M15 micro correction) aligns with Unmitigated FVG closure at 81659.00 and Quarter Theory barriers. MACD H4 bearish histogram momentum pushes price down toward HTF liquidity clusters at 81195.00 and 80810.00."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "H4 macro downtrend combines with extreme M15 overbought momentum (RSI 79.4) and precise triple-top wick rejection at the 81658.00 supply/defensive staff level, offering an asymmetric risk-to-reward short setup."
-          },
-          "risk_profile": {
-            "expected_rr": "1:15.4",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Market is in an extreme low-volatility tight compression (M15 ATR = 0.00021) oscillating within a 3-pip channel (1.12363 - 1.12396) across H1, M15, and M5 timeframes. While the H4 trend remains structurally bullish, H1, M15, and M5 are sideways/neutral, resulting in a breakdown of multi-timeframe alignment. No valid lower-timeframe Break of Structure (BOS), unmitigated Fair Value Gap (FVG), or predictive defensive staff zone can be defined to support a high-probability entry with 1:10+ Risk:Reward. Both Buy and Sell evaluation models fall far short of the mandatory 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 4,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "23.53%",
+            "dominant_bias_reason": "Neither Buy (23.53%) nor Sell (17.65%) reaches the required 80% confidence threshold (minimum 14/17 aligned concepts). Higher-timeframe H4 bullishness is contradicted by H1/M15/M5 neutral stagnation, sub-50 RSI (44.4), flattened EMAs, and a complete absence of structural momentum or directional wick-rejection zones."
+          }
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Severe volatility compression and horizontal deadlock on H1, M15, and M5 timeframes within an extremely tight range of 4164.58 to 4164.86. With M15 ATR at 0.249 and M15 RSI neutral at 50.9, there is no active lower-timeframe Break of Structure (BOS) or actionable predictive defensive staff zone. Neither scenario satisfies the required 80% confidence threshold.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "35.29%",
+            "dominant_bias_reason": "Although H4 macro structure remains technically bullish from prior swings, lower-timeframe price action exhibits near-zero displacement and directionless consolidation, making preemptive entry invalid."
+          }
+        }
       }
     }
   }
