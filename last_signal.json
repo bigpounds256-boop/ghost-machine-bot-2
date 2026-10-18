@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17 22:50 UTC",
+  "generated_at": "2026-10-18 00:33 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -13,13 +13,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Market is in an extreme low-volatility tight compression (M15 ATR = 0.00021) oscillating within a 3-pip channel (1.12363 - 1.12396) across H1, M15, and M5 timeframes. While the H4 trend remains structurally bullish, H1, M15, and M5 are sideways/neutral, resulting in a breakdown of multi-timeframe alignment. No valid lower-timeframe Break of Structure (BOS), unmitigated Fair Value Gap (FVG), or predictive defensive staff zone can be defined to support a high-probability entry with 1:10+ Risk:Reward. Both Buy and Sell evaluation models fall far short of the mandatory 80% confidence threshold.",
+          "reason": "The market is locked in an extreme low-volatility sideways squeeze across H1, M15, and M5 timeframes, oscillating in an ultra-tight 3.3-pip range (1.12363 - 1.12396). There is a total absence of lower-timeframe Break of Structure (BOS), actionable Fair Value Gaps (FVG), volume expansion, or momentum divergence (M15 RSI neutral at 48.1, M15 ATR at 0.00023). Multi-timeframe alignment fails as H4 macro bullishness is neutralized by completely flat lower timeframes, preventing the identification of a valid predictive defensive staff zone.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "23.53%",
-            "dominant_bias_reason": "Neither Buy (23.53%) nor Sell (17.65%) reaches the required 80% confidence threshold (minimum 14/17 aligned concepts). Higher-timeframe H4 bullishness is contradicted by H1/M15/M5 neutral stagnation, sub-50 RSI (44.4), flattened EMAs, and a complete absence of structural momentum or directional wick-rejection zones."
+            "buy_conditions_met": 6,
+            "sell_conditions_met": 4,
+            "confidence_percentage": "35.29%",
+            "dominant_bias_reason": "Macro H4 structure retains a bullish bias, but lower timeframes (H1/M15/M5) show compressed volatility, flat EMAs/MACD/ADX, and overlapping candles, failing to provide the multi-concept confluence required to reach the 80% confidence execution threshold."
           }
         }
       }
@@ -29,13 +29,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Severe volatility compression and horizontal deadlock on H1, M15, and M5 timeframes within an extremely tight range of 4164.58 to 4164.86. With M15 ATR at 0.249 and M15 RSI neutral at 50.9, there is no active lower-timeframe Break of Structure (BOS) or actionable predictive defensive staff zone. Neither scenario satisfies the required 80% confidence threshold.",
+          "reason": "Price action across H1, M15, and M5 timeframes is tightly compressed in an extremely low-volatility range (4164.58 - 4164.86) with an M15 ATR of only 0.24355. Current structure exhibits no clear displacement, lower-timeframe Break of Structure (BOS), or actionable Fair Value Gap (FVG) alignment near current price. Both Buy and Sell scenarios fail to meet the required 80% doctrine confidence threshold due to flat trend/momentum indicators and lack of a definitive HTF defensive staff interaction zone.",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 6,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "35.29%",
-            "dominant_bias_reason": "Although H4 macro structure remains technically bullish from prior swings, lower-timeframe price action exhibits near-zero displacement and directionless consolidation, making preemptive entry invalid."
+            "sell_conditions_met": 5,
+            "confidence_percentage": "35.29% Buy / 29.41% Sell",
+            "dominant_bias_reason": "H4 remains structurally bullish above 4154.57, but lower timeframes (H1, M15, M5) are completely neutral and flatlining. RSI (57.5) sits in neutral territory, ADX and MACD reflect zero momentum, and price is stagnating at mid-range equilibrium without testing deep demand (4154-4156) or overhead supply (4188-4198). Under strict doctrine rules, execution is prohibited until price expands to a verified defensive staff zone with >= 80% confluence."
           }
         }
       }
