@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-10-18 00:33 UTC",
+  "generated_at": "2026-10-18 05:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81700.00 - 81750.00",
+          "entry_price": "81735.00",
+          "invalidation_stop": "81625.00",
+          "take_profit": {
+            "primary_tp": "82078.00",
+            "extreme_tp": "82885.00",
+            "risk_reward_ratio": "1:10.5"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: H1 bullish expansion from 81403.25 to 82078.00 created an unmitigated M15/H1 demand zone and FVG between 81657 and 81830. Price's ~280-pip pullback (~2.3x M15 ATR) absorbs selling liquidity directly into the internal defensive order block, preparing for a high-probability preemptive wick rejection.",
+            "Confluence 2: The bullish BOS above the key 81700 resistance transformed it into a fresh MSNR support floor. As price retests this level along the ascending MTF trendline, M15 RSI resets to 46.4 near the median 45-50 bull-market support zone, signaling momentum normalization before buyers defend the staff.",
+            "Confluence 3: The 81750 Major Quarter Level aligns precisely with the 50% equilibrium level of the current H4 candle expansion range (81403\u201382078). M5 candles show predictive lower-wick rejections at 81782, while price touches the lower M15 Keltner/Bollinger volatility boundary, creating a tight predictive defensive staff.",
+            "Confluence 4: The 81735 defensive entry sits exactly at the 0.50 Fibonacci retracement (81740.62) of the 81403\u201382078 leg, coinciding with -1.0 Standard Deviation from M15 VWAP. This technical confluence within an inverse head-and-shoulders continuation pattern on H1 reinforces the bullish trend alignment across H1 and M15 timeframes.",
+            "Confluence 5: A bullish flag consolidation on M15 rests upon the outer arc of the Fibonacci Circle projected from the 80819 low. Volume Profile analysis shows high accumulation and Point of Control (POC) between 81650 and 81750, indicating Smart Money defending liquidity clusters before expanding toward HTF swing highs at 82078 and 82885."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "Strong multi-timeframe bullish structure on H1 and M15 with H1 BOS above 81700, holding above the 81750 Major Quarter Level and 50% Fibonacci retracement in an unmitigated demand zone."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.5",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
@@ -13,13 +52,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "The market is locked in an extreme low-volatility sideways squeeze across H1, M15, and M5 timeframes, oscillating in an ultra-tight 3.3-pip range (1.12363 - 1.12396). There is a total absence of lower-timeframe Break of Structure (BOS), actionable Fair Value Gaps (FVG), volume expansion, or momentum divergence (M15 RSI neutral at 48.1, M15 ATR at 0.00023). Multi-timeframe alignment fails as H4 macro bullishness is neutralized by completely flat lower timeframes, preventing the identification of a valid predictive defensive staff zone.",
+          "reason": "Price is locked in an extreme tight consolidation range of 3.3 pips (1.12363 to 1.12396) across H4, H1, M15, and M5 timeframes with M15 ATR at 0.0002. All timeframes show neutral/sideways trends with flat indicator trajectories. Neither Buy nor Sell scenarios exhibit valid HTF Break of Structure (BOS), actionable Fair Value Gaps (FVG), or sufficient momentum/volume alignment to reach the mandatory 80% confidence threshold.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
+            "buy_conditions_met": 4,
             "sell_conditions_met": 4,
-            "confidence_percentage": "35.29%",
-            "dominant_bias_reason": "Macro H4 structure retains a bullish bias, but lower timeframes (H1/M15/M5) show compressed volatility, flat EMAs/MACD/ADX, and overlapping candles, failing to provide the multi-concept confluence required to reach the 80% confidence execution threshold."
+            "confidence_percentage": "23.5% Buy / 23.5% Sell",
+            "dominant_bias_reason": "Both Buy and Sell scenarios fail 13 of 17 doctrine checks due to multi-timeframe trend neutrality, lack of structural displacement, flat EMA/Ichimoku/MACD baselines, and suppressed volatility. Confidence for both directions is far below the mandatory 80% execution threshold."
           }
         }
       }
@@ -29,13 +68,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Price action across H1, M15, and M5 timeframes is tightly compressed in an extremely low-volatility range (4164.58 - 4164.86) with an M15 ATR of only 0.24355. Current structure exhibits no clear displacement, lower-timeframe Break of Structure (BOS), or actionable Fair Value Gap (FVG) alignment near current price. Both Buy and Sell scenarios fail to meet the required 80% doctrine confidence threshold due to flat trend/momentum indicators and lack of a definitive HTF defensive staff interaction zone.",
+          "reason": "All timeframes (H4, H1, M15, M5) are locked in neutral/sideways consolidation within an ultra-tight range of 4164.58 - 4164.86. Volatility is severely contracted (M15 ATR 0.2474) and momentum is neutral (M15 RSI 51.0), yielding no valid Break of Structure (BOS), Fair Value Gap (FVG), or actionable HTF liquidity sweep to establish a high-probability predictive defensive staff zone.",
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 6,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "35.29% Buy / 29.41% Sell",
-            "dominant_bias_reason": "H4 remains structurally bullish above 4154.57, but lower timeframes (H1, M15, M5) are completely neutral and flatlining. RSI (57.5) sits in neutral territory, ADX and MACD reflect zero momentum, and price is stagnating at mid-range equilibrium without testing deep demand (4154-4156) or overhead supply (4188-4198). Under strict doctrine rules, execution is prohibited until price expands to a verified defensive staff zone with >= 80% confluence."
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 3,
+            "confidence_percentage": "17.65%",
+            "dominant_bias_reason": "Neither scenario approaches the mandatory 80% confidence threshold (14/17 aligned checks). The market lacks directional bias, structural displacement, and volatility across all multi-timeframe anchors."
           }
         }
       }
