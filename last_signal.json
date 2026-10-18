@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18 16:56 UTC",
+  "generated_at": "2026-10-18 19:09 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -17,17 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Market across H4, H1, M15, and M5 timeframes is locked in extreme sideways consolidation within a micro 0.25-dollar range (4164.60 - 4164.85). Neutral momentum (M15 RSI 44.6), low volatility (M15 ATR 0.24725), and absence of structural breaks or unmitigated FVGs prevent establishing a high-probability predictive defensive staff zone. Neither Buy nor Sell scenario meets the required 80% confidence threshold (minimum 14/17 checks).",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "29.41%",
-            "dominant_bias_reason": "Lack of HTF/LTF structure breaks (BOS), unmitigated FVGs, directional trend alignment, or volume expansion across all evaluated timeframes makes any entry speculative rather than rule-based."
-          }
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
