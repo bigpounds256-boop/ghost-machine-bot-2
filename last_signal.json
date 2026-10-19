@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-10-19 14:14 UTC",
+  "generated_at": "2026-10-19 19:58 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "81650.00 - 81750.00",
+          "entry_price": "81715.00",
+          "invalidation_stop": "81520.00",
+          "take_profit": {
+            "primary_tp": "82850.00",
+            "extreme_tp": "83650.00",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT/SMC H4 bullish Order Block and discount zone mitigation combines with H4 Supply & Demand zone (81500-81750) and intact HTF bullish Break of Structure (BOS) above 82227, aligned with EMA50/200 and Ichimoku trend baseline support.",
+            "Confluence 2: Unmitigated H4 Fair Value Gap (81600-81900) intersects with Candle Range Theory (CRT) lower 25% boundary of the H4 expansion range and 81750 Quarter Theory key level, confirmed by M15 RSI (39.8) reaching oversold baseline for bullish momentum pivot.",
+            "Confluence 3: MSNR horizontal support at 81680-81750 aligns with HTF ascending trendline bounce and M5/M15 candlestick rejection wicks at the defensive staff, supported by M15 ATR (153.77) volatility compression near lower Bollinger Bands.",
+            "Confluence 4: Chart pattern bull flag consolidation on H1/M15 merges with institutional quarter level liquidity sweep below 81748.85 and ICT inducement clear, aligned with VPVR high volume node / point of control structural floor.",
+            "Confluence 5: 61.8% Fibonacci retracement (81629) from 80684.36 to 83158.00 confluence with Fibonacci Circle time-price arc and SD -1.5 lower expansion boundary, supported by Stochastic and CCI momentum turning upward from oversold territory."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 5,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "H4 macro trend is strongly bullish with price retracing into a 61.8% Fibonacci discount level, mitigating an H4 Fair Value Gap and Demand Zone at 81650-81750. Multiple confluences across structure, momentum (M15 RSI 39.8 oversold), and volume support a preemptive wick-rejection buy order at the defensive staff."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
