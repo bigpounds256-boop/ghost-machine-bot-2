@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19 19:58 UTC",
+  "generated_at": "2026-10-19 23:18 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -9,12 +9,12 @@
           "asset": "BTC/USD",
           "bias": "BUY",
           "trade_type": "BUY-LIMIT",
-          "entry_zone": "81650.00 - 81750.00",
-          "entry_price": "81715.00",
-          "invalidation_stop": "81520.00",
+          "entry_zone": "81800.00 - 81880.00",
+          "entry_price": "81850.00",
+          "invalidation_stop": "81680.00",
           "take_profit": {
-            "primary_tp": "82850.00",
-            "extreme_tp": "83650.00",
+            "primary_tp": "82700.00",
+            "extreme_tp": "83550.00",
             "risk_reward_ratio": "1:10"
           },
           "timeframes_used": [
@@ -25,18 +25,18 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: ICT/SMC H4 bullish Order Block and discount zone mitigation combines with H4 Supply & Demand zone (81500-81750) and intact HTF bullish Break of Structure (BOS) above 82227, aligned with EMA50/200 and Ichimoku trend baseline support.",
-            "Confluence 2: Unmitigated H4 Fair Value Gap (81600-81900) intersects with Candle Range Theory (CRT) lower 25% boundary of the H4 expansion range and 81750 Quarter Theory key level, confirmed by M15 RSI (39.8) reaching oversold baseline for bullish momentum pivot.",
-            "Confluence 3: MSNR horizontal support at 81680-81750 aligns with HTF ascending trendline bounce and M5/M15 candlestick rejection wicks at the defensive staff, supported by M15 ATR (153.77) volatility compression near lower Bollinger Bands.",
-            "Confluence 4: Chart pattern bull flag consolidation on H1/M15 merges with institutional quarter level liquidity sweep below 81748.85 and ICT inducement clear, aligned with VPVR high volume node / point of control structural floor.",
-            "Confluence 5: 61.8% Fibonacci retracement (81629) from 80684.36 to 83158.00 confluence with Fibonacci Circle time-price arc and SD -1.5 lower expansion boundary, supported by Stochastic and CCI momentum turning upward from oversold territory."
+            "Confluence 1: ICT/SMC HTF discount zone intersects with an unmitigated H4 Supply & Demand zone at 81800-81880 and Malaysian SNR drop-base-rally horizontal support, while Volatility indicators (M15 ATR 111.47) confirm compression into the lower Bollinger Band for an explosive upward expansion.",
+            "Confluence 2: Complete mitigation of an unmitigated HTF Fair Value Gap (FVG) at the 81750 Quarter Theory major level reinforces H4/H1 candlestick lower wick rejections, driving a bullish reversal signal on Momentum indicators (M15 RSI at 47.3 hooking upward alongside Stochastic oscillator).",
+            "Confluence 3: Macro HTF Break of Structure (BOS) bullish integrity is sustained as price hits an ascending HTF trendline bounce level, aligning with Candle Range Theory (CRT) lower range accumulation while Volume indicators (Accumulation/Distribution line) show stealth institutional buying.",
+            "Confluence 4: A refined micro double bottom chart pattern forms at the M15 demand node following an internal sell-side liquidity sweep under 81850, remaining fully backed by the long-term bullish Trend alignment of the H4 EMA50/200 stack.",
+            "Confluence 5: Optimal Trade Entry (OTE) 0.618 Fibonacci Retracement from the 80684 swing low to the 83158 high coincides with the -2 Standard Deviation envelope and 82000/81750 Quarter Theory boundaries, pinpointing the predictive defensive staff entry zone."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 15,
-            "sell_conditions_met": 5,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "H4 macro trend is strongly bullish with price retracing into a 61.8% Fibonacci discount level, mitigating an H4 Fair Value Gap and Demand Zone at 81650-81750. Multiple confluences across structure, momentum (M15 RSI 39.8 oversold), and volume support a preemptive wick-rejection buy order at the defensive staff."
+            "sell_conditions_met": 6,
+            "confidence_percentage": "88.24%",
+            "dominant_bias_reason": "Macro H4 structural trend remains distinctly bullish. The pullbacks into 81800-81880 represent a high-confluence discount retest (0.618 Fib, HTF Demand, FVG fill, lower BB boundary) outscoring the temporary H1 counter-trend pullback."
           },
           "risk_profile": {
             "expected_rr": "1:10",
@@ -50,13 +50,33 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Market is in an extreme compression regime on lower timeframes (M15 ATR at 0.00023, price stuck in a 3-pip range between 1.12115 and 1.12149). While H4 maintains a macro bearish structure, H1, M15, and M5 timeframes are all sideways/neutral. Momentum (RSI 53.0) and volume metrics are completely flat. Multi-timeframe alignment fails, and fewer than 14 of the 17 doctrine checks align for either direction, keeping the maximum confidence score at 58.8%, well below the mandatory 80% threshold required to deploy a preemptive limit order.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 5,
+            "sell_conditions_met": 10,
+            "confidence_percentage": "58.8%",
+            "dominant_bias_reason": "H4 structural lower highs and bearish BOS favor a ultimate sell side bias, but lack of lower-timeframe trend alignment, neutral momentum, low ATR volatility, and absence of clear wick rejection at a defensive staff zone prevent entry execution."
+          }
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "status": "NO TRADE",
+          "reason": "Neither the Buy nor the Sell scenario satisfies the mandatory 80% confidence threshold (requires at least 14 of 17 doctrine checks). While H1 trend is strongly bearish, H4, M15, and M5 timeframes remain sideways/neutral. Additionally, price is testing major H4 demand/support near 4131.92 with M15 RSI deeply oversold at 24.5, creating severe conflict between bearish momentum and imminent mean-reversion/support bounce risk.",
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 12,
+            "sell_conditions_met": 12,
+            "confidence_percentage": "70.59%",
+            "dominant_bias_reason": "The Sell scenario (70.59%) fails to reach execution threshold because shorting directly into major H4 demand (4131.92) with M15 RSI at 24.5 lacks favorable Fib retracement alignment and lacks MTF trend agreement across H4/M15/M5. The Buy scenario (70.59%) fails due to lack of bullish Break of Structure (BOS), unmitigated bullish lower FVGs, and prevailing H1 bearish market structure."
+          }
+        }
       }
     }
   }
