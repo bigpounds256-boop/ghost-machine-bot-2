@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-10-19 06:54 UTC",
+  "generated_at": "2026-10-19 14:14 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "82650.00 - 82720.00",
-          "entry_price": "82685.00",
-          "invalidation_stop": "82535.00",
-          "take_profit": {
-            "primary_tp": "83465.00",
-            "extreme_tp": "84146.00",
-            "risk_reward_ratio": "1:5.2"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC order block confluence with an unmitigated M15 FVG (82680-82740) following a H1 Break of Structure (BOS) to 82917.62, reinforced by Trend Indicators (H1 price above Ichimoku cloud and bullish EMA alignment). Institutional liquidity swept prior lows, creating a defensive staff demand zone where price will preemptively reject lower wicks.",
-            "Confluence 2: Quarter Theory (QT) major key level at 82500 combined with Malaysian SNR (MSNR) horizontal support at 82650-82680 and M15 Candlestick Pattern lower-wick rejections, aligned with Volatility Indicators (M15 ATR 119.96 and lower Bollinger Band elasticity). A 1-ATR retrace into 82685 causes a volatility squeeze triggering defensive staff limit buying.",
-            "Confluence 3: Fibonacci Retracement 0.5-0.618 golden pocket (82650-82700) measured from swing low 82484 to high 82917.62, coinciding with Supply and Demand demand zone origin and a clean Trendline Bounce on M15, backed by Momentum Indicators (M15 RSI at 63.9 holding above 50 and rising Stochastic). Momentum ensures preemptive absorption at the golden pocket.",
-            "Confluence 4: Candle Range Theory (CRT) expansion and M15 Chart Pattern (bullish continuation pennant) breaking upper liquidity, supported by Volume Indicators (OBV upward trajectory and positive Accumulation/Distribution). Accumulation during shallow pullbacks confirms aggressive buying resting at the lower pennant boundary near 82685.",
-            "Confluence 5: Multi-Timeframe Alignment with H1/M15 strongly bullish, another H1 Break of Structure (BOS), and Quarter Theory structural stacking above 82500, validated by Volatility and Trend Indicators (Standard Deviation envelope expansion and MACD histogram momentum expansion). Structure interactions dictate immediate continuation toward HTF liquidity targets at 83465 and 84146 once defensive staff is touched."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 3,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "H1 and M15 structural alignment are strongly bullish with clear BOS to 82917.62, resting above an unmitigated FVG/Demand defensive staff at 82650-82720 and Major Quarter Level 82500, backed by bullish RSI (63.9) and positive MACD expansion."
-          },
-          "risk_profile": {
-            "expected_rr": "1:5.2 (Primary) / 1:9.7 (Extreme)",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
@@ -56,7 +17,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "Gemini still rate-limited after all retries \u2014 free tier quota likely exhausted for now."
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
