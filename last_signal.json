@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20 07:12 UTC",
+  "generated_at": "2026-10-20 12:44 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,17 +11,7 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Multi-timeframe trend alignment is sideways/neutral across H4, H1, M15, and M5 timeframes with compressed volatility (M15 ATR 0.00036) and neutral momentum (M15 RSI 46.7). Neither the Buy scenario (7/17 checks met, 41.18%) nor the Sell scenario (6/17 checks met, 35.29%) achieves the mandatory 80% doctrine confidence threshold required to issue a preemptive defensive staff order.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 7,
-            "sell_conditions_met": 6,
-            "confidence_percentage": "41.18%",
-            "dominant_bias_reason": "Slight bullish lean (41.18% vs 35.29%) due to micro BOS to 1.12359 and holding above 1.1225 Quarter Theory support, but overall market context is severely rangebound without directional indicator convergence or sustained HTF structure alignment."
-          }
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
