@@ -1,27 +1,21 @@
 {
-  "generated_at": "2026-10-21 18:05 UTC",
+  "generated_at": "2026-10-21 21:40 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
-      }
-    },
-    "EUR/USD": {
-      "asset_class": "forex",
-      "signal": {
         "trade_signal_doctrine": {
-          "asset": "EUR/USD",
+          "asset": "BTC/USD",
           "bias": "BUY",
           "trade_type": "BUY-LIMIT",
-          "entry_zone": "1.12310 - 1.12340",
-          "entry_price": "1.12325",
-          "invalidation_stop": "1.12265",
+          "entry_zone": "84620.00 - 84680.00",
+          "entry_price": "84650.00",
+          "invalidation_stop": "84430.00",
           "take_profit": {
-            "primary_tp": "1.12590",
-            "extreme_tp": "1.12925",
-            "risk_reward_ratio": "1:4.4"
+            "primary_tp": "84898.00",
+            "extreme_tp": "86850.00",
+            "risk_reward_ratio": "1:10"
           },
           "timeframes_used": [
             "H4",
@@ -31,21 +25,21 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: ICT/SMC displacement following a lower liquidity sweep below 1.12165 produced a bullish Break of Structure (BOS) above 1.12378, leaving an unmitigated M15 Fair Value Gap (FVG) between 1.12278 and 1.12336. Lower timeframe EMA50 remaining aligned above EMA200 dynamically reinforces this gap fill zone.",
-            "Confluence 2: The 1.12300 minor level under Quarter Theory acts as an MSNR support flip where previous structural resistance turned into a fresh M15 Demand Zone (1.12310-1.12340). This interaction directly coincides with the high-volume node on VPVR, providing dense resting liquidity to trigger the defensive staff wick rejection.",
-            "Confluence 3: A bullish engulfing candlestick sequence on M15 accompanied a breakout of the M15 descending trendline, driving current H4 CRT range expansion above 1.12378. This structural shift is supported by momentum indicators as M15 RSI reaches 67.3 without bearish divergence.",
-            "Confluence 4: The 50% to 61.8% Fibonacci Retracement golden pocket (1.12297-1.12327) of the 1.12185-1.12409 impulse leg aligns with an inverse head-and-shoulders right-shoulder chart pattern retest and M5 CRT range boundaries. Volatility indicators validate this as M15 ATR (0.00053) expands along the upper Bollinger Band.",
-            "Confluence 5: The -1 Standard Deviation band intersects the Fibonacci Circle arc anchored from the 1.12185 swing low precisely at 1.12310-1.12325, mapping the predictive defensive staff entry point. The rising Accumulation/Distribution slope confirms underlying institutional buying into this pullback."
+            "Confluence 1: ICT/SMC bullish order block at 84620-84680 intersects an unmitigated M15 Fair Value Gap (FVG) created during the expansion above 84500. This is structurally backed by recent H1 Break of Structure (BOS) above 83713 toward 84898, where H4, H1, and M5 Trend Indicators (EMA50/200 and Ichimoku Cloud) maintain strong bullish directional alignment.",
+            "Confluence 2: Quarter Theory (QT) level at 84750/84500 establishes an institutional corridor where 84650 serves as a proven MSNR (Malaysian Support & Resistance) flip zone. The active Demand Zone at 84620-84680 is validated by Volume Indicators (VPVR High Volume Node accumulation and positive OBV trend), confirming institutional buying defense at this predictive staff.",
+            "Confluence 3: M15 and M5 lower wick rejection Candlestick Patterns confirm buyer presence at the bottom of the CRT (Candle Range Theory) expansion range (holding above the H4 open of 84489.59) along ascending Trendline Support. Momentum Indicators reinforce this, with M15 RSI(14) resting healthily at 53.3 above the 50 midline and the Awesome Oscillator (AO) displaying bullish histogram expansion.",
+            "Confluence 4: Chart Patterns reveal a bullish continuation flag on H1/M15 following an internal ICT/SMC Liquidity Sweep down to 84446, setting up a secondary LTF Break of Structure (BOS) above 84840. Volatility Indicators show M15 ATR(14) at 161.26 providing explosive expansion headroom as upper Bollinger Bands flare outward.",
+            "Confluence 5: The defensive staff resting price at 84650 aligns precisely with the 0.382-0.5 Fibonacci Retracement of the recent impulse leg (84180 to 84846), reinforced by Standard Deviation (+1 SD) channel support and fresh M15 Demand Zone confluence for a preemptive wick rejection."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
+            "sell_conditions_met": 2,
             "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong bullish displacement across M5 and M15 with BOS above 1.12378, supported by an unmitigated M15 FVG/Demand Zone at 1.12310-1.12340, RSI momentum (67.3), and volume accumulation, generating an 88.24% buy score."
+            "dominant_bias_reason": "Multi-timeframe trend alignment (H4/H1/M5 bullish), bullish HTF BOS above 83713, M15 RSI momentum reset at 53.3, and multi-concept demand defense at 84650."
           },
           "risk_profile": {
-            "expected_rr": "1:4.4",
+            "expected_rr": "1:10",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
@@ -53,20 +47,16 @@
         }
       }
     },
+    "EUR/USD": {
+      "asset_class": "forex",
+      "signal": {
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+      }
+    },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Multi-timeframe structural conflict between H4 bearish trend and H1 bullish trend, preventing either buy or sell scenario from reaching the mandatory 80% confidence threshold (14/17 aligned concepts).",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 12,
-            "sell_conditions_met": 7,
-            "confidence_percentage": "70.59%",
-            "dominant_bias_reason": "Buy scenario leads with 12/17 checks (70.59%) driven by H1 upside BOS, M15 RSI at 60.6, and demand holding above 4125.00 quarter level; however, HTF H4 bearish trend and overhead supply rejection at 4140.00-4142.00 invalidate MTF alignment, keeping confidence below the 80% execution threshold."
-          }
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
