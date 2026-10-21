@@ -1,11 +1,50 @@
 {
-  "generated_at": "2026-10-20 23:35 UTC",
+  "generated_at": "2026-10-21 02:03 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "BTC/USD",
+          "bias": "BUY",
+          "trade_type": "BUY-LIMIT",
+          "entry_zone": "82810.00 - 82860.00",
+          "entry_price": "82835.00",
+          "invalidation_stop": "82680.00",
+          "take_profit": {
+            "primary_tp": "83439.00",
+            "extreme_tp": "84400.00",
+            "risk_reward_ratio": "1:10.1"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: ICT/SMC Demand Zone, Malaysian SNR, and Fair Value Gap (FVG) aligned with HTF EMA50/200 trend support. H4/H1 bullish expansion pulls back into the unmitigated FVG and horizontal MSNR support zone between 82800 and 82850, where price respects the HTF EMA dynamic baseline, providing institutional defensive order block backing.",
+            "Confluence 2: Candlestick Wick Rejection, Candle Range Theory (CRT), and Quarter Theory (QT) validated by M15 RSI momentum reset. Successive lower wick rejections at 82804.98 demonstrate aggressive preemptive buying at the 82750/83000 QT sub-quarter axis, defending the CRT range equilibrium while M15 RSI (48.4) completes a neutral reset for upside continuation.",
+            "Confluence 3: Break of Structure (BOS), Chart Pattern (Bullish Flag / Ascending Triangle), and Supply & Demand Zone confirmed by Volume (VPVR High Volume Node). The H4 BOS above 82929 toward 83439 created a bullish consolidation pattern, with the defensive staff located at the lower demand boundary supported by high volume node interaction on VPVR ensuring firm buyer absorption.",
+            "Confluence 4: Ascending Trendline Support, Fibonacci Retracement (0.618 level), and Standard Deviation (SD) bands aligned with Volatility (M15 ATR 149.009). The 0.618 Golden Ratio Fib level from recent swing low to high coincides with the M15 ascending trendline at 82820-82850 within 1 SD of the mean, with ATR providing sufficient structural buffer above the stop loss.",
+            "Confluence 5: HTF Liquidity Cluster targeting, ICT Smart Money Liquidity Sweep, and Quarter Theory (83500/84400) aligned with MACD/Ichimoku trend continuation. Unswept buy-side liquidity clusters above the 83439 peak and 84000+ quarter levels act as primary magnets, supported by Ichimoku cloud baseline alignment on H1/H4 confirming uninterrupted macro trend momentum."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 15,
+            "sell_conditions_met": 2,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "HTF trends on H4 and H1 are strongly bullish with confirmed BOS to 83439. Price is consolidating above key MSNR/QT support at 82800-82850, where FVG mitigation, lower wick rejections, 0.618 Fibonacci retracement, and VPVR volume nodes converge to form a robust predictive defensive staff."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10.1",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "EUR/USD": {
