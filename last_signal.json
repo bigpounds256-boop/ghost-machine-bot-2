@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-10-21 07:36 UTC",
+  "generated_at": "2026-10-21 13:15 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "82880.00 - 82960.00",
-          "entry_price": "82925.00",
-          "invalidation_stop": "82760.00",
-          "take_profit": {
-            "primary_tp": "83439.00",
-            "extreme_tp": "84575.00",
-            "risk_reward_ratio": "1:3.11"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: M15/H1 candle expansion broke above the 82924.47 resistance, executing a bullish Break of Structure (BOS) and leaving an unmitigated M15 Fair Value Gap (FVG) between 82860.75 and 83080.00. This ICT/SMC imbalance sits directly above the golden-cross alignment of EMA50 over EMA200 and a rising MACD baseline, indicating sustained bullish order flow.",
-            "Confluence 2: Malaysian SNR (MSNR) resistance at 82924.47 has flipped into a defensive demand zone coinciding with the Quarter Theory (QT) 82925 sub-level. VPVR indicates a high volume node at this exact horizontal junction, while expanding OBV confirms aggressive buyer absorption during the structural breakout.",
-            "Confluence 3: Candle Range Theory (CRT) expansion out of the 82635-82924 consolidation range forms a classic bullish flag chart pattern driven by strong M15/H1 bullish expansion candles. RSI at 69.6 demonstrates robust momentum prior to overbought exhaustion, supported by a bullish Stochastic cross in the upper channel.",
-            "Confluence 4: An ascending trendline originating from 81322.22 through 82526.00 intersects the 0.5-0.618 Fibonacci retracement zone (82850.00-82914.00) of the recent expansion leg. M15 ATR volatility (135.69) and upper Bollinger Band expansion validate sufficient market energy for a shallow pullback into the defensive staff zone before continuation.",
-            "Confluence 5: Sustained price action above the 83000 major Quarter level following HTF structural alignment across H4, H1, and M5 charts supports an upper Standard Deviation extension. The entry zone anchors demand between 82880.00 and 82960.00, targeting liquidity clusters above the 83439.00 H4 swing high."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 2,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "Multi-timeframe trend alignment (H4/H1/M5 bullish), M15 bullish BOS above 82924.47, unmitigated M15 FVG creation (82860-83080), MSNR support flip at 82925, and strong momentum (RSI 69.6) heavily favor a preemptive buy-limit order at the defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:3.11",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
@@ -52,13 +13,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Multi-timeframe trend analysis across H4, H1, M15, and M5 exhibits neutral/sideways range-bound price action with compressed volatility (M15 ATR = 0.00041). Neither Buy nor Sell scenario fulfills the mandatory 80% confidence threshold (minimum 14 of 17 doctrine checks aligned) needed to establish a high-conviction preemptive defensive staff entry.",
+          "reason": "Multi-timeframe alignment across H4, H1, M15, and M5 indicates a sideways/neutral market structure with extremely low volatility (M15 ATR of 0.00054) and compressed price action around 1.12312. Neither the Buy scenario (6/17 = 35.29% confidence) nor the Sell scenario (7/17 = 41.18% confidence) satisfies the mandatory 80% threshold required to identify an actionable predictive defensive staff zone.",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 6,
             "sell_conditions_met": 7,
-            "confidence_percentage": "41.2%",
-            "dominant_bias_reason": "Sell scenario marginally leads with 7/17 checks (41.2%) driven by H1 lower-high structure and M15 RSI at 37.9, but fails the strict 80% execution criteria due to total neutral alignment across HTF/LTF trends, low volatility compression, and lack of verified predictive defensive staff wick-rejection zones."
+            "confidence_percentage": "41.18%",
+            "dominant_bias_reason": "Price is locked in a tight sideways range across all evaluated timeframes (H4, H1, M15, M5). Absence of a clear HTF Break of Structure (BOS), lack of strong trend indicator momentum (RSI neutral at 57.3), and tight volatility compression prevent establishing a high-probability preemptive defensive staff entry in either direction."
           }
         }
       }
