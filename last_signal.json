@@ -1,66 +1,17 @@
 {
-  "generated_at": "2026-10-25 16:26 UTC",
+  "generated_at": "2026-10-25 19:11 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "80680.00 - 80730.00",
-          "entry_price": "80710.00",
-          "invalidation_stop": "80825.00",
-          "take_profit": {
-            "primary_tp": "80100.00",
-            "extreme_tp": "79250.00",
-            "risk_reward_ratio": "1:12.7"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: The unmitigated M15/H1 FVG between 80680.00 and 80730.00 aligns directly with the ICT premium supply order block and the 80750 Quarter Theory minor level; as price retraces into this defensive staff zone, H4/H1 trend EMAs and bearish MACD momentum force supply absorption, precipitating a predictive wick-rejection.",
-            "Confluence 2: HTF bearish Break of Structure (BOS) established clear lower lows, converting the 80700 MSNR horizontal pivot from structural support into firm resistance; strong upper wicks on recent H1 candlestick bars reflect aggressive overhead selling while M15 RSI (54.7) and momentum indicators roll over to accelerate downside momentum.",
-            "Confluence 3: Price retesting the descending H1 trendline converges with a fresh H1 Supply Zone and CRT candle high capping; this structural zone coincides with the upper Bollinger Band / Keltner Volatility Channel boundary, where M15 ATR (123.2) bounds dictate a defensive staff wick-rejection.",
-            "Confluence 4: The M15 bearish flag consolidation breakdown points lower toward HTF liquidity clusters sitting beneath the 80087 and 79220 swing lows, catalyzed by structural rejection from the 80750 Quarter Theory level where VPVR overhead volume resistance and declining OBV suppress bullish buying interest.",
-            "Confluence 5: The 0.618 Fibonacci retracement level (~80671-80710) of the recent drop from 81033.69 to 80087.70 intersects the M15 gap-fill zone and MSNR level, establishing a precision defensive staff where Standard Deviation bands project institutional wick-rejection prior to HTF trend continuation."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 2,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong H4/H1 bearish structural alignment, breakdown from M15 flag pattern, 0.618 Fib retracement confluence, overhead VPVR node at 80700-80750, and unmitigated FVG mitigation support a high-probability preemptive sell limit at the defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:12.7",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "trade_signal_doctrine": {
-          "status": "NO TRADE",
-          "reason": "Market is in extreme sideways consolidation across all timeframes (H4, H1, M15, M5) with an M15 ATR of 0.0001 (1 pip). Lack of directional impulse, structural displacement, or unmitigated FVG/defensive staff zone prevents establishing a high-probability preemptive limit order with required 1:10+ R:R.",
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 5,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "29.4%",
-            "dominant_bias_reason": "Neither Buy (29.4%) nor Sell (23.5%) scenario achieves the required 80% confidence threshold (14/17 aligned concepts). All timeframes are sideways/neutral, volatility is suppressed, and no clear HTF BOS or liquidity sweep trigger exists."
-          }
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "XAU/USD": {
@@ -68,13 +19,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Market is in an extreme tight range compression (3993.55 - 3993.79) across H1, M15, and M5 timeframes with M15 ATR compressed at 0.237. Multi-timeframe structure lacks clear lower-timeframe displacement, Break of Structure (BOS), and Fair Value Gap (FVG) formation needed to establish a high R:R predictive defensive staff entry zone. Neither Buy nor Sell scenario achieves the mandatory 80% confidence threshold.",
+          "reason": "Market is in an extreme tight consolidation range between 3993.55 and 3993.80 across H1, M15, and M5 timeframes with neutral momentum (M15 RSI 42.4) and zero volatility expansion (M15 ATR 0.237). Neither Buy nor Sell scenarios reach the required 80% confidence threshold (>= 14/17 conditions met) due to conflicting HTF/LTF alignment, absence of fresh actionable Fair Value Gaps (FVGs), and lack of lower timeframe Break of Structure (BOS) to anchor a predictive defensive staff.",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 4,
-            "sell_conditions_met": 6,
-            "confidence_percentage": "35.29%",
-            "dominant_bias_reason": "Sell scenario holds slight structural dominance due to the H4 bearish trend and overhead HTF supply, but fails LTF structure alignment, momentum expansion, volume confirmation, and FVG/BOS setup requirements across lower timeframes."
+            "sell_conditions_met": 8,
+            "confidence_percentage": "47.06%",
+            "dominant_bias_reason": "H4 remains structurally bearish following the decline from 4140 to 3993, giving Sell a relative statistical edge over Buy (47.06% vs 23.53%). However, LTF timeframes (H1/M15/M5) are entirely sideways/neutral without clear volume expansion or unmitigated liquidity/FVG pools to define a high-probability predictive wick-rejection entry. Thus, execution threshold of 80% is not met."
           }
         }
       }
