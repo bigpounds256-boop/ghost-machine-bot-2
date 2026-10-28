@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28 08:31 UTC",
+  "generated_at": "2026-10-28 15:22 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -15,13 +15,13 @@
           "asset": "EUR/USD",
           "bias": "SELL",
           "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.11310 - 1.11340",
-          "entry_price": "1.11320",
-          "invalidation_stop": "1.11370",
+          "entry_zone": "1.11380 - 1.11410",
+          "entry_price": "1.11385",
+          "invalidation_stop": "1.11425",
           "take_profit": {
             "primary_tp": "1.11130",
-            "extreme_tp": "1.10820",
-            "risk_reward_ratio": "1:10"
+            "extreme_tp": "1.10850",
+            "risk_reward_ratio": "1:13.4"
           },
           "timeframes_used": [
             "H4",
@@ -31,21 +31,21 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: Smart Money Concepts (SMC), Supply and Demand Zones, and Fair Value Gap (FVG) align in the 1.11310 - 1.11340 defensive staff area. H4 macro orderflow remains strongly bearish, creating an unmitigated H1/M15 FVG within a key institutional supply zone. Trend indicators (H4/H1 EMA50/200 bearish cross and Ichimoku cloud overhead) dynamically reinforce this zone as a high-probability rejection area.",
-            "Confluence 2: Break of Structure (BOS), Malaysian SNR (MSNR), and Quarter Theory (QT) converge near 1.11300 - 1.11325. Previous HTF structural support broken on H4/H1 acts as fresh Malaysian SNR resistance at the 1.11300 Quarter level. Momentum indicators (M15 RSI at 60.2) indicate a short-term overbought retracement terminating precisely at this HTF structural pivot.",
-            "Confluence 3: Trendline Breaks & Bounces, Chart Patterns (bearish continuation flag), and Candlestick Patterns (upper wick rejection clusters) align across H1/M15. Volatility indicators (M15 ATR of 0.00042 showing tight squeeze and upper Bollinger Band/Keltner Channel alignment) signal immediate volatility expansion downwards upon contact with the descending trendline.",
-            "Confluence 4: Candle Range Theory (CRT), Smart Money Concepts (SMC), and Supply and Demand Zones indicate current lower-timeframe price action is a temporary retracement into the upper 50% premium array of the H4 bearish candle range. Volume indicators (declining volume on upward ticks, negative OBV/CMF) confirm institutional liquidity absorption into supply.",
-            "Confluence 5: Fibonacci Retracement (0.618 level at ~1.11288 - 1.11322 derived from H1 swing 1.11388 to 1.11127), Quarter Theory (QT), and Break of Structure (BOS) target the exact entry coordinate. Standard Deviation projection caps potential upside spike at 1.11369, allowing a tight 5-pip preemptive defensive SL placement at 1.11370."
+            "Confluence 1: ICT/SMC Bearish Order Block/Supply Zone (1.11380-1.11420), H4/H1 Bearish Break of Structure (BOS) below 1.11226, and unmitigated H1 Fair Value Gap (1.11369-1.11417) align directly with downward sloping H4 EMA50 and overhead Ichimoku cloud dynamic resistance, driving institutional supply at the defensive staff boundary.",
+            "Confluence 2: Confluence of exact 61.8% Fibonacci retracement (1.11385) from the 1.11544-1.11127 swing, Quarter Theory sub-level (1.11375/1.11400), and MSNR previous support flipped to resistance interacts with M15 RSI (56.0 resetting) and momentum indicators rolling over from overbought thresholds to signal buying exhaustion.",
+            "Confluence 3: H1/M15 Bearish Continuation Flag pattern bouncing off HTF descending trendline resistance (1.12308 -> 1.11793 -> 1.11387) features predictive upper rejection wicks on M15/M5 at 1.11387, validated by low M15 ATR (0.0005) at the upper Bollinger Band / +2 SD boundary indicating an imminent downward volatility expansion.",
+            "Confluence 4: Candle Range Theory (CRT) upper H4 range expansion tests extreme resistance, executing a buy-side liquidity sweep above 1.11360 into H1 origin supply; declining volume on bullish retracement bars combined with VPVR Point of Control resistance confirms absence of institutional demand.",
+            "Confluence 5: Multi-timeframe alignment confirms H4 primary trend bearishness while H1/M15 retracements construct a corrective lower high; MACD histogram remaining below zero line combined with strong bearish ADX trend strength supports rapid continuation down toward lower Quarter Theory targets (1.11250) and HTF sell-side liquidity at 1.11127."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "Strong H4 macro bearish trend aligned across MTF orderflow, retracing to unmitigated supply/FVG defensive staff zone at 1.11310 - 1.11340."
+            "buy_conditions_met": 2,
+            "sell_conditions_met": 16,
+            "confidence_percentage": "94.1%",
+            "dominant_bias_reason": "H4 dominant bearish trend with H1/M15/M5 corrective retracement capping at the 61.8% Fibonacci level (1.11385), unmitigated H1 FVG, descending trendline, and upper M15/M5 wick rejections."
           },
           "risk_profile": {
-            "expected_rr": "1:10",
+            "expected_rr": "1:13.4",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
@@ -56,7 +56,7 @@
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
