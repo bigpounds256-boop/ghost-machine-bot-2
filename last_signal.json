@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29 11:47 UTC",
+  "generated_at": "2026-10-29 17:53 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,17 +11,23 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+      }
+    },
+    "XAU/USD": {
+      "asset_class": "metals",
+      "signal": {
         "trade_signal_doctrine": {
-          "asset": "EUR/USD",
+          "asset": "XAU/USD",
           "bias": "SELL",
           "trade_type": "SELL-LIMIT",
-          "entry_zone": "1.11520 - 1.11550",
-          "entry_price": "1.11535",
-          "invalidation_stop": "1.11610",
+          "entry_zone": "4020.50 - 4023.50",
+          "entry_price": "4022.10",
+          "invalidation_stop": "4026.10",
           "take_profit": {
-            "primary_tp": "1.11250",
-            "extreme_tp": "1.10750",
-            "risk_reward_ratio": "1:10.5"
+            "primary_tp": "3998.10",
+            "extreme_tp": "3978.10",
+            "risk_reward_ratio": "1:11"
           },
           "timeframes_used": [
             "H4",
@@ -31,32 +37,26 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: Price retesting the 1.11500 Quarter Theory major level directly interacts with the unmitigated H1 Supply Zone and ICT/SMC premium bearish Order Block (1.11520-1.11580), where institutional sell liquidity rests; this structural resistance is causally reinforced by Trend Indicators (H4 bearish alignment below EMA50/200 and MACD negative histogram below signal line), signaling immediate defensive staff rejection.",
-            "Confluence 2: The upward pullback fills the unmitigated M15 Fair Value Gap (FVG) precisely at the 1.11520 MSNR horizontal support-turned-resistance barrier, which previously broken via H4 Break of Structure (BOS); as price stretches to the upper Bollinger Band limit under low volatility (M15 ATR 0.00068), Volatility Indicators confirm exhaustion, forcing a predictive wick rejection.",
-            "Confluence 3: Price bouncing off the upper boundary of the H4 descending trendline forms the retest leg of a bearish flag Chart Pattern, evidenced by Candlestick Patterns displaying upper rejection wicks on recent M15/M5 bars near 1.11528; simultaneously, Momentum Indicators (M15 RSI at 57.4 failing to expand into overbought territory) causally validate fading upside impulse.",
-            "Confluence 4: The retracement reaches the 0.618 Fibonacci Retracement level (1.11533) from the 1.11710-1.11247 swing, sitting at the +1.5 Standard Deviation expansion limit and top of the CRT (Candle Range Theory) previous H1 range; Volume Indicators reveal dry volume and declining OBV/A/D on the retest, causing immediate preemptive selling pressure.",
-            "Confluence 5: High-probability distribution setup targeting HTF sell-side liquidity clusters below recent swing lows at 1.11250 and 1.11127 via major Quarter Theory levels (1.11000/1.10750); ICT/SMC liquidity mapping aligned with Fibonacci Circle arc resistance at 1.11535 ensures a strong defensive staff zone providing a 1:10.5 Risk:Reward extended continuation profile."
+            "Confluence 1: M15/H1 Break of Structure (BOS) created a fresh M15 Supply Zone and Bearish Order Block (ICT/SMC) between 4022.00 and 4024.00 during the impulse drop to 4010.27, aligned with Trend Indicators showing H1 EMA50 below EMA200 and price trading beneath the Ichimoku cloud.",
+            "Confluence 2: An unmitigated M15 Fair Value Gap (FVG) resting between 4020.90 and 4023.20 overlaps directly with an MSNR horizontal support-turned-resistance flip zone at 4022.00 beneath the $4025.00 Quarter Level (QT), supported by Momentum Indicators where M15 RSI (34.6) and Stochastic maintain a downward slope.",
+            "Confluence 3: M15 and M5 Candlestick upper wick rejections near 4025.28 demonstrate buyer exhaustion at the top of the Candle Range Theory (CRT) expansion leg within a H1 Bearish Descending Channel pattern, with Volatility Indicators (M15 ATR at 6.81) confirming downside volatility expansion near lower Bollinger Bands.",
+            "Confluence 4: Descending trendline resistance connecting H1 lower highs aligns with an ICT/SMC internal liquidity sweep prior to structural collapse and an MSNR wick origin at 4023.50, verified by Volume Indicators exhibiting active capital distribution through declining OBV and negative CMF.",
+            "Confluence 5: The 0.618 Fibonacci retracement level (~4022.50) from the 4025.28 to 4010.27 leg forms a tight defensive staff zone in the direction of the HTF bearish structure, matching Standard Deviation projections at the +1.5 SD upper retest boundary of the short-term M5 mean."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 4,
+            "buy_conditions_met": 2,
             "sell_conditions_met": 15,
             "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "H4 bearish trend alignment combined with M15/H1 retest of unmitigated supply, 1.11500 Quarter Theory resistance, 61.8% Fibonacci retracement, and volume exhaustion at the defensive staff zone."
+            "dominant_bias_reason": "Strong multi-timeframe bearish alignment across H1 and M15 with clear BOS to 4010.27, unmitigated M15 FVG/Supply defensive staff at 4020.50-4023.50, and 15 out of 17 doctrine concepts favoring downward expansion toward HTF liquidity at 3988.80 / 3978.10."
           },
           "risk_profile": {
-            "expected_rr": "1:10.5",
+            "expected_rr": "1:11",
             "stop_type": "HTF structure invalidation (preemptive)",
             "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
           },
           "status": "PENDING - valid only if price taps predictive zone"
         }
-      }
-    },
-    "XAU/USD": {
-      "asset_class": "metals",
-      "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     }
   }
