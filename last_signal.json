@@ -1,50 +1,11 @@
 {
-  "generated_at": "2026-11-16 01:18 UTC",
+  "generated_at": "2026-11-16 08:03 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
       "asset_class": "crypto",
       "signal": {
-        "trade_signal_doctrine": {
-          "asset": "BTC/USD",
-          "bias": "SELL",
-          "trade_type": "SELL-LIMIT",
-          "entry_zone": "65070.00 - 65120.00",
-          "entry_price": "65095.00",
-          "invalidation_stop": "65235.00",
-          "take_profit": {
-            "primary_tp": "64250.00",
-            "extreme_tp": "63500.00",
-            "risk_reward_ratio": "1:11.4"
-          },
-          "timeframes_used": [
-            "H4",
-            "H1",
-            "M15",
-            "M5"
-          ],
-          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
-          "confluences": [
-            "Confluence 1: ICT/SMC Bearish Order Block & FVG mitigation + Quarter Theory (65000/65250 grid) + Supply Zone (65070-65120) aligned with H4/M5 EMA50/200 downward trajectory. Price retracing into the unmitigated M15 FVG (65068.60-65113.38) embedded inside the institutional 65000 Quarter level and H1 supply; dynamic resistance from higher timeframe EMAs triggers institutional sell orders preemptively at the defensive staff.",
-            "Confluence 2: Break of Structure (M15 lower low at 64672.55) + Malaysian SNR (65070 support-to-resistance flip) + Candlestick Rejection patterns (M15 upper wick at 65056.97) aligned with M15 RSI(14) at 46.1. The lower low BOS established bearish structural control, turning prior support into a defensive flip zone, with sub-50 RSI momentum confirming lack of bullish buying pressure.",
-            "Confluence 3: Candle Range Theory (H4 range expansion down, M5 contraction pullback) + Chart Patterns (M5 bearish flag) + Trendline Break & Bounce (retesting broken M5 ascending sub-trendline at 65080) aligned with M15 ATR(14) of 278.31. The M5 corrective rally forms a flag retesting broken trendline structure, with the 278.31 ATR parameter projecting volatility exhaustion exactly within the 65070-65120 defensive staff boundary.",
-            "Confluence 4: Fibonacci Retracement (0.5 at 65032.28 to 0.618 at 65117.18 golden ratio zone) + ICT/SMC Premium Array + Supply and Demand confluence aligned with declining VROC volume on the M5 pullback. Retracing the drop from 65392.01 to 64672.55 places entry in premium pricing, while diminishing volume on the upward move signals lack of buyer interest, confirming defensive staff rejection.",
-            "Confluence 5: Quarter Theory 65000 liquidity sweep + Fibonacci Extension / Standard Deviation (-1.618 projection to 63500.00) + HTF H4 Trend continuation aligned with MACD momentum expansion in negative territory. HTF bearish alignment combined with liquidity absorption above 65000 primes a sharp wick-rejection off 65095.00 targeting the primary swing low liquidity cluster at 64250.00 and extreme extension at 63500.00."
-          ],
-          "confidence_model": {
-            "total_doctrine_checks": 17,
-            "buy_conditions_met": 3,
-            "sell_conditions_met": 15,
-            "confidence_percentage": "88.24%",
-            "dominant_bias_reason": "H4 bearish trend alignment, lower-low BOS on M15 to 64672.55, unmitigated M15 FVG/Supply at 65070-65120, 0.618 Fib retracement, and sub-50 RSI momentum strongly favor a preemptive sell order at the predicted 65095.00 defensive staff."
-          },
-          "risk_profile": {
-            "expected_rr": "1:11.4",
-            "stop_type": "HTF structure invalidation (preemptive)",
-            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
-          },
-          "status": "PENDING - valid only if price taps predictive zone"
-        }
+        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
       }
     },
     "EUR/USD": {
@@ -52,13 +13,13 @@
       "signal": {
         "trade_signal_doctrine": {
           "status": "NO TRADE",
-          "reason": "Market displays sideways/neutral trend alignment across all timeframes (H4, H1, M15, M5) within a tight compression range (1.10169 - 1.10335). M15 ATR(14) is compressed at 0.0006 (6 pips), M15 RSI is neutral/oversold at 33.4 without bullish divergence confirmation, and clear Break of Structure (BOS) is absent. Neither scenario achieves the mandatory 80% confidence threshold required to establish a valid predictive defensive staff order.",
+          "reason": "All four evaluated timeframes (H4, H1, M15, M5) are pre-computed in a sideways/neutral regime, exhibiting severe volatility compression (M15 ATR at 0.0005) and tight range consolidation between 1.1011 and 1.1033. Neither the Buy nor the Sell scenario achieves the mandatory 80% confidence threshold (14/17 aligned concepts/indicators).",
           "confidence_model": {
             "total_doctrine_checks": 17,
             "buy_conditions_met": 8,
             "sell_conditions_met": 7,
-            "confidence_percentage": "47.1% Buy / 41.2% Sell",
-            "dominant_bias_reason": "Neutral multi-timeframe context fails to provide clear directional alignment. Buy scenario scores 47.1% (8/17) supported by proximity to M15 support (1.10169) and low RSI, but fails on MTF trend alignment, volume data, and structural BOS. Sell scenario scores 41.2% (7/17) based on prior H4 macro drop from 1.11624, but fails due to oversold RSI and range-bound momentum. Both fall well below the 80% (14/17) execution barrier."
+            "confidence_percentage": "47.1% Buy / 41.2% Sell (Threshold: 80%)",
+            "dominant_bias_reason": "Dual-scenario evaluation confirms a lack of directional confluence. Buy scenario meets 8/17 checks (MSNR support near 1.1011, Demand Zone, Quarter Theory 1.1000/1.1025, CRT range bottom, RSI at 56.3), but fails on MTF Trend Alignment, HTF BOS, FVG expansion, ADX/EMA trend strength, and Volume expansion. Sell scenario meets 7/17 checks (H4 macro drop context, minor supply at 1.1028-1.1033, range top rejection), but fails on momentum, MTF alignment, and lower structure invalidation. With neither scenario reaching 80% confidence, the doctrine strictly prohibits execution."
           }
         }
       }
@@ -68,14 +29,14 @@
       "signal": {
         "trade_signal_doctrine": {
           "asset": "XAU/USD",
-          "bias": "BUY",
-          "trade_type": "BUY-LIMIT",
-          "entry_zone": "3866.50 - 3871.50",
-          "entry_price": "3869.50",
-          "invalidation_stop": "3862.50",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "3867.50 - 3873.50",
+          "entry_price": "3870.50",
+          "invalidation_stop": "3879.50",
           "take_profit": {
-            "primary_tp": "3900.00",
-            "extreme_tp": "3940.00",
+            "primary_tp": "3834.00",
+            "extreme_tp": "3780.00",
             "risk_reward_ratio": "1:10.1"
           },
           "timeframes_used": [
@@ -86,18 +47,18 @@
           ],
           "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
           "confluences": [
-            "Confluence 1: Smart Money (ICT/SMC) executed a sell-side liquidity sweep beneath the multi-hour consolidation base of 3874.37 down to 3865.03, tapping directly into an unmitigated H4 Supply & Demand Zone (3865.00-3870.00). The immediate wick rejection formed an M5 bullish pin bar Candlestick Pattern, confirming institutional absorption while aligning with the underlying H1 Bullish Trend (EMA50/200 dynamic support).",
-            "Confluence 2: Deep retracement into Malaysian SNR (MSNR) key support at 3865.00 fills the discount Fair Value Gap (FVG) left by the prior bullish Break of Structure (BOS) up to 3901.17. Momentum indicators reflect this structural alignment as M15 RSI(14) at 44.2 rebounds from local oversold territory, validating buyers defending the staff zone.",
-            "Confluence 3: Under Candle Range Theory (CRT), price expanded beyond the internal consolidation range to test the 3862.50/3875.00 Quarter Theory (QT) level and the HTF Trendline Support connecting 3853.26. Volatility indicators confirm overextension as price touched the -2 Standard Deviation Keltner/Bollinger envelope relative to M15 ATR(14) of 8.12, setting up a high-probability mean-reversion move.",
-            "Confluence 4: A Wyckoff Spring / Double Bottom Chart Pattern formed around 3865.03 inside the ICT Optimal Trade Entry (OTE) discount array. Pronounced lower-wick Candlestick Patterns on M5 and M15 coupled with Volume Indicator absorption (accumulation at the 3865-3870 demand floor) demonstrate aggressive institutional defending.",
-            "Confluence 5: The 0.618 Fibonacci Retracement level of the 3853.26 to 3901.17 move coincides with the 3869.50 defensive staff entry and 3875.00 Quarter Theory pivot reclaim. Trend indicator alignment via Ichimoku baseline support and MACD histogram troughing supports bullish BOS expansion toward HTF liquidity targets at 3900.00 and 3940.00."
+            "Confluence 1: ICT/SMC Premium Bearish Order Block, Supply Zone, and HTF Break of Structure (BOS) interact at 3867.50-3873.50, where seller defensiveness is highest following the H4/H1 structural break below 3853.00 down to 3833.62. This price action alignment is validated by Trend Indicator confluence, with price resting well below descending H4 and H1 EMA 50/200 levels.",
+            "Confluence 2: An unmitigated H1/M15 Fair Value Gap (FVG) aligns directly with Malaysian SNR (MSNR) horizontal support-turned-resistance at 3873.40 and Quarter Theory (QT) major level $3875.00, capping upward counter-trend retracements. Momentum Indicator alignment via M15 RSI at 42.0 confirms persistent bearish regime control under the 50 midline.",
+            "Confluence 3: Candle Range Theory (CRT) reveals an internal range liquidity sweep into a Bearish Flag continuation pattern on H1/M15, framed by prominent upper rejection wicks on H1. Volatility Indicator alignment is supplied by M15 ATR(14) at 11.514, confirming sufficient directional volatility to drive downside expansion upon tapping the defensive staff.",
+            "Confluence 4: The defensive staff zone captures the 0.50 to 0.618 Optimal Trade Entry (OTE) Fibonacci Retracement (3867.26 - 3875.20) of the recent 3900.91 to 3833.62 drop, colliding with descending trendline resistance and +2 Standard Deviation upper mean-reversion bounds. Volume Indicator analysis via VPVR highlights heavy seller distribution and a high-volume node at 3870.50.",
+            "Confluence 5: Targets align with HTF Sell-Side Liquidity (SSL) pools sitting unmitigated beneath the 3833.62 swing low down to 3780.00. The preemptive SELL-LIMIT order at 3870.50 positions directly inside the defensive staff before wick completion, supported by negative MACD histogram trajectory and elevated ADX bearish trend strength."
           ],
           "confidence_model": {
             "total_doctrine_checks": 17,
-            "buy_conditions_met": 15,
-            "sell_conditions_met": 4,
-            "confidence_percentage": "88.2%",
-            "dominant_bias_reason": "H1 bullish trend remains intact following a liquidity sweep beneath 3874 into strong H4/MSNR demand at 3865-3870, backed by lower wick rejections, RSI stabilization, and 15 aligned doctrine concepts."
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 16,
+            "confidence_percentage": "94.1%",
+            "dominant_bias_reason": "H4, H1, and M15 timeframes maintain aligned bearish trend structure with HTF BOS down to 3833.62. The 3867.50-3873.50 zone presents an ideal preemptive defensive staff combining 0.618 Fib OTE, unmitigated FVG, H1 supply, and $3875 QT resistance, while M5 bullish activity represents only a temporary pullback into premium sell territory."
           },
           "risk_profile": {
             "expected_rr": "1:10.1",
