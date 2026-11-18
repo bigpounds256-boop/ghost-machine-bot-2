@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18 01:29 UTC",
+  "generated_at": "2026-11-18 08:55 UTC",
   "doctrine": "Preemptive Predictive Wick-Rejection / Defensive Staff",
   "results": {
     "BTC/USD": {
@@ -11,13 +11,52 @@
     "EUR/USD": {
       "asset_class": "forex",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "trade_signal_doctrine": {
+          "asset": "EUR/USD",
+          "bias": "SELL",
+          "trade_type": "SELL-LIMIT",
+          "entry_zone": "1.09715 - 1.09745",
+          "entry_price": "1.09728",
+          "invalidation_stop": "1.09788",
+          "take_profit": {
+            "primary_tp": "1.09528",
+            "extreme_tp": "1.09128",
+            "risk_reward_ratio": "1:10"
+          },
+          "timeframes_used": [
+            "H4",
+            "H1",
+            "M15",
+            "M5"
+          ],
+          "entry_logic": "Preemptive entry at predicted wick-rejection zone (defensive staff) with tight SL; no waiting for confirmation.",
+          "confluences": [
+            "Confluence 1: H4 and H1 Bearish Break of Structure (BOS) created a fresh M15/H1 Supply Zone and Bearish Order Block between 1.09715 and 1.09745. As price retraces upward, Trend Indicators (EMA50/200 sloping downwards above price) act as dynamic resistance, driving a preemptive wick rejection within the defensive staff zone.",
+            "Confluence 2: Former H1 structural support at 1.09707 has flipped into an MSNR resistance zone, directly overlapping an unmitigated M15 Fair Value Gap (FVG) and the 1.09750 Quarter Level (QT). Momentum Indicators (M15 RSI at 20.1 displaying strong downside momentum, alongside negative MACD expansion) indicate seller dominance upon retesting this key quarter boundary.",
+            "Confluence 3: Candle Range Theory (CRT) shows clear downward expansion following H1 bearish engulfing candlesticks, pushing price back up to retest descending trendline resistance. Volatility Indicators (expanding ATR at 0.00055 and widening lower Bollinger Bands) signal strong institutional expansion upon price reaching the defensive staff.",
+            "Confluence 4: The M15 chart pattern forms a tight bearish continuation structure where internal liquidity above 1.09718 is swept into the defensive staff before resuming downward targeting the 1.09500 major Quarter Level liquidity. Volume Indicators (Accumulation/Distribution showing distribution on corrective pullbacks) confirm seller re-engagement.",
+            "Confluence 5: The 50.0% to 61.8% Fibonacci Retracement of the recent M15 swing impulse converges precisely at 1.09728 within the defensive staff. Standard Deviation expansion arcs and Fibonacci Circles identify upper-boundary exhaustion at 1.09728, triggering a swift preemptive rejection in line with HTF structure."
+          ],
+          "confidence_model": {
+            "total_doctrine_checks": 17,
+            "buy_conditions_met": 3,
+            "sell_conditions_met": 15,
+            "confidence_percentage": "88.2%",
+            "dominant_bias_reason": "H4 trend is strongly bearish with downward BOS across H4/H1, unmitigated M15 FVG/Supply Zone at 1.09715-1.09745, MSNR flip, and 1.09750 Quarter Level confluence supported by RSI impulse and ATR expansion."
+          },
+          "risk_profile": {
+            "expected_rr": "1:10",
+            "stop_type": "HTF structure invalidation (preemptive)",
+            "note": "Preemptive entry captures full HTF continuation without waiting for wick confirmation."
+          },
+          "status": "PENDING - valid only if price taps predictive zone"
+        }
       }
     },
     "XAU/USD": {
       "asset_class": "metals",
       "signal": {
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
+        "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
       }
     }
   }
